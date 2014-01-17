@@ -1,0 +1,21 @@
+img.header__logo-image {
+  height: 60px;
+}
+
+#block-block-1 {
+  margin-bottom: 0em;
+}
+
+#block-block-1 p {
+  margin-bottom: 0em;
+}
+
+.username {
+  text-transform:capitalize;
+}
+
+.sidebar-second .region-sidebar-second {
+  width: 100%;
+  margin-left: 5px;
+  color: #e6e7e8;
+}
