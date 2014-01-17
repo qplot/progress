@@ -1,0 +1,32 @@
+/** color skin **/
+
+/** general settings **/
+.ctAccordion.skin-color a,
+.ctAccordion.skin-color span {text-decoration: none; display: inline-block; font-family: 'Cagliostro', sans-serif; padding: 2px 20px 2px 0; font-size: 16px; min-width: 50px;}
+.ctAccordion.skin-color .searchMatch { font-weight: bold; font-style: italic;}
+
+
+.ctAccordion.skin-color a:hover {text-decoration: underline;}
+
+/** 1st level **/
+.ctAccordion.skin-color{padding: 0; margin: 0; list-style: none;}
+.ctAccordion.skin-color > li {}
+.ctAccordion.skin-color > li > a {color: #009933; }
+.ctAccordion.skin-color > li > a.head {background: transparent url(img/pointer-green.png) no-repeat center right;}
+.ctAccordion.skin-color > li > span {color: #B3E1C2; }
+
+
+/** 2nd level **/
+.ctAccordion.skin-color > li > ul {list-style: none; margin: 0; padding: 0 0 0 15px;}
+.ctAccordion.skin-color > li > ul > li {}
+.ctAccordion.skin-color > li > ul > li > a { color: #1076BB;}
+.ctAccordion.skin-color > li > ul > li > a.head {background: transparent url(img/pointer-blue.png) no-repeat center right;}}
+.ctAccordion.skin-color > li > ul > li > span {color: #B7D6EA;}
+
+/** 3rd level **/
+
+.ctAccordion.skin-color > li > ul > li > ul {list-style: none; margin: 0; padding: 0 0 0 15px;}
+.ctAccordion.skin-color > li > ul > li > ul > li {}
+.ctAccordion.skin-color > li > ul > li > ul > li > a {color: #cc0000;}
+.ctAccordion.skin-color > li > ul > li > ul > li > span {color: #F0B3B3;}
+
