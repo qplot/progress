@@ -110,6 +110,9 @@ function qplot_progress_block_view($delta = '') {
         'progress' => $wrapper->field_project_progress->value(),
         'status' => $wrapper->field_project_status->name->value(),
         'company' => $wrapper->field_project_company->title->value(),
+        'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+          'query' => drupal_get_destination()
+        )),
       );
       // find phases info and associate properties
       $variables['items'] = array();
@@ -125,7 +128,7 @@ function qplot_progress_block_view($delta = '') {
         $wrapper = entity_metadata_wrapper('node', $node);
         $variables['items'][] = array(
           'title' => $wrapper->title->value(),
-          // 'description' => $wrapper->body->summary->value(),
+          'description' => ($wrapper->body->raw()) ? $wrapper->body->summary->value() : '',
           'progress' => $wrapper->field_phase_progress->value(),
         );
       }

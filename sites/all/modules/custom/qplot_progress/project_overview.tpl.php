@@ -2,8 +2,8 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
- dsm($project);
- dsm($items);
+ // dsm($project);
+ // dsm($items);
 ?>
 
  <div class="row tiles-container tiles white spacing-bottom">
@@ -19,6 +19,9 @@
       </div>
       <div class="tile-footer">
         Migrate and redesign stemcell journal site.
+        <?php if ($project['edit']): ?>
+          <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+        <?php endif; ?>
       </div>
     </div>
     <div class="tiles-body">
@@ -35,7 +38,7 @@
                 <?php echo $phase['title'] ?>
               </div>
               <div class="description">
-                description, need to fix
+                <?php echo $phase['description'] ?>
               </div>
             </div>
             <div class="details-status pull-right">
