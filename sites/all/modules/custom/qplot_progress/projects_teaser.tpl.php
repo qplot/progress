@@ -1,36 +1,29 @@
 <?php 
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
- ?>
- 
+?>
+
+<?php 
+	dsm($items);
+?>
+
 <div class="side-bar-widgets">
   <p class="menu-title">
-	PROJECTS
+    PROJECTS
   </p>
+  <?php foreach($items as $project): ?>
+  <?php $bar = ($project['status'] == 'Active') ? 'success' : 'failure'; ?>
   <div class="status-widget">
-	<div class="status-widget-wrapper">
-	  <div class="title">
-		Oncologist
-	  </div>
-	  <p>
-		Support oncologist app
-	  </p>
-	  <div class="progress transparent progress-small no-radius no-margin">
-		<div data-percentage="79%" class="progress-bar progress-bar-success animate-progress-bar"></div>
-	  </div>
-	</div>
+    <div class="status-widget-wrapper">
+      <span class="pull-right"><i class="fa fa-<?=$project['icon'] ?>"></i></span>
+      <div class="title">
+        <?=$project['title'] ?>
+      </div>
+      <?=$project['description']  ?>
+      <div class="progress transparent progress-small no-radius no-margin">
+        <div data-percentage="<?=$project['progress'] ?>%" class="progress-bar progress-bar-<?=$bar ?> animate-progress-bar"></div>
+      </div>
+    </div>
   </div>
-  <div class="status-widget">
-	<div class="status-widget-wrapper">
-	  <div class="title">
-		Stemcell
-	  </div>
-	  <p>
-		Redesign stemcell website
-	  </p>
-	  <div class="progress transparent progress-small no-radius no-margin">
-		<div data-percentage="34%" class="progress-bar progress-bar-failure animate-progress-bar"></div>
-	  </div>
-	</div>
-  </div>
+<?php endforeach; ?>
 </div>
