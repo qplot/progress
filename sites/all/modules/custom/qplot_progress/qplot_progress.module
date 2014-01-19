@@ -32,7 +32,7 @@ function qplot_progress_theme() {
     'qplot_progress_projects_teaser' => array(
       'variables' => array('items' => NULL),
       'template' => 'projects_teaser'
-    )
+    ),
     // 'devel_querylog_row' => array(
     //   'variables' => array('header' => array(), 'rows' => array()),
     // ),
