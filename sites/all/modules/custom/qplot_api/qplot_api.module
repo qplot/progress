@@ -1,0 +1,91 @@
+<?php
+
+// /**
+//  * Returns nid(s) based on a supplied pgh item key id.
+//  *
+//  * @param string $key
+//  *   A category key.
+//  *
+//  * @param string $type
+//  *   Type of the item
+//  *
+//  * @param bool $all
+//  *   If all matching nid are returned, or just the first one, default FALSE
+//  *
+//  * @return int
+//  *   The nid for the supplied id or 0 if not found.
+//  *   Or array of nids if $all = TRUE
+//  *
+//  * @author Fang Jin <fang@designhammer.com>
+//  */
+// function pgh_api_find_nid($key, $type, $all = FALSE) {
+//   $query = new EntityFieldQuery();
+//   $result = $query->entityCondition('entity_type', 'node')
+//                   ->propertyCondition('type', $type)
+//                   ->propertyCondition('title', $key)
+//                   ->execute();
+//   if (!empty($result['node'])) {
+//     $keys = array_keys($result['node']);
+//     if ($all) {
+//       return $keys;
+//     }
+//     else {
+//       return $keys[0];
+//     }
+//   }
+//   else {
+//     return 0;
+//   }
+// }
+
+/**
+ * Returns node nid(s) based on a supplied entity and property conditions.
+ *
+ * @param array $property_conds
+ *   Type of the item
+ *
+ * @param array $field_conds
+ *   Type of the item
+ *
+ * @param bool $all
+ *   If all matching nid are returned, or just the first one, default FALSE
+ *
+ * @param array $entity_conds
+ *   A category key.
+ *
+ * @return int
+ *   The nid for the supplied id or 0 if not found.
+ *   Or array of nids if $all = TRUE
+ *
+ * @author Fang Jin <fjin@qplot.com>
+ */
+function qplot_api_find_nodes($property_conds = array(), $field_conds = array(), $all = FALSE, $entity_conds = array()) {
+  $query = new EntityFieldQuery();
+  $entity_default = array(
+    'entity_type' => 'node'
+  );
+  $entity_conds = array_merge($entity_default, $entity_conds);
+  foreach ($entity_conds as $key => $value) {
+    $query->entityCondition($key, $value);
+  }
+  foreach ($property_conds as $key => $value) {
+    $query->propertyCondition($key, $value);
+  }
+  foreach ($field_conds as $key => $value) {
+    $query->fieldCondition($key, 'value', $value);
+  }
+
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $keys = array_keys($result['node']);
+    if ($all) {
+      return $keys;
+    }
+    else {
+      return $keys[0];
+    }
+  }
+  else {
+    return 0;
+  }
+}

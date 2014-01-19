@@ -1,0 +1,5 @@
+name = QPLOT Drupal General API
+description = API for QPLOT Drupal
+package = QPLOT
+version = 7.x-1.0
+core = 7.x
