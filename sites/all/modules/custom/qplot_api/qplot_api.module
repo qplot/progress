@@ -46,6 +46,9 @@
  *
  * @param array $field_conds
  *   Type of the item
+ *   By default, if item is a single value, it'll use key.`value` = value rule,
+ *   Or if it's an array, it'll use full key.value[0] value[2] value[1] where
+ *   value[2] is the operator if set, ex. '!='
  *
  * @param bool $all
  *   If all matching nid are returned, or just the first one, default FALSE
@@ -59,20 +62,35 @@
  *
  * @author Fang Jin <fjin@qplot.com>
  */
-function qplot_api_find_nodes($property_conds = array(), $field_conds = array(), $all = FALSE, $entity_conds = array()) {
+function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all = FALSE, $entity_conds = NULL) {
   $query = new EntityFieldQuery();
   $entity_default = array(
     'entity_type' => 'node'
   );
-  $entity_conds = array_merge($entity_default, $entity_conds);
+  if (!empty($entity_conds)) {
+    $entity_conds = array_merge($entity_default, $entity_conds);
+  } else {
+    $entity_conds = $entity_default;
+  }
   foreach ($entity_conds as $key => $value) {
     $query->entityCondition($key, $value);
   }
-  foreach ($property_conds as $key => $value) {
-    $query->propertyCondition($key, $value);
+  if (!empty($property_conds)) {
+    foreach ($property_conds as $key => $value) {
+      $query->propertyCondition($key, $value);
+    }
   }
-  foreach ($field_conds as $key => $value) {
-    $query->fieldCondition($key, 'value', $value);
+  if (!empty($field_conds)) {
+    foreach ($field_conds as $key => $value) {
+      if (is_array($value)) {
+        $property = isset($value[1]) ? $value[0] : 'value'; 
+        $assigned = isset($value[1]) ? $value[1] : $value[0];
+        $operator = isset($value[2]) ? $value[2] : '=';
+        $query->fieldCondition($key, $property, $assigned, $operator);
+      } else {
+        $query->fieldCondition($key, 'value', $value);
+      }
+    }
   }
 
   $result = $query->execute();
