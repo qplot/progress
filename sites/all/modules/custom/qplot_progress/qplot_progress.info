@@ -1,0 +1,7 @@
+name = QPLOT Progress
+description = Various blocks, pages, and functions for QPLOT Progress.
+package = QPLOT
+core = 7.x
+configure = admin/config/development/progress
+tags[] = developer
+

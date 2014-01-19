@@ -1,0 +1,109 @@
+<?php
+
+
+
+/**
+ * Implements hook_menu().
+ */
+// function qplot_progress_menu() {
+ 
+//   // $items['devel/cache/clear'] = array(
+//   //   'title' => 'Empty cache',
+//   //   'page callback' => 'devel_cache_clear',
+//   //   'description' => 'Clear the CSS cache and all database cache tables which store page, node, theme and variable caches.',
+//   //   'access arguments' => array('access devel information'),
+//   //   'file' => 'devel.pages.inc',
+//   //   'menu_name' => 'devel',
+//   // );
+
+  
+//   return $items;
+// }
+
+/**
+ * Implementation of hook_theme()
+ */
+function qplot_progress_theme() {
+  return array(
+    'qplot_progress_company_teaser' => array(
+      'variables' => array(),
+      'template' => 'company_teaser'
+    ),
+    'qplot_progress_projects_teaser' => array(
+      'variables' => array(),
+      'template' => 'projects_teaser'
+    )
+    // 'devel_querylog_row' => array(
+    //   'variables' => array('header' => array(), 'rows' => array()),
+    // ),
+  );
+}
+
+/**
+ * Implementation of hook_block_info()
+ */
+function qplot_progress_block_info() {
+  $blocks = array(
+    // Company mini teaser in sidebar menu area
+    'company_teaser' => array(
+      'info' => ('Company Teaser')
+    ),
+    'projects_teaser' => array(
+      'info' => ('Projects Teaser')
+    ),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view()
+ */
+function qplot_progress_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'company_teaser':
+      $block['content'] = theme('qplot_progress_company_teaser');
+      break;
+    case 'projects_teaser':
+      $block['content'] = theme('qplot_progress_projects_teaser');
+      break;
+    
+    default:
+      # code...
+      break;
+  }
+
+  return $block;
+}
+
+// function theme_devel_querylog_row($variables) {
+//   $row = $variables['row'];
+//   $i = 0;
+//   $output = '';
+//   foreach ($row as $cell) {
+//     $i++;
+
+//     if (is_array($cell)) {
+//       $data = !empty($cell['data']) ? $cell['data'] : '';
+//       unset($cell['data']);
+//       $attr = $cell;
+//     }
+//     else {
+//       $data = $cell;
+//       $attr = array();
+//     }
+
+//     if (!empty($attr['class'])) {
+//       $attr['class'] .= " cell cell-$i";
+//     }
+//     else {
+//       $attr['class'] = "cell cell-$i";
+//     }
+//     $attr = drupal_attributes($attr);
+
+//     $output .= "<div $attr>$data</div>";
+//   }
+//   return $output;
+// }
