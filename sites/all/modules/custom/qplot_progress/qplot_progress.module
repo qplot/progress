@@ -163,7 +163,25 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $variables['tasks'] = array();
-      
+      $tnids = qplot_api_find_nodes(
+        array('type' => 'task'),
+        array('field_task_phase' => array(
+          'target_id', 16, '='
+        )),
+        TRUE
+      );
+      foreach ($tnids as $tid) {
+        $node = node_load($tid);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $variables['tasks'][] = array(
+          'title' => $wrapper->field_task_project->title->value(),
+          'phase' => $wrapper->field_task_phase->title->value(),
+          'description' => $wrapper->title->value(),
+          'progress' => $wrapper->field_task_progress->value(),
+          'hours' => $wrapper->field_task_hours->value(),
+        );
+      }
+
       $block['content'] = theme('qplot_progress_project_overview', $variables);
       break;
     case 'company_overview':

@@ -4,6 +4,9 @@
 
  // dsm($project);
  // dsm($items);
+  dsm($tasks)
+
+
 ?>
 
  <div class="row tiles-container tiles white spacing-bottom">
@@ -74,7 +77,7 @@
   </div>
 </div>
 
-            <!-- BEGIN TASKS BLOCk -->
+ <!-- BEGIN TASKS BLOCk -->
 
             <div class="row tiles-container tiles white spacing-bottom">
               <div class="tiles-body">
@@ -98,15 +101,8 @@
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab4hellowWorld">
                     <div class="row">
-
-
                       <div class="grid">
                         <div class="grid-body no-border">
-          <!-- 
-                          <h3>
-                            Basic <span class="semi-bold">Table</span>
-                          </h3>
-           --> 
                           <table class="table no-more-tables">
                             <thead>
                               <tr>
@@ -117,7 +113,7 @@
                                   Description
                                 </th>
                                 <th style="width:6%">
-                                  Price
+                                  Hours
                                 </th>
                                 <th style="width:10%">
                                   Progress
@@ -125,166 +121,24 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td class="v-align-middle">
-                                  Early Bird
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">Redesign project template</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$4,500</span>
-                                </td>
-                                <td class="v-align-middle">
-                                  <div class="progress">
-                                    <div data-percentage="79%" class="progress-bar progress-bar-success animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Angry Birds&nbsp;&nbsp;&nbsp;<span class="label label-important">ALERT!</span>
-                                </td>
-                                <td>
-                                  <span class="muted">Something goes here</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$9,000</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="10%" class="progress-bar progress-bar-danger animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  PHP Login page
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">A project in business and science is typically defined</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$5,400</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="65%" class="progress-bar progress-bar-info animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Zombies
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">frequently involving research or design</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$6,000</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="42%" class="progress-bar progress-bar-warning animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="v-align-middle">
-                                  Early Bird
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">Redesign project template</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$4,500</span>
-                                </td>
-                                <td class="v-align-middle">
-                                  <div class="progress">
-                                    <div data-percentage="79%" class="progress-bar progress-bar-success animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Angry Birds&nbsp;&nbsp;&nbsp;<span class="label label-important">ALERT!</span>
-                                </td>
-                                <td>
-                                  <span class="muted">Something goes here</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$9,000</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="10%" class="progress-bar progress-bar-danger animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  PHP Login page
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">A project in business and science is typically defined</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$5,400</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="65%" class="progress-bar progress-bar-info animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="v-align-middle">
-                                  Early Bird
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">Redesign project template</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$4,500</span>
-                                </td>
-                                <td class="v-align-middle">
-                                  <div class="progress">
-                                    <div data-percentage="79%" class="progress-bar progress-bar-success animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Angry Birds&nbsp;&nbsp;&nbsp;<span class="label label-important">ALERT!</span>
-                                </td>
-                                <td>
-                                  <span class="muted">Something goes here</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$9,000</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="10%" class="progress-bar progress-bar-danger animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  PHP Login page
-                                </td>
-                                <td class="v-align-middle">
-                                  <span class="muted">A project in business and science is typically defined</span>
-                                </td>
-                                <td>
-                                  <span class="muted">$5,400</span>
-                                </td>
-                                <td>
-                                  <div class="progress">
-                                    <div data-percentage="65%" class="progress-bar progress-bar-info animate-progress-bar"></div>
-                                  </div>
-                                </td>
-                              </tr>
+                              <?php foreach($tasks as $task): ?>
+                                <tr>
+                                  <td class="v-align-middle">
+                                    <?php echo $task['title'] ?>
+                                  </td>
+                                  <td class="v-align-middle">
+                                    <span class="muted"><?php echo $task['description'] ?></span>
+                                  </td>
+                                  <td>
+                                    <span class="muted"><?php echo $task['hours'] ?></span>
+                                  </td>
+                                  <td class="v-align-middle">
+                                    <div class="progress">
+                                      <div data-percentage="<?php echo $task['progress'] ?>%" class="progress-bar progress-bar-success animate-progress-bar"></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              <?php endforeach;?>
                             </tbody>
                           </table>
                         </div>
