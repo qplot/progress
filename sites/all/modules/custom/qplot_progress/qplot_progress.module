@@ -45,6 +45,10 @@ function qplot_progress_theme() {
       'variables' => array('company' => NULL, 'contacts' => NULL),
       'template' => 'company_overview'
     ),
+    'qplot_progress_tasks_table' => array(
+      'variables' => array('tasks' => NULL),
+      'template' => 'tasks_table'
+    ),
   );
 }
 
@@ -73,6 +77,10 @@ function qplot_progress_block_info() {
     'company_overview' => array(
       'info' => ('Company Overview')
     ),
+    // Tasks table in main content area
+    'tasks_table' => array(
+      'info' => ('Tasks Table')
+    )
   );
 
   return $blocks;
@@ -162,26 +170,6 @@ function qplot_progress_block_view($delta = '') {
         );
       }
 
-      $variables['tasks'] = array();
-      $tnids = qplot_api_find_nodes(
-        array('type' => 'task'),
-        array('field_task_phase' => array(
-          'target_id', 16, '='
-        )),
-        TRUE
-      );
-      foreach ($tnids as $tid) {
-        $node = node_load($tid);
-        $wrapper = entity_metadata_wrapper('node', $node);
-        $variables['tasks'][] = array(
-          'title' => $wrapper->field_task_project->title->value(),
-          'phase' => $wrapper->field_task_phase->title->value(),
-          'description' => $wrapper->title->value(),
-          'progress' => $wrapper->field_task_progress->value(),
-          'hours' => $wrapper->field_task_hours->value(),
-        );
-      }
-
       $block['content'] = theme('qplot_progress_project_overview', $variables);
       break;
     case 'company_overview':
@@ -210,6 +198,34 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_company_overview', $variables);
+      break;
+    case 'tasks_table':
+      // find tasks of one phase for now
+      $variables['tasks'] = array();
+      $tnids = qplot_api_find_nodes(
+        array('type' => 'task'),
+        array('field_task_phase' => array(
+          'target_id', 16, '='
+        )),
+        TRUE
+      );
+      foreach ($tnids as $tid) {
+        $node = node_load($tid);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $variables['tasks'][] = array(
+          'title' => $wrapper->title->value(),
+          // 'description' => $wrapper->body->value()->value(),
+          'phase' => $wrapper->field_task_phase->title->value(),
+          'progress' => $wrapper->field_task_progress->value(),
+          'hours' => $wrapper->field_task_hours->value(),
+          'added' => date('m/d/y', $wrapper->field_task_added->value()),
+          'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+            'query' => drupal_get_destination()
+          )),
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_tasks_table', $variables);
       break;
     
     default:
