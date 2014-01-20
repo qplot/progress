@@ -37,9 +37,10 @@ function qplot_progress_theme() {
       'variables' => array('project' => NULL, 'items' => NULL),
       'template' => 'project_overview'
     ),
-    // 'devel_querylog_row' => array(
-    //   'variables' => array('header' => array(), 'rows' => array()),
-    // ),
+    'qplot_progress_company_overview' => array(
+      'variables' => array('company' => NULL, 'contacts' => NULL),
+      'template' => 'company_overview'
+    ),
   );
 }
 
@@ -59,6 +60,10 @@ function qplot_progress_block_info() {
     // Project overview teaser in main content area
     'project_overview' => array(
       'info' => ('Project Overview')
+    ),
+    // Company overview teaser in main content area
+    'company_overview' => array(
+      'info' => ('Company Overview')
     ),
   );
 
@@ -134,6 +139,33 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_project_overview', $variables);
+      break;
+    case 'company_overview':
+      // find company info
+      $node = node_load(4);
+      $wrapper = entity_metadata_wrapper('node', $node);
+      $variables['company'] = array(
+        'title' => $wrapper->title->value(),
+        'logo' => $wrapper->field_company_logo->file->url->value(),
+        'description' => $wrapper->body->summary->value(),
+        'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+          'query' => drupal_get_destination()
+        )),
+      );
+
+      // find company contacts 
+      $variables['contacts'] = array();
+      foreach ($wrapper->field_company_contacts->getIterator() as $cwrapper) {
+        $variables['contacts'][] = array(
+          'name' => $cwrapper->title->value(),
+          'title' => $cwrapper->field_contact_title->value(),
+          'photo' => $cwrapper->field_contact_photo->file->url->value(),
+          'email' => $cwrapper->field_contact_email->value(),
+          'phone' => $cwrapper->field_contact_phone->value()
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_company_overview', $variables);
       break;
     
     default:
