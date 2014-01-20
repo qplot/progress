@@ -25,6 +25,10 @@
  */
 function qplot_progress_theme() {
   return array(
+    'qplot_progress_logo_area' => array(
+      'variables' => array(),
+      'template' => 'logo_area'
+    ),
     'qplot_progress_company_teaser' => array(
       'variables' => array('company' => NULL),
       'template' => 'company_teaser'
@@ -49,6 +53,10 @@ function qplot_progress_theme() {
  */
 function qplot_progress_block_info() {
   $blocks = array(
+    // QPlot Company logo area
+    'logo_area' => array(
+      'info' => ('Logo Area')
+    ),
     // Company mini teaser in sidebar menu area
     'company_teaser' => array(
       'info' => ('Company Teaser')
@@ -77,6 +85,9 @@ function qplot_progress_block_view($delta = '') {
   $block = array();
 
   switch ($delta) {
+    case 'logo_area':
+      $block['content'] = theme('qplot_progress_logo_area');
+      break;
     case 'company_teaser':
       // find company info and asoociated properties
       $node = node_load(4);
