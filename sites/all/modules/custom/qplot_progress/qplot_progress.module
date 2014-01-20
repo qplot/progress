@@ -26,7 +26,7 @@
 function qplot_progress_theme() {
   return array(
     'qplot_progress_company_teaser' => array(
-      'variables' => array(),
+      'variables' => array('company' => NULL),
       'template' => 'company_teaser'
     ),
     'qplot_progress_projects_teaser' => array(
@@ -78,7 +78,20 @@ function qplot_progress_block_view($delta = '') {
 
   switch ($delta) {
     case 'company_teaser':
-      $block['content'] = theme('qplot_progress_company_teaser');
+      // find company info and asoociated properties
+      $node = node_load(4);
+      $wrapper = entity_metadata_wrapper('node', $node);
+      $variables['company'] = array(
+        'title' => $wrapper->title->value(),
+        'logo' => $wrapper->field_company_logo->file->url->value(),
+        'description' => $wrapper->body->summary->value(),
+        'status' => 'Active',
+        'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+          'query' => drupal_get_destination()
+        )),
+      );
+
+      $block['content'] = theme('qplot_progress_company_teaser', $variables);
       break;
     case 'projects_teaser':
       // find out all projects and associated properties
