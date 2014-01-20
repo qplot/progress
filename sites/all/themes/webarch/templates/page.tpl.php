@@ -7,9 +7,7 @@ $uname = $user_fields;
 <div class="header navbar navbar-inverse "> 
   <!-- BEGIN TOP NAVIGATION BAR -->
   <div class="navbar-inner">
-    <?php $block = module_invoke('qplot_progress', 'block_view', 'logo_area');
-    print render($block['content']); ?>
-      <!-- END RESPONSIVE MENU TOGGLER --> 
+    <?php echo theme('qplot_progress_logo_area'); ?>
     <div class="header-quick-nav" > 
       <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="pull-left"> 

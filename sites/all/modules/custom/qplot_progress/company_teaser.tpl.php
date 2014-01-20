@@ -5,7 +5,7 @@
 //  dsm($company);
 ?>
 <div class="user-info-wrapper">
-    <img src="%3C?php%20echo%20$company['logo']%20?%3E" alt="" data-src="<?php echo $company['logo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" height="36px">
+    <img src="<?php echo $company['logo']?>" alt="" data-src="<?php echo $company['logo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" height="36px">
     <div class="user-info">
         <div class="greeting"></div>
         <div class="username">

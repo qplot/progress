@@ -162,6 +162,8 @@ function qplot_progress_block_view($delta = '') {
         );
       }
 
+      $variables['tasks'] = array();
+      
       $block['content'] = theme('qplot_progress_project_overview', $variables);
       break;
     case 'company_overview':
