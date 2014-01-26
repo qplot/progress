@@ -15,16 +15,16 @@
       <div class="tiles-body">
         <div class="heading">
           <?php echo $project['title'] ?>
+        <?php if ($project['edit']): ?>
+          <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+        <?php endif; ?>
         </div>
         <p>
           Status : <?php echo $project['status'] ?>
         </p>
       </div>
       <div class="tile-footer">
-        Migrate and redesign stemcell journal site.
-        <?php if ($project['edit']): ?>
-          <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
-        <?php endif; ?>
+        <?php echo $project['description'] ?>
       </div>
     </div>
     <div class="tiles-body">

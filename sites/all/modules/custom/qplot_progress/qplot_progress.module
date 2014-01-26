@@ -27,27 +27,27 @@ function qplot_progress_theme() {
   return array(
     'qplot_progress_logo_area' => array(
       'variables' => array(),
-      'template' => 'logo_area'
+      'template' => 'templates/logo_area'
     ),
     'qplot_progress_company_teaser' => array(
       'variables' => array('company' => NULL),
-      'template' => 'company_teaser'
+      'template' => 'templates/company_teaser'
     ),
     'qplot_progress_projects_teaser' => array(
       'variables' => array('items' => NULL),
-      'template' => 'projects_teaser'
+      'template' => 'templates/projects_teaser'
     ),
     'qplot_progress_project_overview' => array(
       'variables' => array('project' => NULL, 'items' => NULL),
-      'template' => 'project_overview'
+      'template' => 'templates/project_overview'
     ),
     'qplot_progress_company_overview' => array(
       'variables' => array('company' => NULL, 'contacts' => NULL),
-      'template' => 'company_overview'
+      'template' => 'templates/company_overview'
     ),
     'qplot_progress_tasks_table' => array(
       'variables' => array('tasks' => NULL),
-      'template' => 'tasks_table'
+      'template' => 'templates/tasks_table'
     ),
   );
 }
@@ -136,12 +136,17 @@ function qplot_progress_block_view($delta = '') {
       $block['content'] = theme('qplot_progress_projects_teaser', $variables);
       break;
     case 'project_overview':
+      $nid = arg(1);
+      if (empty($nid)) return;
+
+      // $node = node_load(10);
+      $node = node_load($nid);
+
       // find project info
-      $node = node_load(10);
       $wrapper = entity_metadata_wrapper('node', $node);
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
-        'photo' => $wrapper->field_project_photo->file->url->value(),
+        'photo' => ($wrapper->field_project_photo->value()) ? $wrapper->field_project_photo->file->url->value() : '',
         'icon' => $wrapper->field_project_icon->name->value(),
         'description' => $wrapper->body->summary->value(),
         'progress' => $wrapper->field_project_progress->value(),
@@ -156,7 +161,7 @@ function qplot_progress_block_view($delta = '') {
       $nids = qplot_api_find_nodes(
         array('type' => 'phase'),
         array('field_phase_project' => array(
-          'target_id', 10, '='
+          'target_id', $nid, '='
         )),
         TRUE
       );
