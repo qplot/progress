@@ -88,9 +88,11 @@ scripts[] = assets/plugins/jquery-slider/jquery.sidr.min.js
 scripts[] = assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js
 scripts[] = assets/plugins/pace/pace.min.js
 scripts[] = assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js
+scripts[] = assets/js/tabs_accordian.js
 scripts[] = assets/js/core.js
 scripts[] = assets/js/chat.js
 scripts[] = assets/js/demo.js
+
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

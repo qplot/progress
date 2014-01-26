@@ -104,6 +104,10 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
     }
   }
   else {
-    return 0;
+    if ($all) {
+      return array();
+    } else {
+      return 0;
+    }
   }
 }
