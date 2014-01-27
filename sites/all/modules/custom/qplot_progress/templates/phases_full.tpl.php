@@ -35,6 +35,7 @@
                                 );
                               ?>
                               <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
+                              <span class="label label-info"><?php echo $phase['progress'] . '%' ?></span>
                             </p>
                             <h3>
                                 Phase: <span class="semi-bold"><?php echo $phase['title'] ?></span>
@@ -43,6 +44,7 @@
                                 <?php endif; ?>
                             </h3>
                             <?php echo $phase['description'] ?>
+                            <hr />
 
                             <p class="pull-right">
                               <?php if ($phase['create']): ?>
