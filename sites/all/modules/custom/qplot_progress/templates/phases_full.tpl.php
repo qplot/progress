@@ -98,7 +98,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                          <a href="<?php echo $task['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+                                          <a href="<?php echo $task['edit'] ?>"><i class="fa fa-edit"></i></a>
                                         </td>
                                     </tr><?php endforeach;?>
                                 </tbody>
