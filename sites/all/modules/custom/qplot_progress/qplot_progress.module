@@ -246,7 +246,12 @@ function qplot_progress_block_view($delta = '') {
           'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => drupal_get_destination()
           )),
-          'create' => url('node/add/task', array('query' => drupal_get_destination())),
+          'create' => url('node/add/task', array('query' => array_merge(
+            array(
+              'field_task_phase' => $pid,
+              'field_task_project' => $nid,
+            ), drupal_get_destination()
+          ))),
           'tasks' => array(),
           'focus' => FALSE,
         );
@@ -270,6 +275,9 @@ function qplot_progress_block_view($delta = '') {
             'hours' => $wrapper->field_task_hours->value(),
             'added' => date('m/d/y', $wrapper->field_task_added->value()),
             'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+              'query' => drupal_get_destination()
+            )),
+            'delete' => url('node/' . $wrapper->getIdentifier() . '/delete', array(
               'query' => drupal_get_destination()
             )),
           );
