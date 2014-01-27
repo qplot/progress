@@ -19,3 +19,8 @@ img.header__logo-image {
   margin-left: 5px;
   color: #e6e7e8;
 }
+
+.progress .progress-bar {
+	font-size: 11px;
+	line-height: 13px;
+}

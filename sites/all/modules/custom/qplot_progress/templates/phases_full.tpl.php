@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  dsm($phases);
+  // dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -29,9 +29,9 @@
                             <p class="pull-right"> 
                               <?php 
                                 $classes = array(
-                                  'Proposed' => '',
+                                  'Proposed' => 'warning',
                                   'Approved' => 'important',
-                                  'Paid' => 'inverse',
+                                  'Paid' => '',
                                 );
                               ?>
                               <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
@@ -44,6 +44,11 @@
                             </h3>
                             <?php echo $phase['description'] ?>
 
+                            <p class="pull-right">
+                              <?php if ($phase['create']): ?>
+                                <a href="<?php echo $phase['create'] ?>" class="btn btn-primary btn-small"><i class="fa fa-plus"> Add new task</i></a>
+                              <?php endif; ?>
+                            </p>
                             <table class="table no-more-tables">
                                 <thead>
                                     <tr>
@@ -80,7 +85,16 @@
                                         </td>
                                         <td class="v-align-middle">
                                             <div class="progress">
-                                                <div data-percentage="<?php echo $task['progress'] ?>%" class="progress-bar progress-bar-success animate-progress-bar"></div>
+                                                <?php 
+                                                  $class = 'success';
+                                                  if ($task['progress'] <= 95) $class = 'warning';
+                                                  if ($task['progress'] <= 50) $class = 'danger';
+                                                  if ($task['progress'] <= 15) {
+                                                    $class = 'info';
+                                                    $task['progress'] = '';
+                                                  }
+                                                ?>
+                                                <div data-percentage="<?php echo $task['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $task['progress'] ?></div>
                                             </div>
                                         </td>
                                         <td>
