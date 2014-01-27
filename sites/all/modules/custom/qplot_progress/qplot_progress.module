@@ -240,7 +240,13 @@ function qplot_progress_block_view($delta = '') {
         $phase_wrapper = entity_metadata_wrapper('node', $phase);
         $phase_item = array(
           'title' => $phase_wrapper->title->value(),
+          'description' => ($phase_wrapper->body->raw()) ? $phase_wrapper->body->value->value() : '',
           'progress' => $phase_wrapper->field_phase_progress->value(),
+          'status' => $phase_wrapper->field_phase_status->name->value(),
+          'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
+            'query' => drupal_get_destination()
+          )),
+          'add' => url('node/add/task', array('query' => drupal_get_destination())),
           'tasks' => array(),
           'focus' => FALSE,
         );

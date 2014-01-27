@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  // dsm($phases);
+  dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -26,6 +26,24 @@
                 <div class="row">
                     <div class="grid">
                         <div class="grid-body no-border">
+                            <p class="pull-right"> 
+                              <?php 
+                                $classes = array(
+                                  'Proposed' => '',
+                                  'Approved' => 'important',
+                                  'Paid' => 'inverse',
+                                );
+                              ?>
+                              <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
+                            </p>
+                            <h3>
+                                Phase: <span class="semi-bold"><?php echo $phase['title'] ?></span>
+                                <?php if ($phase['edit']): ?>
+                                  <a href="<?php echo $phase['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+                                <?php endif; ?>
+                            </h3>
+                            <?php echo $phase['description'] ?>
+
                             <table class="table no-more-tables">
                                 <thead>
                                     <tr>
