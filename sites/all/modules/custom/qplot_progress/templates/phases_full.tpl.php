@@ -1,4 +1,4 @@
-<?php 
+<?php
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
@@ -13,6 +13,12 @@
         <div class="tiles-title">
             Tasks in Phases
         </div><br>
+        <?php if ($project['create']): ?>
+          <p class="pull-right">
+            <a href="<?php echo $project['create'] ?>" class="btn btn-primary btn-small"><i class="fa fa-plus"> Add new phase</i></a>
+          </p>
+        <?php endif; ?>
+
         <ul class="nav nav-pills" id="tab-4">
           <?php foreach ($phases as $key => &$phase): ?>
             <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
@@ -26,8 +32,8 @@
                 <div class="row">
                     <div class="grid">
                         <div class="grid-body no-border">
-                            <p class="pull-right"> 
-                              <?php 
+                            <p class="pull-right">
+                              <?php
                                 $classes = array(
                                   'Proposed' => 'warning',
                                   'Approved' => 'important',
@@ -87,7 +93,7 @@
                                         </td>
                                         <td class="v-align-middle">
                                             <div class="progress">
-                                                <?php 
+                                                <?php
                                                   $class = 'success';
                                                   if ($task['progress'] <= 95) $class = 'warning';
                                                   if ($task['progress'] <= 50) $class = 'danger';

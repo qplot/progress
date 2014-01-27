@@ -6,7 +6,7 @@
  * Implements hook_menu().
  */
 // function qplot_progress_menu() {
- 
+
 //   // $items['devel/cache/clear'] = array(
 //   //   'title' => 'Empty cache',
 //   //   'page callback' => 'devel_cache_clear',
@@ -16,7 +16,7 @@
 //   //   'menu_name' => 'devel',
 //   // );
 
-  
+
 //   return $items;
 // }
 
@@ -208,7 +208,7 @@ function qplot_progress_block_view($delta = '') {
         )),
       );
 
-      // find company contacts 
+      // find company contacts
       $variables['contacts'] = array();
       foreach ($wrapper->field_company_contacts->getIterator() as $cwrapper) {
         $variables['contacts'][] = array(
@@ -228,6 +228,15 @@ function qplot_progress_block_view($delta = '') {
       $nid = arg(1);
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
+      // fill project info
+      $variables['project'] = array(
+        'create' => url('node/add/phase', array('query' => array_merge(
+          array(
+            'field_phase_project' => $nid,
+          ), drupal_get_destination()
+        ))),
+      );
+      // find phases info
       $pnids = qplot_api_find_nodes(
         array('type' => 'phase'),
         array('field_phase_project' => array(
@@ -284,7 +293,7 @@ function qplot_progress_block_view($delta = '') {
         }
         $variables['phases'][] = $phase_item;
       }
-      // set focus
+      // set current phase
       if (!empty($variables['phases'])) {
         $variables['phases'][0]['focus'] = TRUE;
       }
@@ -320,7 +329,7 @@ function qplot_progress_block_view($delta = '') {
 
       $block['content'] = theme('qplot_progress_tasks_table', $variables);
       break;
-    
+
     default:
       # code...
       break;
