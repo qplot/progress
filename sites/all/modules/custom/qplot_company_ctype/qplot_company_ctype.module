@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Company Content Type feature.
+ */
+
+include_once 'qplot_company_ctype.features.inc';

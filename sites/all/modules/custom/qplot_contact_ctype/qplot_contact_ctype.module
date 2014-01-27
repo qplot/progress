@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Contact Content Type feature.
+ */
+
+include_once 'qplot_contact_ctype.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Task Content Type feature.
+ */
+
+include_once 'qplot_task_ctype.features.inc';

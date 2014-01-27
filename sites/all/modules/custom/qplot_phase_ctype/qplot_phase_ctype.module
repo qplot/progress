@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Phase Content Type feature.
+ */
+
+include_once 'qplot_phase_ctype.features.inc';
