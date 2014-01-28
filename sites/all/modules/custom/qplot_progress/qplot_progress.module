@@ -253,7 +253,8 @@ function qplot_progress_block_view($delta = '') {
         $phase_item = array(
           'title' => $phase_wrapper->title->value(),
           'description' => ($phase_wrapper->body->raw()) ? $phase_wrapper->body->value->value() : '',
-          'progress' => $phase_wrapper->field_phase_progress->value(),
+          'hours' => 0,
+          'progress' => 0, //$phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
           'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => drupal_get_destination()
@@ -279,7 +280,8 @@ function qplot_progress_block_view($delta = '') {
         foreach ($tnids as $tid) {
           $node = node_load($tid);
           $wrapper = entity_metadata_wrapper('node', $node);
-          $phase_item['tasks'][] = array(
+
+          $task_item = array(
             'title' => $wrapper->title->value(),
             // 'description' => $wrapper->body->value()->value(),
             'phase' => $wrapper->field_task_phase->title->value(),
@@ -293,7 +295,13 @@ function qplot_progress_block_view($delta = '') {
               'query' => drupal_get_destination()
             )),
           );
+          // perform analysis and summary
+          $phase_item['hours'] = $phase_item['hours'] + $task_item['hours'];
+          $phase_item['progress'] = $phase_item['progress'] + $task_item['hours'] * $task_item['progress'] / 100;
+
+          $phase_item['tasks'][] = $task_item;
         }
+        $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
         $variables['phases'][] = $phase_item;
       }
       // set current phase

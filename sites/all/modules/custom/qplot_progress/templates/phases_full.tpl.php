@@ -118,6 +118,28 @@
                                   </td>
                               </tr><?php endforeach;?>
                           </tbody>
+                          <tfoot>
+                            <tr>
+                              <td><b>Total:</b></td>
+                              <td></td>
+                              <td><?php echo $phase['hours'] ?></td>
+                              <td class="v-align-middle">
+                                <div class="progress progress-large progress-striped active">
+                                    <?php
+                                      $class = 'success';
+                                      if ($phase['progress'] <= 95) $class = 'warning';
+                                      if ($phase['progress'] <= 50) $class = 'danger';
+                                      if ($phase['progress'] <= 15) {
+                                        $class = 'info';
+                                        $phase['progress'] = '';
+                                      }
+                                    ?>
+                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $phase['progress'] ?></div>
+                                </div>
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tfoot>
                       </table>
                     </div>
                 </div>
