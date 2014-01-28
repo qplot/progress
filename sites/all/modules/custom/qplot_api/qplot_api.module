@@ -62,7 +62,7 @@
  *
  * @author Fang Jin <fjin@qplot.com>
  */
-function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all = FALSE, $entity_conds = NULL) {
+function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all = FALSE, $entity_conds = NULL, $orders = NULL) {
   $query = new EntityFieldQuery();
   $entity_default = array(
     'entity_type' => 'node'
@@ -92,6 +92,18 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
       }
     }
   }
+  if (!empty($orders)) {
+    if (!empty($orders['field'])) {
+      foreach ($orders['field'] as $key => $value) {
+        $query->fieldOrderBy($key, $value[0], $value[1]);
+      }
+    }
+    if (!empty($orders['property'])) {
+      foreach ($orders['property'] as $key => $value) {
+        $query->propertyOrderBy($key, $value);
+      }
+    }
+  }
 
   $result = $query->execute();
   if (!empty($result['node'])) {
@@ -109,4 +121,16 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
       return 0;
     }
   }
+}
+
+/**
+ * Candidates for new find node function
+ */
+function qplot_api_find_nodes2($commands) {
+  $commands = array(
+    array('property', 'condition', 'type', 'phase'),
+    array('field', 'condition', 'field_phase_project', 'target_id', 3, '='),
+    array('property', 'order', 'created', 'ASC'),
+    array('array', TRUE)
+  );
 }

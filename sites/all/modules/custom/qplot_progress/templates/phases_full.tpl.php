@@ -39,6 +39,7 @@
                           $classes = array(
                             'Proposed' => 'warning',
                             'Approved' => 'important',
+                            'Canceled' => 'inverse',
                             'Paid' => '',
                           );
                         ?>

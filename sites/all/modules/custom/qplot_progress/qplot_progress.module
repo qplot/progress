@@ -242,7 +242,10 @@ function qplot_progress_block_view($delta = '') {
         array('field_phase_project' => array(
           'target_id', $nid, '='
         )),
-        TRUE
+        TRUE, NULL, 
+        array('property' => array(
+          'created' => 'DESC'
+        ))
       );
       foreach ($pnids as $pid) {
         $phase = node_load($pid);
