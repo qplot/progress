@@ -9,6 +9,7 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = number
 dependencies[] = options
+dependencies[] = qplot_project_ctype
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = viewfield
