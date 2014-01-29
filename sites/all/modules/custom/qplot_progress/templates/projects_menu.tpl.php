@@ -8,7 +8,7 @@
 <div class="side-bar-widgets">
 
   <p class="menu-title">
-    PROJECTS <span class="pull-right"><a href="javascript:;"></a></span>
+    ALL PROJECTS <span class="pull-right"><a href="javascript:;"></a></span>
   </p>
   <ul class="menu">
     <?php foreach ($companies as $company => $projects): ?>      

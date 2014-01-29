@@ -307,6 +307,7 @@ function qplot_progress_block_view($delta = '') {
           'created' => 'DESC'
         ))
       );
+      $variables['phases'] = array();
       foreach ($pnids as $pid) {
         $phase = node_load($pid);
         $phase_wrapper = entity_metadata_wrapper('node', $phase);
