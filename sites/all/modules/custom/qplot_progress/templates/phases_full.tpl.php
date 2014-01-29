@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  // dsm($phases);
+  dsm($phases);
 ?>
 
 <div class="row tiles-container spacing-bottom">
@@ -74,12 +74,9 @@
                                       $class = 'success';
                                       if ($phase['progress'] <= 95) $class = 'warning';
                                       if ($phase['progress'] <= 50) $class = 'danger';
-                                      if ($phase['progress'] <= 15) {
-                                        $class = 'info';
-                                        $phase['progress'] = '';
-                                      }
+                                      if ($phase['progress'] <= 15) $class = 'info';
                                     ?>
-                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $phase['progress'] ?></div>
+                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo ($phase['progress'] < 15) ? '.' : $phase['progress'] ?></div>
                                 </div>
                               </td>
                               <td>
