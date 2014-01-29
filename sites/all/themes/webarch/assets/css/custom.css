@@ -24,3 +24,8 @@ img.header__logo-image {
 	font-size: 11px;
 	line-height: 13px;
 }
+
+.status-widget .title a {
+	color: #fff;
+	font-size: 13px;
+}

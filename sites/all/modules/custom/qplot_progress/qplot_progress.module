@@ -161,6 +161,7 @@ function qplot_progress_block_view($delta = '') {
           'description' => $wrapper->body->summary->value(),
           'progress' => $wrapper->field_project_progress->value(),
           'status' => $wrapper->field_project_status->name->value(),
+          'view' => url('project/' . $wrapper->getIdentifier()),
         );
       }
       $block['content'] = theme('qplot_progress_projects_teaser', $variables);
