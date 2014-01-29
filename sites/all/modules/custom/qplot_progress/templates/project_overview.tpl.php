@@ -28,6 +28,10 @@
       </div>
     </div>
     <div class="tiles-body">
+      <?php if (empty($items)): ?>
+        <p> No phases and tasks information available. </p>
+      <?php endif; ?>
+
       <ul class="progress-list">
         <?php foreach ($items as $phase): ?>
           <?php 

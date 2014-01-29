@@ -20,9 +20,6 @@
             <a href="<?php echo $project['create'] ?>" class="btn btn-large btn-link"><i class="fa fa-plus"> Add new phase</i></a>
           </div>
         <?php endif; ?>
-        <?php if (empty($phases)): ?>
-          <p> No phases and tasks information available. </p>
-        <?php endif; ?>
 
         <ul class="nav nav-tabs" id="tab-4">          
           <?php foreach ($phases as $key => &$phase): ?>
