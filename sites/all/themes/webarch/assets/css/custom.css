@@ -36,3 +36,8 @@ img.header__logo-image {
 .alert em.placeholder {
   font-weight: bold;
 }
+
+/* fix inactive menu item */
+.menu .sub-menu span.title.gray {
+  color: gray;
+}

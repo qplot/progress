@@ -187,11 +187,11 @@ function qplot_progress_block_view($delta = '') {
         $wrapper = entity_metadata_wrapper('node', $node);
         $project_item = array(
           'title' => $wrapper->title->value(),
-          // 'icon' => $wrapper->field_project_icon->name->value(),
+          'icon' => $wrapper->field_project_icon->name->value(),
           'company' => $wrapper->field_project_company->title->value(),
           // 'description' => $wrapper->body->summary->value(),
           'progress' => $wrapper->field_project_progress->value(),
-          // 'status' => $wrapper->field_project_status->name->value(),
+          'status' => $wrapper->field_project_status->name->value(),
           'view' => url('project/' . $wrapper->getIdentifier()),
         );
         if (empty($project_item['company'])) {

@@ -20,8 +20,14 @@
         </a>
         <ul class="sub-menu">
           <?php foreach ($projects as $project): ?>
+            <?php 
+              $gray = ($project['status'] == 'Active') ? '' : 'gray';
+            ?>
             <li>
-              <a href="<?php echo $project['view'] ?>"><span class="title"><?php echo $project['title'] ?></span></a>
+              <a href="<?php echo $project['view'] ?>">
+                <i class="fa fa-<?php echo $project['icon'] ?>"></i>
+                <span class="title <?php echo $gray ?>"><?php echo $project['title'] ?></span>
+              </a>
             </li>
           <?php endforeach ?>
         </ul>
