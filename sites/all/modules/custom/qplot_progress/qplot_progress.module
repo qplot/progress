@@ -25,6 +25,10 @@
  */
 function qplot_progress_theme() {
   return array(
+    'qplot_progress_status_messages' => array(
+      'variables' => array('messages' => NULL),
+      'template' => 'templates/status_messages'
+    ),
     'qplot_progress_logo_area' => array(
       'variables' => array(),
       'template' => 'templates/logo_area'

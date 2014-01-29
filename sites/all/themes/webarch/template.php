@@ -77,6 +77,15 @@ function webarch_preprocess_page(&$variables, $hook) {
 // */
 
 /**
+ * Returns HTML for status and/or error messages, grouped by type.
+ */
+function webarch_status_messages($variables) {
+  $display = $variables['display'];
+  $vars['messages'] = drupal_get_messages($display);
+  return theme('qplot_progress_status_messages', $vars);
+}
+
+/**
  * Override or insert variables into the node templates.
  *
  * @param $variables
