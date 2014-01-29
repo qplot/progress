@@ -6,21 +6,20 @@
     'warning' => '',
   );
 
-// dsm($messages);
+  // var_dump($messages);
 ?>
 
 <?php foreach ($messages as $type => $msgs): ?>
   <div class="alert alert-<?php echo $classes[$type] ?>">
     <button class="close" data-dismiss="alert"></button>
-    <?php $heading = '<b>' . ucfirst($type) . ' : ' . '</b> '; ?>
     <?php if (count($msgs) > 1): ?>
       <ul>
         <?php foreach ($msgs as $message): ?>
-          <li><?php $heading . $message ?></li>
+          <li><?php echo $message ?></li>
         <?php endforeach ?>
       </ul>
     <?php else: ?>
-      <?php echo $heading . $msgs[0]; ?>
+      <?php echo $msgs[0]; ?>
     <?php endif; ?>
   </div>
 <?php endforeach ?>

@@ -20,12 +20,19 @@ img.header__logo-image {
   color: #e6e7e8;
 }
 
+/* fix progress font size */
 .progress .progress-bar {
 	font-size: 11px;
 	line-height: 13px;
 }
 
+/* fix menu favorites link */
 .status-widget .title a {
 	color: #fff;
 	font-size: 13px;
+}
+
+/* fix status message font */
+.alert em.placeholder {
+  font-weight: bold;
 }
