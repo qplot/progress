@@ -44,7 +44,6 @@
                           );
                         ?>
                         <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
-                        <span class="label label-info"><?php echo $phase['progress'] . '%' ?></span>
                       </p>
                       <h3>
                           Phase: <span class="semi-bold"><?php echo $phase['title'] ?></span>
@@ -59,12 +58,37 @@
                       </h4>
                       <hr />
 
-                      <p class="pull-right">
-                        <?php if ($phase['create']): ?>
-                          <a href="<?php echo $phase['create'] ?>" class="btn btn-primary btn-small"><i class="fa fa-plus"> Add new task</i></a>
-                        <?php endif; ?>
-                      </p>
                       <table class="table no-more-tables">
+                          <thead>
+                            <tr>
+                              <td>
+                                <h4 class="semi-bold no-margin">Progress : </h4>
+                              </td>
+                              <td></td>
+                              <td>
+                                <h4 class="semi-bold no-margin"><?php echo $phase['hours'] ?></h4>
+                              </td>
+                              <td class="v-align-middle">
+                                <div class="progress progress-large progress-striped active">
+                                    <?php
+                                      $class = 'success';
+                                      if ($phase['progress'] <= 95) $class = 'warning';
+                                      if ($phase['progress'] <= 50) $class = 'danger';
+                                      if ($phase['progress'] <= 15) {
+                                        $class = 'info';
+                                        $phase['progress'] = '';
+                                      }
+                                    ?>
+                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $phase['progress'] ?></div>
+                                </div>
+                              </td>
+                              <td>
+                                <?php if ($phase['create']): ?>
+                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New </i></a>
+                                <?php endif; ?>
+                              </td>
+                            </tr>
+                          </thead>
                           <thead>
                               <tr>
                                   <th style="width:23%">
@@ -118,28 +142,6 @@
                                   </td>
                               </tr><?php endforeach;?>
                           </tbody>
-                          <tfoot>
-                            <tr>
-                              <td><b>Total:</b></td>
-                              <td></td>
-                              <td><?php echo $phase['hours'] ?></td>
-                              <td class="v-align-middle">
-                                <div class="progress progress-large progress-striped active">
-                                    <?php
-                                      $class = 'success';
-                                      if ($phase['progress'] <= 95) $class = 'warning';
-                                      if ($phase['progress'] <= 50) $class = 'danger';
-                                      if ($phase['progress'] <= 15) {
-                                        $class = 'info';
-                                        $phase['progress'] = '';
-                                      }
-                                    ?>
-                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $phase['progress'] ?></div>
-                                </div>
-                              </td>
-                              <td></td>
-                            </tr>
-                          </tfoot>
                       </table>
                     </div>
                 </div>
