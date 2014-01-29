@@ -324,7 +324,9 @@ function qplot_progress_block_view($delta = '') {
 
           $phase_item['tasks'][] = $task_item;
         }
-        $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
+        if ($phase_item['progress']) {
+          $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
+        }
         $variables['phases'][] = $phase_item;
       }
       // set current phase
