@@ -45,6 +45,10 @@ function qplot_progress_theme() {
       'variables' => array('items' => NULL),
       'template' => 'templates/projects_teaser'
     ),
+    'qplot_progress_projects_menu' => array(
+      'variables' => array('companies' => NULL),
+      'template' => 'templates/projects_menu'
+    ),
     'qplot_progress_project_overview' => array(
       'variables' => array('project' => NULL, 'items' => NULL),
       'template' => 'templates/project_overview'
@@ -81,9 +85,13 @@ function qplot_progress_block_info() {
     'company_teaser' => array(
       'info' => ('Company Teaser')
     ),
-    // Projects mini teasers in sidebar menu area
+    // Projects mini teasers in sidebar menu area, favorites, flat
     'projects_teaser' => array(
       'info' => ('Projects Teaser')
+    ),
+    // Projects menu in sidebar menu area, categorized by company hierarchy
+    'projects_menu' => array(
+      'info' => ('Projects Menu')
     ),
     // Project overview teaser in main content area
     'project_overview' => array(
@@ -165,6 +173,35 @@ function qplot_progress_block_view($delta = '') {
         );
       }
       $block['content'] = theme('qplot_progress_projects_teaser', $variables);
+      break;
+
+    case 'projects_menu':
+      // find out all projects
+      $nids = qplot_api_find_nodes(
+        array('type' => 'project'),
+        array(),
+        TRUE
+      );
+      foreach ($nids as $id) {
+        $node = node_load($id);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $project_item = array(
+          'title' => $wrapper->title->value(),
+          // 'icon' => $wrapper->field_project_icon->name->value(),
+          'company' => $wrapper->field_project_company->title->value(),
+          // 'description' => $wrapper->body->summary->value(),
+          'progress' => $wrapper->field_project_progress->value(),
+          // 'status' => $wrapper->field_project_status->name->value(),
+          'view' => url('project/' . $wrapper->getIdentifier()),
+        );
+        if (empty($project_item['company'])) {
+          $project_item['company'] = 'Noname';
+        }
+        $variables['companies'][$project_item['company']][] = $project_item;
+      }
+
+      // $variables['companies'] = array();
+      $block['content'] = theme('qplot_progress_projects_menu', $variables);
       break;
 
     case 'project_overview':
