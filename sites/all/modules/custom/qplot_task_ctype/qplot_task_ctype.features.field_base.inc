@@ -119,7 +119,7 @@ function qplot_task_ctype_field_default_field_bases() {
   // Exported field_base: 'field_task_project'
   $field_bases['field_task_project'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_task_project',

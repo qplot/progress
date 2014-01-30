@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = link
 dependencies[] = number
 dependencies[] = options
+dependencies[] = qplot_project_ctype
 dependencies[] = text
 features[features_api][] = api:2
 features[field_base][] = field_task_added
