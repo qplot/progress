@@ -299,7 +299,11 @@ function qplot_project_ctype_field_default_field_instances() {
   // Exported field_instance: 'node-project-field_project_status'
   $field_instances['node-project-field_project_status'] = array(
     'bundle' => 'project',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 10,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -318,9 +322,10 @@ function qplot_project_ctype_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_project_status',
     'label' => 'Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
