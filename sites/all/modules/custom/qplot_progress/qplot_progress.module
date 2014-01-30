@@ -349,6 +349,11 @@ function qplot_progress_block_view($delta = '') {
             'progress' => $wrapper->field_task_progress->value(),
             'hours' => $wrapper->field_task_hours->value(),
             'added' => date('m/d/y', $wrapper->field_task_added->value()),
+            'ticket' => !empty($wrapper->field_task_ticket_url->value()) ? l(
+              $wrapper->field_task_ticket_url->title->value(),
+              $wrapper->field_task_ticket_url->url->value(),
+              array('attributes' => array('target' => '_blank'))
+            ) : '',
             'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
               'query' => drupal_get_destination()
             )),

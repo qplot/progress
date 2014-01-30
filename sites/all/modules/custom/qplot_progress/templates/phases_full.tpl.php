@@ -61,6 +61,7 @@
                       <table class="table no-more-tables">
                           <thead>
                             <tr>
+                              <td></td>
                               <td>
                                 <h4 class="semi-bold no-margin">Progress : </h4>
                               </td>
@@ -88,6 +89,9 @@
                           </thead>
                           <thead>
                               <tr>
+                                  <th style="width:1%">
+                                      ID
+                                  </th>
                                   <th style="width:23%">
                                       Task
                                   </th>
@@ -108,6 +112,9 @@
                           <tbody>
                               <?php foreach($phase['tasks'] as $task): ?>
                               <tr>
+                                  <td>
+                                    <?php echo $task['ticket'] ?>
+                                  </td>
                                   <td class="v-align-middle">
                                       <?php echo $task['title'] ?>
                                   </td>
