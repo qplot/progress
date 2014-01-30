@@ -152,14 +152,20 @@ function qplot_progress_block_view($delta = '') {
       break;
     case 'projects_teaser':
       // find out all projects and associated properties
+      // $nids = qplot_api_find_nodes(
+      //   array('type' => 'project'),
+      //   array('field_project_company' => array(
+      //     'target_id', 4, '='
+      //   )),
+      //   TRUE
+      // );
+      // find out all favorites by the current user
+      $nids = array();
+      $flags = flag_get_user_flags('node');
+      if (!empty($flags['favorite_projects'])) {
+        $nids = array_keys($flags['favorite_projects']);
+      }
       $variables['items'] = array();
-      $nids = qplot_api_find_nodes(
-        array('type' => 'project'),
-        array('field_project_company' => array(
-          'target_id', 4, '='
-        )),
-        TRUE
-      );
       foreach ($nids as $id) {
         $node = node_load($id);
         $wrapper = entity_metadata_wrapper('node', $node);
@@ -221,6 +227,7 @@ function qplot_progress_block_view($delta = '') {
         'progress' => $wrapper->field_project_progress->value(),
         'status' => $wrapper->field_project_status->name->value(),
         'company' => $wrapper->field_project_company->title->value(),
+        'flag' => flag_create_link('favorite_projects', $wrapper->getIdentifier()),
         'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
           'query' => drupal_get_destination()
         )),

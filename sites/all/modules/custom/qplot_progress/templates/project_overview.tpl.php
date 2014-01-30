@@ -15,13 +15,18 @@
       <div class="tiles-body">
         <div class="heading">
           <?php echo $project['title'] ?>
-        <?php if ($project['edit']): ?>
-          <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
-        <?php endif; ?>
+          <?php if ($project['edit']): ?>
+            <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+          <?php endif; ?>
         </div>
         <p>
           Status : <?php echo $project['status'] ?>
         </p>
+        <?php 
+          if ($project['flag'])
+            echo $project['flag']
+        ?>
+
       </div>
       <div class="tile-footer">
         <?php echo $project['description'] ?>
