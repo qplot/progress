@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Flag Favorite Project  feature.
+ */
+
+include_once 'qplot_project_flag.features.inc';
