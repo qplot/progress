@@ -1,4 +1,4 @@
-<?php 
+<?php
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
   // dsm($items);
@@ -18,9 +18,14 @@
         </div>
         <?=$project['description']  ?>
         <div class="progress transparent progress-small no-radius no-margin">
-          <?php print theme('qplot_progress_progress_widget', array('progress' => $project['progress'])) ?>
+          <?php
+            print theme('qplot_progress_progress_widget', array(
+              'progress' => $project['progress'],
+              'caption' => FALSE,
+            ))
+          ?>
         </div>
       </div>
     </div>
-  <?php endforeach; ?>  
+  <?php endforeach; ?>
 </div>
