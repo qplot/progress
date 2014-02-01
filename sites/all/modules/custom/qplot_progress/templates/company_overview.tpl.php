@@ -1,4 +1,4 @@
-<?php 
+<?php
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
@@ -14,10 +14,13 @@
           <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
         </div>
         <img src="<?php echo $company['logo'] ?>" alt="" data-src="<?php echo $company['logo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" height="36px">
-        <?php if ($company['edit']): ?>
-          <a href="<?php echo $company['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
-        <?php endif; ?>
-        <?php echo $company['description'] ?>
+        <p>
+          <?php echo $company['title'] ?>
+          <?php if ($company['edit']): ?>
+            <a href="<?php echo $company['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+          <?php endif; ?>
+        </p>
+        <?php echo !empty($company['description']) ? $company['description'] : 'No company description'; ?>
       </div>
     </div>
     <div class="tiles white added-margin">

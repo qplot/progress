@@ -142,10 +142,11 @@ function qplot_progress_block_view($delta = '') {
       // find company info and asoociated properties
       $node = node_load(4);
       $wrapper = entity_metadata_wrapper('node', $node);
+      $body = $wrapper->body->value();
       $variables['company'] = array(
         'title' => $wrapper->title->value(),
         'logo' => $wrapper->field_company_logo->file->url->value(),
-        'description' => $wrapper->body->summary->value(),
+        'description' => !empty($body) ? $wrapper->body->value->value() : '',
         'status' => 'Active',
         'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
           'query' => drupal_get_destination()
@@ -270,10 +271,12 @@ function qplot_progress_block_view($delta = '') {
 
       // find company info
       $wrapper = entity_metadata_wrapper('node', $node);
+      $body = $wrapper->body->value();
+      $logo = $wrapper->field_company_logo->value();
       $variables['company'] = array(
         'title' => $wrapper->title->value(),
-        'logo' => $wrapper->field_company_logo->file->url->value(),
-        'description' => $wrapper->body->summary->value(),
+        'logo' => !empty($logo) ? $wrapper->field_company_logo->file->url->value() : '',
+        'description' => !empty($body) ? $wrapper->body->value->raw() : '',
         'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
           'query' => drupal_get_destination()
         )),
