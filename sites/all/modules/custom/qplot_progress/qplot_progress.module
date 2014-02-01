@@ -65,6 +65,10 @@ function qplot_progress_theme() {
       'variables' => array('tasks' => NULL),
       'template' => 'templates/tasks_table'
     ),
+    'qplot_progress_progress_widget' => array(
+      'variables' => array('progress' => 0, 'caption' => TRUE),
+      'template' => 'templates/progress_widget'
+    ),
   );
 }
 

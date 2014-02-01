@@ -18,7 +18,7 @@
         </div>
         <?=$project['description']  ?>
         <div class="progress transparent progress-small no-radius no-margin">
-          <div data-percentage="<?=$project['progress'] ?>%" class="progress-bar progress-bar-<?=$bar ?> animate-progress-bar"></div>
+          <?php print theme('qplot_progress_progress_widget', array('progress' => $project['progress'])) ?>
         </div>
       </div>
     </div>
