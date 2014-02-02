@@ -65,9 +65,11 @@
                               <td>
                                 <h4 class="semi-bold no-margin">Progress : </h4>
                               </td>
-                              <td></td>
-                              <td>
-                                <h4 class="semi-bold no-margin"><?php echo $phase['hours'] ?></h4>
+                              <td colspan="2">
+                                <h4 class="semi-bold no-margin">
+                                  <?php echo $phase['hours'] ?>hrs :
+                                  <?php echo round((1 - $phase['progress']/100) * $phase['hours']) ?>hrs (l)
+                                </h4>
                               </td>
                               <td class="v-align-middle">
                                 <div class="progress progress-large progress-striped active">
