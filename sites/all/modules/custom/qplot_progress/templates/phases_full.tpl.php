@@ -71,13 +71,12 @@
                               </td>
                               <td class="v-align-middle">
                                 <div class="progress progress-large progress-striped active">
-                                    <?php
-                                      $class = 'success';
-                                      if ($phase['progress'] <= 95) $class = 'warning';
-                                      if ($phase['progress'] <= 50) $class = 'danger';
-                                      if ($phase['progress'] <= 15) $class = 'info';
-                                    ?>
-                                    <div data-percentage="<?php echo $phase['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo ($phase['progress'] < 15) ? '.' : $phase['progress'] ?></div>
+                                  <?php
+                                    print theme('qplot_progress_progress_widget', array(
+                                      'progress' => $phase['progress'],
+                                      'caption' => TRUE,
+                                    ))
+                                  ?>
                                 </div>
                               </td>
                               <td>
@@ -128,16 +127,12 @@
                                   </td>
                                   <td class="v-align-middle">
                                       <div class="progress">
-                                          <?php
-                                            $class = 'success';
-                                            if ($task['progress'] <= 95) $class = 'warning';
-                                            if ($task['progress'] <= 50) $class = 'danger';
-                                            if ($task['progress'] <= 15) {
-                                              $class = 'info';
-                                              $task['progress'] = '';
-                                            }
-                                          ?>
-                                          <div data-percentage="<?php echo $task['progress'] ?>%" class="progress-bar progress-bar-<?php echo $class ?> animate-progress-bar"><?php echo $task['progress'] ?></div>
+                                        <?php
+                                          print theme('qplot_progress_progress_widget', array(
+                                            'progress' => $task['progress'],
+                                            'caption' => TRUE,
+                                          ))
+                                        ?>
                                       </div>
                                   </td>
                                   <td>
