@@ -350,7 +350,11 @@ function qplot_progress_block_view($delta = '') {
           array('field_task_phase' => array(
             'target_id', $phase_wrapper->getIdentifier(), '='
           )),
-          TRUE
+          TRUE,
+          NULL,
+          array('property' => array(
+            'changed' => 'DESC'
+          ))
         );
         foreach ($tnids as $tid) {
           $node = node_load($tid);
