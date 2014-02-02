@@ -168,7 +168,7 @@ function qplot_progress_block_view($delta = '') {
       $nids = array();
       $flags = flag_get_user_flags('node');
       if (!empty($flags['favorite_projects'])) {
-        $nids = array_keys($flags['favorite_projects']);
+        $nids = array_reverse(array_keys($flags['favorite_projects']));
       }
       $variables['items'] = array();
       foreach ($nids as $id) {
@@ -191,7 +191,11 @@ function qplot_progress_block_view($delta = '') {
       $nids = qplot_api_find_nodes(
         array('type' => 'project'),
         array(),
-        TRUE
+        TRUE,
+        NULL,
+        array('property' => array(
+          'changed' => 'DESC'
+        ))        
       );
       foreach ($nids as $id) {
         $node = node_load($id);
@@ -244,7 +248,11 @@ function qplot_progress_block_view($delta = '') {
         array('field_phase_project' => array(
           'target_id', $nid, '='
         )),
-        TRUE
+        TRUE,
+        NULL,
+        array('property' => array(
+          'changed' => 'DESC'
+        ))
       );
       foreach ($nids as $id) {
         $node = node_load($id);
@@ -316,9 +324,10 @@ function qplot_progress_block_view($delta = '') {
         array('field_phase_project' => array(
           'target_id', $nid, '='
         )),
-        TRUE, NULL,
+        TRUE, 
+        NULL,
         array('property' => array(
-          'created' => 'DESC'
+          'changed' => 'DESC'
         ))
       );
       $variables['phases'] = array();
