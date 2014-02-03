@@ -40,6 +40,24 @@ function qplot_phase_ctype_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+  // Exported field_base: 'field_phase_hours'
+  $field_bases['field_phase_hours'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_phase_hours',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+    ),
+    'translatable' => 0,
+    'type' => 'number_float',
+  );
+
   // Exported field_base: 'field_phase_progress'
   $field_bases['field_phase_progress'] = array(
     'active' => 1,
@@ -131,22 +149,6 @@ function qplot_phase_ctype_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_phase_tasks'
-  $field_bases['field_phase_tasks'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_phase_tasks',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'viewfield',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'viewfield',
   );
 
   return $field_bases;

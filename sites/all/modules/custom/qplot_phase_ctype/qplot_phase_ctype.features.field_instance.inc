@@ -109,6 +109,53 @@ function qplot_phase_ctype_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-phase-field_phase_hours'
+  $field_instances['node-phase-field_phase_hours'] = array(
+    'bundle' => 'phase',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_phase_hours',
+    'label' => 'Hours',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-phase-field_phase_progress'
   $field_instances['node-phase-field_phase_progress'] = array(
     'bundle' => 'phase',
@@ -252,67 +299,14 @@ function qplot_phase_ctype_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-phase-field_phase_tasks'
-  $field_instances['node-phase-field_phase_tasks'] = array(
-    'bundle' => 'phase',
-    'default_value' => array(
-      0 => array(
-        'vname' => 'tasks_by_phase|page',
-        'vargs' => '[node:nid]',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'viewfield',
-        'settings' => array(),
-        'type' => 'viewfield_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_phase_tasks',
-    'label' => 'Tasks',
-    'required' => 0,
-    'settings' => array(
-      'allowed_views' => array(
-        'companies' => 0,
-        'company_projects' => 0,
-        'phases_by_project' => 0,
-        'phases_entityreference_list' => 0,
-        'projects_by_company' => 0,
-        'semantic_demo' => 0,
-        'tasks_by_phase' => 'tasks_by_phase',
-        'view_1' => 0,
-      ),
-      'force_default' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'viewfield',
-      'settings' => array(),
-      'type' => 'viewfield_select',
-      'weight' => 6,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Description');
   t('Durating');
+  t('Hours');
   t('Progress');
   t('Project');
   t('Status');
-  t('Tasks');
 
   return $field_instances;
 }
