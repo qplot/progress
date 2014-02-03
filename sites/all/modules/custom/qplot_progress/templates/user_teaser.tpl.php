@@ -4,10 +4,9 @@
 
   // dsm($user);
 ?>
-
 <div class="user-info-wrapper">
   <div class="profile-wrapper">
-    <img src="<?php echo $path ?>/assets/img/profiles/avatar.jpg" alt="" data-src="<?php echo $path ?>/assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69">
+    <img src="<?php echo $user['photo'] ?>" alt="" data-src="<?php echo $user['photo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69">
   </div>
   <div class="user-info">
     <div class="greeting">

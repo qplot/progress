@@ -130,10 +130,23 @@ function qplot_progress_block_view($delta = '') {
       break;
     case 'user_teaser':
       // find user info
+      global $user;
+      $uid = qplot_api_find_nodes(
+        array('type' => 'contact'),
+        array('field_contact_user' => array(
+          'target_id', $user->uid, '='
+        ))
+      );
+      $node = node_load($uid);
+      $wrapper = entity_metadata_wrapper('node', $node);
+      $name = $wrapper->title->value();
+      $splits = explode(" ", $name); 
+      $photo = $wrapper->field_contact_photo->value();
+
       $variables['user'] = array(
-        'first' => 'John',
-        'last' => 'Smith',
-        'photo' => '',
+        'first' => (count($splits) >= 1) ? $splits[0] : '',
+        'last' => (count($splits) >= 2) ? $splits[1] : '',
+        'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
         'status' => 'Online',
       );
       $block['content'] = theme('qplot_progress_user_teaser', $variables);
