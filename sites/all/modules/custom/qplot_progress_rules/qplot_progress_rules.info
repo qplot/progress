@@ -1,0 +1,11 @@
+name = Progress Rules
+description = Progress Rules
+core = 7.x
+package = QPLOT
+version = 7.x-1.0
+project = qplot_progress_rules
+dependencies[] = entity
+dependencies[] = php
+dependencies[] = rules
+features[features_api][] = api:2
+features[rules_config][] = rules_update_phase_progress

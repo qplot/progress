@@ -350,8 +350,8 @@ function qplot_progress_block_view($delta = '') {
         $phase_item = array(
           'title' => $phase_wrapper->title->value(),
           'description' => ($phase_wrapper->body->raw()) ? $phase_wrapper->body->value->value() : '',
-          'hours' => 0,
-          'progress' => 0, //$phase_wrapper->field_phase_progress->value(),
+          'hours' => $phase_wrapper->field_phase_hours->value(),
+          'progress' => $phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
           'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => drupal_get_destination()
@@ -403,14 +403,14 @@ function qplot_progress_block_view($delta = '') {
             )),
           );
           // perform analysis and summary
-          $phase_item['hours'] = $phase_item['hours'] + $task_item['hours'];
-          $phase_item['progress'] = $phase_item['progress'] + $task_item['hours'] * $task_item['progress'] / 100;
+          // $phase_item['hours'] = $phase_item['hours'] + $task_item['hours'];
+          // $phase_item['progress'] = $phase_item['progress'] + $task_item['hours'] * $task_item['progress'] / 100;
 
           $phase_item['tasks'][] = $task_item;
         }
-        if ($phase_item['progress']) {
-          $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
-        }
+        // if ($phase_item['progress']) {
+        //   $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
+        // }
         $variables['phases'][] = $phase_item;
       }
       // set current phase
@@ -460,8 +460,18 @@ function qplot_progress_block_view($delta = '') {
 
 /**
  * Update phase progress based on its tasks
+ * 
+ * @param object $node
+ *   Tasks node object
  */
-function qplot_progress_update_phase_progress($pid) {
+function qplot_progress_update_phase_progress($node) {
+    // find task's phase
+  $delete = empty($node->op);
+  $twrapper = entity_metadata_wrapper('node', $node);
+  $tid = $twrapper->getIdentifier();
+  $pid = $twrapper->field_task_phase->raw();
+
+  // find all tasks belonging to that phase
   $tnids = qplot_api_find_nodes(
     array('type' => 'task'),
     array('field_task_phase' => array(
@@ -472,12 +482,21 @@ function qplot_progress_update_phase_progress($pid) {
   $hours = 0.0;
   $progress = 0;
   foreach ($tnids as $nid) {
-    $node = node_load($nid);
-    $wrapper = entity_metadata_wrapper('node', $node);
+    if ($tid == $nid) {
+      // for delete operation, skip this record
+      if ($delete) continue;
+      // for save operation, use the latest record
+      $h = $twrapper->field_task_hours->value();
+      $hours = $hours + $h;
+      $progress = $progress + $twrapper->field_task_progress->value() * $h / 100;      
+    } else {
+      $node = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $node);
 
-    $h = $wrapper->field_task_hours->value();
-    $hours = $hours + $h;
-    $progress = $progress + $wrapper->field_task_progress->value() * $h / 100;
+      $h = $wrapper->field_task_hours->value();
+      $hours = $hours + $h;
+      $progress = $progress + $wrapper->field_task_progress->value() * $h / 100;      
+    }
   }
   $progress = !empty($hours) ? round($progress / $hours * 100) : 0;
 
