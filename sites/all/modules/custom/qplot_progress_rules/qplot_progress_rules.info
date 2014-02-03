@@ -9,3 +9,4 @@ dependencies[] = php
 dependencies[] = rules
 features[features_api][] = api:2
 features[rules_config][] = rules_update_phase_progress
+features[rules_config][] = rules_update_project_progress

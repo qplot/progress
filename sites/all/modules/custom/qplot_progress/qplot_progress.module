@@ -465,7 +465,7 @@ function qplot_progress_block_view($delta = '') {
  *   Tasks node object
  */
 function qplot_progress_update_phase_progress($node) {
-    // find task's phase
+  // find task's phase
   $delete = empty($node->op);
   $twrapper = entity_metadata_wrapper('node', $node);
   $tid = $twrapper->getIdentifier();
@@ -504,5 +504,27 @@ function qplot_progress_update_phase_progress($node) {
   $wrapper = entity_metadata_wrapper('node', $node);
   $wrapper->field_phase_hours->set($hours);
   $wrapper->field_phase_progress->set($progress);
+  $wrapper->save();
+}
+
+/**
+ * Update project progress based on its phases
+ * 
+ * @param object $node
+ *   Tasks node object
+ */
+function qplot_progress_update_project_progress($node) {
+  // find phase's project
+  $delete = empty($node->op);
+  $pwrapper = entity_metadata_wrapper('node', $node);
+  $pid = $pwrapper->getIdentifier();
+  $prid = $pwrapper->field_phase_project->raw();
+  $progress = $pwrapper->field_phase_progress->value();
+
+  // update project
+  if (is_array($prid)) $prid = $prid[0];
+  $node = node_load($prid);
+  $wrapper = entity_metadata_wrapper('node', $node);
+  $wrapper->field_project_progress->set($progress);
   $wrapper->save();
 }

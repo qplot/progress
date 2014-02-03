@@ -24,5 +24,19 @@ function qplot_progress_rules_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_update_project_progress'] = entity_import('rules_config', '{ "rules_update_project_progress" : {
+      "LABEL" : "Update project progress",
+      "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
+      "REQUIRES" : [ "php", "rules" ],
+      "ON" : {
+        "node_insert--phase" : { "bundle" : "phase" },
+        "node_update--phase" : { "bundle" : "phase" }
+      },
+      "DO" : [
+        { "php_eval" : { "code" : "qplot_progress_update_project_progress($node);" } }
+      ]
+    }
+  }');
   return $items;
 }
