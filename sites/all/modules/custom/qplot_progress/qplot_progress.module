@@ -457,3 +457,33 @@ function qplot_progress_block_view($delta = '') {
 
   return $block;
 }
+
+/**
+ * Update phase progress based on its tasks
+ */
+function qplot_progress_update_phase_progress($pid) {
+  $tnids = qplot_api_find_nodes(
+    array('type' => 'task'),
+    array('field_task_phase' => array(
+      'target_id', $pid, '='
+    )),
+    TRUE
+  );
+  $hours = 0.0;
+  $progress = 0;
+  foreach ($tnids as $nid) {
+    $node = node_load($nid);
+    $wrapper = entity_metadata_wrapper('node', $node);
+
+    $h = $wrapper->field_task_hours->value();
+    $hours = $hours + $h;
+    $progress = $progress + $wrapper->field_task_progress->value() * $h / 100;
+  }
+  $progress = !empty($hours) ? round($progress / $hours * 100) : 0;
+
+  $node = node_load($pid);
+  $wrapper = entity_metadata_wrapper('node', $node);
+  $wrapper->field_phase_hours->set($hours);
+  $wrapper->field_phase_progress->set($progress);
+  $wrapper->save();
+}
