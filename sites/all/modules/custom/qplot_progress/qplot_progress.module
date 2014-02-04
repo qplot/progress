@@ -324,7 +324,10 @@ function qplot_progress_block_view($delta = '') {
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
       // fill project info
+      $node = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $node);
       $variables['project'] = array(
+        'title' => $wrapper->title->value(),
         'create' => url('node/add/phase', array('query' => array_merge(
           array(
             'field_phase_project' => $nid,

@@ -46,7 +46,7 @@
                         <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
                       </p>
                       <h3>
-                          Phase: <span class="semi-bold"><?php echo $phase['title'] ?></span>
+                          <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                           <?php if ($phase['edit']): ?>
                             <a href="<?php echo $phase['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
                           <?php endif; ?>
