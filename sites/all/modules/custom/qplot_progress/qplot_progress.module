@@ -471,13 +471,14 @@ function qplot_progress_block_view($delta = '') {
       $node = $wrapper->field_project_company->value();
 
       // find company info
-      $wrapper = entity_metadata_wrapper('node', $node);
+      $cwrapper = entity_metadata_wrapper('node', $node);
+      $icon = $cwrapper->field_company_icon->value();
 
       // find members list
       $uids = qplot_api_find_nodes(
         NULL,
         array('og_user_node' => array(
-          'target_id', $wrapper->getIdentifier(), '='
+          'target_id', $cwrapper->getIdentifier(), '='
         )),
         TRUE,
         array('entity_type' => 'user')
@@ -494,6 +495,7 @@ function qplot_progress_block_view($delta = '') {
           'last' => $wrapper->field_profile_last->value(),
           'title' => $wrapper->field_profile_title->value(),
           'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
+          'icon' => !empty($icon) ? $cwrapper->field_company_icon->file->url->value() : '',
         );
       }
 

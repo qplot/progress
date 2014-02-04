@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="action-bar pull-right">
-              <img src="<?php echo $path ?>/assets/img/logos/alphamed_small.jpg" alt="" data-src="<?php echo $path ?>/assets/img/logos/alphamed_small.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="25" height="25">
+              <img src="<?php echo $user['icon'] ?>" alt="" data-src="<?php echo $user['icon'] ?>" data-src-retina="assets/img/profiles/d2x.jpg" width="25" height="25">
             </div>
             <div class="clearfix"></div>
           </div>
