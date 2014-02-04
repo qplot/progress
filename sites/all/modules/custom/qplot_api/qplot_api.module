@@ -106,7 +106,7 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
   }
 
   $result = $query->execute();
-  $ctype = $entity_default['entity_type'];
+  $ctype = $entity_conds['entity_type'];
   if (!empty($result[$ctype])) {
     $keys = array_keys($result[$ctype]);
     if ($all) {
