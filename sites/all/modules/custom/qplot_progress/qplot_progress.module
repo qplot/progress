@@ -139,25 +139,30 @@ function qplot_progress_block_view($delta = '') {
     case 'user_teaser':
       // find user info
       global $user;
-      $uid = qplot_api_find_nodes(
-        array('type' => 'contact'),
-        array('field_contact_user' => array(
-          'target_id', $user->uid, '='
-        ))
-      );
-      $node = node_load($uid);
-      $wrapper = entity_metadata_wrapper('node', $node);
-      $name = $wrapper->title->value();
-      $splits = explode(" ", $name); 
-      $photo = $wrapper->field_contact_photo->value();
+      if ($user->uid) {
+        $uid = qplot_api_find_nodes(
+          array('type' => 'contact'),
+          array('field_contact_user' => array(
+            'target_id', $user->uid, '='
+          ))
+        );
+        $node = node_load($uid);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $name = $wrapper->title->value();
+        $splits = explode(" ", $name); 
+        $photo = $wrapper->field_contact_photo->value();
 
-      $variables['user'] = array(
-        'first' => (count($splits) >= 1) ? $splits[0] : '',
-        'last' => (count($splits) >= 2) ? $splits[1] : '',
-        'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
-        'status' => 'Online',
-      );
-      $block['content'] = theme('qplot_progress_user_teaser', $variables);
+        $variables['user'] = array(
+          'first' => (count($splits) >= 1) ? $splits[0] : '',
+          'last' => (count($splits) >= 2) ? $splits[1] : '',
+          'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
+          'status' => 'Online',
+        );
+        $block['content'] = theme('qplot_progress_user_teaser', $variables);
+      } else {
+        // if not login
+        $block['content'] = '';
+      }
       break;
     case 'company_teaser':
       // find company info and asoociated properties
@@ -483,6 +488,7 @@ function qplot_progress_block_view($delta = '') {
         TRUE,
         array('entity_type' => 'user')
       );
+      $variables['members'] = array();
       foreach ($uids as $uid) {
         $profile = profile2_load_by_user($uid);
         // dsm($profile);
