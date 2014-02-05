@@ -13,8 +13,11 @@
           <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
         </div>
         <div class="tiles-title">
-          Team Members
+          Company Members
         </div><br>
+        <?php if (empty($members)): ?>
+          <p>No team members assigned for this company.</p>
+        <?php endif; ?>
         <?php foreach ($members as $user): ?>        
           <div class="friend-list">
             <div class="friend-profile-pic">
