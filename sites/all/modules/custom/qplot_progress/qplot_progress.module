@@ -130,40 +130,38 @@ function qplot_progress_block_info() {
  * Implementation of hook_block_view()
  */
 function qplot_progress_block_view($delta = '') {
+  global $user;
   $block = array();
+  $block['content'] = '';
 
   switch ($delta) {
     case 'logo_area':
       $block['content'] = theme('qplot_progress_logo_area');
       break;
     case 'user_teaser':
+      if (empty($user->uid)) return;
       // find user info
-      global $user;
-      if ($user->uid) {
-        $uid = qplot_api_find_nodes(
-          array('type' => 'contact'),
-          array('field_contact_user' => array(
-            'target_id', $user->uid, '='
-          ))
-        );
-        $node = node_load($uid);
-        $wrapper = entity_metadata_wrapper('node', $node);
-        $name = $wrapper->title->value();
-        $splits = explode(" ", $name); 
-        $photo = $wrapper->field_contact_photo->value();
+      $uid = qplot_api_find_nodes(
+        array('type' => 'contact'),
+        array('field_contact_user' => array(
+          'target_id', $user->uid, '='
+        ))
+      );
+      $node = node_load($uid);
+      $wrapper = entity_metadata_wrapper('node', $node);
+      $name = $wrapper->title->value();
+      $splits = explode(" ", $name); 
+      $photo = $wrapper->field_contact_photo->value();
 
-        $variables['user'] = array(
-          'first' => (count($splits) >= 1) ? $splits[0] : '',
-          'last' => (count($splits) >= 2) ? $splits[1] : '',
-          'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
-          'status' => 'Online',
-        );
-        $block['content'] = theme('qplot_progress_user_teaser', $variables);
-      } else {
-        // if not login
-        $block['content'] = '';
-      }
+      $variables['user'] = array(
+        'first' => (count($splits) >= 1) ? $splits[0] : '',
+        'last' => (count($splits) >= 2) ? $splits[1] : '',
+        'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
+        'status' => 'Online',
+      );
+      $block['content'] = theme('qplot_progress_user_teaser', $variables);
       break;
+
     case 'company_teaser':
       // find company info and asoociated properties
       $node = node_load(4);
@@ -182,6 +180,7 @@ function qplot_progress_block_view($delta = '') {
       $block['content'] = theme('qplot_progress_company_teaser', $variables);
       break;
     case 'projects_teaser':
+      if (empty($user->uid)) return;
       // find out all projects and associated properties
       // $nids = qplot_api_find_nodes(
       //   array('type' => 'project'),
