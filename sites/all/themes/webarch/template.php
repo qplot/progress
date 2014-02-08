@@ -11,6 +11,7 @@
 $theme_path = drupal_get_path('theme', 'webarch');
 
   include_once './' . $theme_path . '/functions/menu.php';
+  include_once './' . $theme_path . '/functions/views.php';
 
 
 /**
