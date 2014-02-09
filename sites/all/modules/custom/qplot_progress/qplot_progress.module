@@ -150,7 +150,7 @@ function qplot_progress_block_view($delta = '') {
       // $node = node_load($uid);
       // $wrapper = entity_metadata_wrapper('node', $node);
       // $name = $wrapper->title->value();
-      // $splits = explode(" ", $name); 
+      // $splits = explode(" ", $name);
       // $photo = $wrapper->field_contact_photo->value();
 
       // $variables['user'] = array(
@@ -227,6 +227,7 @@ function qplot_progress_block_view($delta = '') {
       break;
 
     case 'projects_menu':
+      if (empty($user->uid)) return;
       // find out all projects
       $nids = qplot_api_find_nodes(
         array('type' => 'project'),
@@ -235,7 +236,7 @@ function qplot_progress_block_view($delta = '') {
         NULL,
         array('property' => array(
           'changed' => 'DESC'
-        ))        
+        ))
       );
       foreach ($nids as $id) {
         $node = node_load($id);
@@ -367,7 +368,7 @@ function qplot_progress_block_view($delta = '') {
         array('field_phase_project' => array(
           'target_id', $nid, '='
         )),
-        TRUE, 
+        TRUE,
         NULL,
         array('property' => array(
           'changed' => 'DESC'
@@ -534,7 +535,7 @@ function qplot_progress_block_view($delta = '') {
 
 /**
  * Update phase progress based on its tasks
- * 
+ *
  * @param object $node
  *   Tasks node object
  */
@@ -562,14 +563,14 @@ function qplot_progress_update_phase_progress($node) {
       // for save operation, use the latest record
       $h = $twrapper->field_task_hours->value();
       $hours = $hours + $h;
-      $progress = $progress + $twrapper->field_task_progress->value() * $h / 100;      
+      $progress = $progress + $twrapper->field_task_progress->value() * $h / 100;
     } else {
       $node = node_load($nid);
       $wrapper = entity_metadata_wrapper('node', $node);
 
       $h = $wrapper->field_task_hours->value();
       $hours = $hours + $h;
-      $progress = $progress + $wrapper->field_task_progress->value() * $h / 100;      
+      $progress = $progress + $wrapper->field_task_progress->value() * $h / 100;
     }
   }
   $progress = !empty($hours) ? round($progress / $hours * 100) : 0;
@@ -583,7 +584,7 @@ function qplot_progress_update_phase_progress($node) {
 
 /**
  * Update project progress based on its phases
- * 
+ *
  * @param object $node
  *   Tasks node object
  */
