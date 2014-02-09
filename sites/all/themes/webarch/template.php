@@ -187,6 +187,11 @@ function webarch_link($variables) {
       $variables['text'] = '<i class="fa fa-edit"></i>';
       $variables['options']['html'] = TRUE;
       break;
+
+    case 'Add Lead':
+      $variables['text'] = '<i class="fa fa-edit"></i>' . $variables['text'];
+      $variables['options']['html'] = TRUE;
+      break;
     
     default:
       # code...

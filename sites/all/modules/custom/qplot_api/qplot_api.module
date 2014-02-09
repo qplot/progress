@@ -1,5 +1,40 @@
 <?php
 
+/**
+ * Implements theme
+ */
+function qplot_api_theme() {
+  return array(
+    'views_link' => array(
+      'variables' => array(
+        'text' => '',
+        'path' => '',
+        'classes' => '',
+        'parent-classes' => '',
+        'query' => NULL,
+        'html' => TRUE,
+      ),
+      // 'template' => 'templates/status_messages'
+    ),
+  );  
+}
+
+/**
+ * Theme views link
+ */
+function theme_views_link($vars) {
+  $link = l($vars['text'], $vars['path'], array(
+    'attributes' => array('class' => $vars['classes']),
+    'query' => $vars['query'],
+    'html' => $vars['html'],
+  ));
+  if ($vars['parent-classes']) {
+    return '<div class="' . implode(' ', $vars['parent-classes']) . '">' . $link . '</div>';
+  } else {
+    return $link;
+  }
+}
+
 // /**
 //  * Returns nid(s) based on a supplied pgh item key id.
 //  *
