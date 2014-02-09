@@ -12,16 +12,17 @@ function webarch_preprocess_views_view(&$vars) {
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-id-'.$vars['name'])));
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-display-id-'.$vars['display_id'])));
 
-  switch ($vars['name']) {
+  $pages = array(
+    'leads' => 'lead',
+    'contacts' => 'contact',
+  );
+  $name = $vars['name'];
+  switch ($name) {
+    case 'contacts':
     case 'leads':
-      // $vars['header'] = '<div class="pull-right">' . l('<i class="fa fa-plus"></i> Add Leads', 'node/add/lead', array(
-      //   'attributes' => array('class' => array('btn', 'btn-success')),
-      //   'query' => drupal_get_destination(),
-      //   'html' => TRUE,
-      // )) . '</div>';  
       $vars['header'] = theme('views_link', array(
-        'text' => '<i class="fa fa-plus"></i> Add Leads',
-        'path' => 'node/add/lead',
+        'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($name),
+        'path' => 'node/add/' . $pages[$name],
         'query' => drupal_get_destination(),
         'classes' => array('btn', 'btn-success'),
         'parent-classes' => array('pull-right'),
