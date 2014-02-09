@@ -12,6 +12,7 @@ $theme_path = drupal_get_path('theme', 'webarch');
 
   include_once './' . $theme_path . '/functions/menu.php';
   include_once './' . $theme_path . '/functions/views.php';
+  include_once './' . $theme_path . '/functions/form.php';
 
 
 /**
@@ -146,18 +147,23 @@ function zen_progress_preprocess_region(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function zen_progress_preprocess_block(&$variables, $hook) {
-  // Add a count to all the blocks in the region.
-  // $variables['classes_array'][] = 'count-' . $variables['block_id'];
+function webarch_preprocess_block(&$vars, $hook) {
+  // if ($vars['block_html_id'] == 'block-user-login') {
+  //   dsm($vars);
+  // }
 
-  // By default, Zen will use the block--no-wrapper.tpl.php for the main
-  // content. This optional bit of code undoes that:
-  //if ($variables['block_html_id'] == 'block-system-main') {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
-  //}
+  // remove css
+  $vars['id_block'] = "";
+  $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('block')));
+  $vars['classes_array'] = preg_grep('/^block-/', $vars['classes_array'], PREG_GREP_INVERT);
+  $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('contextual-links-region')));
+  $vars['id_block'] = ' id="' . $vars['block_html_id'] . '"';
+  $vars['classes_array'][] = $vars['block_html_id'];
+
+  //adds title class to the block ... OMG!
+  $vars['title_attributes_array']['class'][] = 'menu-title';
+  $vars['content_attributes_array']['class'][] = 'block-content';
 }
-// */
 
 /**
  * Override button
@@ -174,7 +180,7 @@ function webarch_button($variables) {
   }
   $element['#attributes']['class'][] = 'btn';
 
-  return '<input' . drupal_attributes($element['#attributes']) . ' />';  
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }
 
 /**
@@ -192,7 +198,7 @@ function webarch_link($variables) {
       $variables['text'] = '<i class="fa fa-edit"></i>' . $variables['text'];
       $variables['options']['html'] = TRUE;
       break;
-    
+
     default:
       # code...
       break;
