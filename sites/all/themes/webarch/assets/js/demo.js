@@ -5,5 +5,6 @@ $(document).ready(function() {
 		
 		$('#my-task-list').popover({
 			html:true			
-		})
+		});
+    $('.tip').tooltip();
 });

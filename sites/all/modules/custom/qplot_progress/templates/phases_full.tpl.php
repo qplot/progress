@@ -114,7 +114,7 @@
                                     <?php echo $task['ticket'] ?>
                                   </td>
                                   <td class="v-align-middle">
-                                      <?php echo $task['title'] ?>
+                                      <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
                                   </td>
                                   <td class="v-align-middle">
                                       <span class="muted">

@@ -396,11 +396,12 @@ function qplot_progress_block_view($delta = '') {
         foreach ($tnids as $tid) {
           $node = node_load($tid);
           $wrapper = entity_metadata_wrapper('node', $node);
+          $body = $wrapper->body->value();
 
           $task_ticket = $wrapper->field_task_ticket_url->value();
           $task_item = array(
             'title' => $wrapper->title->value(),
-            // 'description' => $wrapper->body->value()->value(),
+            'description' => !empty($body) ? $wrapper->body->value->raw() : '',
             'phase' => $wrapper->field_task_phase->title->value(),
             'progress' => $wrapper->field_task_progress->value(),
             'hours' => $wrapper->field_task_hours->value(),
