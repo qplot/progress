@@ -160,7 +160,7 @@ function zen_progress_preprocess_block(&$variables, $hook) {
 // */
 
 /**
- * Theme button
+ * Override button
  */
 function webarch_button($variables) {
   // dsm($variables);
@@ -175,4 +175,22 @@ function webarch_button($variables) {
   $element['#attributes']['class'][] = 'btn';
 
   return '<input' . drupal_attributes($element['#attributes']) . ' />';  
+}
+
+/**
+ * Override link
+ */
+function webarch_link($variables) {
+  // dsm($variables);
+  switch ($variables['text']) {
+    case 'edit':
+      $variables['text'] = '<i class="fa fa-edit"></i>';
+      $variables['options']['html'] = TRUE;
+      break;
+    
+    default:
+      # code...
+      break;
+  }
+  return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
 }

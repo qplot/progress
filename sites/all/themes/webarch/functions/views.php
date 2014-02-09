@@ -36,11 +36,11 @@ function webarch_preprocess_views_view_field(&$vars) {
   if (get_class($vars['field']) == 'views_handler_field_node_link_edit') {
     // dsm($vars['row']);
     // Rerender the link to include edit button
-    $vars['output'] = l('<i class="fa fa-edit"></i>', "node/{$vars['row']->nid}/edit", array(
-      'attributes' => array('title' => 'edit'), 
-      'query' => drupal_get_destination(),
-      'html' => TRUE,
-    ));
+    // $vars['output'] = l('<i class="fa fa-edit"></i>', "node/{$vars['row']->nid}/edit", array(
+    //   'attributes' => array('title' => 'edit'), 
+    //   'query' => drupal_get_destination(),
+    //   'html' => TRUE,
+    // ));
   }
  // $vars['output'] = $vars['field']->advanced_render($vars['row']);
 }
