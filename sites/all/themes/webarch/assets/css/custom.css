@@ -41,3 +41,10 @@ img.header__logo-image {
 .menu .sub-menu span.title.gray {
   color: gray;
 }
+
+/* fix block user login */
+#block-user-login .form-actions {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}

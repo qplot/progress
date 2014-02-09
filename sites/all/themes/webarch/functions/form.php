@@ -675,7 +675,7 @@ function webarch_form_alter(&$form, &$form_state, $form_id) {
   }
 	//login block
   if ($form_id == 'user_login_block') {
-    dsm($form);
+    // dsm($form);
 	  $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
     $form['name']['#prefix'] = '<div class="status-widget">';
     $form['name']['#suffix'] = '</div>';
