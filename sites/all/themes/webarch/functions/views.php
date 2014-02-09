@@ -1,19 +1,11 @@
 <?php
-/**
- * Theme table
- */
-// function zen_progress_preprocess_views_view(&$vars) {
-//   // kpr($variables);
-//   // return '<ul>' . $variables['tree'] . '</ul>';
-//   // return '<ul class="menu">' . $variables['tree'] . '</ul>';
-//   kpr($vars);
-// }
 
 /*
-template_preprocess_views_view
-options to remove css classes from the view
-*/
+ * Theme view
+ */
 function webarch_preprocess_views_view(&$vars) {
+  // dsm($vars);
+  // Remove css classes from the view
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view')));
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-'.$vars['name'])));
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-id-'.$vars['name'])));
@@ -24,11 +16,17 @@ function webarch_preprocess_views_view(&$vars) {
  * Theme table
  */
 function webarch_preprocess_views_view_table(&$vars) {
-  // dsm($vars);
   if (!empty($vars['classes_array'])) {
     // replace with custom class
     $vars['classes_array'][0] = 'table';
   }
+}
+
+/**
+ * Theme table row record
+ */
+function webarch_preprocess_views_view_fields(&$vars) {
+  // kpr($vars);
 }
 
 /**
@@ -47,3 +45,16 @@ function webarch_preprocess_views_view_field(&$vars) {
  // $vars['output'] = $vars['field']->advanced_render($vars['row']);
 }
 
+/**
+ * Theme table exposed form
+ */
+function webarch_preprocess_views_exposed_form(&$vars) {
+  // dsm($vars);
+}
+
+/**
+ * Theme summary
+ */
+function webarch_preprocess_views_view_summary(&$vars) {
+  dsm($vars);
+}

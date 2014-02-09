@@ -586,3 +586,30 @@ function qplot_progress_update_project_progress($node) {
   $wrapper->field_project_progress->set($progress);
   $wrapper->save();
 }
+
+/**
+ * Update views structure
+ */
+function qplot_progress_views_pre_build(&$view) {
+  // dsm($view);
+  // dsm($view->field['edit_node']);
+  // $edit = &$view->field['edit_node'];
+  // $edit->options['label'] = '';
+  // dsm($view->display_handler);
+  // dsm($view->display_handler)
+}
+
+/**
+ * Update views render
+ * With respect to views template, settings are all data
+ */
+function qplot_progress_views_pre_render(&$view) {
+  // dsm($view);
+  // dsm($view->display_handler);
+  // dsm($view->field['edit_node']);
+  // Add a icon to edit button.
+  // $edit = &$view->field['edit_node'];
+  // $edit->options['label'] = "";
+  // $edit->options['alter']['alter_text'] = TRUE;
+  // $edit->options['alter']['text'] = '<i class="fa fa-edit"></i>';
+}

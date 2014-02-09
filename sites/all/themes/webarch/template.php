@@ -158,3 +158,21 @@ function zen_progress_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * Theme button
+ */
+function webarch_button($variables) {
+  // dsm($variables);
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'submit';
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+  $element['#attributes']['class'][] = 'btn';
+
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';  
+}
