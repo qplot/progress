@@ -141,24 +141,39 @@ function qplot_progress_block_view($delta = '') {
     case 'user_teaser':
       if (empty($user->uid)) return;
       // find user info
-      $uid = qplot_api_find_nodes(
-        array('type' => 'contact'),
-        array('field_contact_user' => array(
-          'target_id', $user->uid, '='
-        ))
-      );
-      $node = node_load($uid);
-      $wrapper = entity_metadata_wrapper('node', $node);
-      $name = $wrapper->title->value();
-      $splits = explode(" ", $name); 
-      $photo = $wrapper->field_contact_photo->value();
+      // $uid = qplot_api_find_nodes(
+      //   array('type' => 'contact'),
+      //   array('field_contact_user' => array(
+      //     'target_id', $user->uid, '='
+      //   ))
+      // );
+      // $node = node_load($uid);
+      // $wrapper = entity_metadata_wrapper('node', $node);
+      // $name = $wrapper->title->value();
+      // $splits = explode(" ", $name); 
+      // $photo = $wrapper->field_contact_photo->value();
+
+      // $variables['user'] = array(
+      //   'first' => (count($splits) >= 1) ? $splits[0] : '',
+      //   'last' => (count($splits) >= 2) ? $splits[1] : '',
+      //   'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
+      //   'status' => 'Online',
+      // );
+
+      // Switch to use profile2 instead
+      $profile = profile2_load_by_user($user->uid);
+      $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
+      $photo = $wrapper->field_profile_photo->value();
 
       $variables['user'] = array(
-        'first' => (count($splits) >= 1) ? $splits[0] : '',
-        'last' => (count($splits) >= 2) ? $splits[1] : '',
-        'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
+        'id' => $user->uid,
+        'first' => $wrapper->field_profile_first->value(),
+        'last' => $wrapper->field_profile_last->value(),
+        // 'title' => $wrapper->field_profile_title->value(),
+        'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
         'status' => 'Online',
       );
+
       $block['content'] = theme('qplot_progress_user_teaser', $variables);
       break;
 
