@@ -8,7 +8,7 @@
   </ul>
   <!-- BEGIN LOGO --> 
   <?php if ($logo): ?>
-     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image"/></a>
+     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo" /></a>
   <?php endif; ?>      
   <!-- END LOGO --> 
   <ul class="nav pull-right notifcation-center">  
