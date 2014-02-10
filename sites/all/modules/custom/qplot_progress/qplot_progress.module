@@ -5,20 +5,18 @@
 /**
  * Implements hook_menu().
  */
-// function qplot_progress_menu() {
+function qplot_progress_menu() {
 
-//   // $items['devel/cache/clear'] = array(
-//   //   'title' => 'Empty cache',
-//   //   'page callback' => 'devel_cache_clear',
-//   //   'description' => 'Clear the CSS cache and all database cache tables which store page, node, theme and variable caches.',
-//   //   'access arguments' => array('access devel information'),
-//   //   'file' => 'devel.pages.inc',
-//   //   'menu_name' => 'devel',
-//   // );
+  $items['task/%node/edit'] = array(
+    'title' => 'Edit Task',
+    'page callback' => 'qplot_progress_task_edit_page',
+    'page arguments' => array(1),
+    'description' => 'edit task.',
+    'access callback' => TRUE,
+  );
 
-
-//   return $items;
-// }
+  return $items;
+}
 
 /**
  * Implementation of hook_theme()
@@ -693,4 +691,17 @@ function qplot_progress_views_pre_render(&$view) {
   // $edit->options['label'] = "";
   // $edit->options['alter']['alter_text'] = TRUE;
   // $edit->options['alter']['text'] = '<i class="fa fa-edit"></i>';
+}
+
+/**
+ * Edit task page
+ */
+function qplot_progress_task_edit_page($node) {
+  module_load_include('inc', 'node', 'node.pages');
+  $form = drupal_get_form('task_node_form', $node);
+  return drupal_render($form);
+}
+
+function qplot_progress_form_alter(&$form, &$form_state, $form_id) {
+  // dsm($form_id);
 }
