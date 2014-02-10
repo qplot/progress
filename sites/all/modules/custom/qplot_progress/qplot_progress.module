@@ -536,6 +536,13 @@ function qplot_progress_block_view($delta = '') {
       $nid = arg(1);
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
+      // find project info
+      $variables['project'] = array(
+        'invite' => url("group/node/$nid/admin/people/add-user", array(
+          'query' => drupal_get_destination()
+        )),
+      );
+
       // find members list
       $uids = qplot_api_find_nodes(
         NULL,

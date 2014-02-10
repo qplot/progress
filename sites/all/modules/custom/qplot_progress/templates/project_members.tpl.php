@@ -41,6 +41,10 @@
             <div class="clearfix"></div>
           </div>
         <?php endforeach ?>
+        <?php if (!empty($project['invite'])): ?>
+          <a href="<?php echo $project['invite'] ?>" class="btn btn-mini pull-right"><i class="fa fa-user"></i> add member</a>
+        <?php endif ?>
+        <br>
       </div>
     </div>
   </div>
