@@ -5,18 +5,18 @@
 /**
  * Implements hook_menu().
  */
-function qplot_progress_menu() {
+// function qplot_progress_menu() {
 
-  $items['task/%node/edit'] = array(
-    'title' => 'Edit Task',
-    'page callback' => 'qplot_progress_task_edit_page',
-    'page arguments' => array(1),
-    'description' => 'edit task.',
-    'access callback' => TRUE,
-  );
+//   $items['task/%node/edit'] = array(
+//     'title' => 'Edit Task',
+//     'page callback' => 'drupal_get_form',
+//     'page arguments' => array('qplot_progress_task_edit_form', 1),
+//     'description' => 'edit task.',
+//     'access callback' => TRUE,
+//   );
 
-  return $items;
-}
+//   return $items;
+// }
 
 /**
  * Implementation of hook_theme()
@@ -704,4 +704,20 @@ function qplot_progress_task_edit_page($node) {
 
 function qplot_progress_form_alter(&$form, &$form_state, $form_id) {
   // dsm($form_id);
+}
+
+function qplot_progress_task_edit_form($form, &$form_state, $node) {
+  $wrapper = entity_metadata_wrapper('node', $node);
+  $form['title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Task Title'),
+    '#default_value' => $wrapper->title->value(),
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'Submit',
+  );
+
+  return $form;
 }

@@ -58,7 +58,12 @@
             </div>
             <div class="clearfix"></div>
             <div class="progress progress-small no-radius">
-              <div class="progress-bar progress-bar-<?=$bar ?> animate-progress-bar" data-percentage="<?php echo $phase['progress'] ?>%"></div>
+              <?php
+                print theme('qplot_progress_progress_widget', array(
+                  'progress' => $phase['progress'],
+                  'caption' => FALSE,
+                ))
+              ?>
             </div>
           </li>
         <?php endforeach ?>        
