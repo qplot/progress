@@ -5,35 +5,40 @@
   // dsm($phases);
 ?>
 
-<div class="row tiles-container spacing-bottom">
+<div class="row tiles-container tiles white spacing-bottom">
     <div class="tiles-body">
         <div class="controller">
             <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
-        </div>
-<!--         
+        </div>        
         <div class="tiles-title">
             Tasks in Phases
         </div><br>
- -->        
-        <?php if ($project['create']): ?>
-          <div class="pull-right">
-            <a href="<?php echo $project['create'] ?>" class="btn btn-large btn-link"><i class="fa fa-plus"> Add new phase</i></a>
-          </div>
-        <?php endif; ?>
-
-        <ul class="nav nav-tabs" id="tab-4">          
+        
+        <p class="pull-right">
+          <?php if ($project['create']): ?>
+            <div class="pull-right">
+              <a href="<?php echo $project['create'] ?>" class="btn btn-mini"><i class="fa fa-plus"></i> add </a>
+            </div>
+          <?php endif; ?>
+<!-- 
+          <a href="" class="btn btn-mini"><i class="fa fa-eraser"></i> delete phase </a>
+          <a href="" class="btn btn-mini"><i class="fa fa-pencil"></i> edit </a>
+ -->
+        </p>
+        <ul class="nav nav-ills" id="tab-4">          
           <?php foreach ($phases as $key => &$phase): ?>
             <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
                 <a href="#phase-<?php echo $key  ?>"><?php echo $phase['title'] ?></a>
             </li>
           <?php endforeach ?>
-
         </ul>
         <div class="tab-content">
           <?php foreach ($phases as $key=> &$phase): ?>
             <div class="tab-pane <?php echo $phase['focus'] ? 'active' : '' ?>" id="phase-<?php echo $key ?>">
                 <div class="row">
-                    <div class="col-md-12">
+                  <div class="grid">
+                    <div class="grid-body no-border">
+
                       <p class="pull-right">
                         <?php
                           $classes = array(
@@ -47,28 +52,23 @@
                       </p>
                       <h3>
                           <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
-                          <?php if ($phase['edit']): ?>
-                            <a href="<?php echo $phase['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
-                          <?php endif; ?>
                       </h3>
-                      <h4>
+                      <p>
                       <?php if ($phase['description']): ?>
                         <?php echo $phase['description'] ?>
                       <?php endif; ?>
-                      </h4>
-                      <hr />
+                      </p>
 
                       <table class="table no-more-tables">
                           <thead>
                             <tr>
-                              <td></td>
                               <td colspan="3">
-                                <h4 class="semi-bold no-margin">Progress : 
+                                <h5 class="semi-bold no-margin">Progress : 
                                   <?php echo $phase['hours'] ?>hrs (total), 
                                   <?php echo round((1 - $phase['progress']/100) * $phase['hours']) ?>hrs (left)
-                                </h4>
+                                </h5>
                               </td>
-                              <td class="v-align-middle">
+                              <td colspan="2" class="v-align-middle">
                                 <div class="progress progress-large progress-striped active">
                                   <?php
                                     print theme('qplot_progress_progress_widget', array(
@@ -80,11 +80,22 @@
                               </td>
                               <td>
                                 <?php if ($phase['create']): ?>
-                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New </i></a>
+                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
                                 <?php endif; ?>
                               </td>
                             </tr>
                           </thead>
+                          <tfoot>
+                            <tr>
+                              <td colspan="5">
+                              </td>
+                              <td>
+                                <?php if ($phase['create']): ?>
+                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
+                                <?php endif; ?>
+                              </td>
+                            </tr>
+                          </tfoot>                                                      
                           <thead>
                               <tr>
                                   <th style="width:1%">
@@ -142,6 +153,7 @@
                           </tbody>
                       </table>
                     </div>
+                  </div>
                 </div>
             </div>
           <?php endforeach; ?>
