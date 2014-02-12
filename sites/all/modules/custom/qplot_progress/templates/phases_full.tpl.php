@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  // dsm($phases);
+  dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -25,7 +25,7 @@
           <a href="" class="btn btn-mini"><i class="fa fa-pencil"></i> edit </a>
  -->
         </p>
-        <ul class="nav nav-ills" id="tab-4">          
+        <ul class="nav nav-pills" id="tab-4">          
           <?php foreach ($phases as $key => &$phase): ?>
             <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
                 <a href="#phase-<?php echo $key  ?>"><?php echo $phase['title'] ?></a>
