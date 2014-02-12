@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  dsm($phases);
+  // dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -14,17 +14,6 @@
             Tasks in Phases
         </div><br>
         
-        <p class="pull-right">
-          <?php if ($project['create']): ?>
-            <div class="pull-right">
-              <a href="<?php echo $project['create'] ?>" class="btn btn-mini"><i class="fa fa-plus"></i> add </a>
-            </div>
-          <?php endif; ?>
-<!-- 
-          <a href="" class="btn btn-mini"><i class="fa fa-eraser"></i> delete phase </a>
-          <a href="" class="btn btn-mini"><i class="fa fa-pencil"></i> edit </a>
- -->
-        </p>
         <ul class="nav nav-pills" id="tab-4">          
           <?php foreach ($phases as $key => &$phase): ?>
             <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
@@ -39,7 +28,7 @@
                   <div class="grid">
                     <div class="grid-body no-border">
 
-                      <p class="pull-right">
+                      <p>
                         <?php
                           $classes = array(
                             'Proposed' => 'warning',
@@ -50,6 +39,18 @@
                         ?>
                         <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
                       </p>
+                      <p class="pull-right">
+                        <?php if ($project['create']): ?>
+                          <a href="<?php echo $project['create'] ?>" class="btn btn-mini"><i class="fa fa-plus"></i> add </a>
+                        <?php endif; ?>
+                        <?php if ($phase['delete']): ?>
+                          <a href="<?php echo $phase['delete'] ?>" class="btn btn-mini"><i class="fa fa-eraser"></i> delete phase </a>                        
+                        <?php endif ?>
+                        <?php if ($phase['edit']): ?>
+                          <a href="<?php echo $phase['edit'] ?>" class="btn btn-mini"><i class="fa fa-pencil"></i> edit </a>
+                        <?php endif; ?>
+                      </p>
+
                       <h3>
                           <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                       </h3>

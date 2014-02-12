@@ -14,22 +14,29 @@
     <div class="tiles green">
       <div class="tiles-body">
         <div class="heading">
-          <?php echo $project['title'] ?>
-          <?php if ($project['edit']): ?>
-            <a href="<?php echo $project['edit'] ?>" class="btn btn-primary btn-xs btn-mini"><i class="fa fa-edit"></i></a>
+          <!-- flag -->
+          <?php 
+            if ($project['flag']):
+              // echo $project['flag'];
+          ?>
+            <a href="" class="pull-right"><i class="fa fa-star-o"></i></a>
           <?php endif; ?>
+          <?php echo $project['title'] ?>
         </div>
         <p>
           Status : <?php echo $project['status'] ?>
         </p>
-        <?php 
-          if ($project['flag'])
-            echo $project['flag']
-        ?>
 
       </div>
       <div class="tile-footer">
         <?php echo $project['description'] ?>
+        <?php if ($project['edit']): ?>
+        <p>
+          <a href="<?php echo $project['edit'] ?>" class="btn btn-mini pull-right"><i class="fa fa-pencil"></i> edit project</a>
+          <br />
+        </p>
+        <?php endif; ?>
+
       </div>
     </div>
     <div class="tiles-body">

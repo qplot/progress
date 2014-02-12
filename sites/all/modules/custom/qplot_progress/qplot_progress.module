@@ -393,6 +393,9 @@ function qplot_progress_block_view($delta = '') {
           'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => drupal_get_destination()
           )),
+          'delete' => url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
+            'query' => drupal_get_destination()
+          )),
           'create' => url('node/add/task', array('query' => array_merge(
             array(
               'field_task_phase' => $pid,
