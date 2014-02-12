@@ -75,8 +75,8 @@ function zen_progress_preprocess_html(&$variables, $hook) {
  */
 function webarch_preprocess_page(&$variables, $hook) {
   $variables['path'] = base_path().drupal_get_path('theme', 'webarch').'/';
+  $variables['breadcrumbs'] = array('12','23');
 }
-// */
 
 /**
  * Returns HTML for status and/or error messages, grouped by type.
@@ -204,4 +204,22 @@ function webarch_link($variables) {
       break;
   }
   return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
+}
+
+/**
+ * Override breadcrumb
+ */
+function webarch_breadcrumb($variables) {
+  // dsm($variables);
+  // $breadcrumb = $variables['breadcrumbs'];
+  // dsm($breadcrumb);
+
+  // if (!empty($breadcrumb)) {
+  //   // Provide a navigational heading to give context for breadcrumb links to
+  //   // screen-reader users. Make the heading invisible with .element-invisible.
+  //   $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+
+  //   $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+  //   return $output;
+  // }
 }
