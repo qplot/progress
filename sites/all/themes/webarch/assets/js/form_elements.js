@@ -22,6 +22,11 @@ $(document).ready(function(){
 				todayHighlight: true
 	   });
 	 
+  $('.slider-element').slider()
+    .on('slide', function(ev) {
+      $('#progress').val(ev.value);
+    });
+
 	 // $('#dp5').datepicker();
 	 
 	 // $('#sandbox-advance').datepicker({

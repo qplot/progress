@@ -19,6 +19,8 @@
             <form id="task_edit_form" action="" method="POST">
 
             <h3> Task <span class="semi-bold">Info</span></h3>
+            <input type="hidden" name="id" value="<?php echo $values['id'] ?>" />
+
             <!-- Task Title -->
             <div class="form-group">
               <label class="form-label">Task Title</label>
@@ -75,7 +77,7 @@
               <!-- <span class="help">e.g. "Turn on or off"</span> -->
               <br />
               <div class="slide-primary controls">
-                <input type="checkbox" name="switch" class="ios" checked="checked"/>
+                <input type="checkbox" name="switch" class="ios" <?php echo ($values['status']) ? 'checked="checked"' : '' ?> />
               </div>
             </div>
 
@@ -86,8 +88,9 @@
               <span class="help">e.g. "0 - 100"</span>
               <div class="controls">
                 <div class="row">
-                  <div class="slider primary col-md-6">
-                    <input name="progress" type="text" class="slider-element form-control" value="<?php echo $values['progress'] ?>" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="60" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="">
+                  <div class="slider primary col-md-6 controls">
+                    <input type="hidden" name="progress" id="progress">
+                    <input id="progress" type="text" class="slider-element form-control" value data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="<?php echo $values['progress'] ?>" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="">
                   </div>          
                 </div>
               </div>
@@ -100,7 +103,7 @@
               <div class="radio radio-primary">
                 <?php foreach ($values['phases'] as $value): ?>
                   <div class="row-fluid">
-                    <input id="<?php echo 'phase_' . $value['id'] ?>" name="optionyes1" type="radio" value="<?php echo $value['id'] ?>" <?php echo ($values['phase_id'] == $value['id']) ? 'checked="checked"' : '' ?> >
+                    <input id="<?php echo 'phase_' . $value['id'] ?>" name="phase_id" type="radio" value="<?php echo $value['id'] ?>" <?php echo ($values['phase_id'] == $value['id']) ? 'checked="checked"' : '' ?> >
                     <label for="<?php echo 'phase_' . $value['id'] ?>"><?php echo 'Phase: ' . $value['title'] ?></label>
                   </div>                  
                 <?php endforeach ?>
@@ -116,6 +119,8 @@
             <button type="button" class="btn btn-white btn-cons">Cancel</button>
           </div>
         </div>
+
+        <input type='hidden' name="destination" value='<?php echo $form['destination'] ?>' />
 
       </form>
       </div>
