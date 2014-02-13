@@ -51,16 +51,30 @@ stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
 ; stylesheets[all][] = css/styles.css
+;PLUGIN CSS
+stylesheets[screen][] = assets/plugins/pace/pace-theme-flash.css
+stylesheets[all][] = assets/plugins/bootstrap-tag/bootstrap-tagsinput.css
+stylesheets[all][] = assets/plugins/dropzone/css/dropzone.css
+stylesheets[all][] = assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css
+stylesheets[all][] = assets/plugins/bootstrap-datepicker/css/datepicker.css
+stylesheets[all][] = assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css
+stylesheets[all][] = assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css
+stylesheets[screen][] = assets/plugins/ios-switch/ios7-switch.css
+stylesheets[screen][] = assets/plugins/bootstrap-select2/select2.css
+stylesheets[screen][] = assets/plugins/jquery-slider/css/jquery.sidr.light.css
+
+;CORE CSS FRAMEWORK
 stylesheets[all][] = assets/plugins/boostrapv3/css/bootstrap.min.css
 stylesheets[all][] = assets/plugins/boostrapv3/css/bootstrap-theme.min.css
 stylesheets[all][] = assets/plugins/font-awesome/css/font-awesome.css
 stylesheets[all][] = assets/css/animate.min.css
-stylesheets[screen][] = assets/plugins/pace/pace-theme-flash.css
-stylesheets[screen][] = assets/plugins/jquery-slider/css/jquery.sidr.light.css
+;CSS TEMPLATE
 stylesheets[all][] = assets/css/style.css
 stylesheets[all][] = assets/css/responsive.css
 stylesheets[all][] = assets/css/custom-icon-set.css
 stylesheets[all][] = assets/css/custom.css
+stylesheets[all][] = assets/plugins/boostrap-slider/css/slider.css
+
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
@@ -77,22 +91,36 @@ stylesheets[all][] = assets/css/custom.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+;CORE JS FRAMEWORK
 scripts[] = assets/plugins/jquery-1.8.3.min.js
 scripts[] = assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js
 scripts[] = assets/plugins/bootstrap/js/bootstrap.min.js
 scripts[] = assets/plugins/breakpoints.js
 scripts[] = assets/plugins/jquery-unveil/jquery.unveil.min.js
+;CORE PLUGIN
 scripts[] = assets/plugins/jquery-block-ui/jqueryblockui.js
 scripts[] = assets/plugins/breakpoints.js
 scripts[] = assets/plugins/jquery-slider/jquery.sidr.min.js
 scripts[] = assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js
+;PAGE LEVEL PLUGIN
 scripts[] = assets/plugins/pace/pace.min.js
 scripts[] = assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js
+scripts[] = assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js
+scripts[] = assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js
+scripts[] = assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js
+scripts[] = assets/plugins/jquery-inputmask/jquery.inputmask.min.js
+scripts[] = assets/plugins/jquery-autonumeric/autoNumeric.js
+scripts[] = assets/plugins/ios-switch/ios7-switch.js
+scripts[] = assets/plugins/bootstrap-select2/select2.min.js
+scripts[] = assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js
+scripts[] = assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js
+scripts[] = assets/plugins/dropzone/dropzone.min.js
+scripts[] = assets/js/form_elements.js
 scripts[] = assets/js/tabs_accordian.js
+;PAGE LEVEL SCRIPT
 scripts[] = assets/js/core.js
 scripts[] = assets/js/chat.js
 scripts[] = assets/js/demo.js
-
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

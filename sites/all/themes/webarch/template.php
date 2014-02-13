@@ -75,7 +75,7 @@ function zen_progress_preprocess_html(&$variables, $hook) {
  */
 function webarch_preprocess_page(&$variables, $hook) {
   $variables['path'] = base_path().drupal_get_path('theme', 'webarch').'/';
-  $variables['breadcrumbs'] = array('12','23');
+  // $variables['breadcrumbs'] = array('12','23');
 }
 
 /**

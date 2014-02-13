@@ -5,18 +5,18 @@
 /**
  * Implements hook_menu().
  */
-// function qplot_progress_menu() {
+function qplot_progress_menu() {
 
-//   $items['task/%node/edit'] = array(
-//     'title' => 'Edit Task',
-//     'page callback' => 'drupal_get_form',
-//     'page arguments' => array('qplot_progress_task_edit_form', 1),
-//     'description' => 'edit task.',
-//     'access callback' => TRUE,
-//   );
+  $items['task/%node/edit'] = array(
+    'title' => 'Edit Task',
+    'page callback' => 'qplot_progress_task_edit_form',
+    'page arguments' => array(1),
+    'description' => 'edit task.',
+    'access callback' => TRUE,
+  );
 
-//   return $items;
-// }
+  return $items;
+}
 
 /**
  * Implementation of hook_theme()
@@ -74,6 +74,10 @@ function qplot_progress_theme() {
     'qplot_progress_project_members' => array(
       'variables' => array('members' => NULL),
       'template' => 'templates/project_members'
+    ),
+    'qplot_progress_task_edit' => array(
+      'variables' => array('values' => NULL),
+      'template' => 'templates/task_edit'
     ),
   );
 }
@@ -436,7 +440,8 @@ function qplot_progress_block_view($delta = '') {
               $wrapper->field_task_ticket_url->url->value(),
               array('attributes' => array('target' => '_blank'))
             ) : '',
-            'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+            // 'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+            'edit' => url('task/' . $wrapper->getIdentifier() . '/edit', array(
               'query' => drupal_get_destination()
             )),
             'delete' => url('node/' . $wrapper->getIdentifier() . '/delete', array(
@@ -699,28 +704,64 @@ function qplot_progress_views_pre_render(&$view) {
 /**
  * Edit task page
  */
-function qplot_progress_task_edit_page($node) {
-  module_load_include('inc', 'node', 'node.pages');
-  $form = drupal_get_form('task_node_form', $node);
-  return drupal_render($form);
-}
+// function qplot_progress_task_edit_page($node) {
+//   module_load_include('inc', 'node', 'node.pages');
+//   $form = drupal_get_form('task_node_form', $node);
+//   return drupal_render($form);
+// }
 
-function qplot_progress_form_alter(&$form, &$form_state, $form_id) {
-  // dsm($form_id);
-}
+// function qplot_progress_form_alter(&$form, &$form_state, $form_id) {
+//   // dsm($form_id);
+// }
 
-function qplot_progress_task_edit_form($form, &$form_state, $node) {
+/**
+ * Custom edit page for task
+ */
+function qplot_progress_task_edit_form($node) {
+  // dsm($_POST);
+  // dsm($node);
   $wrapper = entity_metadata_wrapper('node', $node);
-  $form['title'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Task Title'),
-    '#default_value' => $wrapper->title->value(),
+  $body = $wrapper->body->value();
+  $progress = $wrapper->field_task_progress->value();
+
+  // get company id
+  $project_id = $wrapper->field_task_project->raw();
+
+  // get the phases list
+  $pnids = qplot_api_find_nodes(
+    array('type' => 'phase'),
+    array('field_phase_project' => array(
+      'target_id', $project_id, '='
+    )),
+    TRUE,
+    NULL,
+    array('property' => array(
+      'changed' => 'DESC'
+    ))
+  );
+  $phases = array();
+  foreach ($pnids as $pid) {
+    $node = node_load($pid);
+    $phases[] = array(
+      'id' => $pid, 
+      'title' => $node->title,
+    );
+  }
+
+  $variables['values'] = array(
+    'title' => $wrapper->title->value(),
+    'date' => date('m/d/Y', $wrapper->field_task_added->value()),
+    'hours' => $wrapper->field_task_hours->value(),
+    'description' => !empty($body) ? $wrapper->body->value->value() : '',
+    'status' => ($progress == 100),
+    'progress' => $progress,
+    'phases' => $phases,
+    'phase_id' => $wrapper->field_task_phase->raw(),
+  ); 
+  $variables['form'] = array(
+    'submit' => '',
+    'destination' => '',
   );
 
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => 'Submit',
-  );
-
-  return $form;
+  return theme('qplot_progress_task_edit', $variables);
 }
