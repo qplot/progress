@@ -81,7 +81,7 @@
                               </td>
                               <td>
                                 <?php if ($phase['create']): ?>
-                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
+                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
                                 <?php endif; ?>
                               </td>
                             </tr>
@@ -92,7 +92,7 @@
                               </td>
                               <td>
                                 <?php if ($phase['create']): ?>
-                                  <a href="<?php echo $phase['create'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
+                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
                                 <?php endif; ?>
                               </td>
                             </tr>

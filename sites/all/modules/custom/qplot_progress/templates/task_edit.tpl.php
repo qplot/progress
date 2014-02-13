@@ -20,6 +20,7 @@
 
             <h3> Task <span class="semi-bold">Info</span></h3>
             <input type="hidden" name="id" value="<?php echo $values['id'] ?>" />
+            <input type="hidden" name="project_id" value="<?php echo $values['project_id'] ?>" />
 
             <!-- Task Title -->
             <div class="form-group">
@@ -115,8 +116,8 @@
         </div>
         <div class="form-actions">  
           <div class="pull-right">
-            <button type="submit" class="btn btn-primary btn-cons"><i class="icon-ok"></i> Save</button>
-            <button type="button" class="btn btn-white btn-cons">Cancel</button>
+            <button type="submit" name="op" value="Save" class="btn btn-primary btn-cons"><i class="icon-ok"></i> Save</button>
+            <button type="submit" name="op" value="Cancel" class="btn btn-white btn-cons">Cancel</button>
           </div>
         </div>
 
