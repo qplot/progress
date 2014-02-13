@@ -89,7 +89,7 @@
               <div class="controls">
                 <div class="row">
                   <div class="slider primary col-md-6 controls">
-                    <input type="hidden" name="progress" id="progress">
+                    <input type="hidden" name="progress" id="progress" value="<?php echo $values['progress'] ?>">
                     <input id="progress" type="text" class="slider-element form-control" value data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="<?php echo $values['progress'] ?>" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="">
                   </div>          
                 </div>

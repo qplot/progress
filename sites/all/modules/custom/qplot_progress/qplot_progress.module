@@ -773,7 +773,13 @@ function qplot_progress_task_edit_form($node) {
     $date = new DateTime($_POST['date']);
     $wrapper->field_task_added->set($date->getTimestamp());
     $wrapper->field_task_progress->set($_POST['progress']);
-    $wrapper->field_task_phase->set(intval($_POST['phase_id']));
+    $wrapper->body->set(array(
+      'value' => htmlspecialchars($_POST['description']),
+      'format' => 'filtered_html',
+    ));
+    // $wrapper->field_task_phase->set(array(
+    //   'target_id' => intval($_POST['phase_id']),
+    // ));
     $wrapper->save();
 
     if (!empty($_POST['destination'])) {
