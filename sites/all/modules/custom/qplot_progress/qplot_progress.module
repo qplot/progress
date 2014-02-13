@@ -737,7 +737,7 @@ function qplot_progress_task_edit_form($node) {
       TRUE,
       NULL,
       array('property' => array(
-        'changed' => 'DESC'
+        'created' => 'DESC'
       ))
     );
     $phases = array();
@@ -777,9 +777,11 @@ function qplot_progress_task_edit_form($node) {
       'value' => htmlspecialchars($_POST['description']),
       'format' => 'filtered_html',
     ));
-    // $wrapper->field_task_phase->set(array(
+    $node->field_task_phase['und'][0]['target_id'] = intval($_POST['phase_id']);
+    // $wrapper->field_task_phase->set(array(array(
     //   'target_id' => intval($_POST['phase_id']),
-    // ));
+    //   'target_type' => 'node'
+    // )));
     $wrapper->save();
 
     if (!empty($_POST['destination'])) {
