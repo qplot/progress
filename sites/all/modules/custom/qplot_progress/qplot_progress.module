@@ -829,6 +829,8 @@ function qplot_progress_task_edit_form($node) {
       $date = new DateTime($_POST['date']);
       $wrapper->field_task_added->set($date->getTimestamp());
       $wrapper->field_task_progress->set($_POST['progress']);
+      $hours = explode(' ', $_POST['hours']);
+      $wrapper->field_task_hours->set($hours[0]);
       $wrapper->body->set(array(
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',

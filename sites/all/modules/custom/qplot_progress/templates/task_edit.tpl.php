@@ -48,10 +48,10 @@
             <!-- Budget Hours -->
             <div class="form-group">
               <label class="form-label">Budget Hour</label>
-              <span class="help">e.g. "02:30" for two and half hour</span>
+              <span class="help">e.g. "2.5" for two and half hour</span>
               <div class="controls">
                 <div class="input-append bootstrap-timepicker-component primary">
-                  <input name="hours" type="text" class="timepicker-24 span12" value="<?php echo $values['hours'] ?>">
+                  <input name="hours" type="text" class="span12 auto" value="<?php echo $values['hours'] ?>" data-a-sign=" hrs" data-p-sign="s" data-v-min="0" />
                   <span class="add-on">
                     <span class="arrow"></span><i class="fa fa-clock-o"></i>
                   </span> 

@@ -40,9 +40,9 @@ $(document).ready(function(){
 	//Time pickers
 	$('.timepicker-default').timepicker();
     $('.timepicker-24').timepicker({
-                minuteStep: 1,
-                showSeconds: true,
-                showMeridian: false
+      minuteStep: 30,
+      showSeconds: false,
+      showMeridian: false
      });
 	//Color pickers
 	// $('.my-colorpicker-control').colorpicker()
