@@ -426,9 +426,10 @@ function qplot_progress_block_view($delta = '') {
         // find tasks for this phase
         $tnids = qplot_api_find_nodes(
           array('type' => 'task'),
-          array('field_task_phase' => array(
-            'target_id', $phase_wrapper->getIdentifier(), '='
-          )),
+          array(
+            'field_task_phase' => array('target_id', $phase_wrapper->getIdentifier(), '='),
+            'field_task_project' => array('target_id', $nid, '='),
+          ),
           TRUE,
           NULL,
           array('property' => array(
@@ -762,7 +763,6 @@ function qplot_progress_task_edit_form($node) {
         $body = $wrapper->body->value();
         $progress = $wrapper->field_task_progress->value();
         $project_id = $wrapper->field_task_project->raw();
-        $project_id = !empty($project_id) ? $project_id[0] : 0;
         $phase_id = $wrapper->field_task_phase->raw();
 
         $variables['values'] = array(
