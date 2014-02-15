@@ -740,6 +740,8 @@ function qplot_progress_task_edit_form($node) {
     case 'View':
       $edit = !empty($node);
 
+      // determine the phases, projects, selected phase and select project id
+
       // initial data
       $variables['values'] = array(
         'id' => 0,
@@ -778,25 +780,39 @@ function qplot_progress_task_edit_form($node) {
         $phase_id = $_GET['phase'];
       }
 
-      // get the phases list
-      $pnids = qplot_api_find_nodes(
-        array('type' => 'phase'),
-        array('field_phase_project' => array(
-          'target_id', $project_id, '='
-        )),
-        TRUE,
-        NULL,
-        array('property' => array(
-          'created' => 'DESC'
-        ))
-      );
+      // phase_id is the main chain, $project_id is only the secondary chain
+      $phase = node_load($phase_id);
+      $phase_wrapper = entity_metadata_wrapper('node', $phase);
       $phases = array();
-      foreach ($pnids as $pid) {
-        $node = node_load($pid);
-        $phases[] = array(
-          'id' => $pid, 
-          'title' => $node->title,
+      foreach ($phase_wrapper->field_phase_project->getIterator() as $project_wrapper) {
+        $project = array(
+          'id' => $project_wrapper->getIdentifier(),
+          'title' => $project_wrapper->title->value(),
+          'phases' => array(),
         );
+
+        // get the phases list
+        $pnids = qplot_api_find_nodes(
+          array('type' => 'phase'),
+          array('field_phase_project' => array(
+            'target_id', $project_wrapper->getIdentifier(), '='
+          )),
+          TRUE,
+          NULL,
+          array('property' => array(
+            'created' => 'DESC'
+          ))
+        );
+        $items = array();
+        foreach ($pnids as $pid) {
+          $node = node_load($pid);
+          $items[] = array(
+            'id' => $pid, 
+            'title' => $node->title,
+          );
+        }
+        $project['phases'] = $items;
+        $phases[] = $project;
       }
 
       // finalize the common values
@@ -835,8 +851,11 @@ function qplot_progress_task_edit_form($node) {
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',
       ));
-      $node->field_task_phase['und'][0]['target_id'] = intval($_POST['phase_id']);
-      $node->field_task_project['und'][0]['target_id'] = intval($_POST['project_id']);
+      $phase = explode('_', $_POST['phase_id']);
+      if (count($phase) > 2) {
+        $node->field_task_phase['und'][0]['target_id'] = intval($phase[1]);
+        $node->field_task_project['und'][0]['target_id'] = intval($phase[2]);
+      }
       // $wrapper->field_task_phase->set(array(array(
       //   'target_id' => intval($_POST['phase_id']),
       //   'target_type' => 'node'

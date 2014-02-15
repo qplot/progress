@@ -102,11 +102,18 @@
               <!-- <label class="form-label">Choose phase</label> -->
               <!-- <span class="help">e.g. "0 - 100"</span> -->
               <div class="radio radio-primary">
-                <?php foreach ($values['phases'] as $value): ?>
-                  <div class="row-fluid">
-                    <input id="<?php echo 'phase_' . $value['id'] ?>" name="phase_id" type="radio" value="<?php echo $value['id'] ?>" <?php echo ($values['phase_id'] == $value['id']) ? 'checked="checked"' : '' ?> >
-                    <label for="<?php echo 'phase_' . $value['id'] ?>"><?php echo 'Phase: ' . $value['title'] ?></label>
-                  </div>                  
+                <?php foreach ($values['phases'] as $project): ?>
+                  <h4><?php echo $project['title'] ?> :</h4>
+                  <?php foreach ($project['phases'] as $value): ?>
+                    <?php 
+                      $phase_id = 'phase_' . $value['id'] . '_' . $project['id']; 
+                      $checked = ($project['id'] == $values['project_id']) && ($value['id'] == $values['phase_id']);
+                    ?>
+                    <div class="row-fluid">
+                      <input id="<?php echo $phase_id ?>" name="phase_id" type="radio" value="<?php echo $phase_id ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
+                      <label for="<?php echo $phase_id ?>"><?php echo 'Phase: ' . $value['title'] ?></label>
+                    </div>                  
+                  <?php endforeach ?>
                 <?php endforeach ?>
               </div>
 
