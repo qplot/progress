@@ -21,6 +21,13 @@ function qplot_progress_menu() {
     'description' => 'edit task.',
     'access callback' => TRUE,
   );
+  $items['phase/%node/edit'] = array(
+    'title' => 'Edit Phase',
+    'page callback' => 'qplot_progress_phase_edit_form',
+    'page arguments' => array(1),
+    'description' => 'edit phase.',
+    'access callback' => TRUE,
+  );
 
   return $items;
 }
@@ -85,6 +92,10 @@ function qplot_progress_theme() {
     'qplot_progress_task_edit' => array(
       'variables' => array('values' => NULL),
       'template' => 'templates/task_edit'
+    ),
+    'qplot_progress_phase_edit' => array(
+      'variables' => array('values' => NULL),
+      'template' => 'templates/phase_edit'
     ),
   );
 }
@@ -283,14 +294,15 @@ function qplot_progress_block_view($delta = '') {
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
       $node = node_load($nid);
-
       // find project info
       $wrapper = entity_metadata_wrapper('node', $node);
+      $body = $wrapper->body->value();
+
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
         'photo' => ($wrapper->field_project_photo->value()) ? $wrapper->field_project_photo->file->url->value() : '',
         'icon' => $wrapper->field_project_icon->name->value(),
-        'description' => $wrapper->body->summary->value(),
+        'description' => !empty($body) ? $wrapper->body->summary->value() : '',
         'progress' => $wrapper->field_project_progress->value(),
         'status' => $wrapper->field_project_status->name->value(),
         'company' => $wrapper->field_project_company->title->value(),
@@ -401,8 +413,12 @@ function qplot_progress_block_view($delta = '') {
           'hours' => $phase_wrapper->field_phase_hours->value(),
           'progress' => $phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
-          'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
-            'query' => drupal_get_destination()
+          // 'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
+          'edit' => url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
+            'query' => array_merge(
+              array('project' => $nid),
+              drupal_get_destination()
+            )
           )),
           'delete' => url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
             'query' => drupal_get_destination()
@@ -864,6 +880,145 @@ function qplot_progress_task_edit_form($node) {
 
       if (!empty($_POST['destination'])) {
         drupal_set_message('task ' . $_POST['title'] . ' saved');
+        drupal_goto($_POST['destination']);
+      } else {
+        return 'submitted';
+      }
+      break;
+    
+    case 'Cancel':
+    default:
+      if (!empty($_POST['destination'])) {
+        drupal_goto($_POST['destination']);
+      }
+      break;
+  }
+}
+
+/**
+ * Custom edit page for task
+ */
+function qplot_progress_phase_edit_form($node) {  
+  // dsm($_POST);
+  $op = 'View';
+  if (!empty($_POST['op'])) {
+    $op = $_POST['op'];
+  }
+  switch ($op) {
+    case 'View':
+      $edit = !empty($node);
+
+      // initial data
+      $variables['values'] = array(
+        'id' => 0,
+        'title' => '',
+        'from' => date('m/d/Y'),
+        'to' => date('m/d/Y'),
+        'hours' => '0',
+        'description' => '',
+        'status' => FALSE,
+        'progress' => 0,
+        'projects' => array(),
+        'project_id' => 0,
+      );
+
+      // go through each field and sort out the value based on new or edit
+      if ($edit) {
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $body = $wrapper->body->value();
+        $progress = $wrapper->field_phase_progress->value();
+        $project_id = $wrapper->field_phase_project->raw();
+        $duration = $wrapper->field_phase_durating->value();
+        $from = new DateTime($duration['value']);
+        $to = new DateTime($duration['value2']);
+
+        $variables['values'] = array(
+          'id' => $wrapper->getIdentifier(),
+          'title' => $wrapper->title->value(),
+          'from' => $from->format('m/d/Y'),
+          'to' => $to->format('m/d/Y'),
+          'progress' => $wrapper->field_phase_progress->value(),
+          'hours' => $wrapper->field_phase_hours->value(),
+          'description' => !empty($body) ? $wrapper->body->value->value() : '',
+          'status' => ($progress == 100),
+        ); 
+      }
+      
+      // get project id from user  
+      $project_id = $_GET['project'];
+      $project = node_load($project_id);
+      $project_wrapper = entity_metadata_wrapper('node', $project);
+      $company = $project_wrapper->field_project_company->value();
+      $company_wrapper = entity_metadata_wrapper('node', $company);
+
+      // get the project list
+      $pnids = qplot_api_find_nodes(
+        array('type' => 'project'),
+        array('field_project_company' => array(
+          'target_id', $company_wrapper->getIdentifier(), '='
+        )),
+        TRUE,
+        NULL,
+        array('property' => array(
+          'created' => 'DESC'
+        ))
+      );
+      $projects = array();
+      foreach ($pnids as $pid) {
+        $node = node_load($pid);
+        $projects[] = array(
+          'id' => $pid, 
+          'title' => $node->title,
+        );
+      }
+
+      // finalize the common values
+      $variables['values'] = array_merge($variables['values'], array(
+        'projects' => $projects,
+        'project_id' => $project_id,
+      ));
+      $variables['form'] = array(
+        'submit' => '',
+        'destination' => $_GET['destination'],
+      );
+
+      return theme('qplot_progress_phase_edit', $variables);
+      break;
+
+    case 'Save': 
+      $edit = !empty($node);
+
+      $wrapper = NULL;
+      if (!$edit) {
+        $node = entity_create('node', array('type' => 'phase'));
+        $wrapper = entity_metadata_wrapper('node', $node);
+        global $user;
+        $node->uid = $user->uid;
+      } else {
+        $wrapper = entity_metadata_wrapper('node', $node);
+      }
+      $wrapper->title->set($_POST['title']);
+      $from = new DateTime($_POST['from']);
+      $to = new DateTime($_POST['to']);
+      $wrapper->field_phase_durating->set(array(
+        'value' => $from->format('Y-m-d H:i:s'),
+        'value2' => $to->format('Y-m-d H:i:s'),
+        'date_type' => 'datetime',
+      ));
+      // $wrapper->field_task_added->set($date->getTimestamp());
+      $wrapper->field_phase_progress->set($_POST['progress']);
+      $hours = explode(' ', $_POST['hours']);
+      $wrapper->field_phase_hours->set($hours[0]);
+      $wrapper->body->set(array(
+        'value' => htmlspecialchars($_POST['description']),
+        'format' => 'filtered_html',
+      ));
+      $node->field_phase_project['und'][0]['target_id'] = intval($_POST['project_id']);
+
+      $wrapper->save();
+
+      if (!empty($_POST['destination'])) {
+        drupal_set_message('phase: ' . $_POST['title'] . ' saved');
         drupal_goto($_POST['destination']);
       } else {
         return 'submitted';
