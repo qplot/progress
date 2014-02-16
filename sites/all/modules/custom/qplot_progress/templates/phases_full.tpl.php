@@ -40,8 +40,8 @@
                         <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
                       </p>
                       <p class="pull-right">
-                        <?php if ($project['create']): ?>
-                          <a href="<?php echo $project['create'] ?>" class="btn btn-mini"><i class="fa fa-plus"></i> add </a>
+                        <?php if ($project['create_phase']): ?>
+                          <a href="<?php echo $project['create_phase'] ?>" class="btn btn-mini"><i class="fa fa-plus"></i> add </a>
                         <?php endif; ?>
                         <?php if ($phase['delete']): ?>
                           <a href="<?php echo $phase['delete'] ?>" class="btn btn-mini"><i class="fa fa-eraser"></i> delete phase </a>                        
@@ -54,10 +54,15 @@
                       <h3>
                           <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                       </h3>
+                      <h5>
+                        <?php if (!empty($phase['from'])): ?>
+                          <?php echo $phase['from'] . ' - ' . $phase['to'];  ?>
+                        <?php endif; ?>
+                      </h5>
                       <p>
-                      <?php if ($phase['description']): ?>
-                        <?php echo $phase['description'] ?>
-                      <?php endif; ?>
+                        <?php if ($phase['description']): ?>
+                          <?php echo $phase['description'] ?>
+                        <?php endif; ?>
                       </p>
 
                       <table class="table no-more-tables">
@@ -80,8 +85,8 @@
                                 </div>
                               </td>
                               <td>
-                                <?php if ($phase['create']): ?>
-                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
+                                <?php if ($phase['create_task']): ?>
+                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> Task</i></a>
                                 <?php endif; ?>
                               </td>
                             </tr>
@@ -91,8 +96,8 @@
                               <td colspan="5">
                               </td>
                               <td>
-                                <?php if ($phase['create']): ?>
-                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> New</i></a>
+                                <?php if ($phase['create_task']): ?>
+                                  <a href="<?php echo $phase['create_task'] ?>" class="" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"> Task</i></a>
                                 <?php endif; ?>
                               </td>
                             </tr>

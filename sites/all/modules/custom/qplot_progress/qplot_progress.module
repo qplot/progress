@@ -21,6 +21,13 @@ function qplot_progress_menu() {
     'description' => 'edit task.',
     'access callback' => TRUE,
   );
+  $items['phase/new'] = array(
+    'title' => 'Add Phase',
+    'page callback' => 'qplot_progress_phase_edit_form',
+    'page arguments' => array(NULL),
+    'description' => 'add phase.',
+    'access callback' => TRUE,    
+  );
   $items['phase/%node/edit'] = array(
     'title' => 'Edit Phase',
     'page callback' => 'qplot_progress_phase_edit_form',
@@ -385,9 +392,14 @@ function qplot_progress_block_view($delta = '') {
       $wrapper = entity_metadata_wrapper('node', $node);
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
-        'create' => url('node/add/phase', array('query' => array_merge(
+        // 'create' => url('node/add/phase', array('query' => array_merge(
+        //   array(
+        //     'field_phase_project' => $nid,
+        //   ), drupal_get_destination()
+        // ))),
+        'create_phase' => url('phase/new', array('query' => array_merge(
           array(
-            'field_phase_project' => $nid,
+            'project' => $nid,
           ), drupal_get_destination()
         ))),
       );
@@ -407,9 +419,14 @@ function qplot_progress_block_view($delta = '') {
       foreach ($pnids as $pid) {
         $phase = node_load($pid);
         $phase_wrapper = entity_metadata_wrapper('node', $phase);
+        $duration = $phase_wrapper->field_phase_durating->value();
+        $from = new DateTime($duration['value']);
+        $to = new DateTime($duration['value2']);
         $phase_item = array(
           'title' => $phase_wrapper->title->value(),
           'description' => ($phase_wrapper->body->raw()) ? $phase_wrapper->body->value->value() : '',
+          'from' => $from->format('m/d/Y'),
+          'to' => $to->format('m/d/Y'),
           'hours' => $phase_wrapper->field_phase_hours->value(),
           'progress' => $phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
@@ -423,12 +440,12 @@ function qplot_progress_block_view($delta = '') {
           'delete' => url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
             'query' => drupal_get_destination()
           )),
-          'create' => url('node/add/task', array('query' => array_merge(
-            array(
-              'field_task_phase' => $pid,
-              'field_task_project' => $nid,
-            ), drupal_get_destination()
-          ))),
+          // 'create' => url('node/add/task', array('query' => array_merge(
+          //   array(
+          //     'field_task_phase' => $pid,
+          //     'field_task_project' => $nid,
+          //   ), drupal_get_destination()
+          // ))),
           'create_task' => url('task/new', array('query' => array_merge(
             array(
               'phase' => $pid,
