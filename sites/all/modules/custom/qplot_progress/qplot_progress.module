@@ -944,7 +944,7 @@ function qplot_progress_phase_edit_form($node) {
         $wrapper = entity_metadata_wrapper('node', $node);
         $body = $wrapper->body->value();
         $progress = $wrapper->field_phase_progress->value();
-        $project_id = $wrapper->field_phase_project->raw();
+        $project_ids = $wrapper->field_phase_project->raw();
         $duration = $wrapper->field_phase_durating->value();
         $from = new DateTime($duration['value']);
         $to = new DateTime($duration['value2']);
@@ -959,11 +959,13 @@ function qplot_progress_phase_edit_form($node) {
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
           'status' => ($progress == 100),
         ); 
+      } else {
+        $project_ids = array($_GET['project']);
       }
       
       // get project id from user  
-      $project_id = $_GET['project'];
-      $project = node_load($project_id);
+      // $project_id = $_GET['project'];
+      $project = node_load($project_ids[0]);
       $project_wrapper = entity_metadata_wrapper('node', $project);
       $company = $project_wrapper->field_project_company->value();
       $company_wrapper = entity_metadata_wrapper('node', $company);
@@ -986,13 +988,14 @@ function qplot_progress_phase_edit_form($node) {
         $projects[] = array(
           'id' => $pid, 
           'title' => $node->title,
+          // 'checked' => in_array($pid, $project_ids),
         );
       }
 
       // finalize the common values
       $variables['values'] = array_merge($variables['values'], array(
         'projects' => $projects,
-        'project_id' => $project_id,
+        'project_ids' => $project_ids,
       ));
       $variables['form'] = array(
         'submit' => '',
@@ -1002,7 +1005,7 @@ function qplot_progress_phase_edit_form($node) {
       return theme('qplot_progress_phase_edit', $variables);
       break;
 
-    case 'Save': 
+    case 'Save':
       $edit = !empty($node);
 
       $wrapper = NULL;
@@ -1030,7 +1033,10 @@ function qplot_progress_phase_edit_form($node) {
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',
       ));
-      $node->field_phase_project['und'][0]['target_id'] = intval($_POST['project_id']);
+      $node->field_phase_project['und'] = array();
+      foreach ($_POST['project_ids'] as $value) {
+        $node->field_phase_project['und'][]['target_id'] = $value;
+      }
 
       $wrapper->save();
 

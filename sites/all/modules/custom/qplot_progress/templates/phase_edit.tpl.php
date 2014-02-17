@@ -13,7 +13,6 @@
 
             <h3> Phase <span class="semi-bold">Info</span></h3>
             <input type="hidden" name="id" value="<?php echo $values['id'] ?>" />
-            <input type="hidden" name="project_id" value="<?php echo $values['project_id'] ?>" />
 
             <!-- Phase Title -->
             <div class="form-group">
@@ -106,14 +105,15 @@
 
             <h3> Phase <span class="semi-bold">Project</span></h3>
             <div class="form-group">
-              <div class="radio radio-primary">
+              <!-- <div class="radio radio-primary"> -->
+              <div class="checkbox check-primary">
                 <?php foreach ($values['projects'] as $value): ?>
                   <?php 
                     $project_id = 'project_' . $value['id']; 
-                    $checked = ($value['id'] == $values['project_id']);
+                    $checked = in_array($value['id'], $values['project_ids']);
                   ?>
                   <div class="row-fluid">
-                    <input id="<?php echo $project_id ?>" name="project_id" type="radio" value="<?php echo $value['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
+                    <input id="<?php echo $project_id ?>" name="project_ids[]" type="checkbox" value="<?php echo $value['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
                     <label for="<?php echo $project_id ?>"><?php echo 'Project: ' . $value['title'] ?></label>
                   </div>                  
                 <?php endforeach ?>
