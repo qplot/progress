@@ -99,19 +99,6 @@ $uname = $user_fields;
     <div class="page-title">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
-
-      <ul class="breadcrumb">
-        <li>
-          <p>YOU ARE HERE</p> 
-        </li>
-        <li>
-          Project
-        </li>
-        <li>
-          <a href="#" class="active">Oncologist</a>
-        </li>
-      </ul>
-
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
