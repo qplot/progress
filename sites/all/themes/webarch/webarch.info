@@ -116,6 +116,7 @@ scripts[] = assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js
 scripts[] = assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js
 scripts[] = assets/plugins/dropzone/dropzone.min.js
 scripts[] = assets/plugins/boostrap-slider/js/bootstrap-slider.js
+scripts[] = assets/plugins/jquery-easy-pie-chart/js/jquery.easypiechart.min.js
 
 scripts[] = assets/js/form_elements.js
 scripts[] = assets/js/tabs_accordian.js
