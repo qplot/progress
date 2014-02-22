@@ -108,6 +108,12 @@ function qplot_progress_theme() {
       'variables' => array('values' => NULL),
       'template' => 'templates/phase_edit'
     ),
+
+    // COMPANY RELATED TEMPLATE
+    'qplot_progress_projects_full' => array(
+      'variables' => array('projects' => NULL),
+      'template' => 'templates/projects_full'
+    ),
   );
 }
 
@@ -163,6 +169,10 @@ function qplot_progress_block_info() {
     // Company members list in main content area
     'project_members' => array(
       'info' => ('Project Members List')
+    ),
+    // Company projects list in main content area
+    'projects_full' => array(
+      'info' => ('Company Projects List')
     ),
   );
 
@@ -663,6 +673,63 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_project_members', $variables);
+      break;
+
+    case 'projects_full': 
+      $nid = arg(1);
+      if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+
+      // find company info
+      $node = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $node);
+      $variables['company'] = array(
+        'id' => $nid,
+        'title' => $wrapper->title->value(),
+        'create_project' => url('project/new', array('query' => array_merge(
+          array(
+            'company' => $nid,
+          ), drupal_get_destination()
+        ))),
+      );
+
+      // find projects list
+      $pnids = qplot_api_find_nodes(
+        array('type' => 'project'),
+        array('field_project_company' => array(
+          'target_id', $nid, '='
+        )),
+        TRUE,
+        NULL,
+        array('property' => array(
+          'changed' => 'DESC'
+        ))
+      );
+      $variables['projects'] = array();
+      foreach ($pnids as $pid) {
+        $project = node_load($pid);
+        $project_wrapper = entity_metadata_wrapper('node', $project);
+        $body = $project_wrapper->body->value();
+
+        $variables['projects'][] = array(
+          'title' => $project_wrapper->title->value(),
+          'created' => date('F j, Y', $project_wrapper->created->value()),
+          'description' => !empty($body) ? $project_wrapper->body->summary->value() : '',
+          'progress' => $project_wrapper->field_project_progress->value(),
+          'status' => $project_wrapper->field_project_status->name->value(),
+          'capacity' => $project_wrapper->field_project_capacity->value(),
+          'edit' => url('project/' . $project_wrapper->getIdentifier() . '/edit', array(
+            'query' => array_merge(
+              array('company' => $nid),
+              drupal_get_destination()
+            )
+          )),
+          'delete' => url('node/' . $project_wrapper->getIdentifier() . '/delete', array(
+            'query' => drupal_get_destination()
+          )),
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_projects_full', $variables);
       break;
 
     default:
