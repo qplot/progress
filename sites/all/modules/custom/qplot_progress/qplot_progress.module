@@ -657,8 +657,9 @@ function qplot_progress_block_view($delta = '') {
  *   Tasks node object
  */
 function qplot_progress_update_phase_progress($node) {
+  // dsm($node);
   // find task's phase
-  $delete = empty($node->op);
+  $delete = !isset($node->is_new);
   $twrapper = entity_metadata_wrapper('node', $node);
   $tid = $twrapper->getIdentifier();
   $pid = $twrapper->field_task_phase->raw();

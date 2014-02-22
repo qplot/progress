@@ -58,9 +58,9 @@
                           <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                       </h3>
                       <p class="pull-right">
-                                <?php if ($phase['create_task']): ?>
-                                  <a href="<?php echo $phase['create_task'] ?>" class="btn btn-success btn-mini" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"></i> New Task</a>
-                                <?php endif; ?>
+                        <?php if ($phase['create_task']): ?>
+                          <a href="<?php echo $phase['create_task'] ?>" class="btn btn-success btn-mini" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"></i> New Task</a>
+                        <?php endif; ?>
                       </p>
 
                       <h5>
