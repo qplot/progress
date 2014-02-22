@@ -111,6 +111,7 @@ function qplot_phase_ctype_field_default_field_bases() {
           'project' => 'project',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,

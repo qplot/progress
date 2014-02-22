@@ -157,7 +157,7 @@ function qplot_task_ctype_field_default_field_instances() {
   $field_instances['node-task-field_task_phase'] = array(
     'bundle' => 'task',
     'default_value' => NULL,
-    'default_value_function' => 'entityreference_prepopulate_field_default_value',
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -185,12 +185,7 @@ function qplot_task_ctype_field_default_field_instances() {
     'settings' => array(
       'behaviors' => array(
         'prepopulate' => array(
-          'action' => 'hide',
-          'action_on_edit' => 1,
-          'fallback' => 'none',
-          'og_context' => 0,
-          'skip_perm' => 0,
-          'status' => 1,
+          'status' => 0,
         ),
       ),
       'user_register_form' => FALSE,
@@ -209,7 +204,7 @@ function qplot_task_ctype_field_default_field_instances() {
     'bundle' => 'task',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'e.g. 56%',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -231,6 +226,7 @@ function qplot_task_ctype_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_task_progress',
     'label' => 'Progress',
     'required' => 0,
@@ -238,7 +234,7 @@ function qplot_task_ctype_field_default_field_instances() {
       'max' => '',
       'min' => '',
       'prefix' => '',
-      'suffix' => '%',
+      'suffix' => '<span class="arrow"></span><i class="fa fa-clock-o"></i>',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -254,7 +250,7 @@ function qplot_task_ctype_field_default_field_instances() {
   $field_instances['node-task-field_task_project'] = array(
     'bundle' => 'task',
     'default_value' => NULL,
-    'default_value_function' => 'entityreference_prepopulate_field_default_value',
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -282,12 +278,7 @@ function qplot_task_ctype_field_default_field_instances() {
     'settings' => array(
       'behaviors' => array(
         'prepopulate' => array(
-          'action' => 'hide',
-          'action_on_edit' => 1,
-          'fallback' => 'none',
-          'og_context' => 0,
-          'skip_perm' => 0,
-          'status' => 1,
+          'status' => 0,
         ),
       ),
       'user_register_form' => FALSE,
@@ -302,6 +293,47 @@ function qplot_task_ctype_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-task-field_task_tag'
+  $field_instances['node-task-field_task_tag'] = array(
+    'bundle' => 'task',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_task_tag',
+    'label' => 'Tag',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 8,
     ),
   );
 
@@ -367,7 +399,9 @@ function qplot_task_ctype_field_default_field_instances() {
   t('Phase');
   t('Progress');
   t('Project');
+  t('Tag');
   t('Ticket URL');
+  t('e.g. 56%');
 
   return $field_instances;
 }

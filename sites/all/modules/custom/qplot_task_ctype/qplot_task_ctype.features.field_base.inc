@@ -94,6 +94,7 @@ function qplot_task_ctype_field_default_field_bases() {
           'view_name' => 'phases_entityreference_list',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
@@ -111,7 +112,9 @@ function qplot_task_ctype_field_default_field_bases() {
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
-    'settings' => array(),
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'number_integer',
   );
@@ -119,7 +122,7 @@ function qplot_task_ctype_field_default_field_bases() {
   // Exported field_base: 'field_task_project'
   $field_bases['field_task_project'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_task_project',
@@ -153,10 +156,46 @@ function qplot_task_ctype_field_default_field_bases() {
           'project' => 'project',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_task_tag'
+  $field_bases['field_task_tag'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_task_tag',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'task_tag',
+          'parent' => 0,
+        ),
+      ),
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_task_ticket_url'

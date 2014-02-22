@@ -72,6 +72,10 @@ function qplot_progress_theme() {
       'variables' => array('project' => NULL, 'items' => NULL),
       'template' => 'templates/project_overview'
     ),
+    'qplot_progress_project_status' => array(
+      'variables' => array('project' => NULL),
+      'template' => 'templates/project_status'
+    ),
     'qplot_progress_company_overview' => array(
       'variables' => array('company' => NULL, 'contacts' => NULL),
       'template' => 'templates/company_overview'
@@ -135,6 +139,10 @@ function qplot_progress_block_info() {
     // Project overview teaser in main content area
     'project_overview' => array(
       'info' => ('Project Overview')
+    ),
+    // Project status in main content area
+    'project_status' => array(
+      'info' => ('Project Status')
     ),
     // Company overview teaser in main content area
     'company_overview' => array(
@@ -342,6 +350,21 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_project_overview', $variables);
+      break;
+
+    case 'project_status':
+      $nid = arg(1);
+      if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+
+      $node = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $node);
+
+      $variables['project'] = array(
+        'progress' => $wrapper->field_project_progress->value(),
+        'capacity' => $wrapper->field_project_capacity->value(),
+      );
+
+      $block['content'] = theme('qplot_progress_project_status', $variables);
       break;
 
     case 'company_overview':
