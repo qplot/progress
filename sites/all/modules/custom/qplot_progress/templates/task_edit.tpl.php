@@ -78,7 +78,7 @@
               <!-- <span class="help">e.g. "Turn on or off"</span> -->
               <br />
               <div class="slide-primary controls">
-                <input type="checkbox" name="switch" class="ios" <?php echo ($values['status']) ? 'checked="checked"' : '' ?> />
+                <input type="checkbox" name="completed" class="ios" <?php echo ($values['progress'] == '100') ? 'checked="checked"' : '' ?> />
               </div>
             </div>
 

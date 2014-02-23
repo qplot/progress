@@ -3,7 +3,8 @@
 var Switch = require('ios7-switch')
         , checkbox = document.querySelector('.ios')
         , mySwitch = new Switch(checkbox);
- mySwitch.toggle();
+     var checked = checkbox.getAttribute('checked');
+    if (checked) mySwitch.toggle();
       mySwitch.el.addEventListener('click', function(e){
         e.preventDefault();
         mySwitch.toggle();
@@ -25,6 +26,9 @@ $(document).ready(function(){
   $('.slider-element').slider()
     .on('slide', function(ev) {
       $('#progress').val(ev.value);
+      if ((mySwitch.input.checked && (ev.value != 100)) || 
+        (!mySwitch.input.checked && (ev.value == 100)))
+        mySwitch.toggle();
     });
 
 	 // $('#dp5').datepicker();
