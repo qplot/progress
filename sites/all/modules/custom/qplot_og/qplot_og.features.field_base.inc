@@ -10,6 +10,36 @@
 function qplot_og_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_og_membership_title'
+  $field_bases['field_og_membership_title'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_og_membership_title',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'og_membership_request'
   $field_bases['og_membership_request'] = array(
     'active' => 1,

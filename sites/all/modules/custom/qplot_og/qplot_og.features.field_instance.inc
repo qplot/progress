@@ -10,6 +10,45 @@
 function qplot_og_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'og_membership-og_membership_type_default-field_og_membership_title'
+  $field_instances['og_membership-og_membership_type_default-field_og_membership_title'] = array(
+    'bundle' => 'og_membership_type_default',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Developer',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Position in the group',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'og_membership',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_og_membership_title',
+    'label' => 'Title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'og_membership-og_membership_type_default-og_membership_request'
   $field_instances['og_membership-og_membership_type_default-og_membership_request'] = array(
     'bundle' => 'og_membership_type_default',
@@ -99,8 +138,10 @@ function qplot_og_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Group membership');
+  t('Position in the group');
   t('Request message');
   t('This is the text a user may send to the group administrators.');
+  t('Title');
 
   return $field_instances;
 }
