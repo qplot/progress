@@ -1,0 +1,12 @@
+name = Path Breadcrumbs
+description = Store breadcrumbs for all pages
+core = 7.x
+package = QPLOT
+version = 7.x-1.0
+project = qplot_path_breadcrumbs
+dependencies[] = ctools
+dependencies[] = path_breadcrumbs
+features[ctools][] = path_breadcrumbs:path_breadcrumbs:1
+features[features_api][] = api:2
+features[path_breadcrumbs][] = company
+features[path_breadcrumbs][] = project

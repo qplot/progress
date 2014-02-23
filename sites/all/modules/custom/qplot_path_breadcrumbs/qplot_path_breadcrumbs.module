@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Path Breadcrumbs feature.
+ */
+
+include_once 'qplot_path_breadcrumbs.features.inc';
