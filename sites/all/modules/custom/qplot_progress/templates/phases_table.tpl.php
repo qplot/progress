@@ -2,7 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
-  dsm($projects);
+  // dsm($projects);
 ?>
 
 <?php foreach ($projects as $project): ?>

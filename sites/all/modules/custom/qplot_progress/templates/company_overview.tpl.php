@@ -8,7 +8,7 @@
 
 <div class="row spacing-bottom">
   <div class="col-md-12 white col-sm-6">
-    <div class="tiles purple added-margin" style="max-height:345px">
+    <div class="tiles purple added-margin" style="">
       <div class="tiles-body">
         <div class="controller">
           <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
