@@ -84,6 +84,10 @@ function qplot_progress_theme() {
       'variables' => array('phases' => NULL),
       'template' => 'templates/phases_full'
     ),
+    'qplot_progress_phases_table' => array(
+      'variables' => array('phases' => NULL),
+      'template' => 'templates/phases_table'
+    ),
     'qplot_progress_tasks_table' => array(
       'variables' => array('tasks' => NULL),
       'template' => 'templates/tasks_table'
@@ -157,6 +161,10 @@ function qplot_progress_block_info() {
     // Phases tab full in main content area
     'phases_full' => array(
       'info' => ('Phases Tab Listing')
+    ),
+    // Phases table in main content area
+    'phases_table' => array(
+      'info' => ('Phases Table')
     ),
     // Tasks table of specific phase
     'tasks_table' => array(
@@ -547,6 +555,81 @@ function qplot_progress_block_view($delta = '') {
       $block['content'] = theme('qplot_progress_phases_full', $variables);
       break;
 
+    case 'phases_table':
+      $nid = arg(1);
+      if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+
+      // find projects list
+      $pnids = qplot_api_find_nodes(
+        array('type' => 'project'),
+        array('field_project_company' => array(
+          'target_id', $nid, '='
+        )),
+        TRUE,
+        NULL,
+        array('property' => array(
+          'changed' => 'DESC'
+        ))
+      );
+      $variables['projects'] = array();
+      foreach ($pnids as $pid) {
+        // get project info
+        $project = node_load($pid);
+        $project_wrapper = entity_metadata_wrapper('node', $project);
+        
+        // find phases list
+        $phnids = qplot_api_find_nodes(
+          array('type' => 'phase'),
+          array('field_phase_project' => array(
+            'target_id', $pid, '='
+          )),
+          TRUE,
+          NULL,
+          array('property' => array(
+            'changed' => 'DESC'
+          ))
+        );
+
+        $phases = array();
+        foreach ($phnids as $phid) {
+          $phase = node_load($phid);
+          $phase_wrapper = entity_metadata_wrapper('node', $phase);
+          $duration = $phase_wrapper->field_phase_durating->value();
+          $from = new DateTime($duration['value']);
+          $to = new DateTime($duration['value2']);
+
+          $phases[] = array(
+            'title' => $phase_wrapper->title->value(),
+            'progress' => $phase_wrapper->field_phase_progress->value(),
+            'from' => $from->format('H j'),
+            'to' => $to->format('F j'),
+            'hours' => $phase_wrapper->field_phase_hours->value(),
+            'edit' => url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
+              'query' => array_merge(
+                array('project' => $pid),
+                drupal_get_destination()
+              )
+            )),
+            'delete' => url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
+              'query' => drupal_get_destination()
+            )),
+          );
+        }
+        $variables['projects'][] = array(
+          'id' => $pid,
+          'title' => $project_wrapper->title->value(),
+          'phases' => $phases,
+          'create_phase' => url('phase/new', array('query' => array_merge(
+            array(
+              'project' => $pid,
+            ), drupal_get_destination()
+          ))),
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_phases_table', $variables);
+      break;
+
     case 'tasks_table':
       // find tasks of one phase for now
       $variables['tasks'] = array();
@@ -717,6 +800,7 @@ function qplot_progress_block_view($delta = '') {
           'progress' => $project_wrapper->field_project_progress->value(),
           'status' => $project_wrapper->field_project_status->name->value(),
           'capacity' => $project_wrapper->field_project_capacity->value(),
+          'view' => url('project/' . $project_wrapper->getIdentifier()),
           'edit' => url('project/' . $project_wrapper->getIdentifier() . '/edit', array(
             'query' => array_merge(
               array('company' => $nid),
@@ -1006,7 +1090,7 @@ function qplot_progress_task_edit_form($node) {
 /**
  * Custom edit page for task
  */
-function qplot_progress_phase_edit_form($node) {  
+function qplot_progress_phase_edit_form($node) {
   // dsm($_POST);
   $op = 'View';
   if (!empty($_POST['op'])) {
