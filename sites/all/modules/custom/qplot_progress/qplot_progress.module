@@ -676,26 +676,16 @@ function qplot_progress_block_view($delta = '') {
       $icon = $cwrapper->field_company_icon->value();
 
       // find members list
-      // $uids = qplot_api_find_nodes(
-      //   NULL,
-      //   array('og_user_node' => array(
-      //     'target_id', $cwrapper->getIdentifier(), '='
-      //   )),
-      //   TRUE,
-      //   array('entity_type' => 'user')
-      // );
-      $mids = qplot_api_find_nodes(
-        array('gid' => $nid),
+      $uids = qplot_api_find_nodes(
         NULL,
+        array('og_user_node' => array(
+          'target_id', $cwrapper->getIdentifier(), '='
+        )),
         TRUE,
-        array('entity_type' => 'og_membership')
+        array('entity_type' => 'user')
       );
       $variables['members'] = array();
-      foreach ($mids as $mid) {
-        $membership = og_membership_load($mid);
-        $member_wrapper = entity_metadata_wrapper('og_membership', $membership);
-        $uid = $membership->etid;
-        
+      foreach ($uids as $uid) {
         $profile = profile2_load_by_user($uid);
         // dsm($profile);
         $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
@@ -705,8 +695,7 @@ function qplot_progress_block_view($delta = '') {
           'id' => $uid,
           'first' => $wrapper->field_profile_first->value(),
           'last' => $wrapper->field_profile_last->value(),
-          // 'title' => $wrapper->field_profile_title->value(),
-          'title' => $member_wrapper->field_og_membership_title->value(),
+          'title' => $wrapper->field_profile_title->value(),
           'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
           'icon' => !empty($icon) ? $cwrapper->field_company_icon->file->url->value() : '',
         );
@@ -724,19 +713,22 @@ function qplot_progress_block_view($delta = '') {
         'invite' => url("group/node/$nid/admin/people/add-user", array(
           'query' => drupal_get_destination()
         )),
+        'manage' => url("group/node/$nid/admin/people"),
       );
 
       // find members list
-      $uids = qplot_api_find_nodes(
+      $mids = qplot_api_find_nodes(
+        array('gid' => $nid),
         NULL,
-        array('og_user_node' => array(
-          'target_id', $nid, '='
-        )),
         TRUE,
-        array('entity_type' => 'user')
+        array('entity_type' => 'og_membership')
       );
       $variables['members'] = array();
-      foreach ($uids as $uid) {
+      foreach ($mids as $mid) {
+        $membership = og_membership_load($mid);
+        $member_wrapper = entity_metadata_wrapper('og_membership', $membership);
+        $uid = $membership->etid;
+
         $profile = profile2_load_by_user($uid);
         // dsm($profile);
         $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
@@ -746,7 +738,7 @@ function qplot_progress_block_view($delta = '') {
           'id' => $uid,
           'first' => $wrapper->field_profile_first->value(),
           'last' => $wrapper->field_profile_last->value(),
-          'title' => $wrapper->field_profile_title->value(),
+          'title' => $member_wrapper->field_og_membership_title->value(),
           'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
           'companies' => array(),
         );

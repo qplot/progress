@@ -42,7 +42,10 @@
           </div>
         <?php endforeach ?>
         <?php if (!empty($project['invite'])): ?>
-          <a href="<?php echo $project['invite'] ?>" class="btn btn-mini pull-right"><i class="fa fa-user"></i> add member</a>
+          <div class="pull-right">
+            <a href="<?php echo $project['invite'] ?>" class="btn btn-mini"><i class="fa fa-user"></i> add member</a>
+            <a href="<?php echo $project['manage'] ?>" class="btn btn-mini"><i class="fa fa-gear"></i> </a>
+          </div>
         <?php endif ?>
         <br>
       </div>
