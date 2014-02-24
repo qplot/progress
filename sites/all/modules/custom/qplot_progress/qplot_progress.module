@@ -330,10 +330,11 @@ function qplot_progress_block_view($delta = '') {
       // find project info
       $wrapper = entity_metadata_wrapper('node', $node);
       $body = $wrapper->body->value();
+      $photo = $wrapper->field_project_photo->value();
 
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
-        'photo' => ($wrapper->field_project_photo->value()) ? $wrapper->field_project_photo->file->url->value() : '',
+        'photo' => !empty($photo) ? $wrapper->field_project_photo->file->url->value() : '',
         'icon' => $wrapper->field_project_icon->name->value(),
         'description' => !empty($body) ? $wrapper->body->summary->value() : '',
         'progress' => $wrapper->field_project_progress->value(),
