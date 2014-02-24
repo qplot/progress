@@ -118,6 +118,12 @@ function qplot_progress_theme() {
       'variables' => array('projects' => NULL),
       'template' => 'templates/projects_full'
     ),
+
+    // PROJECT CONTENT RELATED TEMPLATE
+    'qplot_progress_content_list' => array(
+      'variables' => array('content' => NULL),
+      'template' => 'templates/project_content_list'
+    ),
   );
 }
 
@@ -181,6 +187,10 @@ function qplot_progress_block_info() {
     // Company projects list in main content area
     'projects_full' => array(
       'info' => ('Company Projects List')
+    ),
+    // Project content list in main content area
+    'content_list' => array(
+      'info' => ('Project Content List')
     ),
   );
 
@@ -821,6 +831,32 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_projects_full', $variables);
+      break;
+
+    case 'content_list':
+      // get list of terms from content dictionary
+      $vid = taxonomy_vocabulary_machine_name_load('project_content')->vid;
+      $tree = taxonomy_get_tree($vid);
+
+      $variables['content'] = array();
+      foreach ($tree as $term) {
+        $variables['content'][] = array(
+          'title' => $term->name,
+        );
+      }
+
+      $vid = taxonomy_vocabulary_machine_name_load('project_page')->vid;
+      $tree = taxonomy_get_tree($vid);
+      $variables['pages'] = array();
+      foreach ($tree as $term) {
+        if ($term->depth == 0) {
+          $variables['pages'][] = array(
+            'title' => $term->name,
+          );
+        }
+      }
+
+      $block['content'] = theme('qplot_progress_content_list', $variables);
       break;
 
     default:
