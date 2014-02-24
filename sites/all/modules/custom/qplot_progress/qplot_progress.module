@@ -604,6 +604,7 @@ function qplot_progress_block_view($delta = '') {
             'from' => $from->format('H j'),
             'to' => $to->format('F j'),
             'hours' => $phase_wrapper->field_phase_hours->value(),
+            'view' => url('project/' . $pid),
             'edit' => url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
               'query' => array_merge(
                 array('project' => $pid),
@@ -618,6 +619,7 @@ function qplot_progress_block_view($delta = '') {
         $variables['projects'][] = array(
           'id' => $pid,
           'title' => $project_wrapper->title->value(),
+          'icon' => $project_wrapper->field_project_icon->name->value(),
           'phases' => $phases,
           'create_phase' => url('phase/new', array('query' => array_merge(
             array(
@@ -807,6 +809,7 @@ function qplot_progress_block_view($delta = '') {
         $variables['projects'][] = array(
           'title' => $project_wrapper->title->value(),
           'created' => date('F j, Y', $project_wrapper->created->value()),
+          'icon' => $project_wrapper->field_project_icon->name->value(),
           'description' => !empty($body) ? $project_wrapper->body->summary->value() : '',
           'progress' => $project_wrapper->field_project_progress->value(),
           'status' => $project_wrapper->field_project_status->name->value(),

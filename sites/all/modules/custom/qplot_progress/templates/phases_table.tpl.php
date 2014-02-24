@@ -11,7 +11,7 @@
       <div class="col-md-12">
         <div class="grid simple ">
           <div class="grid-title no-border">
-            <h4> Project: <span class="semi-bold"><?php echo $project['title'] ?></span></h4>
+            <h4> <i class="fa fa-<?=$project['icon'] ?>"></i><span class="semi-bold"><?php echo $project['title'] ?></span></h4>
             <div class="tools"> 
               <a href="javascript:;" class="collapse"></a>
               <a href="#grid-config" data-toggle="modal" class="config"></a>
@@ -38,7 +38,7 @@
                 <?php foreach ($project['phases'] as $value): ?>                
                 <tr>
                   <td>1</td>
-                  <td><?php echo $value['title'] ?></td>
+                  <td><a href="<?php echo $value['view'] ?>"><?php echo $value['title'] ?></a></td>
                   <td><?php echo $value['to'] ?></td>
                   <td><?php echo $value['hours'] ?> hrs</td>
                   <td class="v-align-middle">

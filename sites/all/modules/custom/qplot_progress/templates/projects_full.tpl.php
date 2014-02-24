@@ -40,7 +40,8 @@
         <hr />        
         <div class="row">
           <div class="col-md-4">
-            <h3><a href="<?php echo $value['view'] ?>"><?php echo $value['title'] ?></a></h3>
+            <h3><i class="fa fa-<?=$value['icon'] ?>"></i> <a href="<?php echo $value['view'] ?>"> <?php echo $value['title'] ?></a></h3>
+
             <p><?php echo $value['created'] ?></p>
             <p><?php echo $value['description'] ?></p>
             <p>
