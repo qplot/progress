@@ -834,26 +834,25 @@ function qplot_progress_block_view($delta = '') {
       break;
 
     case 'content_list':
-      // get list of terms from content dictionary
-      $vid = taxonomy_vocabulary_machine_name_load('project_content')->vid;
-      $tree = taxonomy_get_tree($vid);
+      $nid = arg(1);
+      if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+
+      // find project info
+      $node = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $node);
 
       $variables['content'] = array();
-      foreach ($tree as $term) {
+      foreach ($wrapper->field_project_content->getIterator() as $term) {
         $variables['content'][] = array(
-          'title' => $term->name,
+          'title' => $term->name->value()
         );
       }
 
-      $vid = taxonomy_vocabulary_machine_name_load('project_page')->vid;
-      $tree = taxonomy_get_tree($vid);
       $variables['pages'] = array();
-      foreach ($tree as $term) {
-        if ($term->depth == 0) {
-          $variables['pages'][] = array(
-            'title' => $term->name,
-          );
-        }
+      foreach ($wrapper->field_project_pages->getIterator() as $term) {
+        $variables['pages'][] = array(
+          'title' => $term->name->value(),
+        );
       }
 
       $block['content'] = theme('qplot_progress_content_list', $variables);
