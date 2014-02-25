@@ -256,7 +256,7 @@ function qplot_project_page_default_page_manager_pages() {
     $pane->pid = 'new-6';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'qplot_progress-project_members';
+    $pane->subtype = 'qplot_progress-content_list';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -273,6 +273,27 @@ function qplot_project_page_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-6'] = $pane;
     $display->panels['right'][3] = 'new-6';
+    $pane = new stdClass();
+    $pane->pid = 'new-7';
+    $pane->panel = 'right';
+    $pane->type = 'block';
+    $pane->subtype = 'qplot_progress-project_members';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $display->content['new-7'] = $pane;
+    $display->panels['right'][4] = 'new-7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
