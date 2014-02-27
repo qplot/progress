@@ -35,6 +35,20 @@ function qplot_progress_menu() {
     'description' => 'edit phase.',
     'access callback' => TRUE,
   );
+  $items['project/new'] = array(
+    'title' => 'Add Project',
+    'page callback' => 'qplot_progress_project_edit_form',
+    'page arguments' => array(NULL),
+    'description' => 'add project.',
+    'access callback' => TRUE,    
+  );
+  $items['project/%node/edit'] = array(
+    'title' => 'Edit Project',
+    'page callback' => 'qplot_progress_project_edit_form',
+    'page arguments' => array(1),
+    'description' => 'edit project.',
+    'access callback' => TRUE,
+  );  
 
   return $items;
 }
@@ -123,6 +137,10 @@ function qplot_progress_theme() {
     'qplot_progress_content_list' => array(
       'variables' => array('content' => NULL),
       'template' => 'templates/project_content_list'
+    ),
+    'qplot_progress_project_edit' => array(
+      'variables' => array('values' => NULL),
+      'template' => 'templates/project_edit'
     ),
   );
 }
@@ -837,23 +855,49 @@ function qplot_progress_block_view($delta = '') {
       $nid = arg(1);
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
-      // find project info
-      $node = node_load($nid);
-      $wrapper = entity_metadata_wrapper('node', $node);
+      // find contents
+      $ids = qplot_api_find_nodes(
+        array('type' => 'content'),
+        array('field_content_project' => array(
+          'target_id', $nid, '='
+        )),
+        TRUE,
+        NULL,
+        array('property' => array(
+          'created' => 'ASC'
+        ))
+      );
 
       $variables['content'] = array();
-      foreach ($wrapper->field_project_content->getIterator() as $term) {
+      foreach ($ids as $id) {
+        $node = node_load($id);
         $variables['content'][] = array(
-          'title' => $term->name->value()
+          'title' => $node->title,
+          'edit' => url('node/' . $id . '/edit', array(
+            'query' => array_merge(
+              array('field_content_project' => $id),
+              drupal_get_destination()
+            )
+          )),          
         );
       }
 
+      $project = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $project);
       $variables['pages'] = array();
       foreach ($wrapper->field_project_pages->getIterator() as $term) {
         $variables['pages'][] = array(
           'title' => $term->name->value(),
         );
       }
+
+      $variables['project'] = array(
+        'create_content' => url('node/add/content', array('query' => array_merge(
+          array(
+            'field_content_project' => $nid,
+          ), drupal_get_destination()
+        ))),
+      );
 
       $block['content'] = theme('qplot_progress_content_list', $variables);
       break;
@@ -1131,7 +1175,7 @@ function qplot_progress_task_edit_form($node) {
 }
 
 /**
- * Custom edit page for task
+ * Custom edit page for phase
  */
 function qplot_progress_phase_edit_form($node) {
   // dsm($_POST);
@@ -1255,6 +1299,145 @@ function qplot_progress_phase_edit_form($node) {
       foreach ($_POST['project_ids'] as $value) {
         $node->field_phase_project['und'][]['target_id'] = $value;
       }
+
+      $wrapper->save();
+
+      if (!empty($_POST['destination'])) {
+        drupal_set_message('phase: ' . $_POST['title'] . ' saved');
+        drupal_goto($_POST['destination']);
+      } else {
+        return 'submitted';
+      }
+      break;
+    
+    case 'Cancel':
+    default:
+      if (!empty($_POST['destination'])) {
+        drupal_goto($_POST['destination']);
+      }
+      break;
+  }
+}
+
+/**
+ * Custom edit page for project
+ */
+function qplot_progress_project_edit_form($node) {
+  dsm($_POST);
+  $op = 'View';
+  if (!empty($_POST['op'])) {
+    $op = $_POST['op'];
+  }
+  switch ($op) {
+    case 'View':
+      $edit = !empty($node);
+
+      // initial data
+      $variables['values'] = array(
+        'id' => 0,
+        'title' => '',
+        'caption' => '',
+        'url' => '',
+        'capacity' => '0',
+        'description' => '',
+        'status' => TRUE,
+        'progress' => 0,
+        'icon' => '',
+        'photo' => '',
+        'content' => array(),
+        'pages' => array(),
+      );
+
+      // go through each field and sort out the value based on new or edit
+      if ($edit) {
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $body = $wrapper->body->value();
+        $url = $wrapper->field_project_url->value();
+        $icon = $wrapper->field_project_icon->value();
+        $photo = $wrapper->field_project_photo->value();
+
+        $variables['values'] = array(
+          'id' => $wrapper->getIdentifier(),
+          'title' => $wrapper->title->value(),
+          'caption' => !empty($url) ? $url['title'] : '',
+          'url' => !empty($url) ? $url['url'] : '',
+          'icon' => !empty($icon) ? (array)$icon : array(),
+          'progress' => $wrapper->field_project_progress->value(),
+          'capacity' => $wrapper->field_project_capacity->value(),
+          'description' => !empty($body) ? $wrapper->body->value->value() : '',
+          'photo' => !empty($photo) ? file_create_url($photo['uri']) : '',
+          'status' => TRUE,
+        ); 
+      } else {
+        // $project_ids = array($_GET['project']);
+      }
+
+      // get a list of all icon 
+      $vid = taxonomy_vocabulary_machine_name_load('icons')->vid;
+      $tree = taxonomy_get_tree($vid);
+      $variables['icons'] = array();
+      foreach ($tree as $value) {
+        $variables['icons'][] = array(
+          'id' => $value->tid,
+          'name' => $value->name,
+        );
+      }
+
+      // get the list of content
+      $ids = qplot_api_find_nodes2(
+        array(
+          'type' => 'content',
+          'field_content_project' => array('target_id', $wrapper->getIdentifier(), '='),
+        ),
+        array(
+          'created' => 'ASC'
+        ),
+        TRUE
+      );
+
+      $variables['content'] = array();
+      foreach ($ids as $id) {
+        $content = node_load($id);
+        $variables['content'][] = $content->title;
+      }
+
+      // finalize the common values
+      $variables['values'] = array_merge($variables['values'], array(
+        // 'projects' => $projects,
+        // 'project_ids' => $project_ids,
+      ));
+      $variables['form'] = array(
+        'submit' => '',
+        'destination' => $_GET['destination'],
+      );
+
+      return theme('qplot_progress_project_edit', $variables);
+      break;
+
+    case 'Save':
+      $edit = !empty($node);
+
+      $wrapper = NULL;
+      if (!$edit) {
+        $node = entity_create('node', array('type' => 'project'));
+        $wrapper = entity_metadata_wrapper('node', $node);
+        global $user;
+        $node->uid = $user->uid;
+      } else {
+        $wrapper = entity_metadata_wrapper('node', $node);
+      }
+      $wrapper->title->set($_POST['title']);
+      $wrapper->field_project_progress->set($_POST['progress']);
+      $wrapper->field_project_capacity->set($_POST['capacity']);
+      $wrapper->body->set(array(
+        'value' => htmlspecialchars($_POST['description']),
+        'format' => 'filtered_html',
+      ));
+      $wrapper->field_project_url->set(array(
+        'title' => $_POST['caption'],
+        'url' => $_POST['url'],
+      ));
+      $wrapper->field_project_icon->set($_POST['icon']);
 
       $wrapper->save();
 

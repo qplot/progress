@@ -16,12 +16,14 @@
           Project Content
         </div>
         <div class="grid-body no-border">
+          <a href="<?php echo $project['create_content'] ?>" class="btn btn-mini pull-right"><i class="fa fa-plus"></i></a>
           <h4>Major <span class="semi-bold">Content</span></h4>
+          <div class="clearfix"></div>
           <?php if (empty($content)): ?>
             <p>No content has been assigned for this project.</p>
           <?php endif; ?>
           <?php foreach ($content as $value): ?>
-            <span class=""><a href="" class="btn btn-mini btn-white" style="margin: 2px"><?php echo $value['title'] ?></a></span>
+            <span class=""><a href="<?php echo $value['edit'] ?>" class="btn btn-mini btn-white" style="margin: 2px"><?php echo $value['title'] ?></a></span>
           <?php endforeach ?>
           <h4>Site <span class="semi-bold">Pages</span></h4>
           <?php if (empty($pages)): ?>

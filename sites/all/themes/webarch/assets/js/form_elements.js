@@ -10,12 +10,23 @@ var Switch = require('ios7-switch')
         mySwitch.toggle();
       }, false);
 	  
+function format(state) {
+  if (!state.id) return state.text;
+  return "<i class='fa fa-" + state.text.toLowerCase() + "'></i> " + state.text;
+}
+
 $(document).ready(function(){
 	  //Dropdown menu - select2 plug-in
 	  // $("#source").select2();
 	  
 	  //Multiselect - Select2 plug-in
 	  // $("#multi").val(["Jim","Lucy"]).select2();
+
+    $("#icon-select").select2({
+      formatResult: format,
+      formatSelection: format,
+      escapeMarkup: function(m) { return m; }
+    });
 	  
 	  //Date Pickers
 	  $('.input-append.date').datepicker({
