@@ -489,12 +489,13 @@ function qplot_progress_block_view($delta = '') {
       foreach ($pnids as $pid) {
         $phase = node_load($pid);
         $phase_wrapper = entity_metadata_wrapper('node', $phase);
+        $body = $phase_wrapper->body->value();
         $duration = $phase_wrapper->field_phase_durating->value();
         $from = new DateTime($duration['value']);
         $to = new DateTime($duration['value2']);
         $phase_item = array(
           'title' => $phase_wrapper->title->value(),
-          'description' => ($phase_wrapper->body->raw()) ? $phase_wrapper->body->value->value() : '',
+          'description' => !empty($body) ? htmlspecialchars_decode($body['value']) : '',
           'from' => $from->format('m/d/Y'),
           'to' => $to->format('m/d/Y'),
           'hours' => $phase_wrapper->field_phase_hours->value(),

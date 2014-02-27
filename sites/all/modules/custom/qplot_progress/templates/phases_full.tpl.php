@@ -1,8 +1,5 @@
 <?php
-	global $base_url;
-	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
-
-  // dsm($phases);
+  dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
