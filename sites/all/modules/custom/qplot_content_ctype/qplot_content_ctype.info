@@ -1,0 +1,17 @@
+name = Content Content Type
+description = QPLOT Progress Content Type
+core = 7.x
+package = QPLOT
+version = 7.x-1.0
+project = qplot_content_ctype
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = qplot_project_ctype
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_content_belongto
+features[field_base][] = field_content_project
+features[field_instance][] = node-content-body
+features[field_instance][] = node-content-field_content_belongto
+features[field_instance][] = node-content-field_content_project
+features[node][] = content
