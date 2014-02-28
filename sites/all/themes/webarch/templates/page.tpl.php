@@ -1,8 +1,3 @@
-<?php
-global $user;
-$user_fields = user_load($user->uid)->name;
-$uname = $user_fields;
-?>
 <!-- BEGIN HEADER -->
 <div class="header navbar navbar-inverse ">
   <!-- BEGIN TOP NAVIGATION BAR -->
@@ -34,10 +29,12 @@ $uname = $user_fields;
    <!-- BEGIN CHAT TOGGLER -->
     <div class="pull-right">
       <div class="chat-toggler">
+        <?php if ($user): ?>
         <a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Notifications">
           <div class="user-details">
             <div class="username">
-              <?=$uname;?> <span class="bold"></span>
+              <?php echo $user['first'] ?>
+              <span class="bold"><?php echo $user['last'] ?></span>                
             </div>
           </div>
           <div class="iconset top-down-arrow"></div>
@@ -46,11 +43,10 @@ $uname = $user_fields;
           <div style="width:300px">
           </div>
         </div>
-        <?php if(!empty($uname)): ?>
-          <div class="profile-pic">
-            <img src="<?=$path?>assets/img/profiles/avatar_small.jpg"  alt="" data-src="<?=$path?>assets/img/profiles/avatar_small.jpg" data-src-retina="<?=$path?>assets/img/profiles/avatar_small2x.jpg" width="35" height="35" />
-          </div>
-        <?php endif; ?>
+        <div class="profile-pic">
+          <img src="<?php echo $user['photo'] ?>"  alt="" width="35" height="35" />
+        </div>
+        <?php endif ?>
       </div>
       <ul class="nav quick-section ">
         <li class="quicklinks">

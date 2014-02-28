@@ -74,7 +74,9 @@ function zen_progress_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function webarch_preprocess_page(&$variables, $hook) {
-  $variables['path'] = base_path().drupal_get_path('theme', 'webarch').'/';
+  $variables['path'] = base_path().drupal_get_path('theme', 'webarch').'/';  
+  global $user;
+  $variables['user'] = qplot_progress_user_profile($user);
   // $variables['breadcrumbs'] = array('12','23');
 }
 

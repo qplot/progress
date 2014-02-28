@@ -984,6 +984,29 @@ function qplot_progress_update_project_progress($node) {
 }
 
 /**
+ * Get user profile
+ */
+function qplot_progress_user_profile($user) {
+  if ($user->uid) {
+    $profile = profile2_load_by_user($user->uid);
+    $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
+    $photo = $wrapper->field_profile_photo->value();
+    
+    return array(
+      'id' => $user->uid,
+      'name' => $user->name,
+      'roles' => $user->roles,
+      'first' => $wrapper->field_profile_first->value(),
+      'last' => $wrapper->field_profile_last->value(),
+      'title' => $wrapper->field_profile_title->value(),
+      'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
+    );
+  } else {
+    return '';
+  }
+}
+
+/**
  * Update views structure
  */
 function qplot_progress_views_pre_build(&$view) {
