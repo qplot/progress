@@ -54,11 +54,8 @@
             <div class="iconset top-settings-dark "></div>
           </a>
           <ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
-            <li><a href="user"> My Account</a></li>
-            <li><a href="calender.html">My Calendar</a></li>
-            <li><a href="email.html"> My Inbox&nbsp;&nbsp;<span class="badge badge-important animated bounceIn"></span></a></li>
-            <li class="divider"></li>
-            <li><a href="user/logout"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+            <!-- <li class="divider"></li> -->
+            <li><a href="<?php echo $user['logout'] ?>"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
           </ul>
         </li>
         <li class="quicklinks"> <span class="h-seperate"></span></li>
