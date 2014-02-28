@@ -2,7 +2,24 @@
 <div class="header navbar navbar-inverse ">
   <!-- BEGIN TOP NAVIGATION BAR -->
   <div class="navbar-inner">
-    <?php echo theme('qplot_progress_logo_area'); ?>
+
+    <div class="header-seperation"> 
+      <ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">  
+        <li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>     
+      </ul>
+      <!-- BEGIN LOGO --> 
+      <?php if ($logo): ?>
+         <a href="<?php print $GLOBALS['base_path'] ?>" title="HOME" rel="home"><img src="<?php print $logo; ?>" alt="HOME" class="logo" /></a>
+      <?php endif; ?>      
+      <!-- END LOGO --> 
+      <ul class="nav pull-right notifcation-center">  
+        <li class="dropdown" id="header_task_bar"> <a href="<?php print $front_page; ?>" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+        <li class="dropdown" id="header_inbox_bar" > <a href="email.html" class="dropdown-toggle" > <div class="iconset top-messages"></div>  <span class="badge" id="msgs-badge"></span> </a></li>
+        <li class="dropdown" id="portrait-chat-toggler" style="display:none"> <a href="#sidr" class="chat-menu-toggle"> <div class="iconset top-chat-white "></div> </a> </li>        
+      </ul>
+    </div>
+
+
     <div class="header-quick-nav" >
       <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="pull-left">
@@ -76,6 +93,26 @@
 <div class="page-container row-fluid">
   <!-- BEGIN SIDEBAR -->
   <div class="page-sidebar" id="main-menu">
+
+    <!-- USER TEASER -->
+    <div class="user-info-wrapper">
+      <div class="profile-wrapper">
+        <img src="<?php echo $user['photo'] ?>" alt="" data-src="<?php echo $user['photo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69">
+      </div>
+      <div class="user-info">
+        <div class="greeting">
+          Welcome
+        </div>
+        <div class="username">
+          <?php echo $user['first'] ?> <span class="semi-bold"><?php echo $user['last'] ?></span>
+        </div>
+        <div class="status">
+          Status<a href="#"></a>
+          <div class="status-icon green"></div><?php echo $user['status'] ?>
+        </div>
+      </div>
+    </div>
+
     <?php print render($page['sidebar_first']); ?>
   </div>
   <div class="footer-widget">

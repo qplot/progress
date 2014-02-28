@@ -69,10 +69,6 @@ function qplot_progress_theme() {
       'variables' => array('messages' => NULL),
       'template' => 'templates/status_messages'
     ),
-    'qplot_progress_logo_area' => array(
-      'variables' => array(),
-      'template' => 'templates/logo_area'
-    ),
     'qplot_progress_user_teaser' => array(
       'variables' => array('user' => NULL),
       'template' => 'templates/user_teaser'
@@ -160,14 +156,10 @@ function qplot_progress_block_info() {
     'frontpage' => array(
       'info' => 'Front Page'
     ),
-    // QPlot Company logo area
-    'logo_area' => array(
-      'info' => ('Logo Area')
-    ),
     // User mini teaser in sidebar menu area
-    'user_teaser' => array(
-      'info' => ('User Teaser')
-    ),
+    // 'user_teaser' => array(
+    //   'info' => ('User Teaser')
+    // ),
     // Company mini teaser in sidebar menu area
     'company_teaser' => array(
       'info' => ('Company Teaser')
@@ -237,47 +229,9 @@ function qplot_progress_block_view($delta = '') {
     case 'frontpage':
       $block['content'] = theme('qplot_progress_frontpage');
       break;
-    case 'logo_area':
-      $block['content'] = theme('qplot_progress_logo_area');
-      break;
-    case 'user_teaser':
-      if (empty($user->uid)) return;
-      // find user info
-      // $uid = qplot_api_find_nodes(
-      //   array('type' => 'contact'),
-      //   array('field_contact_user' => array(
-      //     'target_id', $user->uid, '='
-      //   ))
-      // );
-      // $node = node_load($uid);
-      // $wrapper = entity_metadata_wrapper('node', $node);
-      // $name = $wrapper->title->value();
-      // $splits = explode(" ", $name);
-      // $photo = $wrapper->field_contact_photo->value();
-
-      // $variables['user'] = array(
-      //   'first' => (count($splits) >= 1) ? $splits[0] : '',
-      //   'last' => (count($splits) >= 2) ? $splits[1] : '',
-      //   'photo' => !empty($photo) ? $wrapper->field_contact_photo->file->url->value() : '',
-      //   'status' => 'Online',
-      // );
-
-      // Switch to use profile2 instead
-      $profile = profile2_load_by_user($user->uid);
-      $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
-      $photo = $wrapper->field_profile_photo->value();
-
-      $variables['user'] = array(
-        'id' => $user->uid,
-        'first' => $wrapper->field_profile_first->value(),
-        'last' => $wrapper->field_profile_last->value(),
-        // 'title' => $wrapper->field_profile_title->value(),
-        'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
-        'status' => 'Online',
-      );
-
-      $block['content'] = theme('qplot_progress_user_teaser', $variables);
-      break;
+    // case 'logo_area':
+    //   $block['content'] = theme('qplot_progress_logo_area');
+    //   break;
 
     case 'company_teaser':
       // find company info and asoociated properties
