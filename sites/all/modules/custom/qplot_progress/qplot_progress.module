@@ -63,6 +63,10 @@ function qplot_progress_theme() {
       'variables' => array(),
       'template' => 'templates/frontpage'
     ),
+    'qplot_progress_main_menu' => array(
+      'variables' => array('menu' => NULL),
+      'template' => 'templates/main_menu'
+    ),
 
     // 
     'qplot_progress_status_messages' => array(
@@ -156,6 +160,9 @@ function qplot_progress_block_info() {
     'frontpage' => array(
       'info' => 'Front Page'
     ),
+    'main_menu' => array(
+      'info' => 'Client Menu'
+    ),
     // User mini teaser in sidebar menu area
     // 'user_teaser' => array(
     //   'info' => ('User Teaser')
@@ -232,6 +239,22 @@ function qplot_progress_block_view($delta = '') {
     // case 'logo_area':
     //   $block['content'] = theme('qplot_progress_logo_area');
     //   break;
+
+    case 'main_menu':
+      global $user;
+      $profile = qplot_progress_user_profile($user->uid);
+
+      $variables['menu'] = array(
+        'home' => url(''),
+        'user' => $profile,
+      );
+
+      if ($profile) {
+        $variables['menu']['logout'] = $profile['logout'];
+      }
+
+      $block['content'] = theme('qplot_progress_main_menu', $variables);
+      break;
 
     case 'company_teaser':
       // find company info and asoociated properties
@@ -953,12 +976,44 @@ function qplot_progress_update_project_progress($node) {
 /**
  * Get user profile
  */
-function qplot_progress_user_profile($user) {
-  if ($user->uid) {
-    $profile = profile2_load_by_user($user->uid);
+function qplot_progress_user_profile($uid) {
+  if ($uid) { 
+    $user = user_load($uid);
+    $uwrapper = entity_metadata_wrapper('user', $user);
+
+    // get profile info
+    $profile = profile2_load_by_user(intval($uid));
     $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
     $photo = $wrapper->field_profile_photo->value();
-    
+
+    // get company info
+    $company = array();
+    $project = array();
+    foreach ($uwrapper->og_user_node->getIterator() as $nwrapper) {
+      $type = $nwrapper->type->value();
+      switch ($type) {
+        case 'company':
+          $company[] = array(
+            'id' => $nwrapper->getIdentifier(),
+            'title' => $nwrapper->title->value(),
+            'view' => url('company/' . $nwrapper->getIdentifier()),
+          );
+          break;
+        
+        case 'project':
+          $project[] = array(
+            'id' => $nwrapper->getIdentifier(),
+            'title' => $nwrapper->title->value(),
+            'view' => url('project/' . $nwrapper->getIdentifier()),
+          );
+          break;
+        
+        default:
+          # code...
+          break;
+      }
+    }
+
     return array(
       'id' => $user->uid,
       'name' => $user->name,
@@ -967,6 +1022,8 @@ function qplot_progress_user_profile($user) {
       'last' => $wrapper->field_profile_last->value(),
       'title' => $wrapper->field_profile_title->value(),
       'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
+      'company' => $company,
+      'project' => $project,
       'logout' => url('user/logout'),
     );
   } else {

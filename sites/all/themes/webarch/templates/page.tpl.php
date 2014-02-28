@@ -103,7 +103,7 @@
             Welcome
           </div>
           <div class="username">
-            <?php echo $user['first'] ?> <span class="semi-bold"><?php echo $user['last'] ?></span>
+            <span class="semi-bold"><?php echo $user['first'] ?></span>
           </div>
           <div class="status">
             Status<a href="#"></a>
