@@ -32,10 +32,10 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div class="grid simple ">
+          <div class="grid simple">
             <div class="grid-title no-border">
-              <h4>New <span class="semi-bold">Features</span></h4>
               <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+              <h4>New <span class="semi-bold">Features</span></h4>
             </div>
             <div class="grid-body no-border">
               <div class="row">
@@ -111,8 +111,8 @@
         <div class="col-md-8">
           <div class="grid simple">
             <div class="grid-title no-border">
-              <h4>Latest <span class="semi-bold">Task</span></h4>
               <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+              <h4>Latest <span class="semi-bold">Task</span></h4>
             </div>
             <div class="grid-body no-border">
               <div class="row-fluid">

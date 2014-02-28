@@ -14,8 +14,6 @@
       <!-- END LOGO --> 
       <ul class="nav pull-right notifcation-center">  
         <li class="dropdown" id="header_task_bar"> <a href="<?php print $front_page; ?>" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
-        <li class="dropdown" id="header_inbox_bar" > <a href="email.html" class="dropdown-toggle" > <div class="iconset top-messages"></div>  <span class="badge" id="msgs-badge"></span> </a></li>
-        <li class="dropdown" id="portrait-chat-toggler" style="display:none"> <a href="#sidr" class="chat-menu-toggle"> <div class="iconset top-chat-white "></div> </a> </li>        
       </ul>
     </div>
 
@@ -44,9 +42,9 @@
     </div>
    <!-- END TOP NAVIGATION MENU -->
    <!-- BEGIN CHAT TOGGLER -->
+    <?php if ($user): ?>
     <div class="pull-right">
       <div class="chat-toggler">
-        <?php if ($user): ?>
         <a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Notifications">
           <div class="user-details">
             <div class="username">
@@ -63,7 +61,6 @@
         <div class="profile-pic">
           <img src="<?php echo $user['photo'] ?>"  alt="" width="35" height="35" />
         </div>
-        <?php endif ?>
       </div>
       <ul class="nav quick-section ">
         <li class="quicklinks">
@@ -72,7 +69,7 @@
           </a>
           <ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
             <!-- <li class="divider"></li> -->
-            <li><a href="<?php echo $user['logout'] ?>"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+              <li><a href="<?php echo $user['logout'] ?>"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
           </ul>
         </li>
         <li class="quicklinks"> <span class="h-seperate"></span></li>
@@ -83,6 +80,7 @@
       </ul>
     </div>
      <!-- END CHAT TOGGLER -->
+    <?php endif ?>
     </div>
       <!-- END TOP NAVIGATION MENU -->
   </div>
@@ -95,30 +93,34 @@
   <div class="page-sidebar" id="main-menu">
 
     <!-- USER TEASER -->
-    <div class="user-info-wrapper">
-      <div class="profile-wrapper">
-        <img src="<?php echo $user['photo'] ?>" alt="" data-src="<?php echo $user['photo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69">
+    <?php if ($user): ?>
+      <div class="user-info-wrapper">
+        <div class="profile-wrapper">
+          <img src="<?php echo $user['photo'] ?>" alt="" data-src="<?php echo $user['photo'] ?>" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69">
+        </div>
+        <div class="user-info">
+          <div class="greeting">
+            Welcome
+          </div>
+          <div class="username">
+            <?php echo $user['first'] ?> <span class="semi-bold"><?php echo $user['last'] ?></span>
+          </div>
+          <div class="status">
+            Status<a href="#"></a>
+            <div class="status-icon green"></div>Online
+          </div>
+        </div>
       </div>
-      <div class="user-info">
-        <div class="greeting">
-          Welcome
-        </div>
-        <div class="username">
-          <?php echo $user['first'] ?> <span class="semi-bold"><?php echo $user['last'] ?></span>
-        </div>
-        <div class="status">
-          Status<a href="#"></a>
-          <div class="status-icon green"></div><?php echo $user['status'] ?>
-        </div>
-      </div>
-    </div>
+    <?php endif ?>
 
     <?php print render($page['sidebar_first']); ?>
   </div>
   <div class="footer-widget">
-    <div class="pull-right">
-      <a href="user/logout"><i class="fa fa-power-off"></i></a>
-    </div>
+    <?php if ($user): ?>
+      <div class="pull-right">
+        <a href="user/logout"><i class="fa fa-power-off"></i></a>
+      </div>
+    <?php endif ?>
     <div><?php print render($page['footer']); ?></div>
   </div>
   <!-- END SIDEBAR -->
