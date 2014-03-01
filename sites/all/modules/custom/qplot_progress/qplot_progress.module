@@ -67,6 +67,10 @@ function qplot_progress_theme() {
       'variables' => array('menu' => NULL),
       'template' => 'templates/main_menu'
     ),
+    'qplot_progress_project_list' => array(
+      'variables' => array('project_list' => NULL),
+      'template' => 'templates/projects_list'
+    ),
 
     // 
     'qplot_progress_status_messages' => array(
@@ -148,6 +152,7 @@ function qplot_progress_theme() {
     'qplot_progress_project_edit' => array(
       'variables' => array('values' => NULL),
       'template' => 'templates/project_edit'
+
     ),
   );
 }
@@ -218,6 +223,9 @@ function qplot_progress_block_info() {
     // Project content list in main content area
     'content_list' => array(
       'info' => ('Project Content List')
+    ),
+    'project_list' => array(
+      'info' => ('Project List')
     ),
   );
 
@@ -891,6 +899,34 @@ function qplot_progress_block_view($delta = '') {
       );
 
       $block['content'] = theme('qplot_progress_content_list', $variables);
+      break;
+    case 'project_list':
+      // find out all projects
+      $nids = qplot_api_find_nodes2(
+        array(
+          'type' => 'project',
+        ),
+        NULL,
+        TRUE        
+      );
+      $variables['projects'] = array();
+      foreach ($nids as $id) {
+        $node = node_load($id);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $body = $wrapper->body->value();
+
+        $variables['projects'][] = array(
+          'title' => $wrapper->title->value(),
+          // 'icon' => $wrapper->field_project_icon->name->value(),
+          // 'company' => $wrapper->field_project_company->title->value(),
+          'description' => !empty($body) ? $wrapper->body->summary->value() : '',
+          'progress' => $wrapper->field_project_progress->value(),
+          // 'status' => $wrapper->field_project_status->name->value(),
+          // 'view' => url('project/' . $wrapper->getIdentifier()),
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_project_list', $variables);
       break;
 
     default:
