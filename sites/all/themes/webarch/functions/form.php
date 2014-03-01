@@ -677,6 +677,7 @@ function webarch_container($variables) {
 more Placeholder sweetness
 */
 function webarch_form_alter(&$form, &$form_state, $form_id) {
+  // dsm($form_id);
 /*
 	print "<pre>";
 	print_r($form_id);
@@ -727,6 +728,15 @@ function webarch_form_alter(&$form, &$form_state, $form_id) {
 	if($form_id == 'user_pass'){
 		$form['name']['#attributes']['placeholder'] = $form['name']['#title'];
 	}
+
+  //masquerade form
+  if ($form_id == 'masquerade_block_1') {
+    $form['masquerade_user_field']['#prefix'] = '<div class="status-widget">';
+    $form['masquerade_user_field']['#suffix'] = '</div>';    
+    $form['masquerade_user_field']['#required'] = FALSE;    
+    $form['submit']['#prefix'] = '<div class="status-widget">';
+    $form['submit']['#suffix'] = '</div>';    
+  }
 
 
 }
