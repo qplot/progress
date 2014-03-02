@@ -1198,11 +1198,14 @@ function qplot_progress_task_edit_form($node) {
         'date' => date('m/d/Y'),
         'hours' => '0',
         'description' => '',
+        'caption' => '',
+        'url' => '',
         'status' => FALSE,
         'progress' => 0,
         'phases' => array(),
         'phase_id' => 0,
         'project_id' => 0,
+        'user_id' => ''
       );
 
       // go through each field and sort out the value based on new or edit
@@ -1213,6 +1216,7 @@ function qplot_progress_task_edit_form($node) {
         // $progress = $wrapper->field_task_progress->value();
         $project_id = $wrapper->field_task_project->raw();
         $phase_id = $wrapper->field_task_phase->raw();
+        $user_id = $wrapper->field_task_requestby->raw();
 
         $variables['values'] = array(
           'id' => $wrapper->getIdentifier(),
@@ -1223,7 +1227,7 @@ function qplot_progress_task_edit_form($node) {
           'hours' => $wrapper->field_task_hours->value(),
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
           'progress' => $wrapper->field_task_progress->value(),
-          'user_id' => $wrapper->field_task_requestby->raw(),
+          'user_id' => !empty($user_id) ? $wrapper->field_task_requestby->raw() : '',
         ); 
       } else {
         // get company id
