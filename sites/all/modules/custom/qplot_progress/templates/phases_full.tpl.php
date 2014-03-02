@@ -124,9 +124,7 @@
                                       <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
                                   </td>
                                   <td class="v-align-middle">
-                                      <span class="muted">
-                                        <?php echo $task['added'] ?>
-                                      </span>
+                                    <a href="" class="tip" data-toggle="tooltip" title="<?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?>" data-placement="top"><?php echo $task['added'] ?></a>                                      
                                   </td>
                                   <td>
                                       <span class="muted"><?php echo $task['hours'] ?></span>

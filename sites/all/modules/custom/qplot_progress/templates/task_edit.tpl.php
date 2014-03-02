@@ -31,30 +31,77 @@
               </div>
             </div>
 
-            <!-- Added Date -->
-            <div class="form-group">
-              <label class="form-label">Requested Date</label>
-              <span class="help">e.g. "02/14/2014"</span>
-              <div class="controls">
-                <div class="input-append primary date">
-                  <input name="date" type="text" class="form-control" value="<?php echo $values['date'] ?>">
-                  <span class="add-on">
-                    <span class="arrow"></span><i class="fa fa-th"></i>
-                  </span> 
+            <div class="row">
+              <div class="col-md-7">
+                <!-- Task Requested Date -->
+                <div class="form-group">
+                  <label class="form-label">Requested date</label>
+                  <span class="help">e.g. "02/14/2014"</span>
+                  <div class="controls">
+                    <div class="input-append primary date">
+                      <input name="date" type="text" class="form-control" value="<?php echo $values['date'] ?>">
+                      <span class="add-on">
+                        <span class="arrow"></span><i class="fa fa-th"></i>
+                      </span> 
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Budget Hours -->
+                <div class="form-group">
+                  <label class="form-label">Budget Hour</label>
+                  <span class="help">e.g. "2.5" for two and half hour</span>
+                  <div class="controls">
+                    <div class="input-append bootstrap-timepicker-component primary">
+                      <input name="hours" type="text" class="span12 auto" value="<?php echo $values['hours'] ?>" data-a-sign=" hrs" data-p-sign="s" data-v-min="0" />
+                      <span class="add-on">
+                        <span class="arrow"></span><i class="fa fa-clock-o"></i>
+                      </span> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label class="form-label">Requested by</label>
+                  <span class="help">e.g. "Lauren"</span>
+                  <div class="controls">
+
+                    <div class="radio radio-primary">
+                      <?php foreach ($members as $member): ?>                      
+                        <?php 
+                          $checked = ($values['user_id'] == $member['id']);
+                        ?>
+                        <div class="row-fluid">
+                          <input id="<?php echo $member['id'] ?>" name="member_id" type="radio" value="<?php echo $member['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
+                          <label for="<?php echo $member['id'] ?>"><?php echo $member['first'] . ' ' . $member['last'] ?></label>
+                        </div>                  
+
+                      <?php endforeach ?>
+
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <!-- Budget Hours -->
+            <!-- Task URL -->
             <div class="form-group">
-              <label class="form-label">Budget Hour</label>
-              <span class="help">e.g. "2.5" for two and half hour</span>
-              <div class="controls">
-                <div class="input-append bootstrap-timepicker-component primary">
-                  <input name="hours" type="text" class="span12 auto" value="<?php echo $values['hours'] ?>" data-a-sign=" hrs" data-p-sign="s" data-v-min="0" />
-                  <span class="add-on">
-                    <span class="arrow"></span><i class="fa fa-clock-o"></i>
-                  </span> 
+              <label class="form-label">URL with Caption</label>
+              <span class="help">e.g. "1 -> http://ticket/1"</span>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="controls">
+                    <input name="caption" type="text" class="form-control" value="<?php echo $values['caption'] ?>">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="controls">
+                    <input name="url" type="text" class="form-control" value="<?php echo $values['url'] ?>">
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,6 +114,7 @@
                 <textarea name="description" id="text-editor" placeholder="Enter text ..." class="form-control" rows="10" ><?php echo $values['description'] ?></textarea>
               </div>
             </div>
+
           </div>
 
           <div class="col-md-4 col-sm-4 col-xs-4">
