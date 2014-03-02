@@ -268,9 +268,7 @@ function qplot_progress_block_view($delta = '') {
       $desc = "We seem to have lost you in the clouds";
       $msg = "The page your looking for is not here";
 
-      if (!empty(arg(1))) {
-        $error = arg(1);
-      }
+      $error = arg(1);
   
       switch ($error) {
         case '403':
