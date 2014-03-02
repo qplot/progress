@@ -163,6 +163,48 @@ function qplot_task_ctype_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_task_requestby'
+  $field_bases['field_task_requestby'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_task_requestby',
+    'foreign keys' => array(
+      'users' => array(
+        'columns' => array(
+          'target_id' => 'uid',
+        ),
+        'table' => 'users',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
+      ),
+      'profile2_private' => FALSE,
+      'target_type' => 'user',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_task_tag'
   $field_bases['field_task_tag'] = array(
     'active' => 1,
@@ -198,13 +240,13 @@ function qplot_task_ctype_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_task_ticket_url'
-  $field_bases['field_task_ticket_url'] = array(
+  // Exported field_base: 'field_task_url'
+  $field_bases['field_task_url'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_task_ticket_url',
+    'field_name' => 'field_task_url',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -219,6 +261,7 @@ function qplot_task_ctype_field_default_field_bases() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'profile2_private' => FALSE,
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',

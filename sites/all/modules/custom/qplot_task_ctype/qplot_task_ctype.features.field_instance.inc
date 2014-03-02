@@ -296,6 +296,56 @@ function qplot_task_ctype_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-task-field_task_requestby'
+  $field_instances['node-task-field_task_requestby'] = array(
+    'bundle' => 'task',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_task_requestby',
+    'label' => 'Request By',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-task-field_task_tag'
   $field_instances['node-task-field_task_tag'] = array(
     'bundle' => 'task',
@@ -337,8 +387,8 @@ function qplot_task_ctype_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-task-field_task_ticket_url'
-  $field_instances['node-task-field_task_ticket_url'] = array(
+  // Exported field_instance: 'node-task-field_task_url'
+  $field_instances['node-task-field_task_url'] = array(
     'bundle' => 'task',
     'default_value' => NULL,
     'deleted' => 0,
@@ -349,7 +399,7 @@ function qplot_task_ctype_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -359,8 +409,9 @@ function qplot_task_ctype_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_task_ticket_url',
-    'label' => 'Ticket URL',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_task_url',
+    'label' => 'URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -375,7 +426,7 @@ function qplot_task_ctype_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'required',
+      'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -387,7 +438,7 @@ function qplot_task_ctype_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 2,
+      'weight' => 9,
     ),
   );
 
@@ -399,8 +450,9 @@ function qplot_task_ctype_field_default_field_instances() {
   t('Phase');
   t('Progress');
   t('Project');
+  t('Request By');
   t('Tag');
-  t('Ticket URL');
+  t('URL');
   t('e.g. 56%');
 
   return $field_instances;
