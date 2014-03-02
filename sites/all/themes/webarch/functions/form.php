@@ -26,7 +26,6 @@ original can be found in /includes/form.inc
 // change the div class="description" to <small>
 // adds form-required
 function webarch_form_element($variables) {
-
   $element = &$variables['element'];
   // This is also used in the installer, pre-database setup.
   $t = get_t();
@@ -82,14 +81,20 @@ function webarch_form_element($variables) {
     $output .=  "\n" . '<div>' . "\n";
   }
 
-  $output .= '<div class="input-append">';
+  // if (!empty($element['#prefix'])) {
+  //   $output .= $element['#prefix'];
+  // }
 
   $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
   $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix add-on">' . $element['#field_suffix'] . '</span>' : '';
 
   $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
 
-  $output .= "</div>\n</div>\n</div>\n";
+  // if (!empty($element['#suffix'])) {
+  //   $output .= $element['#suffix'];
+  // }
+
+  $output .= "\n</div>\n</div>\n";
 
   return $output;
 }
@@ -216,32 +221,32 @@ function webarch_form_element_label($variables) {
 // * remove text type if its html5
 // * add placeholder in html5
 // */
-function webarch_textfield($variables) {
-  $element = $variables['element'];
-  $element['#attributes']['type'] = 'text';
-  element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
-  _form_set_class($element, array('form-text'));
+// function webarch_textfield($variables) {
+//   $element = $variables['element'];
+//   $element['#attributes']['type'] = 'text';
+//   element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
+//   _form_set_class($element, array('form-text'));
 
-  $element['#attributes']['class'][] = 'form-control';
+//   $element['#attributes']['class'][] = 'form-control';
 
-  $extra = '';
-  if ($element['#autocomplete_path'] && drupal_valid_path($element['#autocomplete_path'])) {
-    drupal_add_library('system', 'drupal.autocomplete');
-    $element['#attributes']['class'][] = 'form-autocomplete';
+//   $extra = '';
+//   if ($element['#autocomplete_path'] && drupal_valid_path($element['#autocomplete_path'])) {
+//     drupal_add_library('system', 'drupal.autocomplete');
+//     $element['#attributes']['class'][] = 'form-autocomplete';
 
-    $attributes = array();
-    $attributes['type'] = 'hidden';
-    $attributes['id'] = $element['#attributes']['id'] . '-autocomplete';
-    $attributes['value'] = url($element['#autocomplete_path'], array('absolute' => TRUE));
-    $attributes['disabled'] = 'disabled';
-    $attributes['class'][] = 'autocomplete';
-    $extra = '<input' . drupal_attributes($attributes) . ' />';
-  }
+//     $attributes = array();
+//     $attributes['type'] = 'hidden';
+//     $attributes['id'] = $element['#attributes']['id'] . '-autocomplete';
+//     $attributes['value'] = url($element['#autocomplete_path'], array('absolute' => TRUE));
+//     $attributes['disabled'] = 'disabled';
+//     $attributes['class'][] = 'autocomplete';
+//     $extra = '<input' . drupal_attributes($attributes) . ' />';
+//   }
 
-  $output = '<input' . drupal_attributes($element['#attributes']) . ' />';
+//   $output = '<input' . drupal_attributes($element['#attributes']) . ' />';
 
-  return $output . $extra;
-}
+//   return $output . $extra;
+// }
 
 // function mothership_textfield($variables) {
 //   $element = $variables['element'];
@@ -692,18 +697,25 @@ function webarch_form_alter(&$form, &$form_state, $form_id) {
   }
 	//login block
   if ($form_id == 'user_login_block') {
+    // print_r($form['actions']);
+    $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
+    $form['name']['#size'] = 55;
+    $form['name']['#required'] = FALSE;
+    $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
+    $form['pass']['#size'] = 55;
+    $form['pass']['#required'] = FALSE;
+    $form['actions']['submit']['#attributes']['class'][] = 'btn-primary btn-cons pull-right';
+    unset($form['links']);
     // dsm($form);
-	  $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
-    $form['name']['#prefix'] = '<div class="status-widget">';
-    $form['name']['#suffix'] = '</div>';
-    $form['name']['#title_display'] = 'invisible';
-	  $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
-    $form['pass']['#prefix'] = '<div class="status-widget">';
-    $form['pass']['#suffix'] = '</div>';
-    $form['pass']['#title_display'] = 'invisible';
-    $form['actions']['#prefix'] = '<div class="status-widget">';
-    $form['actions']['#suffix'] = '</div>';
-
+   //  // $form['name']['#prefix'] = '<div class="status-widget">';
+   //  $form['name']['#prefix'] = '<div class="input-with-icon right">';
+	  // $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
+   //  // $form['pass']['#prefix'] = '<div class="status-widget">';
+   //  $form['pass']['#prefix'] = '<div class="input-with-icon right">';
+   //  $form['pass']['#suffix'] = '</div>';
+   //  $form['pass']['#title_display'] = 'invisible';
+   //  $form['actions']['#prefix'] = '<div class="status-widget">';
+   //  $form['actions']['#suffix'] = '</div>';
 	}
 
 	//login Register

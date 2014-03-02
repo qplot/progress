@@ -77,6 +77,10 @@ function qplot_progress_theme() {
       'variables' => array('project_list' => NULL),
       'template' => 'templates/projects_list'
     ),
+    'qplot_progress_login_full' => array(
+      'variables' => array('form' => NULL),
+      'template' => 'templates/login_full'
+    ),
 
     // 
     'qplot_progress_status_messages' => array(
@@ -176,6 +180,9 @@ function qplot_progress_block_info() {
     ),
     'main_menu' => array(
       'info' => 'Client Menu'
+    ),
+    'login_full' => array(
+      'info' => 'Front Login'
     ),
     // User mini teaser in sidebar menu area
     // 'user_teaser' => array(
@@ -303,6 +310,17 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $block['content'] = theme('qplot_progress_main_menu', $variables);
+      break;
+
+    case 'login_full':
+      global $user;
+      if (!$user->uid) {
+        $form = drupal_get_form('user_login_block');
+        $variables['form'] = drupal_render($form);
+        $block['content'] = theme('qplot_progress_login_full', $variables);
+      } else {
+        $block['content'] = '';
+      }
       break;
 
     case 'company_teaser':
