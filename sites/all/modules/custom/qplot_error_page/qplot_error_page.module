@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Error Page feature.
+ */
+
+include_once 'qplot_error_page.features.inc';
