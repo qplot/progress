@@ -58,11 +58,17 @@ function qplot_progress_menu() {
  */
 function qplot_progress_theme() {
   return array(
-    // page elements
+    // page
     'qplot_progress_frontpage' => array(
       'variables' => array(),
       'template' => 'templates/frontpage'
     ),
+    'qplot_progress_error_page' => array(
+      'variables' => array('error' => NULL),
+      'template' => 'templates/error_page'
+    ),
+
+    // elements
     'qplot_progress_main_menu' => array(
       'variables' => array('menu' => NULL),
       'template' => 'templates/main_menu'
@@ -165,6 +171,9 @@ function qplot_progress_block_info() {
     'frontpage' => array(
       'info' => 'Front Page'
     ),
+    'error_page' => array(
+      'info' => 'Error Page'
+    ),
     'main_menu' => array(
       'info' => 'Client Menu'
     ),
@@ -247,6 +256,38 @@ function qplot_progress_block_view($delta = '') {
     // case 'logo_area':
     //   $block['content'] = theme('qplot_progress_logo_area');
     //   break;
+    case 'error_page':
+      $error = '';
+      $desc = "We seem to have lost you in the clouds";
+      $msg = "The page your looking for is not here";
+
+      if (!empty(arg(1))) {
+        $error = arg(1);
+      }
+  
+      switch ($error) {
+        case '403':
+          $desc = "Whoops! Try look somewhere else";
+          $msg = 'Not authorized to access this page';
+          break;
+
+        case '404':
+          break;
+        
+        default:
+          $error = ':)';
+          $desc = "Haha, you found our eastern egg";
+          $msg = "QPLOT makes CMS work";
+          break;
+      }
+
+      $variables = array(
+        'error' => $error,
+        'description' => $desc,
+        'message' => $msg,
+      );
+      $block['content'] = theme('qplot_progress_error_page', $variables);
+      break;
 
     case 'main_menu':
       global $user;
