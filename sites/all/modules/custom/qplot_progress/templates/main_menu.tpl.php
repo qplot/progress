@@ -48,7 +48,7 @@
     </li>
 
     <li class=""> 
-      <a href="logout.html"> 
+      <a href="<?php echo $menu['user']['logout'] ?>"> 
         <i class="fa fa-sign-out"></i> <span class="title">Logout</span>
       </a>
     </li>
