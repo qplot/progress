@@ -99,21 +99,6 @@
               </div>
             </div>
 
-            <!-- Phase Capacity -->
-            <div class="form-group">
-              <label class="form-label">Team capacity</label>
-              <span class="help">e.g. "10 hrs/week"</span>
-              <div class="controls">
-                <div class="input-append primary">
-                  <input name="capacity" type="text" class="span12 auto" value="<?php echo $values['capacity'] ?>" data-a-sign=" hrs/w" data-p-sign="s" data-v-min="0" />
-                  <span class="add-on">
-                    <span class="arrow"></span><i class="fa fa-clock-o"></i>
-                  </span> 
-                </div>
-              </div>
-            </div>
-
-
             <h3> Phase <span class="semi-bold">Project</span></h3>
             <div class="form-group">
               <!-- <div class="radio radio-primary"> -->

@@ -20,12 +20,22 @@
         </div><br>
 
         <div class="grid-body no-border">
+          <?php if ($project['comment']): ?>
+            <div class="alert alert-info"><span class="semi-bold">Client Note:</span> <?php echo $project['comment'] ?></div>
+          <?php endif ?>
           <h4>Development <span class="semi-bold">Status</span></h4>
           <p>Indicator of health of project, including the number of hours per week, and the percentage progress of the current work.</p>
-          <br>
-          <div class="">
-            <div id="project-progress" class="easy-pie-custom" data-percent="<?php echo $project['progress'] ?>"><span class="easy-pie-percent"><?php echo $project['progress'] ?>%</span></div>    
-            <div id="project-capacity" class="easy-pie-custom" data-percent="<?php echo $project['capacity'] ?>"><span class="easy-pie-percent"><?php echo $project['capacity'] ?> hrs/w</span></div>    
+
+          <h5>Total hours: <span class="semi-bold"> <?php echo $project['hours'] ?> hours</span></h5>
+          <div class="row">
+            <div class="col-md-6">
+              <p align="center"> Completed </p>
+              <div id="project-progress" class="easy-pie-custom" data-percent="<?php echo $project['progress'] ?>"><span class="easy-pie-percent"><?php echo $project['progress'] ?>%</span></div>    
+            </div>
+            <div class="col-md-6">
+              <p align="center"> Capability </p>
+              <div id="project-capacity" class="easy-pie-custom" data-percent="<?php echo $project['capacity'] ?>"><span class="easy-pie-percent"><?php echo $project['capacity'] ?> hrs/w</span></div>    
+            </div>
           </div>
           <div class="clearfix"></div>
         </div>

@@ -461,10 +461,13 @@ function qplot_progress_block_view($delta = '') {
 
       $node = node_load($nid);
       $wrapper = entity_metadata_wrapper('node', $node);
+      // $comment = $wrapper->field_project_comment->value();
 
       $variables['project'] = array(
+        'hours' => $wrapper->field_project_hours->value(),
         'progress' => $wrapper->field_project_progress->value(),
         'capacity' => $wrapper->field_project_capacity->value(),
+        'comment' => $wrapper->field_project_comment->value(),
       );
 
       $block['content'] = theme('qplot_progress_project_status', $variables);
@@ -955,7 +958,7 @@ function qplot_progress_block_view($delta = '') {
  *   Tasks node object
  */
 function qplot_progress_update_phase_progress($node) {
-  dsm($node);
+  // dsm($node);
   // find task's phase
   $delete = !isset($node->is_new);
   $twrapper = entity_metadata_wrapper('node', $node);
@@ -973,7 +976,7 @@ function qplot_progress_update_phase_progress($node) {
     NULL,
     TRUE
   );
-  dsm($tnids);
+
   $hours = 0.0;
   $progress = 0;
   foreach ($tnids as $nid) {
@@ -1009,19 +1012,62 @@ function qplot_progress_update_phase_progress($node) {
  *   Tasks node object
  */
 function qplot_progress_update_project_progress($node) {
+  // dsm($node);
   // find phase's project
-  $delete = empty($node->op);
-  $pwrapper = entity_metadata_wrapper('node', $node);
-  $pid = $pwrapper->getIdentifier();
-  $prid = $pwrapper->field_phase_project->raw();
-  $progress = $pwrapper->field_phase_progress->value();
+  $delete = !isset($node->is_new);
+  $current_phase_id = $node->nid;
+  $current_phase_wrapper = entity_metadata_wrapper('node', $node);
+  $project_ids = $current_phase_wrapper->field_phase_project->raw();
 
-  // update project
-  if (is_array($prid)) $prid = $prid[0];
-  $node = node_load($prid);
-  $wrapper = entity_metadata_wrapper('node', $node);
-  $wrapper->field_project_progress->set($progress);
-  $wrapper->save();
+  // update has two schemas
+  $all = TRUE;
+
+  // for each project we're going to update their status
+  foreach ($project_ids as $project_id) {
+    if ($all) {
+      // update according to all phases
+
+      // find all phases belonging to this project
+      $phase_ids = qplot_api_find_nodes2(
+        array(
+          'type' => 'phase',
+          'field_phase_project' => array('target_id', $project_id, '='),
+        ),
+        NULL,
+        TRUE
+      );
+
+      $hours = 0;
+      $progress = 0;
+      $capability = 0;
+      foreach ($phase_ids as $phase_id) {
+        // since the record is not updated in database yet
+        // we have to fetch it here
+        if ($phase_id == $current_phase_id) {
+          if ($delete) continue;
+          $phase_wrapper = $current_phase_wrapper;
+        } else {
+          $phase = node_load($phase_id);
+          $phase_wrapper = entity_metadata_wrapper('node', $phase);
+        }
+        $h = $phase_wrapper->field_phase_hours->value();
+        $hours = $hours + $h;
+        $progress = $progress + $phase_wrapper->field_phase_progress->value() * $h / 100;
+      }
+      $progress = !empty($hours) ? round($progress / $hours * 100) : 0;
+    } else {
+      // update according to the latest phase that has been updated
+      $progress = $pwrapper->field_phase_progress->value();
+    }
+
+    // update project record
+    $project = node_load($project_id);
+    $wrapper = entity_metadata_wrapper('node', $project);
+    $wrapper->field_project_hours->set($hours);
+    $wrapper->field_project_progress->set($progress);
+    $wrapper->save();
+  } 
+
 }
 
 /**
@@ -1395,7 +1441,7 @@ function qplot_progress_phase_edit_form($node) {
           'hours' => $wrapper->field_phase_hours->value(),
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
           'status_id' => $wrapper->field_phase_status->raw(),
-          'capacity' => $wrapper->field_phase_capacity->value(),
+          // 'capacity' => $wrapper->field_phase_capacity->value(),
         ); 
       } else {
         $project_ids = array($_GET['project']);
@@ -1479,7 +1525,7 @@ function qplot_progress_phase_edit_form($node) {
       // $hours = explode(' ', $_POST['hours']);
       // $wrapper->field_phase_hours->set($hours[0]);
       $wrapper->field_phase_status->set($_POST['status_id']);
-      $wrapper->field_phase_capacity->set($_POST['capacity']);
+      // $wrapper->field_phase_capacity->set($_POST['capacity']);
       $wrapper->body->set(array(
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',
