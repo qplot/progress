@@ -1368,9 +1368,10 @@ function qplot_progress_phase_edit_form($node) {
         'from' => date('m/d/Y'),
         'to' => date('m/d/Y'),
         'hours' => '0',
+        'progress' => 0,
         'description' => '',
         'status' => 0,
-        'progress' => 0,
+        'capacity' => 0,
         'projects' => array(),
         'project_id' => 0,
       );
@@ -1394,6 +1395,7 @@ function qplot_progress_phase_edit_form($node) {
           'hours' => $wrapper->field_phase_hours->value(),
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
           'status_id' => $wrapper->field_phase_status->raw(),
+          'capacity' => $wrapper->field_phase_capacity->value(),
         ); 
       } else {
         $project_ids = array($_GET['project']);
@@ -1477,6 +1479,7 @@ function qplot_progress_phase_edit_form($node) {
       // $hours = explode(' ', $_POST['hours']);
       // $wrapper->field_phase_hours->set($hours[0]);
       $wrapper->field_phase_status->set($_POST['status_id']);
+      $wrapper->field_phase_capacity->set($_POST['capacity']);
       $wrapper->body->set(array(
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',

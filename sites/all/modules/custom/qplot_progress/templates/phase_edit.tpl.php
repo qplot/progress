@@ -60,6 +60,18 @@
               </div>
             </div>
 
+            <!-- Phase Progress -->
+            <div class="alert alert-info">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5> Total Hours: <span class="semi-bold"><?php echo $values['hours'] ?> hrs</span></h5>
+                </div>
+                <div class="col-md-6">
+                  <h5> Progress: <span class="semi-bold"><?php echo $values['progress'] ?>%</span></h5>
+                </div>
+              </div>            
+            </div>
+
           </div>
 
           <div class="col-md-4 col-sm-4 col-xs-4">
@@ -87,6 +99,21 @@
               </div>
             </div>
 
+            <!-- Phase Capacity -->
+            <div class="form-group">
+              <label class="form-label">Team capacity</label>
+              <span class="help">e.g. "10 hrs/week"</span>
+              <div class="controls">
+                <div class="input-append primary">
+                  <input name="capacity" type="text" class="span12 auto" value="<?php echo $values['capacity'] ?>" data-a-sign=" hrs/w" data-p-sign="s" data-v-min="0" />
+                  <span class="add-on">
+                    <span class="arrow"></span><i class="fa fa-clock-o"></i>
+                  </span> 
+                </div>
+              </div>
+            </div>
+
+
             <h3> Phase <span class="semi-bold">Project</span></h3>
             <div class="form-group">
               <!-- <div class="radio radio-primary"> -->
@@ -103,17 +130,6 @@
                 <?php endforeach ?>
               </div>
             </div>
-
-            <!-- Phase Progress -->
-            <div class="alert alert-info"> <i class="fa fa-info-circle"></i> Phase hours and progress are updated automatically based on tasks info.</div>
-            <div class="row">
-              <div class="col-md-12">
-                <h5> Total Hours: <span class="semi-bold"><?php echo $values['hours'] ?> hrs</span></h5>
-              </div>
-              <div class="col-md-12">
-                <h5> Progress: <span class="semi-bold"><?php echo $values['progress'] ?>%</span></h5>
-              </div>
-            </div>            
 
           </div>
         </div>
