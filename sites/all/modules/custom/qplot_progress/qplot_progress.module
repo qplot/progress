@@ -1369,7 +1369,7 @@ function qplot_progress_phase_edit_form($node) {
         'to' => date('m/d/Y'),
         'hours' => '0',
         'description' => '',
-        'status' => FALSE,
+        'status' => 0,
         'progress' => 0,
         'projects' => array(),
         'project_id' => 0,
@@ -1393,10 +1393,21 @@ function qplot_progress_phase_edit_form($node) {
           'progress' => $wrapper->field_phase_progress->value(),
           'hours' => $wrapper->field_phase_hours->value(),
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
-          'status' => ($progress == 100),
+          'status_id' => $wrapper->field_phase_status->raw(),
         ); 
       } else {
         $project_ids = array($_GET['project']);
+      }
+
+      // get phase status list
+      $vid = taxonomy_vocabulary_machine_name_load('phase_status')->vid;
+      $tree = taxonomy_get_tree($vid);
+      $variables['status'] = array();
+      foreach ($tree as $value) {
+        $variables['status'][] = array(
+          'id' => $value->tid,
+          'name' => $value->name,
+        );
       }
       
       // get project id from user  
@@ -1462,9 +1473,10 @@ function qplot_progress_phase_edit_form($node) {
         'date_type' => 'datetime',
       ));
       // $wrapper->field_task_added->set($date->getTimestamp());
-      $wrapper->field_phase_progress->set($_POST['progress']);
-      $hours = explode(' ', $_POST['hours']);
-      $wrapper->field_phase_hours->set($hours[0]);
+      // $wrapper->field_phase_progress->set($_POST['progress']);
+      // $hours = explode(' ', $_POST['hours']);
+      // $wrapper->field_phase_hours->set($hours[0]);
+      $wrapper->field_phase_status->set($_POST['status_id']);
       $wrapper->body->set(array(
         'value' => htmlspecialchars($_POST['description']),
         'format' => 'filtered_html',

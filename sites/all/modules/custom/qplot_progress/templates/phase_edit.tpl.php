@@ -51,20 +51,6 @@
               </div>
             </div>
 
-            <!-- Phase Hours -->
-            <div class="form-group">
-              <label class="form-label">Budget Hour</label>
-              <span class="help">e.g. "2.5" for two and half hour</span>
-              <div class="controls">
-                <div class="input-append bootstrap-timepicker-component primary">
-                  <input name="hours" type="text" class="span12 auto" value="<?php echo $values['hours'] ?>" data-a-sign=" hrs" data-p-sign="s" data-v-min="0" />
-                  <span class="add-on">
-                    <span class="arrow"></span><i class="fa fa-clock-o"></i>
-                  </span> 
-                </div>
-              </div>
-            </div>
-
             <!-- Phase Notes -->
             <div class="form-group">
               <label class="form-label">Phase Description</label>
@@ -73,32 +59,30 @@
                 <textarea name="description" id="text-editor" placeholder="Enter text ..." class="form-control" rows="10" ><?php echo $values['description'] ?></textarea>
               </div>
             </div>
+
           </div>
 
           <div class="col-md-4 col-sm-4 col-xs-4">
+
             <h3> Phase <span class="semi-bold">Status</span></h3>
-
-            <!-- Phase Status -->
+            <!-- Phase status -->
             <div class="form-group">
-              <label class="form-label">Completed</label>
-              <!-- <span class="help">e.g. "Turn on or off"</span> -->
-              <br />
-              <div class="slide-primary controls">
-                <input type="checkbox" name="switch" class="ios" <?php echo ($values['status']) ? 'checked="checked"' : '' ?> />
-              </div>
-            </div>
-
-
-            <!-- Progress Percentage -->
-            <div class="form-group">
-              <label class="form-label">Phase Completion %</label>
-              <span class="help">e.g. "0 - 100"</span>
+              <label class="form-label">Accounting status</label>
+              <span class="help">e.g. "Paid"</span>
               <div class="controls">
-                <div class="row">
-                  <div class="slider primary col-md-6 controls">
-                    <input type="hidden" name="progress" id="progress" value="<?php echo $values['progress'] ?>">
-                    <input id="progress" type="text" class="slider-element form-control" value data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="<?php echo $values['progress'] ?>" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="">
-                  </div>          
+
+                <div class="radio radio-primary">
+                  <?php foreach ($status as $option): ?>
+                    <?php 
+                      $checked = ($values['status_id'] == $option['id']);
+                    ?>
+                    <div class="row-fluid">
+                      <input id="<?php echo $option['id'] ?>" name="status_id" type="radio" value="<?php echo $option['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
+                      <label for="<?php echo $option['id'] ?>"> <?php echo $option['name'] ?></label>
+                    </div>                  
+
+                  <?php endforeach ?>
+
                 </div>
               </div>
             </div>
@@ -118,8 +102,18 @@
                   </div>                  
                 <?php endforeach ?>
               </div>
-
             </div>
+
+            <!-- Phase Progress -->
+            <div class="alert alert-info"> <i class="fa fa-info-circle"></i> Phase hours and progress are updated automatically based on tasks info.</div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5> Total Hours: <span class="semi-bold"><?php echo $values['hours'] ?> hrs</span></h5>
+              </div>
+              <div class="col-md-12">
+                <h5> Progress: <span class="semi-bold"><?php echo $values['progress'] ?>%</span></h5>
+              </div>
+            </div>            
 
           </div>
         </div>
