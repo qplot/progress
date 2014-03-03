@@ -414,6 +414,7 @@ function qplot_progress_block_view($delta = '') {
       $wrapper = entity_metadata_wrapper('node', $node);
       $body = $wrapper->body->value();
       $photo = $wrapper->field_project_photo->value();
+      $company_id = $wrapper->field_project_company->raw();
 
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
@@ -422,24 +423,24 @@ function qplot_progress_block_view($delta = '') {
         'description' => !empty($body) ? $wrapper->body->summary->value() : '',
         'progress' => $wrapper->field_project_progress->value(),
         'status' => $wrapper->field_project_status->name->value(),
-        'company' => $wrapper->field_project_company->title->value(),
+        // 'company' => $wrapper->field_project_company->title->value(),
+        'view_company' => ($company_id) ? url('company/' . $company_id) : '',
         'flag' => flag_create_link('favorite_projects', $wrapper->getIdentifier()),
-        'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
+        'edit' => node_access('update', $node) ? url('node/' . $wrapper->getIdentifier() . '/edit', array(
           'query' => drupal_get_destination()
-        )),
+        )) : '',
       );
       // find phases info and associate properties
       $variables['items'] = array();
-      $nids = qplot_api_find_nodes(
-        array('type' => 'phase'),
-        array('field_phase_project' => array(
-          'target_id', $nid, '='
-        )),
-        TRUE,
-        NULL,
-        array('property' => array(
+      $nids = qplot_api_find_nodes2(
+        array(
+          'type' => 'phase',
+          'field_phase_project' => array('target_id', $nid, '=')
+        ),
+        array(
           'changed' => 'DESC'
-        ))
+        ),
+        TRUE, 3
       );
       foreach ($nids as $id) {
         $node = node_load($id);
@@ -517,16 +518,11 @@ function qplot_progress_block_view($delta = '') {
       $wrapper = entity_metadata_wrapper('node', $node);
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
-        // 'create' => url('node/add/phase', array('query' => array_merge(
-        //   array(
-        //     'field_phase_project' => $nid,
-        //   ), drupal_get_destination()
-        // ))),
-        'create_phase' => url('phase/new', array('query' => array_merge(
+        'create_phase' => node_access('create', 'phase') ? url('phase/new', array('query' => array_merge(
           array(
             'project' => $nid,
           ), drupal_get_destination()
-        ))),
+        ))) : '',
       );
       // find phases info
       $pnids = qplot_api_find_nodes(
@@ -557,27 +553,27 @@ function qplot_progress_block_view($delta = '') {
           'progress' => $phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
           // 'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
-          'edit' => url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
+          'edit' => node_access('update', $phase) ? url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => array_merge(
               array('project' => $nid),
               drupal_get_destination()
             )
-          )),
-          'delete' => url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
+          )) : '',
+          'delete' => node_access('delete', $phase) ? url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
             'query' => drupal_get_destination()
-          )),
+          )) : '',
           // 'create' => url('node/add/task', array('query' => array_merge(
           //   array(
           //     'field_task_phase' => $pid,
           //     'field_task_project' => $nid,
           //   ), drupal_get_destination()
           // ))),
-          'create_task' => url('task/new', array('query' => array_merge(
+          'create_task' => node_access('create', 'task') ? url('task/new', array('query' => array_merge(
             array(
               'phase' => $pid,
               'project' => $nid,
             ), drupal_get_destination()
-          ))),            
+          ))) : '',
           'tasks' => array(),
           'focus' => FALSE,
         );
@@ -616,12 +612,12 @@ function qplot_progress_block_view($delta = '') {
             ) : '',
             'request_by' => ($member_id) ? qplot_progress_user_profile($member_id) : '',
             // 'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
-            'edit' => url('task/' . $wrapper->getIdentifier() . '/edit', array(
+            'edit' => node_access('update', $node) ? url('task/' . $wrapper->getIdentifier() . '/edit', array(
               'query' => drupal_get_destination()
-            )),
-            'delete' => url('node/' . $wrapper->getIdentifier() . '/delete', array(
+            )) : '',
+            'delete' => node_access('delete', $node) ? url('node/' . $wrapper->getIdentifier() . '/delete', array(
               'query' => drupal_get_destination()
-            )),
+            )) : '',
           );
           // perform analysis and summary
           // $phase_item['hours'] = $phase_item['hours'] + $task_item['hours'];
@@ -959,21 +955,25 @@ function qplot_progress_block_view($delta = '') {
  *   Tasks node object
  */
 function qplot_progress_update_phase_progress($node) {
-  // dsm($node);
+  dsm($node);
   // find task's phase
   $delete = !isset($node->is_new);
   $twrapper = entity_metadata_wrapper('node', $node);
   $tid = $twrapper->getIdentifier();
   $pid = $twrapper->field_task_phase->raw();
+  $prid = $twrapper->field_task_project->raw();
 
   // find all tasks belonging to that phase
-  $tnids = qplot_api_find_nodes(
-    array('type' => 'task'),
-    array('field_task_phase' => array(
-      'target_id', $pid, '='
-    )),
+  $tnids = qplot_api_find_nodes2(
+    array(
+      'type' => 'task',
+      'field_task_phase' => array('target_id', $pid, '='),
+      'field_task_project' => array('target_id', $prid, '='),
+    ),
+    NULL,
     TRUE
   );
+  dsm($tnids);
   $hours = 0.0;
   $progress = 0;
   foreach ($tnids as $nid) {

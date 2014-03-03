@@ -140,8 +140,12 @@
                                       </div>
                                   </td>
                                   <td>
-                                    <a href="<?php echo $task['edit'] ?>" title="edit"><i class="fa fa-edit"></i></a>
-                                    <a href="<?php echo $task['delete'] ?>" title="delete"><i class="fa fa-eraser"></i></a>
+                                    <?php if ($task['edit']): ?>
+                                      <a href="<?php echo $task['edit'] ?>" title="edit"><i class="fa fa-edit"></i></a>
+                                    <?php endif ?>
+                                    <?php if ($task['delete']): ?>        
+                                      <a href="<?php echo $task['delete'] ?>" title="delete"><i class="fa fa-eraser"></i></a>
+                                    <?php endif ?>
                                   </td>
                               </tr><?php endforeach;?>
                           </tbody>

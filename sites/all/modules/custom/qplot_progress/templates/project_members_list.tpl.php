@@ -43,8 +43,10 @@
         <?php endforeach ?>
         <?php if (!empty($project['invite'])): ?>
           <div class="pull-right">
-            <a href="<?php echo $project['invite'] ?>" class="btn btn-mini"><i class="fa fa-user"></i> add member</a>
-            <a href="<?php echo $project['manage'] ?>" class="btn btn-mini"><i class="fa fa-gear"></i> </a>
+            <?php if ($project['invite']): ?>
+              <a href="<?php echo $project['invite'] ?>" class="btn btn-mini"><i class="fa fa-user"></i> add member</a>
+              <a href="<?php echo $project['manage'] ?>" class="btn btn-mini"><i class="fa fa-gear"></i> </a>
+            <?php endif ?>
           </div>
         <?php endif ?>
         <br>

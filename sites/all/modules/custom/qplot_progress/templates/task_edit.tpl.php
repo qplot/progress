@@ -75,7 +75,7 @@
                         ?>
                         <div class="row-fluid">
                           <input id="<?php echo $member['id'] ?>" name="member_id" type="radio" value="<?php echo $member['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
-                          <label for="<?php echo $member['id'] ?>"><?php echo $member['first'] . ' ' . $member['last'] ?></label>
+                          <label for="<?php echo $member['id'] ?>"> Requested by <?php echo $member['first'] . ' ' . $member['last'] ?></label>
                         </div>                  
 
                       <?php endforeach ?>

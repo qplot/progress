@@ -186,7 +186,7 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
  *
  * @author Fang Jin <windmaomao@gmail.com>
  */
-function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE) {
+function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE, $range = NULL) {
   $conds = array_merge(array('entity_type' => 'node'), $conds);
   if (empty($sorts)) {
     $sorts = array();
@@ -242,6 +242,17 @@ function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE) {
         $query->propertyOrderBy($key, $value);
         break;
     }
+  }
+
+  // apply range
+  if (!empty($range)) {
+    $rvars = array(0, 0);
+    if (is_array($range)) {
+      $rvars = $range;
+    } else {
+      $rvars[1] = $range;
+    }
+    $query->range($rvars[0], $rvars[1]);
   }
 
   $result = $query->execute();

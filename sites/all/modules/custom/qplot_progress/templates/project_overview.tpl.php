@@ -46,11 +46,6 @@
 
       <ul class="progress-list">
         <?php foreach ($items as $phase): ?>
-          <?php 
-            $bar = 'success';
-            if ($phase['progress'] < 60) $bar = 'failure';
-            if ($phase['progress'] < 40) $bar = 'danger';
-          ?>
           <li>
             <div class="details-wrapper">
               <div class="name">
@@ -75,6 +70,9 @@
           </li>
         <?php endforeach ?>        
       </ul>
+      <?php if ($project['view_company']): ?>
+        <p> For more information, visit <a href="<?php echo $project['view_company'] ?>" class="btn btn-mini pull-right"> <i class="fa fa-eye"></i> view company </a> </p>
+      <?php endif ?>
     </div>
   </div>
   <div class="tiles white col-md-8 col-sm-8 no-padding">
@@ -84,7 +82,6 @@
       </div>
       <div class="tiles-body">
         <div class="tiles-title">
-          <?php echo $project['company'] ?>
         </div>
         <div class="heading">
           <!-- 8,545,654 <i class="fa fa-map-marker"></i> -->
