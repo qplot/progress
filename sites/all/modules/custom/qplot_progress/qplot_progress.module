@@ -460,10 +460,11 @@ function qplot_progress_block_view($delta = '') {
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
 
       $node = node_load($nid);
-      $wrapper = entity_metadata_wrapper('node', $node);
+      $wrapper = entity_metadata_wrapper('node', $node);      
       // $comment = $wrapper->field_project_comment->value();
 
       $variables['project'] = array(
+        'status' => $wrapper->field_project_status->name->value(),
         'hours' => $wrapper->field_project_hours->value(),
         'progress' => $wrapper->field_project_progress->value(),
         'capacity' => $wrapper->field_project_capacity->value(),

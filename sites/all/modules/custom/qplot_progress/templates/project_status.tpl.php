@@ -2,9 +2,7 @@
 	global $base_url;
 	$path = $base_url . '/' . drupal_get_path('theme', 'webarch');
 
- // dsm($project);
-
-
+ dsm($project);
 ?>
 
 <!-- Project status chart -->
@@ -15,9 +13,20 @@
         <div class="controller">
           <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
         </div>
+
         <div class="tiles-title">
           Project Status
         </div><br>
+
+        <?php
+          $classes = array(
+            // 'Proposed' => 'warning',
+            'On Hold' => 'important',
+            'Finished' => 'inverse',
+            'Active' => '',
+          );
+        ?>
+        <p class="pull-right"><span class="label label-<?php echo $classes[$project['status']] ?>"><?php echo $project['status'] ?></span></p>
 
         <div class="grid-body no-border">
           <?php if ($project['comment']): ?>
@@ -25,7 +34,7 @@
           <?php endif ?>
           <h4>Development <span class="semi-bold">Status</span></h4>
           <p>Indicator of health of project, including the number of hours per week, and the percentage progress of the current work.</p>
-
+          <br />
           <h5>Total hours: <span class="semi-bold"> <?php echo $project['hours'] ?> hours</span></h5>
           <div class="row">
             <div class="col-md-6">
@@ -39,7 +48,7 @@
           </div>
           <div class="clearfix"></div>
         </div>
-
+        <p></p>
       </div>
     </div>
   </div>
