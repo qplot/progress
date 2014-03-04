@@ -100,9 +100,11 @@
                                   <th style="width:23%">
                                       Task
                                   </th>
+<!-- 
                                   <th style="width:9%">
                                       Added
                                   </th>
+ -->                                  
                                   <th style="width:2%">
                                       Hours
                                   </th>
@@ -123,11 +125,8 @@
                                   <td class="v-align-middle">
                                       <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
                                   </td>
-                                  <td class="v-align-middle">
-                                    <a href="" class="tip" data-toggle="tooltip" title="<?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?>" data-placement="top"><?php echo $task['added'] ?></a>                                      
-                                  </td>
                                   <td>
-                                      <span class="muted"><?php echo $task['hours'] ?></span>
+                                    <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top"><?php echo $task['hours'] ?></a>
                                   </td>
                                   <td class="v-align-middle">
                                       <div class="progress">
