@@ -10,7 +10,7 @@
 ?>
 
  <div class="row tiles-container tiles white spacing-bottom">
-  <div class="tile-more-content col-md-4 col-sm-4 no-padding">
+  <div class="tile-more-content col-md-5 col-sm-5 no-padding">
     <div class="tiles green">
       <div class="tiles-body">
         <div class="heading">
@@ -19,16 +19,19 @@
             if ($project['flag']):
               // echo $project['flag'];
           ?>
-            <a href="" class="pull-right"><i class="fa fa-star-o"></i></a>
+            <a href="" class="text-white pull-right"><i class="fa fa-star-o"></i></a>
           <?php endif; ?>
           <?php echo $project['title'] ?>
         </div>
         <p>
-          Status : <?php echo $project['status'] ?>
+          <?php if ($company): ?>
+            <i class="fa fa-<?php echo $project['icon'] ?>"></i> Company: <a href="<?php echo $company['view'] ?>" class="text-white"> <?php echo $company['title'] ?> </a>
+          <?php endif ?>
         </p>
 
       </div>
       <div class="tile-footer">
+
         <?php echo $project['description'] ?>
         <?php if ($project['edit']): ?>
         <p>
@@ -70,12 +73,9 @@
           </li>
         <?php endforeach ?>        
       </ul>
-      <?php if ($project['view_company']): ?>
-        <p> For more information, visit <a href="<?php echo $project['view_company'] ?>" class="btn btn-mini pull-right"> <i class="fa fa-eye"></i> view company </a> </p>
-      <?php endif ?>
     </div>
   </div>
-  <div class="tiles white col-md-8 col-sm-8 no-padding">
+  <div class="tiles white col-md-7 col-sm-7 no-padding">
     <div class="tiles-chart">
       <div class="controller">
         <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a>
@@ -92,5 +92,6 @@
       </div>
     </div>
     <div class="clearfix"></div>
+    <br />
   </div>
 </div>

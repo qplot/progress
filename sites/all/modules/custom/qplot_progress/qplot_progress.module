@@ -414,7 +414,6 @@ function qplot_progress_block_view($delta = '') {
       $wrapper = entity_metadata_wrapper('node', $node);
       $body = $wrapper->body->value();
       $photo = $wrapper->field_project_photo->value();
-      $company_id = $wrapper->field_project_company->raw();
 
       $variables['project'] = array(
         'title' => $wrapper->title->value(),
@@ -423,13 +422,19 @@ function qplot_progress_block_view($delta = '') {
         'description' => !empty($body) ? $wrapper->body->summary->value() : '',
         'progress' => $wrapper->field_project_progress->value(),
         'status' => $wrapper->field_project_status->name->value(),
-        // 'company' => $wrapper->field_project_company->title->value(),
-        'view_company' => ($company_id) ? url('company/' . $company_id) : '',
         'flag' => flag_create_link('favorite_projects', $wrapper->getIdentifier()),
         'edit' => node_access('update', $node) ? url('node/' . $wrapper->getIdentifier() . '/edit', array(
           'query' => drupal_get_destination()
         )) : '',
       );
+
+      $company = $wrapper->field_project_company->value();
+      $variables['company'] = array(
+        'id' => $company->nid,
+        'title' => $company->title,
+        'view' => url('company/' . $company->nid),
+      );
+
       // find phases info and associate properties
       $variables['items'] = array();
       $nids = qplot_api_find_nodes2(
