@@ -534,16 +534,15 @@ function qplot_progress_block_view($delta = '') {
         ))) : '',
       );
       // find phases info
-      $pnids = qplot_api_find_nodes(
-        array('type' => 'phase'),
-        array('field_phase_project' => array(
-          'target_id', $nid, '='
-        )),
-        TRUE,
-        NULL,
-        array('property' => array(
+      $pnids = qplot_api_find_nodes2(
+        array(
+          'type' => 'phase',
+          'field_phase_project' => array('target_id', $nid, '='),
+        ),
+        array(
           'changed' => 'DESC'
-        ))
+        ),
+        TRUE
       );
       $variables['phases'] = array();
       foreach ($pnids as $pid) {
@@ -588,17 +587,14 @@ function qplot_progress_block_view($delta = '') {
         );
 
         // find tasks for this phase
-        $tnids = qplot_api_find_nodes(
-          array('type' => 'task'),
+        $tnids = qplot_api_find_nodes2(
           array(
+            'type' => 'task',
             'field_task_phase' => array('target_id', $phase_wrapper->getIdentifier(), '='),
             'field_task_project' => array('target_id', $nid, '='),
           ),
-          TRUE,
           NULL,
-          array('property' => array(
-            'changed' => 'DESC'
-          ))
+          TRUE
         );
         foreach ($tnids as $tid) {
           $node = node_load($tid);
@@ -628,15 +624,9 @@ function qplot_progress_block_view($delta = '') {
               'query' => drupal_get_destination()
             )) : '',
           );
-          // perform analysis and summary
-          // $phase_item['hours'] = $phase_item['hours'] + $task_item['hours'];
-          // $phase_item['progress'] = $phase_item['progress'] + $task_item['hours'] * $task_item['progress'] / 100;
 
           $phase_item['tasks'][] = $task_item;
         }
-        // if ($phase_item['progress']) {
-        //   $phase_item['progress'] = round($phase_item['progress'] / $phase_item['hours'] * 100);
-        // }
         $variables['phases'][] = $phase_item;
       }
       // set current phase
