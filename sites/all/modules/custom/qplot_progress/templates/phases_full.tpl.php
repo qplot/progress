@@ -74,7 +74,7 @@
                       <table class="table no-more-tables">
                           <thead>
                             <tr>
-                              <td colspan="4">
+                              <td colspan="3">
                                 <h5 class="semi-bold no-margin">Progress : 
                                   <?php echo $phase['hours'] ?>hrs (total), 
                                   <?php echo round((1 - $phase['progress']/100) * $phase['hours']) ?>hrs (left)
