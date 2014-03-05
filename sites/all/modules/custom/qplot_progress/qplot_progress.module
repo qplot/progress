@@ -788,13 +788,14 @@ function qplot_progress_block_view($delta = '') {
     case 'project_members':
       $nid = arg(1);
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+      $node = node_load($nid);
 
       // find project info
       $variables['project'] = array(
-        'invite' => url("group/node/$nid/admin/people/add-user", array(
+        'invite' => node_access('update', $node) ? url("group/node/$nid/admin/people/add-user", array(
           'query' => drupal_get_destination()
-        )),
-        'manage' => url("group/node/$nid/admin/people"),
+        )) : '',
+        'manage' => node_access('update', $node) ? url("group/node/$nid/admin/people") : '',
       );
 
       $variables['members'] = qplot_progress_project_members($nid);
@@ -901,11 +902,11 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $variables['project'] = array(
-        'create_content' => url('node/add/content', array('query' => array_merge(
+        'create_content' => node_access('update', $project) ? url('node/add/content', array('query' => array_merge(
           array(
             'field_content_project' => $nid,
           ), drupal_get_destination()
-        ))),
+        ))) : '',
       );
 
       $block['content'] = theme('qplot_progress_content_list', $variables);

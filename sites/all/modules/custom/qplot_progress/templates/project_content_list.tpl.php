@@ -16,7 +16,9 @@
           Project Content
         </div>
         <div class="grid-body no-border">
-          <a href="<?php echo $project['create_content'] ?>" class="btn btn-mini pull-right"><i class="fa fa-plus"></i></a>
+          <?php if ($project['create_content']): ?>
+            <a href="<?php echo $project['create_content'] ?>" class="btn btn-mini pull-right"><i class="fa fa-plus"></i></a>
+          <?php endif ?>
           <h4>Major <span class="semi-bold">Content</span></h4>
           <div class="clearfix"></div>
           <?php if (empty($content)): ?>
