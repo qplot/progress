@@ -985,8 +985,8 @@ function qplot_progress_update_phase_progress($node) {
       $hours = $hours + $h;
       $progress = $progress + $twrapper->field_task_progress->value() * $h / 100;
     } else {
-      $node = node_load($nid);
-      $wrapper = entity_metadata_wrapper('node', $node);
+      $task = node_load($nid);
+      $wrapper = entity_metadata_wrapper('node', $task);
 
       $h = $wrapper->field_task_hours->value();
       $hours = $hours + $h;
@@ -995,11 +995,21 @@ function qplot_progress_update_phase_progress($node) {
   }
   $progress = !empty($hours) ? round($progress / $hours * 100) : 0;
 
-  $node = node_load($pid);
-  $wrapper = entity_metadata_wrapper('node', $node);
+  $phase = node_load($pid);
+  $wrapper = entity_metadata_wrapper('node', $phase);
   $wrapper->field_phase_hours->set($hours);
   $wrapper->field_phase_progress->set($progress);
   $wrapper->save();
+
+
+  // create message for notification
+  // global $user;
+  // $message = message_create('task', array('uid' => $user->uid));
+  // $wrapper = entity_metadata_wrapper('message', $message);
+  // if (!$delete) {
+  //   $wrapper->field_message_node->set($node);
+  // }
+  // $wrapper->save();
 }
 
 /**
