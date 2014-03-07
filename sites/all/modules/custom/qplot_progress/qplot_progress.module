@@ -596,12 +596,14 @@ function qplot_progress_block_view($delta = '') {
           NULL,
           TRUE
         );
+        $phase_item['group'] = array();
         foreach ($tnids as $tid) {
           $node = node_load($tid);
           $wrapper = entity_metadata_wrapper('node', $node);
           $body = $wrapper->body->value();
           $url = $wrapper->field_task_url->value();
           $member_id = $wrapper->field_task_requestby->raw();
+          $tag = $wrapper->field_task_tag->value();
 
           $task_item = array(
             'title' => $wrapper->title->value(),
@@ -615,6 +617,7 @@ function qplot_progress_block_view($delta = '') {
               $wrapper->field_task_url->url->value(),
               array('attributes' => array('target' => '_blank'))
             ) : '',
+            'tag' => !empty($tag) ? $tag->name : '',
             'request_by' => ($member_id) ? qplot_progress_user_profile($member_id) : '',
             // 'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
             'edit' => node_access('update', $node) ? url('task/' . $wrapper->getIdentifier() . '/edit', array(
@@ -626,6 +629,11 @@ function qplot_progress_block_view($delta = '') {
           );
 
           $phase_item['tasks'][] = $task_item;
+
+          // group task using tag
+          $group = $task_item['tag'];
+          if (!$group) $group = '0';
+          $phase_item['group'][$group][] = count($phase_item['tasks']) - 1;
         }
         $variables['phases'][] = $phase_item;
       }
