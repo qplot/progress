@@ -1258,7 +1258,8 @@ function qplot_progress_task_edit_form($node) {
         'phases' => array(),
         'phase_id' => 0,
         'project_id' => 0,
-        'user_id' => ''
+        'user_id' => '',
+        'tag_id' => '',
       );
 
       // go through each field and sort out the value based on new or edit
@@ -1281,6 +1282,7 @@ function qplot_progress_task_edit_form($node) {
           'description' => !empty($body) ? $wrapper->body->value->value() : '',
           'progress' => $wrapper->field_task_progress->value(),
           'user_id' => !empty($user_id) ? $wrapper->field_task_requestby->raw() : '',
+          'tag_id' => $wrapper->field_task_tag->raw(),
         ); 
       } else {
         // get company id
@@ -1321,6 +1323,17 @@ function qplot_progress_task_edit_form($node) {
         }
         $project['phases'] = $items;
         $phases[] = $project;
+      }
+
+      // get a list of all tags 
+      $vid = taxonomy_vocabulary_machine_name_load('task_tag')->vid;
+      $tree = taxonomy_get_tree($vid);
+      $variables['tags'] = array();
+      foreach ($tree as $value) {
+        $variables['tags'][] = array(
+          'id' => $value->tid,
+          'name' => $value->name,
+        );
       }
 
       // get all members in this project
@@ -1369,6 +1382,9 @@ function qplot_progress_task_edit_form($node) {
       ));
       if (!empty($_POST['member_id'])) {
         $node->field_task_requestby['und'][0]['target_id'] = $_POST['member_id'];
+      }
+      if (!empty($_POST['tag_id'])) {
+        $wrapper->field_task_tag->set($_POST['tag_id']);      
       }
 
       $phase = explode('_', $_POST['phase_id']);

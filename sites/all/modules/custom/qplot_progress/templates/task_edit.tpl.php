@@ -31,6 +31,21 @@
               </div>
             </div>
 
+            <!-- Task Tags -->
+            <div class="form-group">
+              <label class="form-label">Tag</label>
+              <span class="help">Pick one tag to better refine this task in the phase</span>
+              <div class="controls radio radio-primary">
+                <?php foreach ($tags as $tag): ?>
+                  <?php 
+                    $checked = $tag['id'] == $values['tag_id'];
+                  ?>
+                  <input id="<?php echo $tag['id'] ?>" name="tag_id" type="radio" value="<?php echo $tag['id'] ?>" <?php echo $checked ? 'checked="checked"' : '' ?> >
+                  <label for="<?php echo $tag['id'] ?>"><?php echo $tag['name'] ?></label>
+                <?php endforeach ?>                  
+              </div>
+            </div>
+
             <div class="row">
               <div class="col-md-7">
                 <!-- Task Requested Date -->
@@ -164,7 +179,6 @@
                   <?php endforeach ?>
                 <?php endforeach ?>
               </div>
-
             </div>
 
           </div>
