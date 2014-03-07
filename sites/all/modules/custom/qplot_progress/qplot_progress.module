@@ -635,6 +635,7 @@ function qplot_progress_block_view($delta = '') {
           if (!$group) $group = '0';
           $phase_item['group'][$group][] = count($phase_item['tasks']) - 1;
         }
+        ksort($phase_item['group']);
         $variables['phases'][] = $phase_item;
       }
       // set current phase
