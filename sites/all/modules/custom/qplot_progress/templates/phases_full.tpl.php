@@ -1,5 +1,5 @@
 <?php
-  // dsm($phases);
+  dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -153,10 +153,21 @@
 
                               <?php else: ?>
 
-                                <?php foreach($phase['group'] as $group => $tasks): ?>
+                                <?php foreach($phase['group'] as $group => $g): ?>
+                                  <?php 
+                                    $tasks = $g['tasks'];
+                                  ?>
                                   <tr> 
-                                    <td colspan="5">
+                                    <td colspan="2">
                                       <h5><?php echo $group ? $group : 'Uncategorized' ?></h5>
+                                    </td>
+                                    <td>
+                                      <h5><?php echo $g['hours'] ?></h5>
+                                    </td>
+                                    <td>
+                                      <h5><?php echo $g['progress'] ?></h5>
+                                    </td>
+                                    <td>
                                     </td>
                                   </tr>
                                   <?php foreach ($tasks as $id): ?>

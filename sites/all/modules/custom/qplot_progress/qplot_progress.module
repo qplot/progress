@@ -632,9 +632,24 @@ function qplot_progress_block_view($delta = '') {
 
           // group task using tag
           $group = $task_item['tag'];
-          if (!$group) $group = '0';
-          $phase_item['group'][$group][] = count($phase_item['tasks']) - 1;
+          if (!$group) $group = 'Not-categorized';
+          // init group
+          if (empty($phase_item['group'][$group])) {
+            $phase_item['group'][$group] = array(
+              'tasks' => array(),
+              'hours' => 0,
+              'progress' => 0,
+            );
+          }
+          $phase_item['group'][$group]['tasks'][] = count($phase_item['tasks']) - 1;
+          $phase_item['group'][$group]['hours'] = $phase_item['group'][$group]['hours'] + $task_item['hours'];
+          $phase_item['group'][$group]['progress'] = $phase_item['group'][$group]['progress'] + $task_item['hours'] * $task_item['progress'];
         }
+        // update final progress
+        foreach ($phase_item['group'] as &$g) {
+          $g['progress'] = intval($g['progress'] / $g['hours']);
+        }
+
         ksort($phase_item['group']);
         $variables['phases'][] = $phase_item;
       }
