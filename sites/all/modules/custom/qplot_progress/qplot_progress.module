@@ -67,6 +67,10 @@ function qplot_progress_theme() {
       'variables' => array('error' => NULL),
       'template' => 'templates/error_page'
     ),
+    'qplot_progress_front_dashboard' => array(
+    'variables' => array(),
+    'template' => 'templates/front_dashboard'
+    ),
 
     // elements
     'qplot_progress_main_menu' => array(
@@ -162,7 +166,10 @@ function qplot_progress_theme() {
     'qplot_progress_project_edit' => array(
       'variables' => array('values' => NULL),
       'template' => 'templates/project_edit'
-
+    ),
+    'qplot_progress_tasks_latest' => array(
+      'variables' => array('phases' => NULL),
+      'template' => 'templates/tasks_latest'
     ),
   );
 }
@@ -177,6 +184,9 @@ function qplot_progress_block_info() {
     ),
     'error_page' => array(
       'info' => 'Error Page'
+    ),
+    'front_dashboard' => array(
+      'info' => 'Front Dashboard'
     ),
     'main_menu' => array(
       'info' => 'Client Menu'
@@ -243,6 +253,9 @@ function qplot_progress_block_info() {
     'project_list' => array(
       'info' => ('Project List')
     ),
+    'tasks_latest' => array(
+      'info' => ('Latest Tasks')
+    ),
   );
 
   return $blocks;
@@ -263,6 +276,64 @@ function qplot_progress_block_view($delta = '') {
     // case 'logo_area':
     //   $block['content'] = theme('qplot_progress_logo_area');
     //   break;
+    case 'front_dashboard':
+    // find out all projects
+      $nids = qplot_api_find_nodes2(
+        array(
+          'type' => 'project',
+        ),
+        NULL,
+        TRUE,
+        3
+      );  
+      $variables['projects'] = array();
+      foreach ($nids as $id) {
+        $node = node_load($id);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $body = $wrapper->body->value();
+
+        $variables['projects'][] = array(
+          'title' => $wrapper->title->value(),
+          // 'icon' => $wrapper->field_project_icon->name->value(),
+          // 'company' => $wrapper->field_project_company->title->value(),
+          'description' => !empty($body) ? $wrapper->body->summary->value() : '',
+          'progress' => $wrapper->field_project_progress->value(),
+          // 'status' => $wrapper->field_project_status->name->value(),
+          // 'view' => url('project/' . $wrapper->getIdentifier()),
+        );
+      }
+
+      // find tasks
+      $tnids = qplot_api_find_nodes2(
+        array(
+          'type' => 'task',
+        ),
+        NULL,
+        TRUE,
+        2        
+      );
+      $variables['tasks'] = array();
+      foreach ($tnids as $id) {
+        $node = node_load($id);
+        $wrapper = entity_metadata_wrapper('node', $node);
+        $body = $wrapper->body->value();
+        $user = user_load($node->uid);
+
+        $variables['tasks'][] = array(
+          'title' => $wrapper->title->value(),
+          'modified' => date('g:i <b>a</b>', $wrapper->changed->value()),
+          'user' => $user->name,
+          'company' => $wrapper->field_task_project->field_project_company->title->value(),
+          'description' => !empty($body) ? $wrapper->body->summary->value() : '',
+          'hours' => $wrapper->field_task_hours->value(),
+          'progress' => $wrapper->field_task_progress->value(),
+          'project' => $wrapper->field_task_project->title->value(),
+          'phase' => $wrapper->field_task_phase->title->value(),
+        );
+      }
+
+      $block['content'] = theme('qplot_progress_front_dashboard', $variables);
+      break;
     case 'error_page':
       $error = '';
       $desc = "We seem to have lost you in the clouds";
