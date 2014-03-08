@@ -165,7 +165,7 @@
                                       <h5><?php echo $g['hours'] ?></h5>
                                     </td>
                                     <td>
-                                      <h5><?php echo $g['progress'] ?></h5>
+                                      <h5><?php echo $g['progress'] ?>%</h5>
                                     </td>
                                     <td>
                                     </td>

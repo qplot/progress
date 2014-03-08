@@ -650,7 +650,7 @@ function qplot_progress_block_view($delta = '') {
           $g['progress'] = intval($g['progress'] / $g['hours']);
         }
 
-        ksort($phase_item['group']);
+        ksort($phase_item['group'], SORT_STRING);
         $variables['phases'][] = $phase_item;
       }
       // set current phase
