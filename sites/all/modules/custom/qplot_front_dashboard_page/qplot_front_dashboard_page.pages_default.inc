@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * qlot_front_dashboard_page.pages_default.inc
+ * qplot_front_dashboard_page.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function qlot_front_dashboard_page_default_page_manager_pages() {
+function qplot_front_dashboard_page_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;

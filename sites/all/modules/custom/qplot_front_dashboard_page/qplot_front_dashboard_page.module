@@ -4,4 +4,4 @@
  * Code for the Front Dashboard Page feature.
  */
 
-include_once 'qlot_front_dashboard_page.features.inc';
+include_once 'qplot_front_dashboard_page.features.inc';
