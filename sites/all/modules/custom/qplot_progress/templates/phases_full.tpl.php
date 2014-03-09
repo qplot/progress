@@ -88,7 +88,7 @@
                                 </h5>
                               </td>
                               <td colspan="2" class="v-align-middle">
-                                <div class="progress progress-large progress-striped active">
+                                <div class="progress progress-large active">
                                   <?php
                                     print theme('qplot_progress_progress_widget', array(
                                       'progress' => $phase['progress'],
@@ -148,11 +148,11 @@
                                           </div>
                                       </td>
                                       <td>
-                                        <?php if ($task['edit']): ?>
-                                          <a href="<?php echo $task['edit'] ?>" title="edit"><i class="fa fa-edit"></i></a>
-                                        <?php endif ?>
                                         <?php if ($task['delete']): ?>        
-                                          <a href="<?php echo $task['delete'] ?>" title="delete"><i class="fa fa-eraser"></i></a>
+                                          <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
+                                        <?php endif ?>
+                                        <?php if ($task['edit']): ?>
+                                          <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
                                         <?php endif ?>
                                       </td>
                                   </tr>

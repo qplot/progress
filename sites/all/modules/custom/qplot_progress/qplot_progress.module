@@ -1688,7 +1688,7 @@ function qplot_progress_phase_edit_form($node) {
  * Custom edit page for project
  */
 function qplot_progress_project_edit_form($node) {
-  dsm($_POST);
+  // dsm($_POST);
   $op = 'View';
   if (!empty($_POST['op'])) {
     $op = $_POST['op'];

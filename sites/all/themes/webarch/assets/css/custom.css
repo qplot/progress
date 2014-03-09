@@ -65,3 +65,9 @@
   margin-right: 0px;
   padding-top: 10px;
  }
+
+ /* fix progress bar text */
+ .progress-large .progress-bar {
+  font-size: 13px;
+  padding-top: 4px;
+ }
