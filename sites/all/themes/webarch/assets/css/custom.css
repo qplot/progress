@@ -56,3 +56,12 @@
   font-weight: 600;
   font-size: 14px;
 }
+
+/* fix phase tabs */
+ .phases-tab {
+  background-color: #F2F4F6;
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+ }

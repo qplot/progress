@@ -1,5 +1,5 @@
 <?php
-  dsm($phases);
+  // dsm($phases);
 ?>
 
 <div class="row tiles-container tiles white spacing-bottom">
@@ -9,21 +9,28 @@
         </div>        
         <div class="tiles-title">
             Tasks in Phases
-        </div><br>
-        <?php if ($project['create_phase']): ?>
-          <a href="<?php echo $project['create_phase'] ?>" class="btn btn-success btn-mini pull-right"><i class="fa fa-plus"></i> New Phase</a>
-          <div class="clearfix"></div>
-        <?php endif; ?>        
-        <?php if (count($phases) == 0): ?>
-          <p> There are currently no phases for this project. </p>
-        <?php endif; ?>
-        <ul class="nav nav-pills form-actions" id="tab-4">          
-          <?php foreach ($phases as $key => &$phase): ?>
-            <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
-                <a href="#phase-<?php echo $key  ?>"><?php echo $phase['title'] ?></a>
-            </li>
-          <?php endforeach ?>
-        </ul>
+        </div>
+        <div class="row phases-tab">
+          <div class="col-md-10">
+            <?php if (count($phases) == 0): ?>
+              <p> There are currently no phases for this project. </p>
+            <?php endif; ?>
+            <ul class="nav nav-pills" id="tab-4">          
+              <?php foreach ($phases as $key => &$phase): ?>
+                <li class="<?php echo $phase['focus'] ? 'active' : '' ?>">
+                    <a href="#phase-<?php echo $key  ?>"><?php echo $phase['title'] ?></a>
+                </li>
+              <?php endforeach ?>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <?php if ($project['create_phase']): ?>
+              <div class="pull-right">
+                <a href="<?php echo $project['create_phase'] ?>" class="btn btn-success btn-mini tip" data-toggle="tooltip" data-placement="right" title="New Phase"><i class="fa fa-plus"></i> </a>
+              </div>
+            <?php endif ?>
+          </div>
+        </div>
         <div class="tab-content">
           <?php foreach ($phases as $key=> &$phase): ?>
             <div class="tab-pane <?php echo $phase['focus'] ? 'active' : '' ?>" id="phase-<?php echo $key ?>">
@@ -43,21 +50,21 @@
                         <span class="label label-<?php echo $classes[$phase['status']] ?>"><?php echo $phase['status'] ?></span>
                       </p>
                       <p class="pull-right">
+                        <?php if ($phase['create_task']): ?>
+                          <a href="<?php echo $phase['create_task'] ?>" class="btn btn-success" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"></i>  Task</a>
+                        <?php endif; ?>
+
+                      </p>
+                      <h3>
+                        <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                         <?php if ($phase['delete']): ?>
-                          <a href="<?php echo $phase['delete'] ?>" class="btn btn-mini"><i class="fa fa-eraser"></i> delete phase </a>                        
+                          <a href="<?php echo $phase['delete'] ?>" class="btn btn-mini tip" data-toggle="tooltip" data-placement="top" title="Delete phase"><i class="fa fa-eraser"></i> delete </a>                        
                         <?php endif ?>
                         <?php if ($phase['edit']): ?>
-                          <a href="<?php echo $phase['edit'] ?>" class="btn btn-mini"><i class="fa fa-pencil"></i> edit </a>
+                          <a href="<?php echo $phase['edit'] ?>" class="btn btn-mini tip" data-toggle="tooltip" data-placement="top" title="Edit phase"><i class="fa fa-pencil"></i> edit </a>
                         <?php endif; ?>
-                      </p>
-
-                      <h3>
-                          <?php echo $project['title'] ?>: <span class="semi-bold"><?php echo $phase['title'] ?></span>
                       </h3>
                       <p class="pull-right">
-                        <?php if ($phase['create_task']): ?>
-                          <a href="<?php echo $phase['create_task'] ?>" class="btn btn-success btn-mini" data-togle="tooltip" title="Add New Task"><i class="fa fa-plus"></i> New Task</a>
-                        <?php endif; ?>
                       </p>
 
                       <h5>

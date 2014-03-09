@@ -611,7 +611,8 @@ function qplot_progress_block_view($delta = '') {
           'field_phase_project' => array('target_id', $nid, '='),
         ),
         array(
-          'changed' => 'DESC'
+          // 'created' => 'ASC'
+          'field_phase_durating' => array('value', 'ASC'),
         ),
         TRUE
       );
