@@ -135,7 +135,10 @@
                                           <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
                                       </td>
                                       <td>
-                                        <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top"><?php echo $task['hours'] ?></a>
+                                        <?php 
+                                          $left = intval((100-$task['progress']) / 100 * $task['hours']);
+                                        ?>
+                                        <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top"><?php echo $task['hours'] ?> <small>: <?php echo $left ?></small></a>
                                       </td>
                                       <td class="v-align-middle">
                                           <div class="progress">
@@ -169,7 +172,10 @@
                                       <h5><?php echo $group ? $group : 'Uncategorized' ?></h5>
                                     </td>
                                     <td>
-                                      <h5><?php echo $g['hours'] ?></h5>
+                                      <?php 
+                                        $left = intval((100-$g['progress']) / 100 * $g['hours']);
+                                      ?>                                      
+                                      <h5><?php echo $g['hours'] ?> : <small><?php echo $left ?></small></h5>
                                     </td>
                                     <td>
                                       <h5><?php echo $g['progress'] ?>%</h5>
