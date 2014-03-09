@@ -622,8 +622,7 @@ function qplot_progress_block_view($delta = '') {
           'field_phase_project' => array('target_id', $nid, '='),
         ),
         array(
-          // 'created' => 'ASC'
-          'field_phase_durating' => array('value', 'ASC'),
+          'field_phase_durating' => array('value', 'ASC')
         ),
         TRUE
       );
@@ -1416,9 +1415,9 @@ function qplot_progress_task_edit_form($node) {
           )),
           TRUE,
           NULL,
-          array('property' => array(
-            'created' => 'DESC'
-          ))
+          array(
+            'field_phase_durating' => array('value', 'ASC')
+          )
         );
         $items = array();
         foreach ($pnids as $pid) {
