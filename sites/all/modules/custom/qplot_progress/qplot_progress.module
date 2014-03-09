@@ -284,7 +284,7 @@ function qplot_progress_block_view($delta = '') {
         ),
         NULL,
         TRUE,
-        3
+        5
       );  
       $variables['projects'] = array();
       foreach ($nids as $id) {
@@ -308,27 +308,38 @@ function qplot_progress_block_view($delta = '') {
         array(
           'type' => 'task',
         ),
-        NULL,
+        array(
+          'changed' => 'DESC'
+        ),
         TRUE,
-        2        
+        5        
       );
+
       $variables['tasks'] = array();
       foreach ($tnids as $id) {
         $node = node_load($id);
         $wrapper = entity_metadata_wrapper('node', $node);
         $body = $wrapper->body->value();
         $user = user_load($node->uid);
+        $profile = profile2_load_by_user($node->uid);
+        $uwrapper = entity_metadata_wrapper('profile2', $profile['main']);
 
         $variables['tasks'][] = array(
           'title' => $wrapper->title->value(),
-          'modified' => date('g:i <b>a</b>', $wrapper->changed->value()),
-          'user' => $user->name,
+          'datetime' => date('Y-m-d G:i', $wrapper->changed->value()),
+          'day' => date('l', $wrapper->changed->value()),
+          'time' => date('g:i', $wrapper->changed->value()),
+          'am/pm' => date('a', $wrapper->changed->value()),
+          'fname' => $uwrapper->field_profile_first->value(),
+          'lname' => $uwrapper->field_profile_last->value(),
           'company' => $wrapper->field_task_project->field_project_company->title->value(),
           'description' => !empty($body) ? $wrapper->body->summary->value() : '',
           'hours' => $wrapper->field_task_hours->value(),
           'progress' => $wrapper->field_task_progress->value(),
           'project' => $wrapper->field_task_project->title->value(),
           'phase' => $wrapper->field_task_phase->title->value(),
+          'icon' => $wrapper->field_task_project->field_project_icon->name->value(),
+
         );
       }
 
