@@ -1,7 +1,7 @@
 <?php 
   $class = 'success';
   if ($progress <= 95) $class = 'success';
-  if ($progress <= 50) $class = 'warning';
+  if ($progress <= 80) $class = 'warning';
   if ($progress <= 15) $class = 'danger';
 ?>
 

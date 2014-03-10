@@ -35,6 +35,10 @@ function qplot_progress_menu() {
     'description' => 'edit phase.',
     'access callback' => TRUE,
   );
+  // Implements using panel
+  // $items['project/%node/phase/%node'] = array(
+  //   'title' => 'View Project',
+  // );
   $items['project/new'] = array(
     'title' => 'Add Project',
     'page callback' => 'qplot_progress_project_edit_form',
@@ -378,16 +382,18 @@ function qplot_progress_block_view($delta = '') {
 
     case 'main_menu':
       global $user;
-      $profile = qplot_progress_user_profile($user->uid);
+      // $profile = qplot_progress_user_profile($user->uid);
 
       $variables['menu'] = array(
         'home' => url(''),
-        'user' => $profile,
+        // 'user' => $profile,
+        'user' => (array)$user,
+        'logout' => url('user/logout'),
       );
 
-      if ($profile) {
-        $variables['menu']['logout'] = $profile['logout'];
-      }
+      // if ($profile) {
+      //   $variables['menu']['logout'] = $profile['logout'];
+      // }
 
       $block['content'] = theme('qplot_progress_main_menu', $variables);
       break;
@@ -422,33 +428,33 @@ function qplot_progress_block_view($delta = '') {
       break;
     case 'projects_teaser':
       if (empty($user->uid)) return;
-      // find out all projects and associated properties
-      // $nids = qplot_api_find_nodes(
-      //   array('type' => 'project'),
-      //   array('field_project_company' => array(
-      //     'target_id', 4, '='
-      //   )),
-      //   TRUE
-      // );
-      // find out all favorites by the current user
-      $nids = array();
-      $flags = flag_get_user_flags('node');
-      if (!empty($flags['favorite_projects'])) {
-        $nids = array_reverse(array_keys($flags['favorite_projects']));
+
+      $use_favorites = FALSE;
+      if ($use_favorites) {
+        // find out all favorites by the current user
+        $nids = array();
+        $flags = flag_get_user_flags('node');
+        if (!empty($flags['favorite_projects'])) {
+          $nids = array_reverse(array_keys($flags['favorite_projects']));
+        }
+        $variables['items'] = array();
+        foreach ($nids as $id) {
+          $node = node_load($id);
+          $wrapper = entity_metadata_wrapper('node', $node);
+          $variables['items'][] = array(
+            'title' => $wrapper->title->value(),
+            'icon' => $wrapper->field_project_icon->name->value(),
+            'description' => $wrapper->body->summary->value(),
+            'progress' => $wrapper->field_project_progress->value(),
+            'status' => $wrapper->field_project_status->name->value(),
+            'view' => url('project/' . $wrapper->getIdentifier()),
+          );
+        }        
+      } else {
+        $profile = qplot_progress_user_profile($user->uid);
+        $variables['items'] = $profile['project'];
       }
-      $variables['items'] = array();
-      foreach ($nids as $id) {
-        $node = node_load($id);
-        $wrapper = entity_metadata_wrapper('node', $node);
-        $variables['items'][] = array(
-          'title' => $wrapper->title->value(),
-          'icon' => $wrapper->field_project_icon->name->value(),
-          'description' => $wrapper->body->summary->value(),
-          'progress' => $wrapper->field_project_progress->value(),
-          'status' => $wrapper->field_project_status->name->value(),
-          'view' => url('project/' . $wrapper->getIdentifier()),
-        );
-      }
+
       $block['content'] = theme('qplot_progress_projects_teaser', $variables);
       break;
 
@@ -1215,6 +1221,10 @@ function qplot_progress_user_profile($uid) {
             'id' => $nwrapper->getIdentifier(),
             'title' => $nwrapper->title->value(),
             'view' => url('project/' . $nwrapper->getIdentifier()),
+            'icon' => $nwrapper->field_project_icon->name->value(),
+            'description' => $nwrapper->body->summary->value(),
+            'progress' => $nwrapper->field_project_progress->value(),
+            'status' => $nwrapper->field_project_status->name->value(),
           );
           break;
         

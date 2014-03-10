@@ -9,7 +9,7 @@
     FAVORATES
   </p>
   <?php foreach($items as $project): ?>
-    <?php $bar = ($project['status'] == 'Active') ? 'success' : 'failure'; ?>
+    <?php //$bar = ($project['status'] == 'Active') ? 'success' : 'failure'; ?>
     <div class="status-widget">
       <div class="status-widget-wrapper">
         <span class="pull-right"><i class="fa fa-<?=$project['icon'] ?>"></i></span>

@@ -20,7 +20,7 @@
     </a>
   </li>      
  -->
-  <?php if ($menu['user']): ?>
+  <?php if (!empty($menu['project'])): ?>
     <li class=""> 
       <a href="javascript:;"> 
         <i class="fa fa-book"></i> 
@@ -46,9 +46,11 @@
         <?php endforeach ?>
       </ul>
     </li>
+  <?php endif; ?>
 
+  <?php if ($menu['user']): ?>
     <li class=""> 
-      <a href="<?php echo $menu['user']['logout'] ?>"> 
+      <a href="<?php echo $menu['logout'] ?>"> 
         <i class="fa fa-sign-out"></i> <span class="title">Logout</span>
       </a>
     </li>
