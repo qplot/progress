@@ -735,7 +735,11 @@ function qplot_progress_block_view($delta = '') {
         }
         // update final progress
         foreach ($phase_item['group'] as &$g) {
-          $g['progress'] = intval($g['progress'] / $g['hours']);
+          if ($g['hours']) {
+            $g['progress'] = intval($g['progress'] / $g['hours']);
+          } else {
+            $g['progress'] = 100;
+          }
         }
 
         ksort($phase_item['group'], SORT_STRING);
