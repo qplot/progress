@@ -151,11 +151,11 @@
                                           </div>
                                       </td>
                                       <td>
-                                        <?php if ($task['delete']): ?>        
-                                          <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
-                                        <?php endif ?>
                                         <?php if ($task['edit']): ?>
                                           <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
+                                        <?php endif ?>
+                                        <?php if ($task['delete']): ?>        
+                                          <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
                                         <?php endif ?>
                                       </td>
                                   </tr>
@@ -209,10 +209,10 @@
                                         </td>
                                         <td>
                                           <?php if ($task['edit']): ?>
-                                            <a href="<?php echo $task['edit'] ?>" title="edit"><i class="fa fa-edit"></i></a>
+                                            <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
                                           <?php endif ?>
                                           <?php if ($task['delete']): ?>        
-                                            <a href="<?php echo $task['delete'] ?>" title="delete"><i class="fa fa-eraser"></i></a>
+                                            <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
                                           <?php endif ?>
                                         </td>
                                     </tr>

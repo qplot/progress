@@ -609,6 +609,7 @@ function qplot_progress_block_view($delta = '') {
       // $nid = 10;
       $nid = arg(1);
       if (empty($nid) || !is_numeric($nid)) return array('content' => '');
+      $focus_phase = arg(3);
 
       // fill project info
       $node = node_load($nid);
@@ -640,7 +641,12 @@ function qplot_progress_block_view($delta = '') {
         $duration = $phase_wrapper->field_phase_durating->value();
         $from = new DateTime($duration['value']);
         $to = new DateTime($duration['value2']);
+        // $destination = drupal_get_destination();
+        $destination = array('destination' => url(
+          'project/' . $nid . '/phase/' . $phase_wrapper->getIdentifier()
+        ));
         $phase_item = array(
+          'id' => $phase_wrapper->getIdentifier(),
           'title' => $phase_wrapper->title->value(),
           'description' => !empty($body) ? htmlspecialchars_decode($body['value']) : '',
           'from' => $from->format('m/d/Y'),
@@ -648,27 +654,20 @@ function qplot_progress_block_view($delta = '') {
           'hours' => $phase_wrapper->field_phase_hours->value(),
           'progress' => $phase_wrapper->field_phase_progress->value(),
           'status' => $phase_wrapper->field_phase_status->name->value(),
-          // 'edit' => url('node/' . $phase_wrapper->getIdentifier() . '/edit', array(
           'edit' => node_access('update', $phase) ? url('phase/' . $phase_wrapper->getIdentifier() . '/edit', array(
             'query' => array_merge(
               array('project' => $nid),
-              drupal_get_destination()
+              $destination
             )
           )) : '',
           'delete' => node_access('delete', $phase) ? url('node/' . $phase_wrapper->getIdentifier() . '/delete', array(
-            'query' => drupal_get_destination()
+            'query' => $destination
           )) : '',
-          // 'create' => url('node/add/task', array('query' => array_merge(
-          //   array(
-          //     'field_task_phase' => $pid,
-          //     'field_task_project' => $nid,
-          //   ), drupal_get_destination()
-          // ))),
           'create_task' => node_access('create', 'task') ? url('task/new', array('query' => array_merge(
             array(
               'phase' => $pid,
               'project' => $nid,
-            ), drupal_get_destination()
+            ), $destination
           ))) : '',
           'tasks' => array(),
           'focus' => FALSE,
@@ -709,10 +708,10 @@ function qplot_progress_block_view($delta = '') {
             'request_by' => ($member_id) ? qplot_progress_user_profile($member_id) : '',
             // 'edit' => url('node/' . $wrapper->getIdentifier() . '/edit', array(
             'edit' => node_access('update', $node) ? url('task/' . $wrapper->getIdentifier() . '/edit', array(
-              'query' => drupal_get_destination()
+              'query' => $destination
             )) : '',
             'delete' => node_access('delete', $node) ? url('node/' . $wrapper->getIdentifier() . '/delete', array(
-              'query' => drupal_get_destination()
+              'query' => $destination
             )) : '',
           );
 
@@ -741,13 +740,22 @@ function qplot_progress_block_view($delta = '') {
             $g['progress'] = 100;
           }
         }
-
+        // sort group
         ksort($phase_item['group'], SORT_STRING);
+
+        // set current 
+        if ($focus_phase == $phase_item['id']) {
+          $phase_item['focus'] = TRUE;
+        }
+
         $variables['phases'][] = $phase_item;
       }
-      // set current phase
-      if (!empty($variables['phases'])) {
-        $variables['phases'][0]['focus'] = TRUE;
+
+      // set current phase if not set
+      if (empty($focus_phase)) {
+        if (!empty($variables['phases'])) {
+          $variables['phases'][0]['focus'] = TRUE;
+        }
       }
 
       $block['content'] = theme('qplot_progress_phases_full', $variables);
