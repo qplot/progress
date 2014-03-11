@@ -81,11 +81,14 @@
                       <table class="table no-more-tables">
                           <thead>
                             <tr>
-                              <td colspan="3">
-                                <h5 class="semi-bold no-margin">Progress : 
-                                  <?php echo $phase['hours'] ?>hrs (total), 
-                                  <?php echo round((1 - $phase['progress']/100) * $phase['hours']) ?>hrs (left)
-                                </h5>
+                              <td colspan="2">
+                                <h5 class="semi-bold no-margin">Overall Phase Progress : </h5>
+                              </td>
+                              <td>
+                                <?php 
+                                  $left = intval((100-$phase['progress']) / 100 * $phase['hours']);
+                                ?>                                      
+                                <h5 class="semi-bold no-margin"><?php echo $phase['hours'] ?> : <small class="semi-bold no-margin"><?php echo $left ?></small></h5>
                               </td>
                               <td colspan="2" class="v-align-middle">
                                 <div class="progress progress-large active">
