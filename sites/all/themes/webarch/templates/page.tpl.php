@@ -121,7 +121,11 @@
         <a href="user/logout"><i class="fa fa-power-off"></i></a>
       </div>
     <?php endif ?>
-    <div><?php print render($page['footer']); ?></div>
+    <div><?php //print render($page['footer']); ?>
+      <footer id="footer">
+        <span>Powered by <a href="http://qplot.com" target="_blank">QPLOT</a></span>
+      </footer>
+    </div>
   </div>
   <!-- END SIDEBAR -->
   <!-- BEGIN PAGE CONTAINER-->
