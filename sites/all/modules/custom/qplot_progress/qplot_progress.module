@@ -387,7 +387,7 @@ function qplot_progress_block_view($delta = '') {
       $variables['menu'] = array(
         'home' => url(''),
         // 'user' => $profile,
-        'user' => (array)$user,
+        'user' => $user->uid ? (array)$user : '',
         'logout' => url('user/logout'),
       );
 

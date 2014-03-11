@@ -1,11 +1,8 @@
 <?php 
-  global $base_url;
-  $path = $base_url . '/' . drupal_get_path('theme', 'webarch') . '/';
-
   // dsm($menu);
 ?>
 
-<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-bookmark"></i></a></span></p>
 <ul class="menu">  
   <li class="start active "> 
     <a href="<?php echo $menu['home'] ?>"> 
@@ -54,6 +51,7 @@
         <i class="fa fa-sign-out"></i> <span class="title">Logout</span>
       </a>
     </li>
-  <?php endif; ?>
+  <?php else: ?>
+  <?php endif ?>
 
 </ul>
