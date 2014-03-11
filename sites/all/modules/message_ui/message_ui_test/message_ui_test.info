@@ -1,0 +1,11 @@
+name = Message UI test
+description = Dummy module for checking how other modules will interact with message UI.
+core = 7.x
+
+dependencies[] = message_ui
+; Information added by Drupal.org packaging script on 2014-02-18
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "message_ui"
+datestamp = "1392753812"
+

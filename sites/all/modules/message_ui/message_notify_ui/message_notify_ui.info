@@ -1,0 +1,14 @@
+name = Message notify UI
+description = Integrating the message notify into the UI functionality.
+core = 7.x
+package = Message
+
+dependencies[] = message_ui
+dependencies[] = message_notify
+
+; Information added by Drupal.org packaging script on 2014-02-18
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "message_ui"
+datestamp = "1392753812"
+
