@@ -124,103 +124,71 @@
                               </tr>
                           </thead>
                           <tbody>
-                              <?php if (count($phase['group']) <= 1): ?>
 
-                                <?php foreach($phase['tasks'] as $task): ?>
-                                  <tr>
-                                      <td>
-                                        <?php echo $task['ticket'] ?>
-                                      </td>
-                                      <td class="v-align-middle">
-                                          <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
-                                      </td>
-                                      <td>
-                                        <?php 
-                                          $left = intval((100-$task['progress']) / 100 * $task['hours']);
-                                        ?>
-                                        <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top"><?php echo $task['hours'] ?> <small>: <?php echo $left ?></small></a>
-                                      </td>
-                                      <td class="v-align-middle">
-                                          <div class="progress">
-                                            <?php
-                                              print theme('qplot_progress_progress_widget', array(
-                                                'progress' => $task['progress'],
-                                                'caption' => TRUE,
-                                              ))
-                                            ?>
-                                          </div>
-                                      </td>
-                                      <td>
-                                        <?php if ($task['edit']): ?>
-                                          <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
-                                        <?php endif ?>
-                                        <?php if ($task['delete']): ?>        
-                                          <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
-                                        <?php endif ?>
-                                      </td>
-                                  </tr>
-                                <?php endforeach;?>
-
-                              <?php else: ?>
-
-                                <?php foreach($phase['group'] as $group => $g): ?>
+                            <?php foreach($phase['group'] as $group => $g): ?>
+                              <?php 
+                                $tasks = $g['tasks'];
+                              ?>
+                              <tr> 
+                                <td colspan="2">
+                                  <h5><?php echo $group ? $group : 'Uncategorized' ?></h5>
+                                </td>
+                                <td>
                                   <?php 
-                                    $tasks = $g['tasks'];
-                                  ?>
-                                  <tr> 
-                                    <td colspan="2">
-                                      <h5><?php echo $group ? $group : 'Uncategorized' ?></h5>
+                                    $left = intval((100-$g['progress']) / 100 * $g['hours']);
+                                  ?>                                      
+                                  <h5><?php echo $g['hours'] ?> : <small><?php echo $left ?></small></h5>
+                                </td>
+                                <td>
+                                  <h5><?php echo $g['progress'] ?>%</h5>
+                                </td>
+                                <td>
+                                </td>
+                              </tr>
+                              <?php foreach ($tasks as $id): ?>
+                                <?php 
+                                  $task = $phase['tasks'][$id];
+                                ?>
+                                <tr>
+                                    <td>
+                                      <?php echo $task['ticket'] ?>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right">
+                                        <?php if ($task['description']): ?>
+                                          <i class="fa fa-file-text-o"></i>
+                                        <?php endif; ?>
+                                        <?php echo $task['title'] ?>
+                                      </a>
                                     </td>
                                     <td>
-                                      <?php 
-                                        $left = intval((100-$g['progress']) / 100 * $g['hours']);
-                                      ?>                                      
-                                      <h5><?php echo $g['hours'] ?> : <small><?php echo $left ?></small></h5>
+                                      <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top">
+                                        <?php echo $task['hours'] ?>
+                                      </a>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <div class="progress">
+                                        <?php
+                                          print theme('qplot_progress_progress_widget', array(
+                                            'progress' => $task['progress'],
+                                            'caption' => TRUE,
+                                          ))
+                                        ?>
+                                      </div>
                                     </td>
                                     <td>
-                                      <h5><?php echo $g['progress'] ?>%</h5>
+                                      <?php if ($task['edit']): ?>
+                                        <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <?php endif ?>
+                                      <?php if ($task['delete']): ?>        
+                                        <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash-o"></i></a>
+                                      <?php endif ?>
                                     </td>
-                                    <td>
-                                    </td>
-                                  </tr>
-                                  <?php foreach ($tasks as $id): ?>
-                                    <?php 
-                                      $task = $phase['tasks'][$id];
-                                    ?>
-                                    <tr>
-                                        <td>
-                                          <?php echo $task['ticket'] ?>
-                                        </td>
-                                        <td class="v-align-middle">
-                                            <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right"><?php echo $task['title'] ?></a>
-                                        </td>
-                                        <td>
-                                          <a href="" class="tip" data-toggle="tooltip" title="Requested by <?php echo !empty($task['request_by']) ? $task['request_by']['first'] : 'N/A' ?> on <?php echo $task['added'] ?>" data-placement="top"><?php echo $task['hours'] ?></a>
-                                        </td>
-                                        <td class="v-align-middle">
-                                            <div class="progress">
-                                              <?php
-                                                print theme('qplot_progress_progress_widget', array(
-                                                  'progress' => $task['progress'],
-                                                  'caption' => TRUE,
-                                                ))
-                                              ?>
-                                            </div>
-                                        </td>
-                                        <td>
-                                          <?php if ($task['edit']): ?>
-                                            <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
-                                          <?php endif ?>
-                                          <?php if ($task['delete']): ?>        
-                                            <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-times"></i></a>
-                                          <?php endif ?>
-                                        </td>
-                                    </tr>
-                                  <?php endforeach ?>
-                                <?php endforeach;?>
+                                </tr>
+                              <?php endforeach ?>
+                            <?php endforeach;?>
 
 
-                              <?php endif; ?>
                           </tbody>
                       </table>
                     </div>
