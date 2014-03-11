@@ -694,7 +694,7 @@ function qplot_progress_block_view($delta = '') {
 
           $task_item = array(
             'title' => $wrapper->title->value(),
-            'description' => !empty($body) ? $wrapper->body->value->raw() : '',
+            'description' => !empty($body) ? htmlspecialchars_decode($wrapper->body->value->raw()) : '',
             'phase' => $wrapper->field_task_phase->title->value(),
             'progress' => $wrapper->field_task_progress->value(),
             'hours' => $wrapper->field_task_hours->value(),

@@ -110,11 +110,6 @@
                                   <th style="width:23%">
                                       Task
                                   </th>
-<!-- 
-                                  <th style="width:9%">
-                                      Added
-                                  </th>
- -->                                  
                                   <th style="width:2%">
                                       Hours
                                   </th>
