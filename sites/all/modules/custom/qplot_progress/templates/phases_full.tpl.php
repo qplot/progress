@@ -90,7 +90,7 @@
                                 ?>                                      
                                 <h5 class="semi-bold no-margin"><?php echo $phase['hours'] ?> : <small class="semi-bold no-margin"><?php echo $left ?></small></h5>
                               </td>
-                              <td colspan="2" class="v-align-middle">
+                              <td colspan="<?php $phase['create_task'] ? 2 : 1 ?>" class="v-align-middle">
                                 <div class="progress progress-large active">
                                   <?php
                                     print theme('qplot_progress_progress_widget', array(
@@ -107,18 +107,20 @@
                                   <th style="width:1%">
                                       ID
                                   </th>
-                                  <th style="width:23%">
+                                  <th style="width:40%">
                                       Task
                                   </th>
-                                  <th style="width:2%">
+                                  <th style="width:5%">
                                       Hours
                                   </th>
-                                  <th style="width:10%">
+                                  <th style="width:20%">
                                       Progress
                                   </th>
-                                  <th style="width:7%">
-                                      Edit
-                                  </th>
+                                  <?php if ($phase['create_task']): ?>
+                                    <th style="width:7%">
+                                        Edit
+                                    </th>
+                                  <?php endif ?>
                               </tr>
                           </thead>
                           <tbody>
@@ -140,8 +142,10 @@
                                 <td>
                                   <h5><?php echo $g['progress'] ?>%</h5>
                                 </td>
-                                <td>
-                                </td>
+                                <?php if ($phase['create_task']): ?>
+                                  <td>
+                                  </td>
+                                <?php endif ?>
                               </tr>
                               <?php foreach ($tasks as $id): ?>
                                 <?php 
@@ -174,14 +178,16 @@
                                         ?>
                                       </div>
                                     </td>
-                                    <td>
-                                      <?php if ($task['edit']): ?>
-                                        <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
-                                      <?php endif ?>
-                                      <?php if ($task['delete']): ?>        
-                                        <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash-o"></i></a>
-                                      <?php endif ?>
-                                    </td>
+                                    <?php if ($phase['create_task']): ?>
+                                      <td>
+                                        <?php if ($task['edit']): ?>
+                                          <a href="<?php echo $task['edit'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></a>
+                                        <?php endif ?>
+                                        <?php if ($task['delete']): ?>        
+                                          <a href="<?php echo $task['delete'] ?>" class="tip" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash-o"></i></a>
+                                        <?php endif ?>
+                                      </td>
+                                    <?php endif ?>
                                 </tr>
                               <?php endforeach ?>
                             <?php endforeach;?>
