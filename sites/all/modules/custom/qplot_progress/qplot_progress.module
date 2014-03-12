@@ -916,10 +916,10 @@ function qplot_progress_block_view($delta = '') {
 
       // find project info
       $variables['project'] = array(
-        'invite' => node_access('update', $node) ? url("group/node/$nid/admin/people/add-user", array(
+        'invite' => node_access('create', 'project') ? url("group/node/$nid/admin/people/add-user", array(
           'query' => drupal_get_destination()
         )) : '',
-        'manage' => node_access('update', $node) ? url("group/node/$nid/admin/people") : '',
+        'manage' => node_access('create', 'project') ? url("group/node/$nid/admin/people") : '',
       );
 
       $variables['members'] = qplot_progress_project_members($nid);
@@ -1026,7 +1026,7 @@ function qplot_progress_block_view($delta = '') {
       }
 
       $variables['project'] = array(
-        'create_content' => node_access('update', $project) ? url('node/add/content', array('query' => array_merge(
+        'create_content' => node_access('create', 'project') ? url('node/add/content', array('query' => array_merge(
           array(
             'field_content_project' => $nid,
           ), drupal_get_destination()
