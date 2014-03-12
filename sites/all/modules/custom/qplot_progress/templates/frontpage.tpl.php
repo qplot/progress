@@ -61,36 +61,33 @@
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                           <br>
                           <i class="icon-credit-card icon-7x"></i>
-                          <h4 id="myModalLabel" class="semi-bold">We need your billing info.</h4>
-                          <p class="no-margin">You'll be charged $29/Month and get immediate access to new plan </p>
+                          <h4 id="myModalLabel" class="semi-bold">Contact us.</h4>
+                          <p class="no-margin">You'll get a email from us shortly. </p>
                           <br>
                         </div>
                         <div class="modal-body">
                           <div class="row form-row">
-                            <div class="col-md-8">
-                              <input type="text" class="form-control" placeholder="Your Card Number">
+                            <div class="col-md-6">
+                              <input type="text" class="form-control" placeholder="First Name">
                             </div>
-                            <div class="col-md-4">
-                              <input type="text" class="form-control" placeholder="CVS">
+                            <div class="col-md-6">
+                              <input type="text" class="form-control" placeholder="Last Name">
                             </div>
                           </div>
                           <div class="row form-row">
                             <div class="col-md-12">
-                              <input type="text" class="form-control" placeholder="Card Holder's Name">
+                              <input type="text" class="form-control" placeholder="Email Address">
                             </div>
                           </div>
                           <div class="row form-row">
-                            <div class="col-md-6">
-                              <input type="text" class="form-control" placeholder="Month">
-                            </div>
-                            <div class="col-md-6">
-                              <input type="text" class="form-control" placeholder="Year">
+                            <div class="col-md-12">
+                              <textarea type="textarea" class="form-control" placeholder="Enter text ..."></textarea>
                             </div>
                           </div>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-primary">Send</button>
                         </div>
                       </div>
                       <!-- /.modal-content -->
