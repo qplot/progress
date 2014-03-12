@@ -6,7 +6,7 @@
 ?>
 
 <div class="row">
-  <div class="col-md-12 col-sm-6 spacing-bottom">
+  <div class="col-md-12 spacing-bottom">
     <div class="tiles white added-margin">
       <div class="tiles-body">
         <div class="controller">
