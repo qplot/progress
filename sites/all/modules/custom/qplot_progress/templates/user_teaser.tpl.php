@@ -1,7 +1,4 @@
 <?php
-  global $base_url;
-  $path = $base_url . '/' . drupal_get_path('theme', 'webarch');
-
   // dsm($user);
 ?>
 <div class="user-info-wrapper">

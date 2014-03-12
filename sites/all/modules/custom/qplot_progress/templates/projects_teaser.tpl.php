@@ -4,7 +4,6 @@
   // dsm($items);
 ?>
 
-<div class="side-bar-widgets">
   <p class="menu-title">
     FAVORATES
   </p>
@@ -28,4 +27,3 @@
       </div>
     </div>
   <?php endforeach; ?>
-</div>

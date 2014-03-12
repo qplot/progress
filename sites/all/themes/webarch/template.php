@@ -165,6 +165,10 @@ function webarch_preprocess_block(&$vars, $hook) {
   //adds title class to the block ... OMG!
   $vars['title_attributes_array']['class'][] = 'menu-title';
   $vars['content_attributes_array']['class'][] = 'block-content';
+
+  if ($vars['block_html_id'] != 'block-qplot-progress-main-menu') {
+    $vars['classes_array'][] = 'side-bar-widgets';
+  }
 }
 
 /**
