@@ -1,0 +1,11 @@
+name = Progress Migrate
+description = Migrate company, project, and tasks from external application
+package = QPLOT
+core = 7.x
+project = qplot_migrate
+
+dependencies[] = migrate
+
+#  include the files that contain your Migrate classes 
+files[] = qplot_migrate.migrate.inc
+files[] = class/project.inc
