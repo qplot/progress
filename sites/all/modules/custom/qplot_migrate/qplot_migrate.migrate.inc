@@ -13,6 +13,10 @@ function qplot_migrate_migrate_api() {
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',
       ),
+      'Company' => array(
+        'class_name' => 'DHCompanyMigration',
+        'group_name' => 'dh',
+      ),
     ),
   );
   return $api;
