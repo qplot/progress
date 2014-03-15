@@ -9,6 +9,10 @@ function qplot_migrate_migrate_api() {
       ),
     ),
     'migrations' => array(
+      'User' => array(
+        'class_name' => 'DHUserMigration',
+        'group_name' => 'dh',
+      ),
       'Project' => array(
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',
