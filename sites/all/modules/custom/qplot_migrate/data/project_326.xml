@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project><id>326</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Practice Greenhealth: Phase 1]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1]]></permalink>
+<created_on><![CDATA[2013-10-16 15:04:43]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:02:19]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on></invited_on>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2013-10-31 19:29:51]]></updated_on>
+<updated_by_id>18</updated_by_id>
+<updated_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 22:01:49]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on></invited_on>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/practice-greenhealth-phase-1/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=326]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=326]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-1/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/326.256x256.png?time=1383247791]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/326.80x80.png?time=1383247791]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/326.40x40.png?time=1383247791]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/326.16x16.png?time=1383247791]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/326.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/326.256x256.png?time=1383247791]]></_largest_size>
+</avatar>
+<category_id>8</category_id>
+<category><id>8</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Initial Build]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/8]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>21</items_count>
+</category>
+<label_id>12</label_id>
+<label><id>12</id>
+<name><![CDATA[NEW]]></name>
+<fg_color><![CDATA[#000000]]></fg_color>
+<bg_color><![CDATA[#FFFF00]]></bg_color>
+<type><![CDATA[ProjectLabel]]></type>
+<is_default>0</is_default>
+</label>
+<is_favorite>0</is_favorite>
+<custom_fields></custom_fields>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate></estimate>
+<slug><![CDATA[practice-greenhealth-phase-1]]></slug>
+<company_id>112</company_id>
+<leader_id>107</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>110000</budget>
+<overview><![CDATA[<p><a href="https://practicegreenhealth.org">https://practicegreenhealth.org</a></p><p>Based upon the available budget, timeline, and required functionality for the 2014 award application process, DesignHammer proposed the follow Phase I scope and schedule: Phase 1.1 (Delivery by January 1, 2014):</p><ul><li>User Access Control</li><li>User Profile</li><li>Facility Profile</li><li>Award Application Process</li></ul><p>Phase 1.2 (Delivery by February 28, 2014):</p><ul><li>Award Review and Scoring Workflow</li><li>Award Reporting</li></ul><p>Project Plan:</p><p>afp://anvil3.designhammer.net/jobs/sites/Practice-Greenhealth/Phase-0/Resources/PracticeGreenhealthProjectPlan-101-signed</p>]]></overview>
+<overview_formatted><![CDATA[<p><a href="https://practicegreenhealth.org">https://practicegreenhealth.org</a></p><p>Based upon the available budget, timeline, and required functionality for the 2014 award application process, DesignHammer proposed the follow Phase I scope and schedule: Phase 1.1 (Delivery by January 1, 2014):</p><ul><li>User Access Control</li><li>User Profile</li><li>Facility Profile</li><li>Award Application Process</li></ul><p>Phase 1.2 (Delivery by February 28, 2014):</p><ul><li>Award Review and Scoring Workflow</li><li>Award Reporting</li></ul><p>Project Plan:</p><p>afp://anvil3.designhammer.net/jobs/sites/Practice-Greenhealth/Phase-0/Resources/PracticeGreenhealthProjectPlan-101-signed</p>]]></overview_formatted>
+<based_on></based_on>
+<progress><percent_done>76</percent_done>
+<total_tasks><![CDATA[321]]></total_tasks>
+<open_tasks><![CDATA[75]]></open_tasks>
+</progress>
+<cost_summarized>181848.85</cost_summarized>
+<leader><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<invited_on></invited_on>
+<company_id>19</company_id>
+</leader>
+<company><id>112</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Practice Greenhealth]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/112]]></permalink>
+<created_on><![CDATA[2013-08-30 20:09:36]]></created_on>
+<created_by_id>107</created_by_id>
+<updated_on></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/112.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[12355 Sunrise Valley Drive
+Suite 680
+Reston, VA
+20191]]></office_address>
+<office_phone><![CDATA[888-688-3332]]></office_phone>
+<office_fax><![CDATA[866-379-8705]]></office_fax>
+<office_homepage><![CDATA[https://practicegreenhealth.org/]]></office_homepage>
+<is_owner>0</is_owner>
+<note><![CDATA[]]></note>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>
