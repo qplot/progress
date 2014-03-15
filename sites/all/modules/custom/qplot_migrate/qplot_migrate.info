@@ -10,3 +10,4 @@ dependencies[] = migrate
 files[] = qplot_migrate.migrate.inc
 files[] = class/project.inc
 files[] = class/company.inc
+files[] = class/task.inc
