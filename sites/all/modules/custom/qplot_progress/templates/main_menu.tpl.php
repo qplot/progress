@@ -46,6 +46,27 @@
   <?php endif; ?>
 
   <?php if ($menu['user']): ?>
+    <?php if (!empty($menu['company'])): ?>
+      <li class=""> 
+        <a href="<?php echo $menu['company'] ?>"> 
+          <i class="fa fa-apple"></i> <span class="title">Company</span>
+        </a>
+      </li>
+    <?php endif ?>    
+    <?php if (!empty($menu['contact'])): ?>
+      <li class=""> 
+        <a href="<?php echo $menu['contact'] ?>"> 
+          <i class="fa fa-linkedin"></i> <span class="title">Contact</span>
+        </a>
+      </li>
+    <?php endif ?>    
+    <?php if (!empty($menu['lead'])): ?>
+      <li class=""> 
+        <a href="<?php echo $menu['lead'] ?>"> 
+          <i class="fa fa-puzzle-piece"></i> <span class="title">Lead</span>
+        </a>
+      </li>
+    <?php endif ?>    
     <li class=""> 
       <a href="<?php echo $menu['logout'] ?>"> 
         <i class="fa fa-sign-out"></i> <span class="title">Logout</span>

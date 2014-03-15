@@ -348,6 +348,61 @@ function qplot_progress_block_view($delta = '') {
 }
 
 /**
+ * Update views render
+ * With respect to views template, settings are all data
+ * Implements buttons on all admin views
+ *
+*/
+function qplot_progress_views_pre_render(&$view) {
+  // dsm($view);
+  // dsm($view->display_handler);
+  // dsm($view->field['edit_node']);
+  // Add a icon to edit button.
+  // $edit = &$view->field['edit_node'];
+  // $edit->options['label'] = "";
+  // $edit->options['alter']['alter_text'] = TRUE;
+  // $edit->options['alter']['text'] = '<i class="fa fa-edit"></i>';
+
+  // add button for view page
+  $pages = array(
+    'leads' => 'lead',
+    'contacts' => 'contact',
+    'companies' => 'company',
+  );
+  $name = $view->name;
+  switch ($name) {
+    case 'contacts':
+    case 'leads':
+    case 'companies':
+      $view->header['area']->options['content'] = theme('views_link', array(
+        'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($pages[$name]),
+        'path' => 'node/add/' . $pages[$name],
+        'query' => drupal_get_destination(),
+        'classes' => array('btn', 'btn-success'),
+        'parent-classes' => array('pull-right'),
+      ));    
+      break;
+    
+    default:
+      # code...
+      break;
+  }
+  // dsm($view->header['area']);
+}
+
+/**
+ * Update views structure
+ */
+function qplot_progress_views_pre_build(&$view) {
+  // dsm($view);
+  // dsm($view->field['edit_node']);
+  // $edit = &$view->field['edit_node'];
+  // $edit->options['label'] = '';
+  // dsm($view->display_handler);
+  // dsm($view->display_handler)
+}
+
+/**
  * Update phase progress based on its tasks
  *
  * @param object $node
@@ -590,18 +645,6 @@ function qplot_progress_project_members($project_id) {
   }
 
   return $members;
-}
-
-/**
- * Update views structure
- */
-function qplot_progress_views_pre_build(&$view) {
-  // dsm($view);
-  // dsm($view->field['edit_node']);
-  // $edit = &$view->field['edit_node'];
-  // $edit->options['label'] = '';
-  // dsm($view->display_handler);
-  // dsm($view->display_handler)
 }
 
 /**
@@ -1089,47 +1132,4 @@ function qplot_progress_project_edit_form($node) {
       }
       break;
   }
-}
-
-/**
- * Update views render
- * With respect to views template, settings are all data
- * Implements buttons on all admin views
- *
-*/
-function qplot_progress_views_pre_render(&$view) {
-  // dsm($view);
-  // dsm($view->display_handler);
-  // dsm($view->field['edit_node']);
-  // Add a icon to edit button.
-  // $edit = &$view->field['edit_node'];
-  // $edit->options['label'] = "";
-  // $edit->options['alter']['alter_text'] = TRUE;
-  // $edit->options['alter']['text'] = '<i class="fa fa-edit"></i>';
-
-  // add button for view page
-  $pages = array(
-    'leads' => 'lead',
-    'contacts' => 'contact',
-    'companies' => 'company',
-  );
-  $name = $view->name;
-  switch ($name) {
-    case 'contacts':
-    case 'leads':
-    case 'companies':
-      $view->header['area']->options['content'] = theme('views_link', array(
-        'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($pages[$name]),
-        'path' => 'node/add/' . $pages[$name],
-        'query' => drupal_get_destination(),
-        'classes' => array('btn', 'btn-success'),
-        'parent-classes' => array('pull-right'),
-      ));    
-      break;
-    
-    default:
-      # code...
-      break;
-  }
-  // dsm($view->header['area']);
 }

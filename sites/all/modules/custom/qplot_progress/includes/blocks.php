@@ -15,6 +15,15 @@ function qplot_progress_block_view_main_menu(&$block) {
     'logout' => url('user/logout'),
   );
 
+  // for administrator 
+  if (in_array('administrator', $user->roles)) {
+    $menu = array(
+      'company' => url('companies'),
+      'contact' => url('contacts'),
+      'lead' => url('leads'),
+    );
+    $variables['menu'] = array_merge($variables['menu'], $menu);
+  }
   // if ($profile) {
   //   $variables['menu']['logout'] = $profile['logout'];
   // }
