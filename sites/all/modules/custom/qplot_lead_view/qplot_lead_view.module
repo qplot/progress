@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Lead Views feature.
- */
-
-include_once 'qplot_lead_view.features.inc';

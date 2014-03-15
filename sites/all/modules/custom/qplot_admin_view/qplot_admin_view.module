@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Admin View feature.
+ */
+
+include_once 'qplot_admin_view.features.inc';
