@@ -12,28 +12,6 @@ function webarch_preprocess_views_view(&$vars) {
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-id-'.$vars['name'])));
   $vars['classes_array'] = array_values(array_diff($vars['classes_array'],array('view-display-id-'.$vars['display_id'])));
 
-  // Add button to the top of the views
-  $pages = array(
-    'leads' => 'lead',
-    'contacts' => 'contact',
-  );
-  $name = $vars['name'];
-  switch ($name) {
-    case 'contacts':
-    case 'leads':
-      $vars['header'] = theme('views_link', array(
-        'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($name),
-        'path' => 'node/add/' . $pages[$name],
-        'query' => drupal_get_destination(),
-        'classes' => array('btn', 'btn-success'),
-        'parent-classes' => array('pull-right'),
-      ));    
-      break;
-    
-    default:
-      # code...
-      break;
-  }
 }
 
 /**
