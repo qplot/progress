@@ -54,7 +54,10 @@ class DHCompanyMigration extends XMLMigration {
          ->defaultValue('full_html');
     $this->addFieldMapping('field_company_url', 'url')
          ->xpath('office_homepage');
-
+    $this->addFieldMapping('field_company_migrate_source')
+         ->defaultValue(array('DesignHammer'));
+    $this->addFieldMapping('field_company_migrate_id', 'id')
+         ->xpath('id');
     // $this->addFieldMapping('created', 'date')
     //      ->xpath('publicationDate');
     // $this->addFieldMapping('field_latest_identifier', 'identifier')
