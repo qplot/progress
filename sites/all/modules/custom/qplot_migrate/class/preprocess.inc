@@ -24,6 +24,9 @@ class DHPreprocessMigration extends MigrationBase {
    * @author Jay Roberts <jay@designhammer.com>
    */
   public function import() {
+    $use_phantomjs = TRUE;
+    $phantomjs = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/phantomjs/pull.js';
+
     $data_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data';
     $compiled_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
 
@@ -71,10 +74,16 @@ class DHPreprocessMigration extends MigrationBase {
             foreach ($xml->company as $company) {
               $id = (string)$company->id;
               $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
+              $output = $saved_dir . '/' . $id . '.xml';
 
-              $page = file_get_contents($link);
-
-              file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+              if ($use_phantomjs) {
+                $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                // dsm($exec);
+                exec($exec);
+              } else {
+                $page = file_get_contents($link);
+                file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+              }
             }
           }
         }
