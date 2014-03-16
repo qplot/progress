@@ -19,10 +19,32 @@ class DHCompanyMigration extends XMLMigration {
       'note' => t('Note'),
     );
     // create source
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    $items_url = $xml_folder . 'company.xml';
-    $item_xpath = "/companies/company";
+
+    // multiple records in one file    
+    // $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
+    // $items_url = $xml_folder . 'company.xml';
+    // $item_xpath = "/companies/company";
+    // $item_ID_xpath = 'id';
+    // $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    // $this->source = new MigrateSourceMultiItems($items_class, $fields);
+
+    // multiple records in multiple files
+    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/company';
+    $items_url = array();
+
+    if (is_dir($xml_folder)) {
+      $directory = new DirectoryIterator($xml_folder);
+      foreach ($directory as $fileinfo) {
+        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+          $items_url[] = $fileinfo->getPathname();
+        }
+      }
+    }
+
+    $item_xpath = "/company";
     $item_ID_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
     // create destination
     $this->destination = new MigrateDestinationNode('company');
@@ -39,8 +61,6 @@ class DHCompanyMigration extends XMLMigration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
-    $this->source = new MigrateSourceMultiItems($items_class, $fields);
     $this->addFieldMapping('title', 'name')->xpath('name');
     $this->addFieldMapping('created', 'created')->xpath('created_on');
     // missing author from created_by_id

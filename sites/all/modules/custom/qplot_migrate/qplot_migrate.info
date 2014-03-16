@@ -12,3 +12,4 @@ files[] = class/project.inc
 files[] = class/company.inc
 files[] = class/task.inc
 files[] = class/user.inc
+files[] = class/preprocess.inc
