@@ -13,18 +13,18 @@ function qplot_migrate_migrate_api() {
         'class_name' => 'DHPreprocessMigration',
         'group_name' => 'dh',
       ),
+      'Company' => array(
+        'class_name' => 'DHCompanyMigration',
+        'group_name' => 'dh',
+        'soft_dependencies' => array('Preprocess')        
+      ),
       'User' => array(
         'class_name' => 'DHUserMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
+        'soft_dependencies' => array('Preprocess', 'Company')
       ),
       'Project' => array(
         'class_name' => 'DHProjectMigration',
-        'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
-      ),
-      'Company' => array(
-        'class_name' => 'DHCompanyMigration',
         'group_name' => 'dh',
         'soft_dependencies' => array('Preprocess')        
       ),

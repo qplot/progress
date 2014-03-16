@@ -29,12 +29,7 @@ class DHUserMigration extends XMLMigration {
       'company_id' => t('Company ID'),
     );
 
-    // $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    // $items_url = $xml_folder . 'user.xml';
-    // $item_xpath = "/users/user";
-    // $item_ID_xpath = 'id';
-
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/company';
+    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/user';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
@@ -46,7 +41,7 @@ class DHUserMigration extends XMLMigration {
       }
     }
 
-    $item_xpath = "/company/users/user";
+    $item_xpath = "/user";
     $item_ID_xpath = 'id';
     $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
@@ -73,11 +68,16 @@ class DHUserMigration extends XMLMigration {
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
     $this->addFieldMapping('field_contact_firstname', 'first_name')->xpath('first_name');
     $this->addFieldMapping('field_contact_lastname', 'last_name')->xpath('last_name');
+    $this->addFieldMapping('field_contact_title', 'title')->xpath('title')
+         ->callbacks(array($this, 'fixEmpty'));
+    $this->addFieldMapping('field_contact_phone', 'phone_work')->xpath('phone_work');
+    // missing mobile phone
+    // missing messager
     $this->addFieldMapping('field_contact_email', 'email')->xpath('email');
     $this->addFieldMapping('field_contact_company', 'company_id')->xpath('company_id')
          ->sourceMigration('Company');
     $this->addFieldMapping('field_contact_migrate_source')
-         ->defaultValue(array('DesignHammer'));
+         ->defaultValue(array('DesignHammer AC'));
     $this->addFieldMapping('field_contact_migrate_id', 'id')->xpath('id');
   }
 
@@ -87,6 +87,14 @@ class DHUserMigration extends XMLMigration {
     }
 
     return TRUE;
+  }
+
+  protected function fixEmpty($value) {
+    if ($value) {
+      return $value;
+    } else {
+      return null;
+    }
   }
 
 }
