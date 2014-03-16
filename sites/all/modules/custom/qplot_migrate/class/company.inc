@@ -65,9 +65,11 @@ class DHCompanyMigration extends XMLMigration {
     $this->addFieldMapping('created', 'created')->xpath('created_on');
     // missing author from created_by_id
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
+    $this->addFieldMapping('field_company_address')
+         ->defaultValue('US');
     $this->addFieldMapping('field_company_address:thoroughfare')
          ->defaultValue('stored in data');
-    // $this->addFieldMapping('field_company_address:data', 'address')->xpath('office_address');
+    $this->addFieldMapping('field_company_address:data', 'address')->xpath('office_address');
     $this->addFieldMapping('field_company_phone', 'phone')->xpath('office_phone');
     // missing logo
     $this->addFieldMapping('body', 'note')->xpath('note');
