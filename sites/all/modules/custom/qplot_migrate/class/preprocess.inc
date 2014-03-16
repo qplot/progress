@@ -42,14 +42,15 @@ class DHPreprocessMigration extends MigrationBase {
     // Compile the CSV files in each of these folders into a single file for each folder.
     $dirs = array(
       'company',
+      'user',
     );
-
     $api = array(
       // 'url' => 'https://qplot.manageprojects.com/api.php',
       // 'token' => '1-bm4xON3HasMFpm7qg9oea9sUvfy1j1WkbOHPqzmr',
       'url' => 'https://ac.designhammer.net/api.php',
       'token' => '217-qUrX6d8cJVc69tPndSrqtgcDI2meGkXW5eIZiF2S',
     );
+    // Make sure all folder exists.
     foreach ($dirs as $dir) {
       if (is_dir($data_path . '/' . $dir)) {
 
@@ -61,76 +62,61 @@ class DHPreprocessMigration extends MigrationBase {
             return MigrationBase::RESULT_FAILED;
           }
         }
+      }
+    }
 
-        $directory = new DirectoryIterator($data_path . '/' . $dir);
-        foreach ($directory as $fileinfo) {
-          if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
-            // dsm($fileinfo->getFilename());
+    $processed_dir = array(
+      // 'company'
+      'user',
+    );
 
-            $file = file_get_contents($fileinfo->getPathname());
-            // file_put_contents($saved_dir . '/' . 'index.xml', $file);
+    foreach ($processed_dir as $dir) {
+      $saved_dir = $compiled_path . '/' . $dir; 
+      $directory = new DirectoryIterator($data_path . '/' . $dir);
+      foreach ($directory as $fileinfo) {
+        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+          $file = file_get_contents($fileinfo->getPathname());
+          $xml = simplexml_load_string($file);
 
-            $xml = simplexml_load_string($file);
-            foreach ($xml->company as $company) {
-              $id = (string)$company->id;
-              $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
-              $output = $saved_dir . '/' . $id . '.xml';
+          switch ($dir) {
+            case 'company':
+              foreach ($xml->company as $company) {
+                $id = (string)$company->id;
+                $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
+                $output = $saved_dir . '/' . $id . '.xml';
 
-              if ($use_phantomjs) {
+                // save directly to disk
+                // $page = file_get_contents($link);
+                // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+
+                // use phantomjs to help us get around the https issue
                 $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                // dsm($exec);
                 exec($exec);
-              } else {
-                $page = file_get_contents($link);
-                file_put_contents($saved_dir . '/' . $id . '.xml', $page);
               }
-            }
+              break;
+
+            case 'user':
+              $id = (string)$xml->id;
+              foreach ($xml->users->children() as $user) {
+                $uid = (string)$user->id;
+
+                $link = $api['url'] . '?path_info=people/' . $id . '/users/' . $uid . '&auth_api_token=' . $api['token'];
+                $output = $saved_dir . '/' . $uid . '.xml';
+                // dsm($link); break;
+                $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                exec($exec);
+              }
+
+              break;
+            
+            default:
+              # code...
+              break;
           }
+
         }
       }
     }
-    //       if (preg_match('/\.csv$/', $fileinfo->getFilename())) {
-    //         $csv_handle = @fopen($fileinfo->getPathname(), 'r');
-
-    //         if ($csv_handle === FALSE) {
-    //           self::displayMessage('Couldn\'t open CSV file for reading. ' . $fileinfo->getFilename());
-    //           return MigrationBase::RESULT_FAILED;
-    //         }
-
-    //         // Build up the array of all rows in $csv_data. Skip the first line of each file.
-    //         // Each file should have identical header rows. In any case, the header of the last
-    //         // file read will be used as the header in the compiled file.
-    //         $count = 0;
-    //         while ($row = fgetcsv($csv_handle)) {
-    //           if ($count == 0) {
-    //             $csv_header = $row;
-    //           }
-    //           else {
-    //             $csv_data[] = $row;
-    //           }
-    //           $count++;
-    //         }
-    //       }
-    //     }
-
-    //     // Put the header at the top.
-    //     array_unshift($csv_data, $csv_header);
-
-    //     // Write the data to the compiled folder.
-    //     $output_handle = @fopen(PGH_MIGRATE_DATA_DIR . '/compiled/' . $dir . '.csv', 'w');
-    //     if ($output_handle === FALSE) {
-    //       self::displayMessage('Couldn\'t open CSV file for writing. ' . PGH_MIGRATE_DATA_DIR . '/compiled/' . $dir . '.csv');
-    //       return MigrationBase::RESULT_FAILED;
-    //     }
-
-    //     foreach ($csv_data as $row) {
-    //       fputcsv($output_handle, $row);
-    //     }
-
-    //     fclose($csv_handle);
-    //     fclose($output_handle);
-    //   }
-    // }
 
     return MigrationBase::RESULT_COMPLETED;
   }

@@ -1,0 +1,161 @@
+<company><id>99</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Soshowise]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/99]]></permalink>
+<created_on><![CDATA[2012-05-31 16:13:54]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/people/99]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/99/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/99/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/99/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/99/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/99/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>0</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/99.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[5140 E Kings Canyon, Unit 158
+Fresno, CA 93727]]></office_address>
+<office_phone><![CDATA[559-679-7143]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>179</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Eric Santos]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/99/users/179]]></permalink>
+<created_on><![CDATA[2012-05-31 16:18:05]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/179.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/179.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/179.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/179.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/179.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Eric]]></first_name>
+<last_name><![CDATA[Santos]]></last_name>
+<display_name><![CDATA[Eric Santos]]></display_name>
+<short_display_name><![CDATA[Eric S.]]></short_display_name>
+<email><![CDATA[eric@soshowise.com]]></email>
+<last_visit_on><![CDATA[2013-02-13 18:55:05]]></last_visit_on>
+<invited_on/>
+<company_id>99</company_id>
+</user>
+<user><id>177</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Greg Meinert]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/99/users/177]]></permalink>
+<created_on><![CDATA[2012-05-31 16:16:10]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/177.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/177.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/177.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/177.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/177.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Greg]]></first_name>
+<last_name><![CDATA[Meinert]]></last_name>
+<display_name><![CDATA[Greg Meinert]]></display_name>
+<short_display_name><![CDATA[Greg M.]]></short_display_name>
+<email><![CDATA[greg@soshowise.com]]></email>
+<last_visit_on><![CDATA[2012-09-26 02:58:33]]></last_visit_on>
+<invited_on/>
+<company_id>99</company_id>
+</user>
+<user><id>178</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Sal Santos]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/99/users/178]]></permalink>
+<created_on><![CDATA[2012-05-31 16:17:26]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/178.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/178.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/178.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/178.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/178.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Sal]]></first_name>
+<last_name><![CDATA[Santos]]></last_name>
+<display_name><![CDATA[Sal Santos]]></display_name>
+<short_display_name><![CDATA[Sal S.]]></short_display_name>
+<email><![CDATA[sal@soshowise.com]]></email>
+<last_visit_on><![CDATA[2012-08-24 05:28:29]]></last_visit_on>
+<invited_on/>
+<company_id>99</company_id>
+</user>
+</users>
+</company>

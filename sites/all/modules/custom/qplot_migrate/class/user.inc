@@ -4,6 +4,7 @@ class DHUserMigration extends XMLMigration {
   public function __construct($arguments) {
     parent::__construct($arguments);
 
+    // create source
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -15,16 +16,40 @@ class DHUserMigration extends XMLMigration {
       'first_name' => t('First Name'),
       'last_name' => t('Last Name'),
       'display_name' => t('Display Name'),
+      'office' => t('Office Address'),
+      'owner' => t('Is Owner'),
       'email' => t('Email'),
       'short_display_name' => t('Short Display Name'),
+      'title' => t('Title'),
+      'phone_work' => t('Phone Work'),
+      'phone_mobile' => t('Phone Mobile'),
+      'im_type' => t('IM Type'),
+      'im_value' => t('IM Value'),
       'last_visit' => t('Last Visit On'),
       'company_id' => t('Company ID'),
     );
-    // create source
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    $items_url = $xml_folder . 'user.xml';
-    $item_xpath = "/users/user";
+
+    // $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
+    // $items_url = $xml_folder . 'user.xml';
+    // $item_xpath = "/users/user";
+    // $item_ID_xpath = 'id';
+
+    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/company';
+    $items_url = array();
+
+    if (is_dir($xml_folder)) {
+      $directory = new DirectoryIterator($xml_folder);
+      foreach ($directory as $fileinfo) {
+        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+          $items_url[] = $fileinfo->getPathname();
+        }
+      }
+    }
+
+    $item_xpath = "/company/users/user";
     $item_ID_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
     // create destination
     $this->destination = new MigrateDestinationNode('contact');

@@ -4,6 +4,7 @@ class DHCompanyMigration extends XMLMigration {
   public function __construct($arguments) {
     parent::__construct($arguments);
 
+    // create source
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -18,17 +19,7 @@ class DHCompanyMigration extends XMLMigration {
       'url' => t('URL'),
       'note' => t('Note'),
     );
-    // create source
-
-    // multiple records in one file    
-    // $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    // $items_url = $xml_folder . 'company.xml';
-    // $item_xpath = "/companies/company";
-    // $item_ID_xpath = 'id';
-    // $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
-    // $this->source = new MigrateSourceMultiItems($items_class, $fields);
-
-    // multiple records in multiple files
+    
     $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/company';
     $items_url = array();
 
