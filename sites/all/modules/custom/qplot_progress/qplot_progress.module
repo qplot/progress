@@ -378,8 +378,8 @@ function qplot_progress_views_pre_render(&$view) {
         'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($pages[$name]),
         'path' => 'node/add/' . $pages[$name],
         'query' => drupal_get_destination(),
-        'classes' => array('btn', 'btn-success'),
-        'parent-classes' => array('pull-right'),
+        'classes' => array('btn', 'btn-success', 'pull-right'),
+        'parent-classes' => array('clearfix'),
       ));    
       break;
     
