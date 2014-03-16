@@ -1,0 +1,232 @@
+<company><id>69</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[SAMSI]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69]]></permalink>
+<created_on><![CDATA[2010-03-02 20:31:16]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/people/69]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/69/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/69/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/69/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/69/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/69/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>0</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/69.256x256.png?time=1349360795]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/69.80x80.png?time=1349360795]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/69.40x40.png?time=1349360795]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/69.16x16.png?time=1349360795]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/69.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/69.256x256.png?time=1349360795]]></_largest_size>
+</avatar>
+<office_address><![CDATA[]]></office_address>
+<office_phone><![CDATA[]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>173</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Alan Karr]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/173]]></permalink>
+<created_on><![CDATA[2012-05-09 18:18:59]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/173.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/173.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/173.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/173.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/173.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Alan]]></first_name>
+<last_name><![CDATA[Karr]]></last_name>
+<display_name><![CDATA[Alan Karr]]></display_name>
+<short_display_name><![CDATA[Alan K.]]></short_display_name>
+<email><![CDATA[karr@niss.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+<user><id>89</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Gordon Campbell]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/89]]></permalink>
+<created_on><![CDATA[2010-10-21 16:46:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/89.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/89.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/89.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/89.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/89.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Gordon]]></first_name>
+<last_name><![CDATA[Campbell]]></last_name>
+<display_name><![CDATA[Gordon Campbell]]></display_name>
+<short_display_name><![CDATA[Gordon C.]]></short_display_name>
+<email><![CDATA[campbell@samsi.info]]></email>
+<last_visit_on><![CDATA[2010-11-18 18:51:21]]></last_visit_on>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+<user><id>56</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Jamie Nunnelly]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/56]]></permalink>
+<created_on><![CDATA[2010-03-18 13:47:50]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/56.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/56.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/56.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/56.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/56.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Jamie]]></first_name>
+<last_name><![CDATA[Nunnelly]]></last_name>
+<display_name><![CDATA[Jamie Nunnelly]]></display_name>
+<short_display_name><![CDATA[Jamie N.]]></short_display_name>
+<email><![CDATA[nunnelly@niss.org]]></email>
+<last_visit_on><![CDATA[2011-10-14 13:33:47]]></last_visit_on>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+<user><id>91</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Katherine Kantner]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/91]]></permalink>
+<created_on><![CDATA[2010-10-21 16:50:59]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/91.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/91.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/91.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/91.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/91.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Katherine]]></first_name>
+<last_name><![CDATA[Kantner]]></last_name>
+<display_name><![CDATA[Katherine Kantner]]></display_name>
+<short_display_name><![CDATA[Katherine K.]]></short_display_name>
+<email><![CDATA[kak@niss.org]]></email>
+<last_visit_on><![CDATA[2014-03-12 13:37:31]]></last_visit_on>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+<user><id>90</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Pierre Gremaud]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/90]]></permalink>
+<created_on><![CDATA[2010-10-21 16:48:48]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/90.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/90.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/90.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/90.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/90.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Pierre]]></first_name>
+<last_name><![CDATA[Gremaud]]></last_name>
+<display_name><![CDATA[Pierre Gremaud]]></display_name>
+<short_display_name><![CDATA[Pierre G.]]></short_display_name>
+<email><![CDATA[gremaud@ncsu.edu]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+<user><id>99</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Sue McDonald]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/69/users/99]]></permalink>
+<created_on><![CDATA[2010-11-17 17:03:32]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/99.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/99.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/99.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/99.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/99.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Sue]]></first_name>
+<last_name><![CDATA[McDonald]]></last_name>
+<display_name><![CDATA[Sue McDonald]]></display_name>
+<short_display_name><![CDATA[Sue M.]]></short_display_name>
+<email><![CDATA[sue@samsi.info]]></email>
+<last_visit_on><![CDATA[2012-05-01 13:59:51]]></last_visit_on>
+<invited_on/>
+<company_id>69</company_id>
+</user>
+</users>
+</company>

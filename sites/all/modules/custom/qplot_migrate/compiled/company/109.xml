@@ -1,0 +1,112 @@
+<company><id>109</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Learning Logistics]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/109]]></permalink>
+<created_on><![CDATA[2013-05-07 13:48:56]]></created_on>
+<created_by_id>18</created_by_id>
+<created_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 22:01:49]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/people/109]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/109/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/109/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/109/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/109/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/109/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>0</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/109.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[]]></office_address>
+<office_phone><![CDATA[]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[]]></office_homepage>
+<is_owner>0</is_owner>
+<note><![CDATA[]]></note>
+<users><user><id>214</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Mike Powell]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/109/users/214]]></permalink>
+<created_on><![CDATA[2013-05-07 14:06:35]]></created_on>
+<created_by_id>18</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/214.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/214.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/214.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/214.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/214.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Mike]]></first_name>
+<last_name><![CDATA[Powell]]></last_name>
+<display_name><![CDATA[Mike Powell]]></display_name>
+<short_display_name><![CDATA[Mike P.]]></short_display_name>
+<email><![CDATA[mspowell@gmail.com]]></email>
+<last_visit_on><![CDATA[2013-05-17 03:05:38]]></last_visit_on>
+<invited_on><![CDATA[2013-05-07 14:06:35]]></invited_on>
+<company_id>109</company_id>
+</user>
+</users>
+</company>

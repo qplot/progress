@@ -1,0 +1,594 @@
+<company><id>72</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Facing History and Ourselves]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72]]></permalink>
+<created_on><![CDATA[2010-05-14 18:24:51]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/people/72]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/72/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/72/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/72/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/72/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/72/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>0</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/72.256x256.png?time=1349360795]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/72.80x80.png?time=1349360795]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/72.40x40.png?time=1349360795]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/72.16x16.png?time=1349360795]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/72.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/72.256x256.png?time=1349360795]]></_largest_size>
+</avatar>
+<office_address><![CDATA[Facing History and Ourselves
+16 Hurd Rd.
+Brookline, MA 02445]]></office_address>
+<office_phone><![CDATA[617.735.1640]]></office_phone>
+<office_fax><![CDATA[617.232.0281]]></office_fax>
+<office_homepage><![CDATA[http://www.facinghistory.org]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>80</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Adam Bernstein]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/80]]></permalink>
+<created_on><![CDATA[2010-06-29 14:59:50]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/80.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/80.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/80.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/80.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/80.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Adam]]></first_name>
+<last_name><![CDATA[Bernstein]]></last_name>
+<display_name><![CDATA[Adam Bernstein]]></display_name>
+<short_display_name><![CDATA[Adam B.]]></short_display_name>
+<email><![CDATA[Adam_Bernstein@facing.org]]></email>
+<last_visit_on><![CDATA[2013-07-31 15:58:20]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>108</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Amy Clatworthy]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/108]]></permalink>
+<created_on><![CDATA[2011-02-01 22:59:05]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/108.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/108.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/108.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/108.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/108.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Amy]]></first_name>
+<last_name><![CDATA[Clatworthy]]></last_name>
+<display_name><![CDATA[Amy Clatworthy]]></display_name>
+<short_display_name><![CDATA[Amy C.]]></short_display_name>
+<email><![CDATA[amy_clatworthy@facing.org]]></email>
+<last_visit_on><![CDATA[2012-12-12 16:45:15]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>131</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Anika Bachhuber]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/131]]></permalink>
+<created_on><![CDATA[2011-07-23 21:47:54]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/131.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/131.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/131.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/131.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/131.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Anika]]></first_name>
+<last_name><![CDATA[Bachhuber]]></last_name>
+<display_name><![CDATA[Anika Bachhuber]]></display_name>
+<short_display_name><![CDATA[Anika B.]]></short_display_name>
+<email><![CDATA[anika_bachhuber@facing.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>183</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[April Lambert]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/183]]></permalink>
+<created_on><![CDATA[2012-06-08 14:08:30]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/183.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/183.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/183.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/183.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/183.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[April]]></first_name>
+<last_name><![CDATA[Lambert]]></last_name>
+<display_name><![CDATA[April Lambert]]></display_name>
+<short_display_name><![CDATA[April L.]]></short_display_name>
+<email><![CDATA[april_lambert@facing.org]]></email>
+<last_visit_on><![CDATA[2013-08-07 16:23:40]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>182</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Catherine O'Keefe]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/182]]></permalink>
+<created_on><![CDATA[2012-06-08 14:08:06]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/182.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/182.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/182.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/182.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/182.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Catherine]]></first_name>
+<last_name><![CDATA[O'Keefe]]></last_name>
+<display_name><![CDATA[Catherine O'Keefe]]></display_name>
+<short_display_name><![CDATA[Catherine O.]]></short_display_name>
+<email><![CDATA[catherine_okeefe@facing.org]]></email>
+<last_visit_on><![CDATA[2013-01-22 14:49:35]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>79</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Deb Chad]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/79]]></permalink>
+<created_on><![CDATA[2010-06-29 14:56:59]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/79.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/79.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/79.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/79.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/79.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Deb]]></first_name>
+<last_name><![CDATA[Chad]]></last_name>
+<display_name><![CDATA[Deb Chad]]></display_name>
+<short_display_name><![CDATA[Deb C.]]></short_display_name>
+<email><![CDATA[Deb_Chad@facing.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>70</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Elijah Lapson]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/70]]></permalink>
+<created_on><![CDATA[2010-05-28 16:53:04]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/70.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/70.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/70.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/70.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/70.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Elijah]]></first_name>
+<last_name><![CDATA[Lapson]]></last_name>
+<display_name><![CDATA[Elijah Lapson]]></display_name>
+<short_display_name><![CDATA[Elijah L.]]></short_display_name>
+<email><![CDATA[Elijah_Lapson@facing.org]]></email>
+<last_visit_on><![CDATA[2013-07-11 20:44:17]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>109</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Eva Radding]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/109]]></permalink>
+<created_on><![CDATA[2011-02-01 23:00:20]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/109.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/109.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/109.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/109.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/109.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Eva]]></first_name>
+<last_name><![CDATA[Radding]]></last_name>
+<display_name><![CDATA[Eva Radding]]></display_name>
+<short_display_name><![CDATA[Eva R.]]></short_display_name>
+<email><![CDATA[eva_radding@facing.org]]></email>
+<last_visit_on><![CDATA[2012-09-28 15:39:20]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>105</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Ilana Klarman]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/105]]></permalink>
+<created_on><![CDATA[2011-01-20 15:07:35]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/105.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/105.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/105.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/105.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/105.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Ilana]]></first_name>
+<last_name><![CDATA[Klarman]]></last_name>
+<display_name><![CDATA[Ilana Klarman]]></display_name>
+<short_display_name><![CDATA[Ilana K.]]></short_display_name>
+<email><![CDATA[ilana_klarman@facing.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>71</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[John Englander]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/71]]></permalink>
+<created_on><![CDATA[2010-05-28 16:55:00]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/71.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/71.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/71.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/71.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/71.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[John]]></first_name>
+<last_name><![CDATA[Englander]]></last_name>
+<display_name><![CDATA[John Englander]]></display_name>
+<short_display_name><![CDATA[John E.]]></short_display_name>
+<email><![CDATA[John_Englander@facing.org]]></email>
+<last_visit_on><![CDATA[2011-11-03 14:56:26]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>181</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Kate Boylan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/181]]></permalink>
+<created_on><![CDATA[2012-06-06 16:26:10]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/181.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/181.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/181.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/181.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/181.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kate]]></first_name>
+<last_name><![CDATA[Boylan]]></last_name>
+<display_name><![CDATA[Kate Boylan]]></display_name>
+<short_display_name><![CDATA[Kate B.]]></short_display_name>
+<email><![CDATA[kate_boylan@facing.org]]></email>
+<last_visit_on><![CDATA[2012-08-10 16:21:36]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>77</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Katie Beckett]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/77]]></permalink>
+<created_on><![CDATA[2010-06-29 14:54:42]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/77.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/77.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/77.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/77.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/77.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Katie]]></first_name>
+<last_name><![CDATA[Beckett]]></last_name>
+<display_name><![CDATA[Katie Beckett]]></display_name>
+<short_display_name><![CDATA[Katie B.]]></short_display_name>
+<email><![CDATA[Kate_Beckett@facing.org]]></email>
+<last_visit_on><![CDATA[2010-07-08 15:17:34]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>110</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[KC Kourtz]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/110]]></permalink>
+<created_on><![CDATA[2011-02-01 23:00:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/110.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/110.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/110.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/110.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/110.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[KC]]></first_name>
+<last_name><![CDATA[Kourtz]]></last_name>
+<display_name><![CDATA[KC Kourtz]]></display_name>
+<short_display_name><![CDATA[KC K.]]></short_display_name>
+<email><![CDATA[kc_kourtz@facing.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>78</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[KC Swope]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/78]]></permalink>
+<created_on><![CDATA[2010-06-29 14:55:44]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/78.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/78.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/78.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/78.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/78.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[KC]]></first_name>
+<last_name><![CDATA[Swope]]></last_name>
+<display_name><![CDATA[KC Swope]]></display_name>
+<short_display_name><![CDATA[KC S.]]></short_display_name>
+<email><![CDATA[KC_Swope@facing.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>111</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Kit Stanton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/111]]></permalink>
+<created_on><![CDATA[2011-02-01 23:01:26]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/111.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/111.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/111.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/111.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/111.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kit]]></first_name>
+<last_name><![CDATA[Stanton]]></last_name>
+<display_name><![CDATA[Kit Stanton]]></display_name>
+<short_display_name><![CDATA[Kit S.]]></short_display_name>
+<email><![CDATA[kit_stanton@facing.org]]></email>
+<last_visit_on><![CDATA[2011-02-17 16:42:27]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>133</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Liz Kelleher]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/133]]></permalink>
+<created_on><![CDATA[2011-07-27 19:43:13]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/133.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/133.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/133.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/133.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/133.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Liz]]></first_name>
+<last_name><![CDATA[Kelleher]]></last_name>
+<display_name><![CDATA[Liz Kelleher]]></display_name>
+<short_display_name><![CDATA[Liz K.]]></short_display_name>
+<email><![CDATA[liz_kelleher@facing.org]]></email>
+<last_visit_on><![CDATA[2013-04-16 18:19:51]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>185</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Margaret Gouthro]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/185]]></permalink>
+<created_on><![CDATA[2012-07-12 13:49:12]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/185.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/185.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/185.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/185.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/185.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Margaret]]></first_name>
+<last_name><![CDATA[Gouthro]]></last_name>
+<display_name><![CDATA[Margaret Gouthro]]></display_name>
+<short_display_name><![CDATA[Margaret G.]]></short_display_name>
+<email><![CDATA[margaret_gouthro@facing.org]]></email>
+<last_visit_on><![CDATA[2012-09-28 22:59:06]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>85</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Nancy Griffin]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/85]]></permalink>
+<created_on><![CDATA[2010-09-28 17:11:06]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/85.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/85.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/85.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/85.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/85.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Nancy]]></first_name>
+<last_name><![CDATA[Griffin]]></last_name>
+<display_name><![CDATA[Nancy Griffin]]></display_name>
+<short_display_name><![CDATA[Nancy G.]]></short_display_name>
+<email><![CDATA[Nancy_Griffin@facing.org]]></email>
+<last_visit_on><![CDATA[2012-12-18 22:55:32]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>135</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Nicky Enriquez]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/135]]></permalink>
+<created_on><![CDATA[2011-08-05 14:05:26]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/135.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/135.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/135.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/135.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/135.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Nicky]]></first_name>
+<last_name><![CDATA[Enriquez]]></last_name>
+<display_name><![CDATA[Nicky Enriquez]]></display_name>
+<short_display_name><![CDATA[Nicky E.]]></short_display_name>
+<email><![CDATA[Nicky_Enriquez@facing.org]]></email>
+<last_visit_on><![CDATA[2012-01-25 19:03:55]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>76</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Tanya Lubicz-Nawrocka]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/76]]></permalink>
+<created_on><![CDATA[2010-06-29 14:53:14]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/76.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/76.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/76.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/76.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/76.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Tanya]]></first_name>
+<last_name><![CDATA[Lubicz-Nawrocka]]></last_name>
+<display_name><![CDATA[Tanya Lubicz-Nawrocka]]></display_name>
+<short_display_name><![CDATA[Tanya L.]]></short_display_name>
+<email><![CDATA[Tanya_Lubicz-Nawrocka@facing.org]]></email>
+<last_visit_on><![CDATA[2010-08-13 15:22:36]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+<user><id>86</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Tracy O'Brien]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/72/users/86]]></permalink>
+<created_on><![CDATA[2010-09-29 18:27:55]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/86.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/86.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/86.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/86.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/86.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Tracy]]></first_name>
+<last_name><![CDATA[O'Brien]]></last_name>
+<display_name><![CDATA[Tracy O'Brien]]></display_name>
+<short_display_name><![CDATA[Tracy O.]]></short_display_name>
+<email><![CDATA[tracy_obrien@facing.org]]></email>
+<last_visit_on><![CDATA[2012-09-25 13:39:42]]></last_visit_on>
+<invited_on/>
+<company_id>72</company_id>
+</user>
+</users>
+</company>

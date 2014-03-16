@@ -1,0 +1,282 @@
+<company><id>81</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[IntraHealth International, Inc.]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81]]></permalink>
+<created_on><![CDATA[2011-06-10 18:28:16]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/people/81]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/81/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/81/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/81/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/81/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/81/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>0</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/81.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[6340 Quadrangle Drive
+Suite 200
+Chapel Hill, NC 27517]]></office_address>
+<office_phone><![CDATA[919-313-9100]]></office_phone>
+<office_fax><![CDATA[919-313-9108]]></office_fax>
+<office_homepage><![CDATA[http://www.intrahealth.org]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>203</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Amy Bess]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/203]]></permalink>
+<created_on><![CDATA[2013-02-20 21:02:56]]></created_on>
+<created_by_id>26</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/203.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/203.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/203.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/203.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/203.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Amy]]></first_name>
+<last_name><![CDATA[Bess]]></last_name>
+<display_name><![CDATA[Amy Bess]]></display_name>
+<short_display_name><![CDATA[Amy B.]]></short_display_name>
+<email><![CDATA[abess@intrahealth.org]]></email>
+<last_visit_on><![CDATA[2013-04-01 18:17:08]]></last_visit_on>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>122</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Brooke Buchanan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/122]]></permalink>
+<created_on><![CDATA[2011-06-10 18:31:00]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/122.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/122.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/122.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/122.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/122.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Brooke]]></first_name>
+<last_name><![CDATA[Buchanan]]></last_name>
+<display_name><![CDATA[Brooke Buchanan]]></display_name>
+<short_display_name><![CDATA[Brooke B.]]></short_display_name>
+<email><![CDATA[bbuchanan@capacityplus.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>124</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Carl Leitner]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/124]]></permalink>
+<created_on><![CDATA[2011-06-10 18:32:05]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/124.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/124.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/124.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/124.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/124.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Carl]]></first_name>
+<last_name><![CDATA[Leitner]]></last_name>
+<display_name><![CDATA[Carl Leitner]]></display_name>
+<short_display_name><![CDATA[Carl L.]]></short_display_name>
+<email><![CDATA[cleitner@capacityplus.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>123</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Carol Bales]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/123]]></permalink>
+<created_on><![CDATA[2011-06-10 18:31:29]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/123.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/123.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/123.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/123.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/123.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Carol]]></first_name>
+<last_name><![CDATA[Bales]]></last_name>
+<display_name><![CDATA[Carol Bales]]></display_name>
+<short_display_name><![CDATA[Carol B.]]></short_display_name>
+<email><![CDATA[cbales@capacityplus.org]]></email>
+<last_visit_on><![CDATA[2011-06-14 13:07:09]]></last_visit_on>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>121</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Dykki Settle]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/121]]></permalink>
+<created_on><![CDATA[2011-06-10 18:30:19]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:46]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/121.256x256.png?time=1391540626]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/121.40x40.png?time=1391540626]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/121.16x16.png?time=1391540626]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/121.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/121.256x256.png?time=1391540626]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Dykki]]></first_name>
+<last_name><![CDATA[Settle]]></last_name>
+<display_name><![CDATA[Dykki Settle]]></display_name>
+<short_display_name><![CDATA[Dykki S.]]></short_display_name>
+<email><![CDATA[dsettle@capacityplus.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>125</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Luke Duncan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/125]]></permalink>
+<created_on><![CDATA[2011-06-10 18:32:38]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/125.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/125.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/125.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/125.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/125.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Luke]]></first_name>
+<last_name><![CDATA[Duncan]]></last_name>
+<display_name><![CDATA[Luke Duncan]]></display_name>
+<short_display_name><![CDATA[Luke D.]]></short_display_name>
+<email><![CDATA[lduncan@intrahealth.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>205</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Paul Cardullo]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/205]]></permalink>
+<created_on><![CDATA[2013-02-20 21:06:45]]></created_on>
+<created_by_id>26</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/205.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/205.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/205.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/205.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/205.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Paul]]></first_name>
+<last_name><![CDATA[Cardullo]]></last_name>
+<display_name><![CDATA[Paul Cardullo]]></display_name>
+<short_display_name><![CDATA[Paul C.]]></short_display_name>
+<email><![CDATA[pcardullo@intrahealth.org]]></email>
+<last_visit_on><![CDATA[2013-04-08 20:25:56]]></last_visit_on>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+<user><id>204</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Sarah Dwyer]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/81/users/204]]></permalink>
+<created_on><![CDATA[2013-02-20 21:04:48]]></created_on>
+<created_by_id>26</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:47]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/204.256x256.png?time=1391540627]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/204.40x40.png?time=1391540627]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/204.16x16.png?time=1391540627]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/204.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/204.256x256.png?time=1391540627]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Sarah]]></first_name>
+<last_name><![CDATA[Dwyer]]></last_name>
+<display_name><![CDATA[Sarah Dwyer]]></display_name>
+<short_display_name><![CDATA[Sarah D.]]></short_display_name>
+<email><![CDATA[sdwyer@capacityplus.org]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>81</company_id>
+</user>
+</users>
+</company>
