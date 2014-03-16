@@ -43,6 +43,7 @@ class DHPreprocessMigration extends MigrationBase {
     $dirs = array(
       'company',
       'user',
+      'project',
     );
     $api = array(
       // 'url' => 'https://qplot.manageprojects.com/api.php',
@@ -66,8 +67,9 @@ class DHPreprocessMigration extends MigrationBase {
     }
 
     $processed_dir = array(
-      'company',
-      'user',
+      // 'company',
+      // 'user',
+      'project',
     );
 
     foreach ($processed_dir as $dir) {
@@ -79,6 +81,7 @@ class DHPreprocessMigration extends MigrationBase {
           $xml = simplexml_load_string($file);
 
           switch ($dir) {
+
             case 'company':
               foreach ($xml->company as $company) {
                 $id = (string)$company->id;
@@ -99,6 +102,7 @@ class DHPreprocessMigration extends MigrationBase {
               }
               break;
 
+            // User uses company raw data folder
             case 'user':
               $id = (string)$xml->id;
               foreach ($xml->users->children() as $user) {
@@ -112,7 +116,20 @@ class DHPreprocessMigration extends MigrationBase {
                   exec($exec);
                 }
               }
+              break;
 
+            case 'project':
+              foreach ($xml->project as $project) {
+                $id = (string)$project->id;
+                $output = $saved_dir . '/' . $id . '.xml';
+
+                if (!file_exists($output)) {
+                  $link = $api['url'] . '?path_info=projects/' . $id . '&auth_api_token=' . $api['token'];
+                  // dsm($link); break;
+                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                  exec($exec);
+                }
+              }
               break;
             
             default:

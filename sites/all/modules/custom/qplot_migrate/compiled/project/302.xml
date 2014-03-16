@@ -1,0 +1,248 @@
+<project><id>302</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[RTI Health Solutions: Drupal Website]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website]]></permalink>
+<created_on><![CDATA[2013-03-25 16:26:22]]></created_on>
+<created_by_id>17</created_by_id>
+<created_by><id>17</id>
+<name><![CDATA[Jay Roberts]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/17]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/17]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/17/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/17/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/17/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/17/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/17/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/17/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:10:22]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/17.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/17.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/17.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/17.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/17.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Jay]]></first_name>
+<last_name><![CDATA[Roberts]]></last_name>
+<display_name><![CDATA[Jay Roberts]]></display_name>
+<short_display_name><![CDATA[Jay R.]]></short_display_name>
+<email><![CDATA[jay@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:29:07]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-16 19:53:21]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2014-02-10 14:44:19]]></updated_on>
+<updated_by_id>18</updated_by_id>
+<updated_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 22:01:49]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/rti-health-solutions-drupal-website/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=302]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=302]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/302.256x256.png?time=1392043459]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/302.80x80.png?time=1392043459]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/302.40x40.png?time=1392043459]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/302.16x16.png?time=1392043459]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/302.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/302.256x256.png?time=1392043459]]></_largest_size>
+</avatar>
+<category_id>8</category_id>
+<category><id>8</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Initial Build]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/8]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>21</items_count>
+</category>
+<label_id>13</label_id>
+<label><id>13</id>
+<name><![CDATA[INPROGRESS]]></name>
+<fg_color><![CDATA[#FFFFFF]]></fg_color>
+<bg_color><![CDATA[#00A651]]></bg_color>
+<type><![CDATA[ProjectLabel]]></type>
+<is_default>0</is_default>
+</label>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0.5</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[rti-health-solutions-drupal-website]]></slug>
+<company_id>76</company_id>
+<leader_id>26</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>51600</budget>
+<overview><![CDATA[<div class="page"><div class="layoutArea"><div class="column"><p><strong>Launch:<br /><del>Oct. 1</del><br />Dec. 1</strong></p><p><a href="http://ekaplandev.devcloud.acquia-sites.com">http://ekaplandev.devcloud.acquia-sites.com</a></p><p>DesignHammer will provide Drupal design and development work for the RTI Health Solutions website (rti-hs.org). RTI Health Solutions is a business unit of RTI International providing consulting and research expertise to pharmaceutical, biotechnology, diagnostics and medical device companies. </p><p><strong>Primary Contacts:</strong></p><p>Graham Dyck<br />gdyck@rti.org<br />919.316.3788</p><p>Dawn Sanks Imershein<br />dsanks@rti.org</p><p><strong>Links:</strong></p></div> </div></div><p>Git: ekaplan@svn-1604.devcloud.hosting.acquia.com:ekaplan.git</p><p>Server: ssh ekaplan@srv-2171.devcloud.hosting.acquia.com</p><p>Prospecting ticket: <a href="https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/479">https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/479</a></p><p>Signed proposal: <a href="https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/files/files/80200">https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/files/files/80200</a></p>]]></overview>
+<overview_formatted><![CDATA[<div class="page"><div class="layoutArea"><div class="column"><p><strong>Launch:<br /><del>Oct. 1</del><br />Dec. 1</strong></p><p><a href="http://ekaplandev.devcloud.acquia-sites.com">http://ekaplandev.devcloud.acquia-sites.com</a></p><p>DesignHammer will provide Drupal design and development work for the RTI Health Solutions website (rti-hs.org). RTI Health Solutions is a business unit of RTI International providing consulting and research expertise to pharmaceutical, biotechnology, diagnostics and medical device companies. </p><p><strong>Primary Contacts:</strong></p><p>Graham Dyck<br />gdyck@rti.org<br />919.316.3788</p><p>Dawn Sanks Imershein<br />dsanks@rti.org</p><p><strong>Links:</strong></p></div> </div></div><p>Git: ekaplan@svn-1604.devcloud.hosting.acquia.com:ekaplan.git</p><p>Server: ssh ekaplan@srv-2171.devcloud.hosting.acquia.com</p><p>Prospecting ticket: <a href="https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/479">https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/479</a></p><p>Signed proposal: <a href="https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/files/files/80200">https://ac.designhammer.net/projects/rti-health-solutions-drupal-website/files/files/80200</a></p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>90</percent_done>
+<total_tasks><![CDATA[318]]></total_tasks>
+<open_tasks><![CDATA[30]]></open_tasks>
+</progress>
+<cost_summarized>65234.35</cost_summarized>
+<leader><id>26</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Kosta Harlan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/26]]></permalink>
+<created_on><![CDATA[2009-08-28 15:00:51]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-18 16:20:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/26.40x40.png?time=1392740403]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/26.16x16.png?time=1392740403]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/26.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kosta]]></first_name>
+<last_name><![CDATA[Harlan]]></last_name>
+<display_name><![CDATA[Kosta Harlan]]></display_name>
+<short_display_name><![CDATA[Kosta H.]]></short_display_name>
+<email><![CDATA[kosta@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-16 15:43:47]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>76</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[RTI Health Solutions]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/76]]></permalink>
+<created_on><![CDATA[2010-08-25 21:47:21]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/76.256x256.png?time=1349360795]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/76.80x80.png?time=1349360795]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/76.40x40.png?time=1349360795]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/76.16x16.png?time=1349360795]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/76.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/76.256x256.png?time=1349360795]]></_largest_size>
+</avatar>
+<office_address><![CDATA[Physical Address
+200 Park Offices Drive 
+Research Triangle Park, NC 27709
+
+Mailing Address 
+P.O. Box 12194
+Research Triangle Park, NC 27709-2194]]></office_address>
+<office_phone><![CDATA[]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://www.rtihs.org/]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

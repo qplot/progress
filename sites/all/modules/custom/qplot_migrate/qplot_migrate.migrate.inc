@@ -23,6 +23,11 @@ function qplot_migrate_migrate_api() {
         'group_name' => 'dh',
         'soft_dependencies' => array('Preprocess', 'Company')
       ),
+      'Category' => array(
+        'class_name' => 'DHCategoryMigration',
+        'group_name' => 'dh',
+        'soft_dependencies' => array('Preprocess')        
+      ),
       'Project' => array(
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',

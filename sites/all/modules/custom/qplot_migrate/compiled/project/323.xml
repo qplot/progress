@@ -1,0 +1,191 @@
+<project><id>323</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Practice Greenhealth: Phase 0 Planning and Discovery]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an]]></permalink>
+<created_on><![CDATA[2013-08-30 20:17:11]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:26:45]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/practice-greenhealth-phase-0-planning-an/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=323]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=323]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/practice-greenhealth-phase-0-planning-an/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/default.80x80.png]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/default.40x40.png]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/323.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></_largest_size>
+</avatar>
+<category_id>4</category_id>
+<category><id>4</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Project Specification]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/4]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>7</items_count>
+</category>
+<label_id>0</label_id>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[practice-greenhealth-phase-0-planning-an]]></slug>
+<company_id>112</company_id>
+<leader_id>107</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>15000</budget>
+<overview><![CDATA[<p>The purpose of the Phase 0 project is to produce a detailed specification and plan for development. Upon completion of this portion of the project, Client will receive a finalized Project Plan. During the Project Plan phase DesignHammer will fully define tasks, requirements, and development plans.</p><p><strong> Project Tasks </strong></p><p>The tasks conducted by DesignHammer resources under this SOW will include the following:</p><ul><li>Collaborate with Client to formally document project goals, project timeframe, and deliver Project Plan document for Phase 1 development.</li><li>Conduct meetings with organization’s stakeholders to further clarify current processes and future goals. Stakeholders could include helpline staff, executive project sponsors and the IT personnel managing the project.</li><li>Hold meeting with client’s core project team to present findings of discovery phase.</li><li>Provide a plan for the development/implementation various solutions and support.</li></ul><p><strong>Scope of Phase 0: Planning and Discovery </strong></p><p>DesignHammer will focus on planning and discovery targeting the following features and functionality for the Phase 1 deployment:</p><ul><li>Awards Application and Review Workflow</li><li>Role-based User Access</li><li>User Accounts Syncing to Salesforce</li><li>Awards Application Syncing to Salesforce</li><li>Awards Reporting</li><li>User Access to the Legacy Drupal 6 website</li></ul><p><em>The specific functionality targeted for the Phase 1 deployment will be determined during Phase 0. </em></p><p><strong>Project Planning Questionnaire and Workbook </strong></p><p>DesignHammer will provide the client with a Project Planning Questionnaire and Salesforce Planning Workbook. The client should complete these with a focus on how they apply to the new Environmental Excellence Awards System and User Access. The completed versions of these should be returned by 9/06/13.</p><p><strong>Project Management</strong></p><p>The follow meetings will be included in this SOW:</p><ul><li>Project Kick-Off meeting (9/16/13)</li><li>Draft Project Plan Review meeting (9/23/13)</li><li>Final Project Plan Presentation meeting (9/30/13)</li></ul><p><strong>Project Plan </strong></p><p>The Project Plan is a formal document that outlines the timeframe for development, proposed features and functionality, costs for development, and project goals. A draft of the Project Plan will be provided to the Client by 9/20/13 for review and feedback (if Client provided all necessary material in a timely manner). The Final Project Plan will be provided to the Client on 09/27/13 for review and approval.</p><p><strong>Tasks Not Included in this SOW:</strong></p><ul><li>Production Drupal Design or Development</li><li>Production Salesforce Configuration or Development</li></ul>]]></overview>
+<overview_formatted><![CDATA[<p>The purpose of the Phase 0 project is to produce a detailed specification and plan for development. Upon completion of this portion of the project, Client will receive a finalized Project Plan. During the Project Plan phase DesignHammer will fully define tasks, requirements, and development plans.</p><p><strong> Project Tasks </strong></p><p>The tasks conducted by DesignHammer resources under this SOW will include the following:</p><ul><li>Collaborate with Client to formally document project goals, project timeframe, and deliver Project Plan document for Phase 1 development.</li><li>Conduct meetings with organization’s stakeholders to further clarify current processes and future goals. Stakeholders could include helpline staff, executive project sponsors and the IT personnel managing the project.</li><li>Hold meeting with client’s core project team to present findings of discovery phase.</li><li>Provide a plan for the development/implementation various solutions and support.</li></ul><p><strong>Scope of Phase 0: Planning and Discovery </strong></p><p>DesignHammer will focus on planning and discovery targeting the following features and functionality for the Phase 1 deployment:</p><ul><li>Awards Application and Review Workflow</li><li>Role-based User Access</li><li>User Accounts Syncing to Salesforce</li><li>Awards Application Syncing to Salesforce</li><li>Awards Reporting</li><li>User Access to the Legacy Drupal 6 website</li></ul><p><em>The specific functionality targeted for the Phase 1 deployment will be determined during Phase 0. </em></p><p><strong>Project Planning Questionnaire and Workbook </strong></p><p>DesignHammer will provide the client with a Project Planning Questionnaire and Salesforce Planning Workbook. The client should complete these with a focus on how they apply to the new Environmental Excellence Awards System and User Access. The completed versions of these should be returned by 9/06/13.</p><p><strong>Project Management</strong></p><p>The follow meetings will be included in this SOW:</p><ul><li>Project Kick-Off meeting (9/16/13)</li><li>Draft Project Plan Review meeting (9/23/13)</li><li>Final Project Plan Presentation meeting (9/30/13)</li></ul><p><strong>Project Plan </strong></p><p>The Project Plan is a formal document that outlines the timeframe for development, proposed features and functionality, costs for development, and project goals. A draft of the Project Plan will be provided to the Client by 9/20/13 for review and feedback (if Client provided all necessary material in a timely manner). The Final Project Plan will be provided to the Client on 09/27/13 for review and approval.</p><p><strong>Tasks Not Included in this SOW:</strong></p><ul><li>Production Drupal Design or Development</li><li>Production Salesforce Configuration or Development</li></ul>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>64</percent_done>
+<total_tasks><![CDATA[14]]></total_tasks>
+<open_tasks><![CDATA[5]]></open_tasks>
+</progress>
+<cost_summarized>8414</cost_summarized>
+<leader><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>112</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Practice Greenhealth]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/112]]></permalink>
+<created_on><![CDATA[2013-08-30 20:09:36]]></created_on>
+<created_by_id>107</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/112.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[12355 Sunrise Valley Drive
+Suite 680
+Reston, VA
+20191]]></office_address>
+<office_phone><![CDATA[888-688-3332]]></office_phone>
+<office_fax><![CDATA[866-379-8705]]></office_fax>
+<office_homepage><![CDATA[https://practicegreenhealth.org/]]></office_homepage>
+<is_owner>0</is_owner>
+<note><![CDATA[]]></note>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

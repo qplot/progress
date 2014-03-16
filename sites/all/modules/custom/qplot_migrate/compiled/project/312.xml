@@ -1,0 +1,237 @@
+<project><id>312</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Certara: Maintenance]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/certara-maintenance]]></permalink>
+<created_on><![CDATA[2013-05-15 15:44:54]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:26:45]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2014-01-07 19:47:36]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<updated_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/certara-maintenance]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/certara-maintenance/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=312]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=312]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/certara-maintenance/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/default.80x80.png]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/default.40x40.png]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/312.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></_largest_size>
+</avatar>
+<category_id>10</category_id>
+<category><id>10</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Update]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/10]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>42</items_count>
+</category>
+<label_id>0</label_id>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[certara-maintenance]]></slug>
+<company_id>108</company_id>
+<leader_id>107</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p>DesignHammer will complete the following tasks:</p><ul><li>DesignHammer will create a project in activeCollab, the DesignHammer project management system, for ongoing website maintenance and website updates for the Certara website.</li><li>When work is desired, Certara staff will create a task in ActiveCollab with the details of the work.</li><li>DesignHammer will respond to tasks created by Certara in the Certara Maintenance Project in activeCollab within two business days.</li><li>If DesignHammer estimates the task will require more than five hours of work to complete, DesignHammer will update the task with an estimate and approach. Certara must approve the estimate for DesignHammer to proceed with the work. Upon confirmation of a scope of work for a ticket, DesignHammer shall schedule the work within one business day.</li><li>Every month DesignHammer will bill Certara for the development hours utilized in the previous month.</li><li>In order to allow DesignHammer to work most efficiently, Certara shall respond with any further information required within two business days, posted to activeCollab.</li></ul>]]></overview>
+<overview_formatted><![CDATA[<p>DesignHammer will complete the following tasks:</p><ul><li>DesignHammer will create a project in activeCollab, the DesignHammer project management system, for ongoing website maintenance and website updates for the Certara website.</li><li>When work is desired, Certara staff will create a task in ActiveCollab with the details of the work.</li><li>DesignHammer will respond to tasks created by Certara in the Certara Maintenance Project in activeCollab within two business days.</li><li>If DesignHammer estimates the task will require more than five hours of work to complete, DesignHammer will update the task with an estimate and approach. Certara must approve the estimate for DesignHammer to proceed with the work. Upon confirmation of a scope of work for a ticket, DesignHammer shall schedule the work within one business day.</li><li>Every month DesignHammer will bill Certara for the development hours utilized in the previous month.</li><li>In order to allow DesignHammer to work most efficiently, Certara shall respond with any further information required within two business days, posted to activeCollab.</li></ul>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>76</percent_done>
+<total_tasks><![CDATA[119]]></total_tasks>
+<open_tasks><![CDATA[28]]></open_tasks>
+</progress>
+<cost_summarized>44717.5</cost_summarized>
+<leader><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>108</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Certara]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/108]]></permalink>
+<created_on><![CDATA[2013-04-23 20:33:16]]></created_on>
+<created_by_id>107</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/108.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[9666 Olive Blvd, Suite 425
+St. Louis MO 63132]]></office_address>
+<office_phone><![CDATA[314.647.1099]]></office_phone>
+<office_fax><![CDATA[314.647.9241]]></office_fax>
+<office_homepage><![CDATA[http://www.certara.com/]]></office_homepage>
+<is_owner>0</is_owner>
+<note><![CDATA[]]></note>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

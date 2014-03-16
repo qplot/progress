@@ -1,0 +1,227 @@
+<project><id>336</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[DTH: Carolina's Finest 2014]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014]]></permalink>
+<created_on><![CDATA[2014-01-30 16:02:51]]></created_on>
+<created_by_id>20</created_by_id>
+<created_by><id>20</id>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/20]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/20/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/20/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/20/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/20/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/20/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/20/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 18:54:22]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2014-01-30 16:22:31]]></updated_on>
+<updated_by_id>20</updated_by_id>
+<updated_by><id>20</id>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/20]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/20/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/20/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/20/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/20/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/20/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/20/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 18:54:22]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/dth-carolinas-finest-2014/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=336]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=336]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/dth-carolinas-finest-2014/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/default.80x80.png]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/default.40x40.png]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/336.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></_largest_size>
+</avatar>
+<category_id>0</category_id>
+<category/>
+<label_id>0</label_id>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[dth-carolinas-finest-2014]]></slug>
+<company_id>33</company_id>
+<leader_id>20</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p>dev: <a href="http://dth.devhammer.com">http://dth.devhammer.com</a></p><p>live: <a href="http://dth.designhammer.com/">http://dth.designhammer.com/</a></p><p>I have to launch Carolina's Finest on Monday - and I'm sorry to contact you so late about it. There are only super-minor changes. The graphic stays the same.</p><p>Is there anything I need to do to physically launch it? I see it's hosted on your domain and not ours, so I'm guessing no?</p><p>3 changes:</p><p>Splash page copy: </p><p>Vote on your campus favorites for a chance to win a $100 gift card to Carolina Brewery!</p><p>Dates:</p><p>Open voting Monday February 3</p><p>Voting ends: 5:00 PM Friday March 7</p><p>Template footer (less important):</p><p>Change to DTH current address:</p><p>151 E. Rosemary St.</p><p>27514</p>]]></overview>
+<overview_formatted><![CDATA[<p>dev: <a href="http://dth.devhammer.com">http://dth.devhammer.com</a></p><p>live: <a href="http://dth.designhammer.com/">http://dth.designhammer.com/</a></p><p>I have to launch Carolina's Finest on Monday - and I'm sorry to contact you so late about it. There are only super-minor changes. The graphic stays the same.</p><p>Is there anything I need to do to physically launch it? I see it's hosted on your domain and not ours, so I'm guessing no?</p><p>3 changes:</p><p>Splash page copy: </p><p>Vote on your campus favorites for a chance to win a $100 gift card to Carolina Brewery!</p><p>Dates:</p><p>Open voting Monday February 3</p><p>Voting ends: 5:00 PM Friday March 7</p><p>Template footer (less important):</p><p>Change to DTH current address:</p><p>151 E. Rosemary St.</p><p>27514</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>0</percent_done>
+<total_tasks><![CDATA[2]]></total_tasks>
+<open_tasks><![CDATA[2]]></open_tasks>
+</progress>
+<cost_summarized>250</cost_summarized>
+<leader><id>20</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>33</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Daily Tar Heel]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/33]]></permalink>
+<created_on><![CDATA[2009-06-16 05:08:09]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/33.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[The Daily Tar Heel 
+P.O. Box 3257
+Chapel Hill, NC 27515]]></office_address>
+<office_phone><![CDATA[919-962-1163]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://www.dailytarheel.com]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories><category><id>1</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Email Campaigns]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/1]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>2</items_count>
+</category>
+<category><id>2</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Monthly Maintenance]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/2]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>50</items_count>
+</category>
+<category><id>3</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Print design]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/3]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>1</items_count>
+</category>
+<category><id>4</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Project Specification]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/4]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>7</items_count>
+</category>
+<category><id>5</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Ready to Invoice]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/5]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>9</items_count>
+</category>
+<category><id>1558</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Sales]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/1558]]></permalink>
+<created_on><![CDATA[2013-11-06 02:59:01]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id>0</parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type><![CDATA[]]></parent_type>
+<items_count>1</items_count>
+</category>
+<category><id>6</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[SEO]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/6]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>4</items_count>
+</category>
+<category><id>7</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Usability]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/7]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>1</items_count>
+</category>
+<category><id>8</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Initial Build]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/8]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>21</items_count>
+</category>
+<category><id>9</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Redesign]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/9]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>16</items_count>
+</category>
+<category><id>10</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Update]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/10]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id></parent_id>
+<parent_class></parent_class>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type></parent_type>
+<items_count>42</items_count>
+</category>
+</categories>

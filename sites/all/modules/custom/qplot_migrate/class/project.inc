@@ -4,21 +4,41 @@ class DHProjectMigration extends XMLMigration {
   public function __construct($arguments) {
     parent::__construct($arguments);
 
+    // create source
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
       'name' => t('Name'),
+      'completed' => t('Is Completed'),
       'created' => t('Created On'),
-      'user' => t('Created By'),
       'updated' => t('Updated On'),
       'state' => t('Status ?'),
+      'slug' => t('Slug'),
+      'company_id' => t('Company ID'),
+      'overview' => t('Overview'),
+      'percent_done' => t('Progress'),
+      'total_tasks' => t('Total Tasks'),
+      'open_tasks' => t('Open Tasks'),
       'budget' => t('Budget'),
+      'cost' => t('Cost Summarized'),
     );
-    // create source
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    $items_url = $xml_folder . 'project.xml';
-    $item_xpath = "/projects/project";
+
+    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/project';
+    $items_url = array();
+
+    if (is_dir($xml_folder)) {
+      $directory = new DirectoryIterator($xml_folder);
+      foreach ($directory as $fileinfo) {
+        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+          $items_url[] = $fileinfo->getPathname();
+        }
+      }
+    }
+
+    $item_xpath = "/project";
     $item_ID_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
     // create destination
     $this->destination = new MigrateDestinationNode('project');
@@ -40,26 +60,24 @@ class DHProjectMigration extends XMLMigration {
     $this->addFieldMapping('field_project_old_id', 'id')->xpath('id');
     $this->addFieldMapping('title', 'name')->xpath('name');
     $this->addFieldMapping('created', 'created')->xpath('created_on');
-    // missing author from created_by_id
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
-    // missing state from state
+    $this->addFieldMapping('field_project_company', 'company_id')->xpath('company_id')
+         ->sourceMigration('Company');
+    $this->addFieldMapping('body', 'overview')->xpath('overview');
+    $this->addFieldMapping('body:format')
+         ->defaultValue('full_html');
+    $this->addFieldMapping('field_project_progress', 'percent_done')->xpath('progress/percent_done');
     // missing is completed
     // missing project avatar
     // missing category
     // missing company id from company_id
     // missing leader id
     $this->addFieldMapping('field_project_budget', 'budget')->xpath('budget');
+    $this->addFieldMapping('field_project_cost', 'cost')->xpath('cost_summarized');
 
-    // $this->addFieldMapping('body', 'description')
-    //      ->xpath('description');
-    // $this->addFieldMapping('body:format')
-    //      ->defaultValue('full_html');
-    // $this->addFieldMapping('field_latest_link', 'link')
-    //      ->xpath('link');
-    // $this->addFieldMapping('created', 'date')
-    //      ->xpath('publicationDate');
-    // $this->addFieldMapping('field_latest_identifier', 'identifier')
-    //      ->xpath('identifier[1]');
+    $this->addFieldMapping('field_project_migrate_source')
+         ->defaultValue(array('DesignHammer AC'));
+    $this->addFieldMapping('field_project_migrate_id', 'id')->xpath('id');
   }
 
   public function prepareRow($row) {

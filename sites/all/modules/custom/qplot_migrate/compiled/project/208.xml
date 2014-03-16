@@ -1,0 +1,188 @@
+<project><id>208</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Frisky: digiSHOP upgrade]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade]]></permalink>
+<created_on><![CDATA[2011-05-25 15:55:09]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:26:45]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2012-08-17 15:17:32]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/frisky-digishop-upgrade/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=208]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=208]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/frisky-digishop-upgrade/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/208.256x256.png?time=1345216652]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/208.80x80.png?time=1345216652]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/208.40x40.png?time=1345216652]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/208.16x16.png?time=1345216652]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/208.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/208.256x256.png?time=1345216652]]></_largest_size>
+</avatar>
+<category_id>10</category_id>
+<category><id>10</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Update]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/10]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>42</items_count>
+</category>
+<label_id/>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>4.91</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[frisky-digishop-upgrade]]></slug>
+<company_id>46</company_id>
+<leader_id>20</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p>DesignHammer is prepared to proceed with the following requested upgrade of digiSHOP on the Frisky Business Boutique website (http://friskybusinessboutique.com/), based on the pricing provided below. Project outlined below, as well as ongoing maintenance and hosting will be conducted under the terms of the DesignHammer Master Agreement (Version 2.70) ; any amendments noted below. There are no amendments noted.</p><p><br /> digiSHOP Upgrade by DesignHammer <strong>﻿</strong></p><p>1. digiSHOP Upgrade License Fee ($150.00)<br /> DesignHammer will purchase the digiSHOP v9 upgrade software license.</p><p><br /> 2. digiSHOP Installation, Database Migration ($500.00–$1,200.00)<br /> DesignHammer will perform the upgrade and database migration on a development server. DesignHammer will deploy the new installation with a focus on ease of future upgrades to digiSHOP. Frisky Business staff will review and approve upgraded store before it is deployed to production server.</p><p><br /> 3. digiSHOP Template Styling ($1,500.00–$2,000.00)<br /> DesignHammer will ensure that the digiSHOP templates provide a consistent look and feel with the rest of the Frisky Business Boutique website. DesignHammer will style the templates to promote future upgrades of digiSHOP.</p>]]></overview>
+<overview_formatted><![CDATA[<p>DesignHammer is prepared to proceed with the following requested upgrade of digiSHOP on the Frisky Business Boutique website (http://friskybusinessboutique.com/), based on the pricing provided below. Project outlined below, as well as ongoing maintenance and hosting will be conducted under the terms of the DesignHammer Master Agreement (Version 2.70) ; any amendments noted below. There are no amendments noted.</p><p><br /> digiSHOP Upgrade by DesignHammer <strong>﻿</strong></p><p>1. digiSHOP Upgrade License Fee ($150.00)<br /> DesignHammer will purchase the digiSHOP v9 upgrade software license.</p><p><br /> 2. digiSHOP Installation, Database Migration ($500.00–$1,200.00)<br /> DesignHammer will perform the upgrade and database migration on a development server. DesignHammer will deploy the new installation with a focus on ease of future upgrades to digiSHOP. Frisky Business staff will review and approve upgraded store before it is deployed to production server.</p><p><br /> 3. digiSHOP Template Styling ($1,500.00–$2,000.00)<br /> DesignHammer will ensure that the digiSHOP templates provide a consistent look and feel with the rest of the Frisky Business Boutique website. DesignHammer will style the templates to promote future upgrades of digiSHOP.</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>81</percent_done>
+<total_tasks><![CDATA[11]]></total_tasks>
+<open_tasks><![CDATA[2]]></open_tasks>
+</progress>
+<cost_summarized>4369</cost_summarized>
+<leader><id>20</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>46</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Frisky Business Boutique Store]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/46]]></permalink>
+<created_on><![CDATA[2009-07-07 15:40:11]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/46.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[]]></office_address>
+<office_phone><![CDATA[(919) 957-4441]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://friskybusinessboutique.com/]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

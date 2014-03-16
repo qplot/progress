@@ -1,0 +1,242 @@
+<project><id>341</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[NCHSAA: Maintenance]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance]]></permalink>
+<created_on><![CDATA[2014-02-19 13:48:53]]></created_on>
+<created_by_id>18</created_by_id>
+<created_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 22:01:49]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2014-02-24 15:03:56]]></updated_on>
+<updated_by_id>18</updated_by_id>
+<updated_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 22:01:49]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/delete]]></delete>
+<trash><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/nchsaa-maintenance/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=341]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=341]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/nchsaa-maintenance/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>1</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/341.256x256.png?time=1393254236]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/341.80x80.png?time=1393254236]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/341.40x40.png?time=1393254236]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/341.16x16.png?time=1393254236]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/341.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/341.256x256.png?time=1393254236]]></_largest_size>
+</avatar>
+<category_id>2</category_id>
+<category><id>2</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Monthly Maintenance]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/2]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>50</items_count>
+</category>
+<label_id>0</label_id>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[nchsaa-maintenance]]></slug>
+<company_id>105</company_id>
+<leader_id>26</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[]]></overview>
+<overview_formatted><![CDATA[]]></overview_formatted>
+<based_on/>
+<progress><percent_done>64</percent_done>
+<total_tasks><![CDATA[14]]></total_tasks>
+<open_tasks><![CDATA[5]]></open_tasks>
+</progress>
+<cost_summarized>2052</cost_summarized>
+<leader><id>26</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Kosta Harlan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/26]]></permalink>
+<created_on><![CDATA[2009-08-28 15:00:51]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-18 16:20:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/26.40x40.png?time=1392740403]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/26.16x16.png?time=1392740403]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/26.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kosta]]></first_name>
+<last_name><![CDATA[Harlan]]></last_name>
+<display_name><![CDATA[Kosta Harlan]]></display_name>
+<short_display_name><![CDATA[Kosta H.]]></short_display_name>
+<email><![CDATA[kosta@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-16 15:43:47]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>105</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[North Carolina High School Athletic Association]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/105]]></permalink>
+<created_on><![CDATA[2013-01-07 22:30:14]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on/>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/105.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[Physical Address:
+222 Finley Golf Course Road
+Chapel Hill, NC 27517
+
+Mailing Address:
+PO Box 3216 
+Chapel Hill, NC 27515]]></office_address>
+<office_phone><![CDATA[(919) 240-7401]]></office_phone>
+<office_fax><![CDATA[(919) 240-7399]]></office_fax>
+<office_homepage><![CDATA[http://www.nchsaa.org]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>
