@@ -368,12 +368,14 @@ function qplot_progress_views_pre_render(&$view) {
     'leads' => 'lead',
     'contacts' => 'contact',
     'companies' => 'company',
+    'projects' => 'project',
   );
   $name = $view->name;
   switch ($name) {
     case 'contacts':
     case 'leads':
     case 'companies':
+    case 'projects':
       $view->header['area']->options['content'] = theme('views_link', array(
         'text' => '<i class="fa fa-plus"></i> Add ' . ucfirst($pages[$name]),
         'path' => 'node/add/' . $pages[$name],

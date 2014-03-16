@@ -17,7 +17,7 @@
     </a>
   </li>      
  -->
-  <?php if (!empty($menu['project'])): ?>
+  <?php if (!empty($menu['project-retired'])): ?>
     <li class=""> 
       <a href="javascript:;"> 
         <i class="fa fa-book"></i> 
@@ -57,6 +57,13 @@
       <li class=""> 
         <a href="<?php echo $menu['contact'] ?>"> 
           <i class="fa fa-linkedin"></i> <span class="title">Contact</span>
+        </a>
+      </li>
+    <?php endif ?>    
+    <?php if (!empty($menu['project'])): ?>
+      <li class=""> 
+        <a href="<?php echo $menu['project'] ?>"> 
+          <i class="fa fa-book"></i> <span class="title">Project</span>
         </a>
       </li>
     <?php endif ?>    

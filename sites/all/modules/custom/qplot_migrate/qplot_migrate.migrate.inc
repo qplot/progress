@@ -26,12 +26,12 @@ function qplot_migrate_migrate_api() {
       'Project' => array(
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
+        'soft_dependencies' => array('Preprocess', 'Company', 'User')        
       ),
       'Task' => array(
         'class_name' => 'DHTaskMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
+        'soft_dependencies' => array('Preprocess', 'Company', 'User', 'Project')
       ),
     ),
   );

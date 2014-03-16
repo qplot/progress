@@ -66,7 +66,7 @@ class DHPreprocessMigration extends MigrationBase {
     }
 
     $processed_dir = array(
-      // 'company'
+      'company',
       'user',
     );
 
@@ -82,16 +82,20 @@ class DHPreprocessMigration extends MigrationBase {
             case 'company':
               foreach ($xml->company as $company) {
                 $id = (string)$company->id;
-                $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
                 $output = $saved_dir . '/' . $id . '.xml';
 
-                // save directly to disk
-                // $page = file_get_contents($link);
-                // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+                if (!file_exists($output)) {
+                  $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
 
-                // use phantomjs to help us get around the https issue
-                $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                exec($exec);
+                  // save directly to disk
+                  // $page = file_get_contents($link);
+                  // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+
+                  // use phantomjs to help us get around the https issue
+                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                  exec($exec);
+                }
+
               }
               break;
 
@@ -99,12 +103,14 @@ class DHPreprocessMigration extends MigrationBase {
               $id = (string)$xml->id;
               foreach ($xml->users->children() as $user) {
                 $uid = (string)$user->id;
-
-                $link = $api['url'] . '?path_info=people/' . $id . '/users/' . $uid . '&auth_api_token=' . $api['token'];
                 $output = $saved_dir . '/' . $uid . '.xml';
-                // dsm($link); break;
-                $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                exec($exec);
+
+                if (!file_exists($output)) {
+                  $link = $api['url'] . '?path_info=people/' . $id . '/users/' . $uid . '&auth_api_token=' . $api['token'];
+                  // dsm($link); break;
+                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                  exec($exec);
+                }
               }
 
               break;

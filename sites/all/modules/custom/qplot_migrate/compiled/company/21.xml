@@ -1,0 +1,208 @@
+<company><id>21</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[FMI Corporation]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/21]]></permalink>
+<created_on><![CDATA[2009-05-06 15:23:10]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2013-10-17 16:22:49]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<updated_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/people/21]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/21/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/21/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/people/21/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/people/21/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/21/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/21.256x256.png?time=1382026969]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/21.80x80.png?time=1382026969]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/21.40x40.png?time=1382026969]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/21.16x16.png?time=1382026969]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/21.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/21.256x256.png?time=1382026969]]></_largest_size>
+</avatar>
+<office_address><![CDATA[]]></office_address>
+<office_phone><![CDATA[]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>51</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Kathryn Robinson]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/21/users/51]]></permalink>
+<created_on><![CDATA[2010-02-03 21:20:06]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:58:56]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/51.256x256.png?time=1381953536]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/51.40x40.png?time=1381953536]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/51.16x16.png?time=1381953536]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/51.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/51.256x256.png?time=1381953536]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kathryn]]></first_name>
+<last_name><![CDATA[Robinson]]></last_name>
+<display_name><![CDATA[Kathryn Robinson]]></display_name>
+<short_display_name><![CDATA[Kathryn R.]]></short_display_name>
+<email><![CDATA[KRobinson@fminet.com]]></email>
+<last_visit_on><![CDATA[2010-02-03 22:26:36]]></last_visit_on>
+<invited_on/>
+<company_id>21</company_id>
+</user>
+<user><id>52</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Sally Hulick]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/21/users/52]]></permalink>
+<created_on><![CDATA[2010-02-03 21:28:50]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:59:09]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/52.256x256.png?time=1381953549]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/52.40x40.png?time=1381953549]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/52.16x16.png?time=1381953549]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/52.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/52.256x256.png?time=1381953549]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Sally]]></first_name>
+<last_name><![CDATA[Hulick]]></last_name>
+<display_name><![CDATA[Sally Hulick]]></display_name>
+<short_display_name><![CDATA[Sally H.]]></short_display_name>
+<email><![CDATA[shulick@fminet.com]]></email>
+<last_visit_on><![CDATA[2010-03-02 14:10:27]]></last_visit_on>
+<invited_on/>
+<company_id>21</company_id>
+</user>
+<user><id>55</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Sarah Vizard]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/21/users/55]]></permalink>
+<created_on><![CDATA[2010-03-10 17:56:06]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:59:02]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/55.256x256.png?time=1381953542]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/55.40x40.png?time=1381953542]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/55.16x16.png?time=1381953542]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/55.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/55.256x256.png?time=1381953542]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Sarah]]></first_name>
+<last_name><![CDATA[Vizard]]></last_name>
+<display_name><![CDATA[Sarah Vizard]]></display_name>
+<short_display_name><![CDATA[Sarah V.]]></short_display_name>
+<email><![CDATA[SVizard@fminet.com]]></email>
+<last_visit_on><![CDATA[2010-03-10 18:40:53]]></last_visit_on>
+<invited_on/>
+<company_id>21</company_id>
+</user>
+</users>
+</company>

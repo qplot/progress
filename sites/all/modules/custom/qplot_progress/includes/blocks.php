@@ -20,6 +20,7 @@ function qplot_progress_block_view_main_menu(&$block) {
     $menu = array(
       'company' => url('companies'),
       'contact' => url('contacts'),
+      'project' => url('projects'),
       'lead' => url('leads'),
     );
     $variables['menu'] = array_merge($variables['menu'], $menu);

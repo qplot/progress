@@ -1,0 +1,306 @@
+<company><id>63</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Cisco Systems, Inc]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63]]></permalink>
+<created_on><![CDATA[2009-11-10 19:16:32]]></created_on>
+<created_by_id>16</created_by_id>
+<created_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2013-10-16 19:54:11]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<updated_by><id>16</id>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/16]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/16/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/16/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/16/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/16/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/16/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/16/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-11 20:07:01]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/people/63]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/63/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/63/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/people/63/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/people/63/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/63/avatar/view]]></update_avatar>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+</permissions>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/63.256x256.png?time=1381953251]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/63.80x80.png?time=1381953251]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/63.40x40.png?time=1381953251]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/63.16x16.png?time=1381953251]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/63.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/63.256x256.png?time=1381953251]]></_largest_size>
+</avatar>
+<office_address><![CDATA[Cisco Systems, Inc 
+7205-3 Kit Creek Rd 
+RTP, NC 27709]]></office_address>
+<office_phone><![CDATA[919.333.9014]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://www.ciscoadexchange.com]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+<users><user><id>44</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Anupam Gupta]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/44]]></permalink>
+<created_on><![CDATA[2010-01-22 23:49:13]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:52:48]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/44.256x256.png?time=1381953168]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/44.40x40.png?time=1381953168]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/44.16x16.png?time=1381953168]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/44.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/44.256x256.png?time=1381953168]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Anupam]]></first_name>
+<last_name><![CDATA[Gupta]]></last_name>
+<display_name><![CDATA[Anupam Gupta]]></display_name>
+<short_display_name><![CDATA[Anupam G.]]></short_display_name>
+<email><![CDATA[angupta@cisco.com]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>35</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Bill Black-Hogins]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/35]]></permalink>
+<created_on><![CDATA[2009-11-10 20:26:17]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:52:59]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/35.256x256.png?time=1381953179]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/35.40x40.png?time=1381953179]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/35.16x16.png?time=1381953179]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/35.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/35.256x256.png?time=1381953179]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Bill]]></first_name>
+<last_name><![CDATA[Black-Hogins]]></last_name>
+<display_name><![CDATA[Bill Black-Hogins]]></display_name>
+<short_display_name><![CDATA[Bill B.]]></short_display_name>
+<email><![CDATA[billbh@cisco.com]]></email>
+<last_visit_on><![CDATA[2010-02-02 03:11:15]]></last_visit_on>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>34</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Brian Carnell]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/34]]></permalink>
+<created_on><![CDATA[2009-11-10 20:25:15]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:53:09]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/34.256x256.png?time=1381953189]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/34.40x40.png?time=1381953189]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/34.16x16.png?time=1381953189]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/34.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/34.256x256.png?time=1381953189]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Brian]]></first_name>
+<last_name><![CDATA[Carnell]]></last_name>
+<display_name><![CDATA[Brian Carnell]]></display_name>
+<short_display_name><![CDATA[Brian C.]]></short_display_name>
+<email><![CDATA[bcarnell@cisco.com]]></email>
+<last_visit_on><![CDATA[2009-11-16 03:51:37]]></last_visit_on>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>45</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Clint Takeshita]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/45]]></permalink>
+<created_on><![CDATA[2010-01-22 23:50:30]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:53:25]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/45.256x256.png?time=1381953205]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/45.40x40.png?time=1381953205]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/45.16x16.png?time=1381953205]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/45.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/45.256x256.png?time=1381953205]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Clint]]></first_name>
+<last_name><![CDATA[Takeshita]]></last_name>
+<display_name><![CDATA[Clint Takeshita]]></display_name>
+<short_display_name><![CDATA[Clint T.]]></short_display_name>
+<email><![CDATA[ctakeshi@cisco.com]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>43</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Guy Tonti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/43]]></permalink>
+<created_on><![CDATA[2010-01-22 23:47:23]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:53:32]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/43.256x256.png?time=1381953212]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/43.40x40.png?time=1381953212]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/43.16x16.png?time=1381953212]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/43.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/43.256x256.png?time=1381953212]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Guy]]></first_name>
+<last_name><![CDATA[Tonti]]></last_name>
+<display_name><![CDATA[Guy Tonti]]></display_name>
+<short_display_name><![CDATA[Guy T.]]></short_display_name>
+<email><![CDATA[gtonti@cisco.com]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>59</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Omar Rodriguez]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/59]]></permalink>
+<created_on><![CDATA[2010-04-15 18:33:42]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:53:42]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/59.256x256.png?time=1381953222]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/59.40x40.png?time=1381953222]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/59.16x16.png?time=1381953222]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/59.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/59.256x256.png?time=1381953222]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Omar]]></first_name>
+<last_name><![CDATA[Rodriguez]]></last_name>
+<display_name><![CDATA[Omar Rodriguez]]></display_name>
+<short_display_name><![CDATA[Omar R.]]></short_display_name>
+<email><![CDATA[omrodrig@cisco.com]]></email>
+<last_visit_on/>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+<user><id>46</id>
+<class><![CDATA[Client]]></class>
+<name><![CDATA[Saugat Roy]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/63/users/46]]></permalink>
+<created_on><![CDATA[2010-01-27 18:17:43]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 19:53:59]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/46.256x256.png?time=1381953239]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/46.40x40.png?time=1381953239]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/46.16x16.png?time=1381953239]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/46.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/46.256x256.png?time=1381953239]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Saugat]]></first_name>
+<last_name><![CDATA[Roy]]></last_name>
+<display_name><![CDATA[Saugat Roy]]></display_name>
+<short_display_name><![CDATA[Saugat R.]]></short_display_name>
+<email><![CDATA[sauroy@cisco.com]]></email>
+<last_visit_on><![CDATA[2010-02-02 17:43:27]]></last_visit_on>
+<invited_on/>
+<company_id>63</company_id>
+</user>
+</users>
+</company>
