@@ -75,3 +75,8 @@
  table .tooltip {
   text-align: left;
  }
+
+ /* fix progress bar width in projects view */
+ table th.views-field-field-project-progress {
+  width: 20%;
+ }

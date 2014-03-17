@@ -1,0 +1,218 @@
+<project><id>219</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[ICC Global: Website Design and Development]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen]]></permalink>
+<created_on><![CDATA[2011-07-19 19:07:51]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:26:45]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2012-07-25 13:33:44]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/icc-global-website-design-and-developmen/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=219]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=219]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/icc-global-website-design-and-developmen/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>0</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>2</state>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2012-07-25 13:33:44]]></completed_on>
+<completed_by><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/219.256x256.png?time=1343223224]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/219.80x80.png?time=1343223224]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/219.40x40.png?time=1343223224]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/219.16x16.png?time=1343223224]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/219.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/219.256x256.png?time=1343223224]]></_largest_size>
+</avatar>
+<category_id>8</category_id>
+<category><id>8</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Initial Build]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/8]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>21</items_count>
+</category>
+<label_id/>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[icc-global-website-design-and-developmen]]></slug>
+<company_id>78</company_id>
+<leader_id>107</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p># Project Specification<br />  <br /> ## Introduction<br />  <br /> DesignHammer and ICC Global will work together to develop the new ICC Global website. This specification document outlines the approach we will take to develop the site as well as define some of the high level goals and present some specific details identified in the planning phase of the project. <br />  <br />  <br /> ## Agile<br />  <br /> We will use an agile development methodology to produce the site. Traditional methodologies typically involve long specification phases and long development phases which make it easier to define the total scope and cost of the project initially, but come at the expense of flexibility.<br />  <br /> Agile development assumes that changes to the spec may occur throughout the project and should be accounted for. <br />  <br /> We keep track of all desired functionality in a project backlog. The backlog is a list of required features in order of priority. Items in the list have rough estimates of the business value of the feature and development effort required. The backlog is used to to prioritize development efforts.<br />  <br /> During the course of the project, the backlog can be changed and adjusted to incorporate new features or adjust the scope of existing features. This allows a great deal of flexibility in the design of the product and allows the team to respond quickly to feedback from users and other project stakeholders.<br />  <br /> Development is broken up into a series of two-week long &quot;sprints&quot;. At the beginning of a sprint, DesignHammer and ICC Global will have a sprint meeting. At the meeting, the team will review the backlog and decide which items will be worked on in the upcoming sprint. During the following sprint meeting the team will review the work from the previous sprint and determine what to include in the next sprint.<br />  <br /> Sprint meetings can be help in-person and remotely. The backlog and other project planning resources are managed through an online tool called [ActiveCollab](http://ac.designhammer.net).<br />  <br />  <br /> ## Goals<br />  <br /> The primary goal of this project is to produce a website for ICC Global that will be a hub for intercultural researchers around the world to communicate and interact.<br />  <br /> It is also important that the site be built in a cost-effective way, particularly in these early stages and also looking towards future development.<br />  <br /> Finally, flexibility is critical. The site should be built with future change in mind. As users request new functionality and as new business models are explored, the site should be flexible to support that.<br />  <br /> To support these goals, the ICC Global site will be built using Drupal. Wherever possible we will implement features using existing modules and techniques. We will avoid writing custom code unless absolutely necessary.<br />  <br /> ICC Global should plan to implement features at a business level before implementing them at a technology level. An example of this might be:<br />  <br /> **Feature:**<br />  <br /> - Only paid users should have the ability to vote.<br />  <br /> **Business Level:**<br />  <br /> - A user pays for their registration. An ICC admin manually grants the user permission to vote.<br />  <br /> **Technology Level:**<br />  <br /> - Upon completing an online payment, an automatic process updates the user's account to have the voting permission.<br />  <br />  <br /> This will help to reduce cost and make it easier to make changes in the future. In some cases this may mean making a tradeoff between the ideal functionality of a feature and what is available in existing modules.<br />  <br /> DesignHammer and ICC Global will collaborate to determine which approach is best in each case.<br />  <br />  <br /> ## Primary Features<br />  <br /> Based on our preliminary discussions, we've identified three primary features to focus on for the first release of the site. We believe that a solid, focused implementation of these features will provide a great user experience and will be a solid basis to iterate on going forward.<br />  <br /> ### User profiles<br />  <br /> The site will allow users to register. They will have an account on the site and a profile page containing information that is visible to other users. Wherever a user sees something posted by another user, they may click on their name and find out more about them.  <br />  <br /> #### Future functionality <br />  <br /> User profiles can start out basic and be expanded to include additional information. One possibility that was discussed was having a way to mark particular users as experts in a given field which could be used to highlight their contributions to the site.<br />  <br /> We may also explore allowing users to sign in with third party services (Google account, Twitter account, etc) to lower the barrier to entry.<br />  <br /> ### Topic Areas<br />  <br /> Once registered, users will be able to create &quot;Topic Areas&quot;. These Topic Areas will serve as containers for various lines of discussion and collaboration.<br />  <br /> For example, there might be a &quot;Statistics Modeling Tools&quot; Topic Area. Users can post new topics for discussion in the Topic Area as well as documents or reports. Other users can see the list of items posted<br />  <br /> Topic Areas are an extremely flexible metaphor that can be used as a building block for a wide range of features.<br />  <br /> One of our early tasks will be to determine the specific requirements for Topic Areas and permissions which will inform our choice of Drupal 6 or 7.<br />  <br /> #### Future Functionality<br />  <br /> The initial implementation of Topic Areas will be very basic and flexible. Having a less defined implementation and avoiding custom coding for Topic Areas will allow for easier changes later.<br />  <br />  <br /> ### Voting and Rating<br />  <br /> Users will have the ability to vote on content they see. It remains to be determined if this takes the form of +1 style voting, up or down voting, or 1-5 star style voting.<br />  <br /> Cumulative vote tallies will be displayed on a user's profile page and alongside their name in individual posts.<br />  <br /> This will allow other user's to evaluate the content they view in the context of votes.<br />  <br /> #### Future Functionality<br />  <br /> The voting statistics can be used in a number of ways to organize content and highlight exceptional content. It can also be used to highlight individual contributors.<br />  <br /> Additional indicators can be added which would enable ICC admins to highlight individuals outside of the voting system.<br />  <br />  <br /> ## Secondary Features<br />  <br /> ### User onboarding<br />  <br /> Users who are not logged in will be presented with a home page designed to entice them to register. A simpler initial design for this page will reduce development costs. Ideally, the content of this page would be created and managed by ICC Global and would allow them to try different styles without requiring work from DesignHammer.<br />  <br />  <br /> ### Theme<br />  <br /> It will be worthwhile to devote some development time to establishing a clean basic look for the site. Typically a well built Drupal theme with wireframes, design comps, and theme build out takes 100-150 hours.<br />  <br /> An alternative is to use a standard Drupal core theme and make minor adjustments.<br />  <br /> ### Metrics and Feedback<br />  <br /> It will be critical during this project to collect as much feedback as possible in order to guide future development decisions and priorities.<br />  <br /> Feedback sources include:<br /> - User surveys<br /> - Usability testing<br /> - Contact forms on the site<br /> - Analytics data<br />  <br />  <br /> ## Timeline<br />  <br /> We will attempt to meet ICC Global's proposed timeline for a pilot release of the site. The final features that will be available at the time of launch will depend on their priority in the backlog and decisions made during the course of the the sprints.<br />  <br />  <br /> ## Testing<br />  <br /> ICC Global will participate in the testing process. This helps to ensure that ICC administrators are familiar with the site and how to manage it, they can also determine if the functionality is meeting their needs.  Additionally, as the site will have end-user participation, it will be critical for ICC to perform user testing.<br />  <br /> Promptly addressing tickets that request testing and approval will ensure that the project stays on track.<br />  <br />  <br /> ## Ongoing development, the future<br />  <br /> The initial development will produce a complete site that will be ready for users to interact with it. It will provide a solid base for future iteration. We expect to continue to develop the site in consultation with ICC Global beyond the initial pilot release. New functionality will be incorporated based on business needs, metrics, and user feedback.</p>]]></overview>
+<overview_formatted><![CDATA[<p># Project Specification<br />  <br /> ## Introduction<br />  <br /> DesignHammer and ICC Global will work together to develop the new ICC Global website. This specification document outlines the approach we will take to develop the site as well as define some of the high level goals and present some specific details identified in the planning phase of the project. <br />  <br />  <br /> ## Agile<br />  <br /> We will use an agile development methodology to produce the site. Traditional methodologies typically involve long specification phases and long development phases which make it easier to define the total scope and cost of the project initially, but come at the expense of flexibility.<br />  <br /> Agile development assumes that changes to the spec may occur throughout the project and should be accounted for. <br />  <br /> We keep track of all desired functionality in a project backlog. The backlog is a list of required features in order of priority. Items in the list have rough estimates of the business value of the feature and development effort required. The backlog is used to to prioritize development efforts.<br />  <br /> During the course of the project, the backlog can be changed and adjusted to incorporate new features or adjust the scope of existing features. This allows a great deal of flexibility in the design of the product and allows the team to respond quickly to feedback from users and other project stakeholders.<br />  <br /> Development is broken up into a series of two-week long &quot;sprints&quot;. At the beginning of a sprint, DesignHammer and ICC Global will have a sprint meeting. At the meeting, the team will review the backlog and decide which items will be worked on in the upcoming sprint. During the following sprint meeting the team will review the work from the previous sprint and determine what to include in the next sprint.<br />  <br /> Sprint meetings can be help in-person and remotely. The backlog and other project planning resources are managed through an online tool called [ActiveCollab](http://ac.designhammer.net).<br />  <br />  <br /> ## Goals<br />  <br /> The primary goal of this project is to produce a website for ICC Global that will be a hub for intercultural researchers around the world to communicate and interact.<br />  <br /> It is also important that the site be built in a cost-effective way, particularly in these early stages and also looking towards future development.<br />  <br /> Finally, flexibility is critical. The site should be built with future change in mind. As users request new functionality and as new business models are explored, the site should be flexible to support that.<br />  <br /> To support these goals, the ICC Global site will be built using Drupal. Wherever possible we will implement features using existing modules and techniques. We will avoid writing custom code unless absolutely necessary.<br />  <br /> ICC Global should plan to implement features at a business level before implementing them at a technology level. An example of this might be:<br />  <br /> **Feature:**<br />  <br /> - Only paid users should have the ability to vote.<br />  <br /> **Business Level:**<br />  <br /> - A user pays for their registration. An ICC admin manually grants the user permission to vote.<br />  <br /> **Technology Level:**<br />  <br /> - Upon completing an online payment, an automatic process updates the user's account to have the voting permission.<br />  <br />  <br /> This will help to reduce cost and make it easier to make changes in the future. In some cases this may mean making a tradeoff between the ideal functionality of a feature and what is available in existing modules.<br />  <br /> DesignHammer and ICC Global will collaborate to determine which approach is best in each case.<br />  <br />  <br /> ## Primary Features<br />  <br /> Based on our preliminary discussions, we've identified three primary features to focus on for the first release of the site. We believe that a solid, focused implementation of these features will provide a great user experience and will be a solid basis to iterate on going forward.<br />  <br /> ### User profiles<br />  <br /> The site will allow users to register. They will have an account on the site and a profile page containing information that is visible to other users. Wherever a user sees something posted by another user, they may click on their name and find out more about them.  <br />  <br /> #### Future functionality <br />  <br /> User profiles can start out basic and be expanded to include additional information. One possibility that was discussed was having a way to mark particular users as experts in a given field which could be used to highlight their contributions to the site.<br />  <br /> We may also explore allowing users to sign in with third party services (Google account, Twitter account, etc) to lower the barrier to entry.<br />  <br /> ### Topic Areas<br />  <br /> Once registered, users will be able to create &quot;Topic Areas&quot;. These Topic Areas will serve as containers for various lines of discussion and collaboration.<br />  <br /> For example, there might be a &quot;Statistics Modeling Tools&quot; Topic Area. Users can post new topics for discussion in the Topic Area as well as documents or reports. Other users can see the list of items posted<br />  <br /> Topic Areas are an extremely flexible metaphor that can be used as a building block for a wide range of features.<br />  <br /> One of our early tasks will be to determine the specific requirements for Topic Areas and permissions which will inform our choice of Drupal 6 or 7.<br />  <br /> #### Future Functionality<br />  <br /> The initial implementation of Topic Areas will be very basic and flexible. Having a less defined implementation and avoiding custom coding for Topic Areas will allow for easier changes later.<br />  <br />  <br /> ### Voting and Rating<br />  <br /> Users will have the ability to vote on content they see. It remains to be determined if this takes the form of +1 style voting, up or down voting, or 1-5 star style voting.<br />  <br /> Cumulative vote tallies will be displayed on a user's profile page and alongside their name in individual posts.<br />  <br /> This will allow other user's to evaluate the content they view in the context of votes.<br />  <br /> #### Future Functionality<br />  <br /> The voting statistics can be used in a number of ways to organize content and highlight exceptional content. It can also be used to highlight individual contributors.<br />  <br /> Additional indicators can be added which would enable ICC admins to highlight individuals outside of the voting system.<br />  <br />  <br /> ## Secondary Features<br />  <br /> ### User onboarding<br />  <br /> Users who are not logged in will be presented with a home page designed to entice them to register. A simpler initial design for this page will reduce development costs. Ideally, the content of this page would be created and managed by ICC Global and would allow them to try different styles without requiring work from DesignHammer.<br />  <br />  <br /> ### Theme<br />  <br /> It will be worthwhile to devote some development time to establishing a clean basic look for the site. Typically a well built Drupal theme with wireframes, design comps, and theme build out takes 100-150 hours.<br />  <br /> An alternative is to use a standard Drupal core theme and make minor adjustments.<br />  <br /> ### Metrics and Feedback<br />  <br /> It will be critical during this project to collect as much feedback as possible in order to guide future development decisions and priorities.<br />  <br /> Feedback sources include:<br /> - User surveys<br /> - Usability testing<br /> - Contact forms on the site<br /> - Analytics data<br />  <br />  <br /> ## Timeline<br />  <br /> We will attempt to meet ICC Global's proposed timeline for a pilot release of the site. The final features that will be available at the time of launch will depend on their priority in the backlog and decisions made during the course of the the sprints.<br />  <br />  <br /> ## Testing<br />  <br /> ICC Global will participate in the testing process. This helps to ensure that ICC administrators are familiar with the site and how to manage it, they can also determine if the functionality is meeting their needs.  Additionally, as the site will have end-user participation, it will be critical for ICC to perform user testing.<br />  <br /> Promptly addressing tickets that request testing and approval will ensure that the project stays on track.<br />  <br />  <br /> ## Ongoing development, the future<br />  <br /> The initial development will produce a complete site that will be ready for users to interact with it. It will provide a solid base for future iteration. We expect to continue to develop the site in consultation with ICC Global beyond the initial pilot release. New functionality will be incorporated based on business needs, metrics, and user feedback.</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>56</percent_done>
+<total_tasks><![CDATA[39]]></total_tasks>
+<open_tasks><![CDATA[17]]></open_tasks>
+</progress>
+<cost_summarized>8694</cost_summarized>
+<leader><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>78</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[ICC Global]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/78]]></permalink>
+<created_on><![CDATA[2011-05-27 19:52:44]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-17 16:23:34]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/78.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[New Mind Education
+NC State University Centennial Campus
+1791 Varsity Drive
+Suite 140
+Raleigh, NC 27606]]></office_address>
+<office_phone><![CDATA[919.371.8015]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://newmindedu.com]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

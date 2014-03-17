@@ -1,0 +1,216 @@
+<project><id>189</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Carolina Theatre: Redesign Phase II]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii]]></permalink>
+<created_on><![CDATA[2011-01-21 22:30:32]]></created_on>
+<created_by_id>19</created_by_id>
+<created_by><id>19</id>
+<name><![CDATA[Tevan Alexander]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/19]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/19]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/19/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/19/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/people/19/users/19/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/19/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/19/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/19/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-05 19:42:37]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-16 16:36:03]]></updated_on>
+<updated_by_id>26</updated_by_id>
+<state>2</state>
+<is_archived>1</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/19.256x256.png?time=1381941363]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/19.40x40.png?time=1381941363]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/19.16x16.png?time=1381941363]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/19.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/19.256x256.png?time=1381941363]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Tevan]]></first_name>
+<last_name><![CDATA[Alexander]]></last_name>
+<display_name><![CDATA[Tevan Alexander]]></display_name>
+<short_display_name><![CDATA[Tevan A.]]></short_display_name>
+<email><![CDATA[tevan@designhammer.com]]></email>
+<last_visit_on><![CDATA[2011-02-11 21:08:54]]></last_visit_on>
+<last_activity_on><![CDATA[2011-02-11 22:32:08]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2011-06-06 15:50:52]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/carolina-theatre-redesign-phase-ii/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=189]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=189]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/carolina-theatre-redesign-phase-ii/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>0</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>2</state>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2011-06-06 15:50:52]]></completed_on>
+<completed_by><id>16</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-11 15:09:05]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/default.80x80.png]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/default.40x40.png]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/189.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></_largest_size>
+</avatar>
+<category_id>9</category_id>
+<category><id>9</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Redesign]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/9]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>16</items_count>
+</category>
+<label_id/>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[carolina-theatre-redesign-phase-ii]]></slug>
+<company_id>32</company_id>
+<leader_id>18</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<h1>Goals</h1><p>Goals for the project include improved usability, as well as design updates to make better use of space on the website home page.</p><h1>Project Notes</h1><p><strong>Homepage Modifications</strong>: Reduce header size. Reduce logo size. Remove ellipses from film titles. Allow for only three films to be displayed at a time in the header. Occasionally display film festival message in films box. Highlight Twitter and Facebook links in header. Add ability to rotate events, films, and blog postings in featured space. Decrease headline font size in featured space. Add pre-headline and sub-headline to featured space and Upcoming Events (see Headlines section below). Add note area for featured space and Upcoming Events (see Note Area section below). Decrease size of Buy Tickets button and add Twitter and Facebook links that tie into the specific post or event. Smaller font size for Upcoming Events. Integrate Twitter feeds to the right of Upcoming Events section.<br /> <br /> <strong>Navigation Menu</strong>: Adjust menu options, font size, and height of menu.<br /> <br /> <strong>Event Listings</strong>: Smaller font size. Add pre-headline and sub-headline (see Headlines section below). Decrease size of Buy Tickets button and add Twitter and Facebook links that tie into the specific event. Add note area for event (see Note Area section below). Change names of some of the categories. Integrate social networking buttons by reconstructing the page template.<br /> <strong><br /> Film Listings</strong>: Add dates the movies are playing beneath Now Showing headline. Reduce film title font size. Add pre-headline and sub-headline (see Headlines section below). Combine Now Showing Coming Soon on one page, with Now Showing at the top of the page and Coming Soon listings beneath Now Showing. Show a message box with custom text at the top of the page when there are no films playing.<br /> <br /> <strong>Event and Film Pages</strong>: Integrate Twitter button with hash tag(s) in tweet text and Facebook Like button. Allow video embedding from YouTube. Change DIV tags to headline tags for SEO in reconstructed template.<br /> <br /> <strong>Blog</strong>: Integrate certain blog posts in the featured space on the homepage (see Homepage Modifications section above). Allow for video blogging. Create design comps and allow for two sets of revisions to comps. Create blog content type that allows for images and videos.<br /> <br /> <strong>Pre-Headlines and Sub-Headlines</strong>: Add pre-headlines and sub-headlines to featured space on the homepage, Upcoming Events on the homepage, event listings page, and film listings page. Recreate templates for flexibility in making changes to layouts.<br /> <br /> <strong>Note Area for On Sale Dates</strong>: Create an area for additional notes in the featured space on the homepage, Upcoming Events on the homepage, and on the event listings page.</p>]]></overview>
+<overview_formatted><![CDATA[<h1>Goals</h1><p>Goals for the project include improved usability, as well as design updates to make better use of space on the website home page.</p><h1>Project Notes</h1><p><strong>Homepage Modifications</strong>: Reduce header size. Reduce logo size. Remove ellipses from film titles. Allow for only three films to be displayed at a time in the header. Occasionally display film festival message in films box. Highlight Twitter and Facebook links in header. Add ability to rotate events, films, and blog postings in featured space. Decrease headline font size in featured space. Add pre-headline and sub-headline to featured space and Upcoming Events (see Headlines section below). Add note area for featured space and Upcoming Events (see Note Area section below). Decrease size of Buy Tickets button and add Twitter and Facebook links that tie into the specific post or event. Smaller font size for Upcoming Events. Integrate Twitter feeds to the right of Upcoming Events section.<br /> <br /> <strong>Navigation Menu</strong>: Adjust menu options, font size, and height of menu.<br /> <br /> <strong>Event Listings</strong>: Smaller font size. Add pre-headline and sub-headline (see Headlines section below). Decrease size of Buy Tickets button and add Twitter and Facebook links that tie into the specific event. Add note area for event (see Note Area section below). Change names of some of the categories. Integrate social networking buttons by reconstructing the page template.<br /> <strong><br /> Film Listings</strong>: Add dates the movies are playing beneath Now Showing headline. Reduce film title font size. Add pre-headline and sub-headline (see Headlines section below). Combine Now Showing Coming Soon on one page, with Now Showing at the top of the page and Coming Soon listings beneath Now Showing. Show a message box with custom text at the top of the page when there are no films playing.<br /> <br /> <strong>Event and Film Pages</strong>: Integrate Twitter button with hash tag(s) in tweet text and Facebook Like button. Allow video embedding from YouTube. Change DIV tags to headline tags for SEO in reconstructed template.<br /> <br /> <strong>Blog</strong>: Integrate certain blog posts in the featured space on the homepage (see Homepage Modifications section above). Allow for video blogging. Create design comps and allow for two sets of revisions to comps. Create blog content type that allows for images and videos.<br /> <br /> <strong>Pre-Headlines and Sub-Headlines</strong>: Add pre-headlines and sub-headlines to featured space on the homepage, Upcoming Events on the homepage, event listings page, and film listings page. Recreate templates for flexibility in making changes to layouts.<br /> <br /> <strong>Note Area for On Sale Dates</strong>: Create an area for additional notes in the featured space on the homepage, Upcoming Events on the homepage, and on the event listings page.</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>100</percent_done>
+<total_tasks><![CDATA[21]]></total_tasks>
+<open_tasks>0</open_tasks>
+</progress>
+<cost_summarized>10122</cost_summarized>
+<leader><id>18</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>32</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Carolina Theatre]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/32]]></permalink>
+<created_on><![CDATA[2009-06-09 18:11:20]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2009-06-16 04:36:50]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/32.256x256.png?time=1245127010]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/32.80x80.png?time=1245127010]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/32.40x40.png?time=1245127010]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/32.16x16.png?time=1245127010]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/32.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/32.256x256.png?time=1245127010]]></_largest_size>
+</avatar>
+<office_address><![CDATA[The Carolina Theatre
+309 West Morgan Street 
+Durham, NC 27701]]></office_address>
+<office_phone><![CDATA[919-560-3040]]></office_phone>
+<office_fax><![CDATA[919-560-3065]]></office_fax>
+<office_homepage><![CDATA[http://www.carolinatheatre.org]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

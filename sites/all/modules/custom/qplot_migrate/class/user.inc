@@ -93,7 +93,7 @@ class DHUserMigration extends XMLMigration {
     if ($value) {
       return $value;
     } else {
-      return null;
+      return NULL;
     }
   }
 

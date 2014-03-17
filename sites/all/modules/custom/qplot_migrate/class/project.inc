@@ -10,6 +10,7 @@ class DHProjectMigration extends XMLMigration {
       'class' => t('Class'),
       'name' => t('Name'),
       'completed' => t('Is Completed'),
+      'category_id' => t('Category ID'),
       'created' => t('Created On'),
       'updated' => t('Updated On'),
       'state' => t('Status ?'),
@@ -67,11 +68,17 @@ class DHProjectMigration extends XMLMigration {
     $this->addFieldMapping('body:format')
          ->defaultValue('full_html');
     $this->addFieldMapping('field_project_progress', 'percent_done')->xpath('progress/percent_done');
-    // missing is completed
+    $this->addFieldMapping('field_project_category', 'category_id')->xpath('category_id')
+         ->sourceMigration('Category');
+    $this->addFieldMapping('field_project_category:source_type')
+         ->defaultValue('tid');
+    $this->addFieldMapping('field_project_status', 'completed')->xpath('is_completed')
+         ->callbacks(array($this, 'assignCompleted'));
     // missing project avatar
-    // missing category
-    // missing company id from company_id
     // missing leader id
+
+    $this->addFieldMapping('field_project_icon')
+         ->defaultValue('adjust');
     $this->addFieldMapping('field_project_budget', 'budget')->xpath('budget');
     $this->addFieldMapping('field_project_cost', 'cost')->xpath('cost_summarized');
 
@@ -86,6 +93,14 @@ class DHProjectMigration extends XMLMigration {
     }
 
     return TRUE;
+  }  
+
+  protected function assignCompleted($value) {
+    if ($value) {
+      return 'Finished';
+    } else {
+      return NULL;
+    }
   }
 
 }

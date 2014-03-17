@@ -389,7 +389,21 @@ function qplot_progress_views_pre_render(&$view) {
       # code...
       break;
   }
-  // dsm($view->header['area']);
+  // change field-project-progress
+  if ($name == 'projects') {
+    foreach ($view->result as &$row) {
+      $progress = $row->_field_data['nid']['entity']->field_project_progress['und'][0]['value'];
+      $row->field_field_project_progress[0]['rendered'] = theme(
+        'qplot_progress_progress_widget', array(
+          'progress' => $progress,
+          'caption' => TRUE,
+        )
+      );
+
+    }
+  }
+
+  // dsm($view);
 }
 
 /**
@@ -549,32 +563,36 @@ function qplot_progress_user_profile($uid) {
     // get company info
     $company = array();
     $project = array();
-    foreach ($uwrapper->og_user_node->getIterator() as $nwrapper) {
-      $type = $nwrapper->type->value();
-      switch ($type) {
-        case 'company':
-          $company[] = array(
-            'id' => $nwrapper->getIdentifier(),
-            'title' => $nwrapper->title->value(),
-            'view' => url('company/' . $nwrapper->getIdentifier()),
-          );
-          break;
-        
-        case 'project':
-          $project[] = array(
-            'id' => $nwrapper->getIdentifier(),
-            'title' => $nwrapper->title->value(),
-            'view' => url('project/' . $nwrapper->getIdentifier()),
-            'icon' => $nwrapper->field_project_icon->name->value(),
-            'description' => $nwrapper->body->summary->value(),
-            'progress' => $nwrapper->field_project_progress->value(),
-            'status' => $nwrapper->field_project_status->name->value(),
-          );
-          break;
-        
-        default:
-          # code...
-          break;
+    if ($uid > 1) {
+      foreach ($uwrapper->og_user_node->getIterator() as $nwrapper) {
+        $type = $nwrapper->type->value();
+        switch ($type) {
+          case 'company':
+            $company[] = array(
+              'id' => $nwrapper->getIdentifier(),
+              'title' => $nwrapper->title->value(),
+              'view' => url('company/' . $nwrapper->getIdentifier()),
+            );
+            break;
+          
+          case 'project':
+            $icon = $nwrapper->field_project_icon->value();
+            $body = $nwrapper->body->value();
+            $project[] = array(
+              'id' => $nwrapper->getIdentifier(),
+              'title' => $nwrapper->title->value(),
+              'view' => url('project/' . $nwrapper->getIdentifier()),
+              'icon' => !empty($icon) ? $icon->name : '',
+              'description' => !$body['value'] ? $body['value'] : '',
+              'progress' => $nwrapper->field_project_progress->value(),
+              'status' => $nwrapper->field_project_status->name->value(),
+            );
+            break;
+          
+          default:
+            # code...
+            break;
+        }
       }
     }
 

@@ -1,0 +1,215 @@
+<project><id>121</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[JLF: CJTV Updates]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates]]></permalink>
+<created_on><![CDATA[2010-02-04 15:52:15]]></created_on>
+<created_by_id>20</created_by_id>
+<created_by><id>20</id>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/20]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/20/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/20/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/20/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/20/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/20/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/20/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-14 18:54:22]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2010-03-19 13:45:31]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/jlf-cjtv-updates/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=121]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=121]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/jlf-cjtv-updates/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>0</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>2</state>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2010-03-19 13:45:31]]></completed_on>
+<completed_by><id>18</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-13 22:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1394748003]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1394748003]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1394748003]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 19:24:17]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/default.80x80.png]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/default.40x40.png]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/121.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/default.256x256.png]]></_largest_size>
+</avatar>
+<category_id>10</category_id>
+<category><id>10</id>
+<class><![CDATA[ProjectCategory]]></class>
+<name><![CDATA[Website Update]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/categories/10]]></permalink>
+<created_on><![CDATA[2013-02-05 04:00:36]]></created_on>
+<created_by_id>16</created_by_id>
+<parent_id/>
+<parent_class/>
+<type><![CDATA[ProjectCategory]]></type>
+<parent_type/>
+<items_count>42</items_count>
+</category>
+<label_id/>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[jlf-cjtv-updates]]></slug>
+<company_id>20</company_id>
+<leader_id>20</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p>Robert,<br /> <br /> We’ve decided we want to use YouTube for all our CJTV videos. We’ve had numerous complaints from people about having to wait for the QuickTime Q to go away while our videos from the Amazon site load. Plus, there’s the problem of not being able to count the view we have on the Amazon site itself. With our YouTube account we can record the numbers every month and determine our viewership.<br /> <br /> We’d like to have the viewer, when he goes to CJTV, to see the lead story as a YouTube embed, that can play right there. Same for the actual Web page for the video. In short, any embedded video that a viewer can click on, we’d like it to be a YouTube embed.<br /> <br /> Let me know if there are any problems or other considerations.<br /> <br /> Thanks,<br /> Jon</p>]]></overview>
+<overview_formatted><![CDATA[<p>Robert,<br /> <br /> We’ve decided we want to use YouTube for all our CJTV videos. We’ve had numerous complaints from people about having to wait for the QuickTime Q to go away while our videos from the Amazon site load. Plus, there’s the problem of not being able to count the view we have on the Amazon site itself. With our YouTube account we can record the numbers every month and determine our viewership.<br /> <br /> We’d like to have the viewer, when he goes to CJTV, to see the lead story as a YouTube embed, that can play right there. Same for the actual Web page for the video. In short, any embedded video that a viewer can click on, we’d like it to be a YouTube embed.<br /> <br /> Let me know if there are any problems or other considerations.<br /> <br /> Thanks,<br /> Jon</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>100</percent_done>
+<total_tasks><![CDATA[1]]></total_tasks>
+<open_tasks>0</open_tasks>
+</progress>
+<cost_summarized>350</cost_summarized>
+<leader><id>20</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Robert Weeks]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/20]]></permalink>
+<created_on><![CDATA[2009-05-05 19:43:28]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/20.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/20.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/20.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Robert]]></first_name>
+<last_name><![CDATA[Weeks]]></last_name>
+<display_name><![CDATA[Robert Weeks]]></display_name>
+<short_display_name><![CDATA[Robert W.]]></short_display_name>
+<email><![CDATA[robert@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 00:36:37]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>20</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[John Locke Foundation]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/20]]></permalink>
+<created_on><![CDATA[2009-05-04 05:40:46]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2009-05-04 05:44:49]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/20.256x256.png?time=1241415889]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/20.80x80.png?time=1241415889]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/20.40x40.png?time=1241415889]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/20.16x16.png?time=1241415889]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/20.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/20.256x256.png?time=1241415889]]></_largest_size>
+</avatar>
+<office_address><![CDATA[200 West Morgan Street, Suite 200
+Raleigh, North Carolina 27601]]></office_address>
+<office_phone><![CDATA[919-828-3876]]></office_phone>
+<office_fax><![CDATA[919-821-5117]]></office_fax>
+<office_homepage><![CDATA[http://www.johnlocke.org]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>

@@ -1,0 +1,204 @@
+<project><id>210</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[Elon University: Drupal Training]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training]]></permalink>
+<created_on><![CDATA[2011-05-31 19:20:28]]></created_on>
+<created_by_id>107</created_by_id>
+<created_by><id>107</id>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/107]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/107/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/107/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/107/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/107/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/107/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/107/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-14 20:36:34]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-15 02:26:45]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2011-09-21 14:26:09]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/trash]]></trash>
+<open><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/complete]]></complete>
+<update_avatar><![CDATA[https://ac.designhammer.net/project/elon-university-drupal-training/avatar/view]]></update_avatar>
+<update_category><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/update-category]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/update-label]]></update_label>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Project&object_id=210]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Project&object_id=210]]></remove_from_favorites>
+<tracking><![CDATA[https://ac.designhammer.net/projects/elon-university-drupal-training/tracking]]></tracking>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_complete_status>0</can_change_complete_status>
+<can_manage_tracking>1</can_manage_tracking>
+<can_see_budget>1</can_see_budget>
+</permissions>
+<state>2</state>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2011-09-21 14:26:09]]></completed_on>
+<completed_by><id>26</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Kosta Harlan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/26]]></permalink>
+<created_on><![CDATA[2009-08-28 15:00:51]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-18 16:20:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/26.40x40.png?time=1392740403]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/26.16x16.png?time=1392740403]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/26.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kosta]]></first_name>
+<last_name><![CDATA[Harlan]]></last_name>
+<display_name><![CDATA[Kosta Harlan]]></display_name>
+<short_display_name><![CDATA[Kosta H.]]></short_display_name>
+<email><![CDATA[kosta@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-16 15:43:47]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/210.256x256.png?time=1316615169]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/210.80x80.png?time=1316615169]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/210.40x40.png?time=1316615169]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/210.16x16.png?time=1316615169]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/210.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/210.256x256.png?time=1316615169]]></_largest_size>
+</avatar>
+<category_id/>
+<category/>
+<label_id/>
+<label/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>0</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<slug><![CDATA[elon-university-drupal-training]]></slug>
+<company_id>79</company_id>
+<leader_id>26</leader_id>
+<currency><id>2</id>
+<name><![CDATA[US Dollar]]></name>
+<code><![CDATA[USD]]></code>
+<decimal_spaces>2</decimal_spaces>
+<decimal_rounding>0</decimal_rounding>
+<is_default>1</is_default>
+</currency>
+<budget>0</budget>
+<overview><![CDATA[<p>Drupal Training Dates:</p><p>06/20/2011</p><p>07/22/2011</p><p> </p><p>Elon Contact:</p><p>Brad Berkner</p><p>Coordinator of Interactive Media</p><p>Elon University</p><p>336.278.5740</p><p>bberkner@elon.edu</p>]]></overview>
+<overview_formatted><![CDATA[<p>Drupal Training Dates:</p><p>06/20/2011</p><p>07/22/2011</p><p> </p><p>Elon Contact:</p><p>Brad Berkner</p><p>Coordinator of Interactive Media</p><p>Elon University</p><p>336.278.5740</p><p>bberkner@elon.edu</p>]]></overview_formatted>
+<based_on/>
+<progress><percent_done>100</percent_done>
+<total_tasks><![CDATA[3]]></total_tasks>
+<open_tasks>0</open_tasks>
+</progress>
+<cost_summarized>2891</cost_summarized>
+<leader><id>26</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Kosta Harlan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/26]]></permalink>
+<created_on><![CDATA[2009-08-28 15:00:51]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-18 16:20:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/26.40x40.png?time=1392740403]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/26.16x16.png?time=1392740403]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/26.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1392740403]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kosta]]></first_name>
+<last_name><![CDATA[Harlan]]></last_name>
+<display_name><![CDATA[Kosta Harlan]]></display_name>
+<short_display_name><![CDATA[Kosta H.]]></short_display_name>
+<email><![CDATA[kosta@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-16 15:43:47]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</leader>
+<company><id>79</id>
+<class><![CDATA[Company]]></class>
+<name><![CDATA[Elon University]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/79]]></permalink>
+<created_on><![CDATA[2011-05-31 19:16:38]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-10-17 16:26:20]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>2</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
+<large><![CDATA[https://ac.designhammer.net/logos/default.80x80.png]]></large>
+<medium><![CDATA[https://ac.designhammer.net/logos/default.40x40.png]]></medium>
+<small><![CDATA[https://ac.designhammer.net/logos/default.16x16.png]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/logos/79.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
+</avatar>
+<office_address><![CDATA[2850 Campus Box
+Elon, NC 27244]]></office_address>
+<office_phone><![CDATA[]]></office_phone>
+<office_fax><![CDATA[]]></office_fax>
+<office_homepage><![CDATA[http://www.elon.edu]]></office_homepage>
+<is_owner>0</is_owner>
+<note/>
+</company>
+<logged_user_permissions><role><![CDATA[administrator]]></role>
+<permissions><milestone>3</milestone>
+<repository>3</repository>
+<todo_list>3</todo_list>
+<discussion>3</discussion>
+<file>3</file>
+<notebook>3</notebook>
+<task>3</task>
+<tracking>3</tracking>
+</permissions>
+</logged_user_permissions>
+</project>
