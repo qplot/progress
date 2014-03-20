@@ -7,6 +7,9 @@
 
 class DHPreprocessMigration extends MigrationBase {
 
+  /**
+   * IsComplete.
+   */
   public function isComplete() {
     return FALSE;
     // $path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
@@ -55,7 +58,7 @@ class DHPreprocessMigration extends MigrationBase {
     foreach ($dirs as $dir) {
       if (is_dir($data_path . '/' . $dir)) {
 
-        $saved_dir = $compiled_path . '/' . $dir; 
+        $saved_dir = $compiled_path . '/' . $dir;
         if (!is_dir($saved_dir)) {
           $result = @mkdir($saved_dir);
           if ($result === FALSE) {
@@ -69,11 +72,12 @@ class DHPreprocessMigration extends MigrationBase {
     $processed_dir = array(
       // 'company',
       // 'user',
-      'project',
+      // 'project',
+      'task',
     );
 
     foreach ($processed_dir as $dir) {
-      $saved_dir = $compiled_path . '/' . $dir; 
+      $saved_dir = $compiled_path . '/' . $dir;
       $directory = new DirectoryIterator($data_path . '/' . $dir);
       foreach ($directory as $fileinfo) {
         if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
@@ -84,17 +88,17 @@ class DHPreprocessMigration extends MigrationBase {
 
             case 'company':
               foreach ($xml->company as $company) {
-                $id = (string)$company->id;
+                $id = (string) $company->id;
                 $output = $saved_dir . '/' . $id . '.xml';
 
                 if (!file_exists($output)) {
                   $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
 
-                  // save directly to disk
+                  // Save directly to disk.
                   // $page = file_get_contents($link);
                   // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
 
-                  // use phantomjs to help us get around the https issue
+                  // Use phantomjs to help us get around the https issue.
                   $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
                   exec($exec);
                 }
@@ -102,11 +106,11 @@ class DHPreprocessMigration extends MigrationBase {
               }
               break;
 
-            // User uses company raw data folder
+            // User uses company raw data folder.
             case 'user':
-              $id = (string)$xml->id;
+              $id = (string) $xml->id;
               foreach ($xml->users->children() as $user) {
-                $uid = (string)$user->id;
+                $uid = (string) $user->id;
                 $output = $saved_dir . '/' . $uid . '.xml';
 
                 if (!file_exists($output)) {
@@ -120,7 +124,7 @@ class DHPreprocessMigration extends MigrationBase {
 
             case 'project':
               foreach ($xml->project as $project) {
-                $id = (string)$project->id;
+                $id = (string) $project->id;
                 $output = $saved_dir . '/' . $id . '.xml';
 
                 if (!file_exists($output)) {
@@ -131,9 +135,24 @@ class DHPreprocessMigration extends MigrationBase {
                 }
               }
               break;
-            
+
+            case 'task':
+              foreach ($xml->task as $task) {
+                $id = (string) $task->id;
+                $task_id = (string) $task->task_id;
+                $pid = (string) $task->project_id;
+                $output = $saved_dir . '/' . $id . '.xml';
+
+                if (!file_exists($output)) {
+                  $link = $api['url'] . '?path_info=projects/' . $pid . '/tasks/' . $task_id . '&auth_api_token=' . $api['token'];
+                  // dsm($link); break;
+                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                  exec($exec);
+                }
+              }
+              break;
+
             default:
-              # code...
               break;
           }
 
@@ -144,14 +163,18 @@ class DHPreprocessMigration extends MigrationBase {
     return MigrationBase::RESULT_COMPLETED;
   }
 
+  /**
+   * Rollback.
+   */
   public function rollback() {
     $compiled_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
     if (!is_dir($compiled_path)) {
       return MigrationBase::RESULT_COMPLETED;
     }
 
-    foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator($compiled_path, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST) as $path) {
-        $path->isFile() ? unlink($path->getPathname()) : rmdir($path->getPathname());
+    foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator(
+      $compiled_path, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST) as $path) {
+      $path->isFile() ? unlink($path->getPathname()) : rmdir($path->getPathname());
     }
     // rmdir($compiled_path);
   }

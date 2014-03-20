@@ -97,7 +97,7 @@ class DHProjectMigration extends XMLMigration {
 
   protected function assignCompleted($value) {
     if ($value) {
-      return 'Finished';
+      return 'Completed';
     } else {
       return NULL;
     }

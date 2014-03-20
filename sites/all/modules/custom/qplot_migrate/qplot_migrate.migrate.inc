@@ -16,7 +16,7 @@ function qplot_migrate_migrate_api() {
       'Company' => array(
         'class_name' => 'DHCompanyMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
+        'soft_dependencies' => array('Preprocess')
       ),
       'User' => array(
         'class_name' => 'DHUserMigration',
@@ -26,12 +26,12 @@ function qplot_migrate_migrate_api() {
       'Category' => array(
         'class_name' => 'DHCategoryMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess')        
+        'soft_dependencies' => array('Preprocess')
       ),
       'Project' => array(
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess', 'Company', 'User')        
+        'soft_dependencies' => array('Preprocess', 'Company', 'User')
       ),
       'Task' => array(
         'class_name' => 'DHTaskMigration',
@@ -42,5 +42,3 @@ function qplot_migrate_migrate_api() {
   );
   return $api;
 }
-
-?>

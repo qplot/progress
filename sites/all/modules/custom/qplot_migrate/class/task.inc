@@ -1,9 +1,24 @@
 <?php
 
+/**
+ * @file
+ * The theme system, which controls the output of Drupal.
+ *
+ * The theme system allows for nearly all output of the Drupal system to be
+ * customized by user themes.
+ */
+
+/**
+ * Task Migration.
+ */
 class DHTaskMigration extends XMLMigration {
+  /**
+   * Construct.
+   */
   public function __construct($arguments) {
     parent::__construct($arguments);
 
+    // Define fields.
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -13,27 +28,42 @@ class DHTaskMigration extends XMLMigration {
       'user' => t('Created By'),
       'updated' => t('Updated On'),
       'state' => t('Status ?'),
-      'completed' => t('Is Completed'),
+      'is_completed' => t('Is Completed'),
       'comments_count' => t('Comments Count'),
       'attachments_count' => t('Attachments Count'),
       'assignee' => t('Assigned By'),
+      'label_id' => t('Label ID'),
+      'label' => t('Label'),
+      'category_id' => t('Category ID'),
       'category' => t('Category'),
-      'url' => t('URL'),
-      'note' => t('Note'),
-      'project' => t('Project'),
+      'body_formatted' => t('Formatted Body'),
+      'project_id' => t('Project ID'),
       'milestone' => t('Milestone'),
-      'task' => t('Task ID'),
+      'milestone_id' => t('Milestone ID'),
+      'task_id' => t('Task Ordered ID'),
     );
-    // create source
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    $items_url = $xml_folder . 'task_6.xml';
-    $item_xpath = "/tasks/task";
-    $item_ID_xpath = 'id';
+    // Create source.
+    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/task';
+    $items_url = array();
 
-    // create destination
+    if (is_dir($xml_folder)) {
+      $directory = new DirectoryIterator($xml_folder);
+      foreach ($directory as $fileinfo) {
+        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+          $items_url[] = $fileinfo->getPathname();
+        }
+      }
+    }
+
+    $item_xpath = "/task";
+    $item_id_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
+    $this->source = new MigrateSourceMultiItems($items_class, $fields);
+
+    // Create destination.
     $this->destination = new MigrateDestinationNode('task');
 
-    // create map
+    // Create map.
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'id' => array(
@@ -45,30 +75,32 @@ class DHTaskMigration extends XMLMigration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
-    $this->source = new MigrateSourceMultiItems($items_class, $fields);
+    // Fields mapping.
     $this->addFieldMapping('title', 'name')->xpath('name');
     $this->addFieldMapping('created', 'created')->xpath('created_on');
-    // missing author from created_by_id
+    // Missing author from created_by_id.
+    $this->addFieldMapping('field_task_added', 'created')->xpath('created_on');
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
-    $this->addFieldMapping('field_task_project', 'project')->xpath('project_id')
+    $this->addFieldMapping('field_task_project', 'project_id')->xpath('project_id')
          ->sourceMigration('Project');
-    // missing date added from created_on
-    // missing progress
-    // missing hours
-    // missing body
-    // missing tag
+    $this->addFieldMapping('field_task_tag', 'label')->xpath('label/name');
+    $this->addFieldMapping('field_task_tag:create_term')
+         ->defaultValue(TRUE);
+    $this->addFieldMapping('body', 'body_formatted')->xpath('body_formatted');
+    $this->addFieldMapping('body:format')
+         ->defaultValue('full_html');
+    // Missing progress.
+    // Missing hours.
     $this->addFieldMapping('field_task_url', 'permalink')
          ->xpath('permalink');
-    $this->addFieldMapping('field_task_url:title', 'task')
-         ->xpath('task');
-
-    // $this->addFieldMapping('created', 'date')
-    //      ->xpath('publicationDate');
-    // $this->addFieldMapping('field_latest_identifier', 'identifier')
-    //      ->xpath('identifier[1]');
+    $this->addFieldMapping('field_task_url:title', 'task_id')
+         ->xpath('task_id');
+    $this->addFieldMapping('field_task_phase', 'milestone')->xpath('milestone/name');
   }
 
+  /**
+   * Prepare Row.
+   */
   public function prepareRow($row) {
     if (parent::prepareRow($row) === FALSE) {
       return FALSE;
@@ -77,6 +109,31 @@ class DHTaskMigration extends XMLMigration {
     return TRUE;
   }
 
-}
+  /**
+   * Prepare.
+   */
+  public function prepare($node, stdClass $row) {dsm($row); dsm($node);
+    $milestone = $row->milestone;
+    if (!$milestone) {
+      $milestone = 'Default';
+    }
+    $project_id = $node->field_task_project['und'][0]['target_id'];
+    // Find phase or create one for this application.
+    if (!($pid = qplot_api_find_nodes2(array(
+        'type' => 'phase',
+        'field_phase_project' => array('target_id', $project_id, '='),
+        'title' => $milestone,
+    )))) {
+      // Create a new phase.
+      $phase = entity_create('node', array('type' => 'phase'));
+      $phase_wrapper = entity_metadata_wrapper('node', $phase);
+      $phase_wrapper->title->set($milestone);
+      $phase->field_phase_project['und'][0]['target_id'] = $project_id;
+      $phase_wrapper->save();
+      $pid = $phase_wrapper->getIdentifier();
+      dsm($phase);
+    }
+    $node->field_task_phase['und'][0]['target_id'] = $pid;
+  }
 
-?>
+}
