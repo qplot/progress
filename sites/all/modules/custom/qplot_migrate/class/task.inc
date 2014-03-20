@@ -89,51 +89,49 @@ class DHTaskMigration extends XMLMigration {
     $this->addFieldMapping('body', 'body_formatted')->xpath('body_formatted');
     $this->addFieldMapping('body:format')
          ->defaultValue('full_html');
-    // Missing progress.
+    $this->addFieldMapping('field_task_progress', 'is_completed')->xpath('is_completed')
+         ->callbacks(array($this, 'assignProgress'));
     // Missing hours.
     $this->addFieldMapping('field_task_url', 'permalink')
          ->xpath('permalink');
     $this->addFieldMapping('field_task_url:title', 'task_id')
          ->xpath('task_id');
-    $this->addFieldMapping('field_task_phase', 'milestone')->xpath('milestone/name');
+    $this->addFieldMapping('field_task_phase', 'milestone_id')->xpath('milestone_id')
+         ->sourceMigration('Milestone');
   }
 
   /**
-   * Prepare Row.
+   * Assign Progress.
    */
-  public function prepareRow($row) {
-    if (parent::prepareRow($row) === FALSE) {
-      return FALSE;
-    }
-
-    return TRUE;
+  protected function assignProgress($value) {
+    return $value ? 100 : 0;
   }
 
   /**
    * Prepare.
    */
-  public function prepare($node, stdClass $row) {dsm($row); dsm($node);
-    $milestone = $row->milestone;
-    if (!$milestone) {
-      $milestone = 'Default';
-    }
-    $project_id = $node->field_task_project['und'][0]['target_id'];
-    // Find phase or create one for this application.
-    if (!($pid = qplot_api_find_nodes2(array(
-        'type' => 'phase',
-        'field_phase_project' => array('target_id', $project_id, '='),
-        'title' => $milestone,
-    )))) {
-      // Create a new phase.
-      $phase = entity_create('node', array('type' => 'phase'));
-      $phase_wrapper = entity_metadata_wrapper('node', $phase);
-      $phase_wrapper->title->set($milestone);
-      $phase->field_phase_project['und'][0]['target_id'] = $project_id;
-      $phase_wrapper->save();
-      $pid = $phase_wrapper->getIdentifier();
-      dsm($phase);
-    }
-    $node->field_task_phase['und'][0]['target_id'] = $pid;
-  }
+  // public function prepare($node, stdClass $row) {dsm($row); dsm($node);
+  //   $milestone = $row->milestone;
+  //   if (!$milestone) {
+  //     $milestone = 'Default';
+  //   }
+  //   $project_id = $node->field_task_project['und'][0]['target_id'];
+  //   // Find phase or create one for this application.
+  //   if (!($pid = qplot_api_find_nodes2(array(
+  //       'type' => 'phase',
+  //       'field_phase_project' => array('target_id', $project_id, '='),
+  //       'title' => $milestone,
+  //   )))) {
+  //     // Create a new phase.
+  //     $phase = entity_create('node', array('type' => 'phase'));
+  //     $phase_wrapper = entity_metadata_wrapper('node', $phase);
+  //     $phase_wrapper->title->set($milestone);
+  //     $phase->field_phase_project['und'][0]['target_id'] = $project_id;
+  //     $phase_wrapper->save();
+  //     $pid = $phase_wrapper->getIdentifier();
+  //     dsm($phase);
+  //   }
+  //   $node->field_task_phase['und'][0]['target_id'] = $pid;
+  // }
 
 }

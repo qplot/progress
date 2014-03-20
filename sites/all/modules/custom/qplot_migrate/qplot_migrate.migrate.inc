@@ -33,10 +33,18 @@ function qplot_migrate_migrate_api() {
         'group_name' => 'dh',
         'soft_dependencies' => array('Preprocess', 'Company', 'User')
       ),
+      'Milestone' => array(
+        'class_name' => 'DHMilestoneMigration',
+        'group_name' => 'dh',
+        'soft_dependencies' => array('Preprocess', 'Project')
+      ),
       'Task' => array(
         'class_name' => 'DHTaskMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess', 'Company', 'User', 'Project')
+        'soft_dependencies' => array(
+          'Preprocess', 'Company', 'User',
+          'Project', 'Milestone'
+        )
       ),
     ),
   );
