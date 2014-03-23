@@ -3,7 +3,7 @@
   Drupal.Panels = Drupal.Panels || {};
 
   Drupal.Panels.autoAttach = function() {
-    if ($.browser.msie) {
+    if ($.browser && $.browser.msie) {
       // If IE, attach a hover event so we can see our admin links.
       $("div.panel-pane").hover(
         function() {
