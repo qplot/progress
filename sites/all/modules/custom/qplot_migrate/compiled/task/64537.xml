@@ -1,0 +1,355 @@
+<task><id>64537</id>
+<class><![CDATA[Task]]></class>
+<name><![CDATA[MI: Writing Site Lessons conversion]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438]]></permalink>
+<created_on><![CDATA[2012-05-10 20:33:37]]></created_on>
+<created_by_id>18</created_by_id>
+<created_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-18 21:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1395177604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1395177604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 13:43:16]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-21 15:56:25]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2013-02-25 15:49:47]]></updated_on>
+<updated_by_id>26</updated_by_id>
+<updated_by><id>26</id>
+<name><![CDATA[Kosta Harlan]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/26]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/26]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/26/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/26/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/26/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/26/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/26/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/26/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-08-28 15:00:51]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-17 15:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1395069604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/26.40x40.png?time=1395069604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/26.16x16.png?time=1395069604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/26.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/26.256x256.png?time=1395069604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Kosta]]></first_name>
+<last_name><![CDATA[Harlan]]></last_name>
+<display_name><![CDATA[Kosta Harlan]]></display_name>
+<short_display_name><![CDATA[Kosta H.]]></short_display_name>
+<email><![CDATA[kosta@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-20 17:30:24]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-21 23:18:44]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</updated_by>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/trash]]></trash>
+<update_priority><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/update-priority]]></update_priority>
+<open><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/complete]]></complete>
+<manage_assignees><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/assignees]]></manage_assignees>
+<update_category><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/update-category?task_id=438]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/update-label]]></update_label>
+<subscriptions><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/subscriptions]]></subscriptions>
+<subscribe><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/subscribe?user_id=217]]></subscribe>
+<unsubscribe><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/unsubscribe?user_id=217]]></unsubscribe>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Task&object_id=64537]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Task&object_id=64537]]></remove_from_favorites>
+<reschedule><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/reschedule]]></reschedule>
+<tracking><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/tracking]]></tracking>
+<update_milestone><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/objects/64537/update-milestone]]></update_milestone>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_visibility>1</can_change_visibility>
+<can_change_complete_status>0</can_change_complete_status>
+<can_comment>0</can_comment>
+<can_manage_tracking>1</can_manage_tracking>
+<can_move>0</can_move>
+<can_copy>1</can_copy>
+</permissions>
+<body><![CDATA[<p>Frank,<br /> <br /> Last week we discussed porting our Flash lessons to HTML5. I got Andy to get examples of what we think lessons we think would be easy, medium, or hard to convert. Take a look at these and let me know if this is enough to get a quote.<br /> <br /> Thanks,<br /> -David<br /> <br /> From: Andrew O'Neill <br /> Sent: Thursday, May 10, 2012 8:53 AM<br /> To: David Wilson<br /> Subject: Writing Site Lessons<br /> <br /> David,<br /> <br /> Here is the information you requested about the lessons.<br /> <br /> Andy<br /> <br />  -------------------</p><p><br /> There are 128 lessons. Many of them are clones of other lessons with changes to the content. I count about 43 unique lessons. I took my best guess at difficulty of converting out of Flash. I came up with 88 easy, 26 medium, and 14 hard. Below are examples of each category. You will first need to log in to https://www.wpponline.com using the user name lessonstudent and the password lessonstudent in order to access these pages.<br /> <br /> Easy<br /> · http://www.wpponline.com/Lessons/Lesson50/Play - Lots of clones of this one<br /> · http://www.wpponline.com/Lessons/Lesson65/Play - Lots of clones of this one<br /> · http://www.wpponline.com/Lessons/Lesson13/Play<br /> · http://www.wpponline.com/Lessons/Lesson9/Play<br /> · http://www.wpponline.com/Lessons/Video1/Play<br /> Medium<br /> · http://www.wpponline.com/Lessons/Lesson16/Play<br /> · http://www.wpponline.com/Lessons/Lesson20/Play<br /> · http://www.wpponline.com/Lessons/PracticeLevel1/Play<br /> · http://www.wpponline.com/Lessons/Lesson4/Play<br /> · http://www.wpponline.com/Lessons/Prewriting1/Play<br /> Hard<br /> · http://www.wpponline.com/Lessons/Lesson18/Play<br /> · http://www.wpponline.com/Lessons/Lesson22/Play<br /> · http://www.wpponline.com/Lessons/Lesson10/Play<br /> · http://www.wpponline.com/Lessons/Lesson35/Play<br /> · http://www.wpponline.com/Lessons/Lesson40/Play<br /> <br /> Some of the different features of the lessons are:<br /> · Audio<br /> · 2D animations<br /> · 3D animations – I think these have all been pre-rendered and are played like a video, but I do not know for sure.<br /> · Video<br /> · Text input<br /> · Drag and drop<br /> · Point and click answers<br /> · Tabbed navigation<br /> · ERB branding – I believe we want to remove all ERB branding<br /> <br /> <br /> This email (including any attachments) may contain confidential information intended solely for acknowledged recipients. If you think you have received this information in error, please reply to the sender and delete all copies from your system. Please note that unauthorized use, disclosure, or further distribution of this information is prohibited by the sender. Note also that we may monitor email directed to or originating from our network. Thank you for your consideration and assistance. |</p>]]></body>
+<body_formatted><![CDATA[<p>Frank,<br /> <br /> Last week we discussed porting our Flash lessons to HTML5. I got Andy to get examples of what we think lessons we think would be easy, medium, or hard to convert. Take a look at these and let me know if this is enough to get a quote.<br /> <br /> Thanks,<br /> -David<br /> <br /> From: Andrew O'Neill <br /> Sent: Thursday, May 10, 2012 8:53 AM<br /> To: David Wilson<br /> Subject: Writing Site Lessons<br /> <br /> David,<br /> <br /> Here is the information you requested about the lessons.<br /> <br /> Andy<br /> <br />  -------------------</p><p><br /> There are 128 lessons. Many of them are clones of other lessons with changes to the content. I count about 43 unique lessons. I took my best guess at difficulty of converting out of Flash. I came up with 88 easy, 26 medium, and 14 hard. Below are examples of each category. You will first need to log in to https://www.wpponline.com using the user name lessonstudent and the password lessonstudent in order to access these pages.<br /> <br /> Easy<br /> · http://www.wpponline.com/Lessons/Lesson50/Play - Lots of clones of this one<br /> · http://www.wpponline.com/Lessons/Lesson65/Play - Lots of clones of this one<br /> · http://www.wpponline.com/Lessons/Lesson13/Play<br /> · http://www.wpponline.com/Lessons/Lesson9/Play<br /> · http://www.wpponline.com/Lessons/Video1/Play<br /> Medium<br /> · http://www.wpponline.com/Lessons/Lesson16/Play<br /> · http://www.wpponline.com/Lessons/Lesson20/Play<br /> · http://www.wpponline.com/Lessons/PracticeLevel1/Play<br /> · http://www.wpponline.com/Lessons/Lesson4/Play<br /> · http://www.wpponline.com/Lessons/Prewriting1/Play<br /> Hard<br /> · http://www.wpponline.com/Lessons/Lesson18/Play<br /> · http://www.wpponline.com/Lessons/Lesson22/Play<br /> · http://www.wpponline.com/Lessons/Lesson10/Play<br /> · http://www.wpponline.com/Lessons/Lesson35/Play<br /> · http://www.wpponline.com/Lessons/Lesson40/Play<br /> <br /> Some of the different features of the lessons are:<br /> · Audio<br /> · 2D animations<br /> · 3D animations – I think these have all been pre-rendered and are played like a video, but I do not know for sure.<br /> · Video<br /> · Text input<br /> · Drag and drop<br /> · Point and click answers<br /> · Tabbed navigation<br /> · ERB branding – I believe we want to remove all ERB branding<br /> <br /> <br /> This email (including any attachments) may contain confidential information intended solely for acknowledged recipients. If you think you have received this information in error, please reply to the sender and delete all copies from your system. Please note that unauthorized use, disclosure, or further distribution of this information is prohibited by the sender. Note also that we may monitor email directed to or originating from our network. Thank you for your consideration and assistance. |</p>]]></body_formatted>
+<state>2</state>
+<visibility>1</visibility>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2012-07-02 20:01:37]]></completed_on>
+<completed_by><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-20 13:58:33]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<priority>0</priority>
+<due_on/>
+<comments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/comments]]></comments_url>
+<comments_count>14</comments_count>
+<is_locked/>
+<subtasks_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/subtasks]]></subtasks_url>
+<total_subtasks>0</total_subtasks>
+<open_subtasks>0</open_subtasks>
+<completed_subtasks>0</completed_subtasks>
+<attachments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/438/attachments]]></attachments_url>
+<attachments/>
+<attachments_count>0</attachments_count>
+<assignee_id>107</assignee_id>
+<delegated_by_id>18</delegated_by_id>
+<other_assignee_ids><other_assignee_id><![CDATA[17]]></other_assignee_id>
+</other_assignee_ids>
+<assignee><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-20 13:58:33]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</assignee>
+<delegated_by><id>18</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-18 21:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1395177604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1395177604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 13:43:16]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</delegated_by>
+<other_assignees><other_assignee><id>17</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Jay Roberts]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/17]]></permalink>
+<created_on><![CDATA[2009-05-04 19:10:22]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/17.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/17.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/17.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/17.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/17.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Jay]]></first_name>
+<last_name><![CDATA[Roberts]]></last_name>
+<display_name><![CDATA[Jay Roberts]]></display_name>
+<short_display_name><![CDATA[Jay R.]]></short_display_name>
+<email><![CDATA[jay@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 15:58:37]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</other_assignee>
+</other_assignees>
+<category_id/>
+<category/>
+<label_id>22</label_id>
+<label><id>22</id>
+<name><![CDATA[CLOSED]]></name>
+<fg_color><![CDATA[#FFFFFF]]></fg_color>
+<bg_color><![CDATA[#333333]]></bg_color>
+<type><![CDATA[AssignmentLabel]]></type>
+<is_default>0</is_default>
+</label>
+<user_is_subscribed>0</user_is_subscribed>
+<subscribers><subscriber><id>16</id>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+</subscriber>
+<subscriber><id>18</id>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+</subscriber>
+<subscriber><id>17</id>
+<display_name><![CDATA[Jay Roberts]]></display_name>
+<short_display_name><![CDATA[Jay R.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/17]]></permalink>
+</subscriber>
+<subscriber><id>107</id>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+</subscriber>
+</subscribers>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>5.85</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<version>103</version>
+<project_id>10</project_id>
+<milestone_id>64506</milestone_id>
+<project><id>10</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[DH: Prospecting/Sales/Proposals]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals]]></permalink>
+<created_on><![CDATA[2009-05-06 22:17:33]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-11-06 02:59:04]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/10.256x256.png?time=1383706744]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/10.80x80.png?time=1383706744]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/10.40x40.png?time=1383706744]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/10.16x16.png?time=1383706744]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/10.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/10.256x256.png?time=1383706744]]></_largest_size>
+</avatar>
+<category_id>1558</category_id>
+<label_id/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<slug><![CDATA[dh-prospectingsalesproposals]]></slug>
+<company_id>19</company_id>
+<leader_id>16</leader_id>
+<currency_id/>
+<budget>0</budget>
+<is_member>0</is_member>
+</project>
+<milestone><id>64506</id>
+<class><![CDATA[Milestone]]></class>
+<name><![CDATA[2012 Week 23 (ends 06/10/12)]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/64506]]></permalink>
+<created_on><![CDATA[2012-05-10 15:45:29]]></created_on>
+<created_by_id>107</created_by_id>
+<updated_on><![CDATA[2013-02-25 15:49:47]]></updated_on>
+<updated_by_id>26</updated_by_id>
+<state>2</state>
+<visibility>1</visibility>
+<is_completed>1</is_completed>
+<comments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/64506/comments]]></comments_url>
+<comments_count>0</comments_count>
+<is_locked/>
+<attachments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/64506/attachments]]></attachments_url>
+<attachments_count>0</attachments_count>
+<assignee_id>107</assignee_id>
+<delegated_by_id/>
+<other_assignee_ids/>
+<user_is_subscribed>0</user_is_subscribed>
+<is_favorite>0</is_favorite>
+<version>3</version>
+<priority>0</priority>
+<project_id>10</project_id>
+<start_on><![CDATA[2012-06-04]]></start_on>
+<due_on><![CDATA[2012-06-10]]></due_on>
+</milestone>
+<task_id>438</task_id>
+</task>

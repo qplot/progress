@@ -1,0 +1,322 @@
+<task><id>79853</id>
+<class><![CDATA[Task]]></class>
+<name><![CDATA[RTI International]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527]]></permalink>
+<created_on><![CDATA[2013-02-05 18:46:34]]></created_on>
+<created_by_id>18</created_by_id>
+<created_by><id>18</id>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<class><![CDATA[Administrator]]></class>
+<verbose_type><![CDATA[Administrator]]></verbose_type>
+<verbose_type_lowercase><![CDATA[administrator]]></verbose_type_lowercase>
+<urls><view><![CDATA[https://ac.designhammer.net/people/19/users/18]]></view>
+<edit><![CDATA[https://ac.designhammer.net/people/19/users/18/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/people/19/users/18/delete]]></delete>
+<archive><![CDATA[https://ac.designhammer.net/people/19/users/18/archive]]></archive>
+<trash><![CDATA[https://ac.designhammer.net/people/19/users/18/trash]]></trash>
+<update_avatar><![CDATA[https://ac.designhammer.net/people/19/users/18/avatar/view]]></update_avatar>
+<set_as_invited><![CDATA[https://ac.designhammer.net/people/19/users/18/set-as-invited]]></set_as_invited>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>1</can_archive>
+<can_unarchive>0</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_set_as_invited>1</can_set_as_invited>
+</permissions>
+<type><![CDATA[Administrator]]></type>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-18 21:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<is_archived>0</is_archived>
+<is_trashed>0</is_trashed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1395177604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1395177604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 13:43:16]]></last_visit_on>
+<last_activity_on><![CDATA[2014-03-21 15:56:25]]></last_activity_on>
+<is_administrator>1</is_administrator>
+<invited_on/>
+<is_project_manager>1</is_project_manager>
+<is_people_manager>1</is_people_manager>
+<company_id>19</company_id>
+</created_by>
+<updated_on><![CDATA[2013-06-09 12:00:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<updated_by/>
+<urls><view><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527]]></view>
+<edit><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/edit]]></edit>
+<delete><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/delete]]></delete>
+<unarchive><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/unarchive]]></unarchive>
+<trash><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/trash]]></trash>
+<update_priority><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/update-priority]]></update_priority>
+<open><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/reopen]]></open>
+<complete><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/complete]]></complete>
+<manage_assignees><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/assignees]]></manage_assignees>
+<update_category><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/update-category?task_id=527]]></update_category>
+<update_label><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/update-label]]></update_label>
+<subscriptions><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/subscriptions]]></subscriptions>
+<subscribe><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/subscribe?user_id=217]]></subscribe>
+<unsubscribe><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/unsubscribe?user_id=217]]></unsubscribe>
+<add_to_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/add?object_type=Task&object_id=79853]]></add_to_favorites>
+<remove_from_favorites><![CDATA[https://ac.designhammer.net/people/19/users/217/favorites/remove?object_type=Task&object_id=79853]]></remove_from_favorites>
+<reschedule><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/reschedule]]></reschedule>
+<tracking><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/tracking]]></tracking>
+<update_milestone><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/objects/79853/update-milestone]]></update_milestone>
+</urls>
+<permissions><can_edit>1</can_edit>
+<can_delete>1</can_delete>
+<can_archive>0</can_archive>
+<can_unarchive>1</can_unarchive>
+<can_trash>1</can_trash>
+<can_untrash>0</can_untrash>
+<can_change_visibility>1</can_change_visibility>
+<can_change_complete_status>0</can_change_complete_status>
+<can_comment>0</can_comment>
+<can_manage_tracking>1</can_manage_tracking>
+<can_move>0</can_move>
+<can_copy>1</can_copy>
+</permissions>
+<body><![CDATA[<p class="p1">Hi, Frank –</p><p class="p1">Once again RTI is looking for website design support, this time with an international flair. I’ve pulled together what I know at the moment and would like to get an estimate from you for <strong>designing a template</strong> that can be adapted (with accent colors and photos) to reflect an international office and for <strong>adapting the design for 3 sites</strong>.</p><p class="p1">Please have a look and let me know what else you need (and what design elements I’m forgetting in the list below). The overall plans are still in development, but I need at least a ballpark cost to move forward.</p><p class="p1">Thanks!<br /> anna</p><p class="p1">--------------------------------</p><p class="p1"><strong>Background</strong></p><p class="p1">My office is developing outreach/marketing plans in support of RTI’s business development goals and strategy in Asia, Africa, and Latin America/Caribbean. One element of this plan is a website for each of 3 international offices: Jakarta, Nairobi, and San Salvador.</p><p class="p1">Our model for this is a competitor site: <a href="http://www.westat.in/"><span class="s1">Westat India</span></a>. (There’s a lot we don’t like about this site, but it’s representative of the size/scope of what we need to build.)</p><p class="p1"><strong>Purpose and Content</strong></p><p class="p1">Sites are intended to be a simple “store front” that communicates RTI’s regional presence and areas of technical service and research that we marketing to clients/partners in those regions. Each site will dynamically draw some content from the Xsite---e.g., news releases, publications, possibly jobs.</p><p class="p1">Current thinking is that each site will have a place for local updates (news, events, announcements), which will be populated by the staff members/leadership in country. The rest of the site will be static (service/capability descriptions, staff bios, etc.).</p><p class="p1">Two sites will be in both English and another language (Jakarta – Bahasa Indonesia, San Salvador – Spanish).</p><p class="p1"><strong>Timeline</strong></p><p class="p1">Goal is to have the sites up and running by end of Sept 2013.</p><p class="p1"><strong>Site Structure and Design</strong></p><p class="p1">PRCC will commission the design of a flexible template that can be adapted for all 3 office websites (and possibly other offices down the road). To the extent possible, colors will come from RTI’s secondary color palette.</p><p class="p1">Design elements will include</p><p class="p2"><strong>Global Elements</strong></p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Header</strong> – RTI logo, office name, tagline, language option (little flags? Is this the best place for this?)</p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Menu bar/buttons</strong></p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>About RTI [Office]</strong> (e.g., About RTI Nairobi) – One page describing who we are and our focus in the region. Profiles office leadership and key staff. </p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Services</strong> – Maybe multiple pages. Breadth/depth of this info will vary by region and will dictate info architecture under this section.</p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Contact Us</strong> – Form or info specific to region</p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Jobs?</strong> – May or may not include this</p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Footer</strong> – Copyright statement, privacy policy, terms &amp; conditions, social icons</p><p class="p2"><strong>Homepage</strong></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Photo/photo gallery</p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Grid with space for body/main text, local updates, RTI news, publications</p><p class="p5"><span class="s2">·</span><span class="s3">         </span><em>What’s missing?</em></p><p class="p2"><strong>Subpage</strong></p><p class="p6"><span class="s2">·</span>         <span class="s5">Title</span></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Main/body text</p><p class="p6"><span class="s2">·</span>         <span class="s5">Photo</span></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Styles for subheadings, bullets, links</p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Left nav (possibly for the services section, other pages would not have this)</p><p class="p5"><span class="s2">·</span><span class="s3">         </span><em>What’s missing?</em></p><p class="p1"> </p><p class="p1"> </p><p class="p1"> </p><p class="p7">Anna Weaver <span class="s6"><br /></span>Office of Public Relations and Corporate Communications<span class="s7"> <br /></span>RTI International<span class="s7"> <br /></span>919.541.6482<br /><span class="s8"><a href="http://www.rti.org/">http://www.rti.org</a></span></p>]]></body>
+<body_formatted><![CDATA[<p class="p1">Hi, Frank –</p><p class="p1">Once again RTI is looking for website design support, this time with an international flair. I’ve pulled together what I know at the moment and would like to get an estimate from you for <strong>designing a template</strong> that can be adapted (with accent colors and photos) to reflect an international office and for <strong>adapting the design for 3 sites</strong>.</p><p class="p1">Please have a look and let me know what else you need (and what design elements I’m forgetting in the list below). The overall plans are still in development, but I need at least a ballpark cost to move forward.</p><p class="p1">Thanks!<br /> anna</p><p class="p1">--------------------------------</p><p class="p1"><strong>Background</strong></p><p class="p1">My office is developing outreach/marketing plans in support of RTI’s business development goals and strategy in Asia, Africa, and Latin America/Caribbean. One element of this plan is a website for each of 3 international offices: Jakarta, Nairobi, and San Salvador.</p><p class="p1">Our model for this is a competitor site: <a href="http://www.westat.in/"><span class="s1">Westat India</span></a>. (There’s a lot we don’t like about this site, but it’s representative of the size/scope of what we need to build.)</p><p class="p1"><strong>Purpose and Content</strong></p><p class="p1">Sites are intended to be a simple “store front” that communicates RTI’s regional presence and areas of technical service and research that we marketing to clients/partners in those regions. Each site will dynamically draw some content from the Xsite---e.g., news releases, publications, possibly jobs.</p><p class="p1">Current thinking is that each site will have a place for local updates (news, events, announcements), which will be populated by the staff members/leadership in country. The rest of the site will be static (service/capability descriptions, staff bios, etc.).</p><p class="p1">Two sites will be in both English and another language (Jakarta – Bahasa Indonesia, San Salvador – Spanish).</p><p class="p1"><strong>Timeline</strong></p><p class="p1">Goal is to have the sites up and running by end of Sept 2013.</p><p class="p1"><strong>Site Structure and Design</strong></p><p class="p1">PRCC will commission the design of a flexible template that can be adapted for all 3 office websites (and possibly other offices down the road). To the extent possible, colors will come from RTI’s secondary color palette.</p><p class="p1">Design elements will include</p><p class="p2"><strong>Global Elements</strong></p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Header</strong> – RTI logo, office name, tagline, language option (little flags? Is this the best place for this?)</p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Menu bar/buttons</strong></p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>About RTI [Office]</strong> (e.g., About RTI Nairobi) – One page describing who we are and our focus in the region. Profiles office leadership and key staff. </p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Services</strong> – Maybe multiple pages. Breadth/depth of this info will vary by region and will dictate info architecture under this section.</p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Contact Us</strong> – Form or info specific to region</p><p class="p4"><span class="s4">o</span><span class="s3">   </span><strong>Jobs?</strong> – May or may not include this</p><p class="p3"><span class="s2">·</span><span class="s3">         </span><strong>Footer</strong> – Copyright statement, privacy policy, terms &amp; conditions, social icons</p><p class="p2"><strong>Homepage</strong></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Photo/photo gallery</p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Grid with space for body/main text, local updates, RTI news, publications</p><p class="p5"><span class="s2">·</span><span class="s3">         </span><em>What’s missing?</em></p><p class="p2"><strong>Subpage</strong></p><p class="p6"><span class="s2">·</span>         <span class="s5">Title</span></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Main/body text</p><p class="p6"><span class="s2">·</span>         <span class="s5">Photo</span></p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Styles for subheadings, bullets, links</p><p class="p3"><span class="s2">·</span><span class="s3">         </span>Left nav (possibly for the services section, other pages would not have this)</p><p class="p5"><span class="s2">·</span><span class="s3">         </span><em>What’s missing?</em></p><p class="p1"> </p><p class="p1"> </p><p class="p1"> </p><p class="p7">Anna Weaver <span class="s6"><br /></span>Office of Public Relations and Corporate Communications<span class="s7"> <br /></span>RTI International<span class="s7"> <br /></span>919.541.6482<br /><span class="s8"><a href="http://www.rti.org/">http://www.rti.org</a></span></p>]]></body_formatted>
+<state>2</state>
+<visibility>1</visibility>
+<is_completed>1</is_completed>
+<completed_on><![CDATA[2013-05-08 14:46:09]]></completed_on>
+<completed_by><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-20 13:58:33]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</completed_by>
+<priority>0</priority>
+<due_on/>
+<comments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/comments]]></comments_url>
+<comments_count>15</comments_count>
+<is_locked/>
+<subtasks_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/subtasks]]></subtasks_url>
+<total_subtasks>0</total_subtasks>
+<open_subtasks>0</open_subtasks>
+<completed_subtasks>0</completed_subtasks>
+<attachments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/tasks/527/attachments]]></attachments_url>
+<attachments/>
+<attachments_count>0</attachments_count>
+<assignee_id>107</assignee_id>
+<delegated_by_id>18</delegated_by_id>
+<other_assignee_ids><other_assignee_id><![CDATA[16]]></other_assignee_id>
+<other_assignee_id><![CDATA[18]]></other_assignee_id>
+</other_assignee_ids>
+<assignee><id>107</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Stephen Pashby]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+<created_on><![CDATA[2011-01-27 01:18:52]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-04 19:03:45]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/107.40x40.png?time=1391540625]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/107.16x16.png?time=1391540625]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/107.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/107.256x256.png?time=1391540625]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Stephen]]></first_name>
+<last_name><![CDATA[Pashby]]></last_name>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<email><![CDATA[stephen@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-20 13:58:33]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</assignee>
+<delegated_by><id>18</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-18 21:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1395177604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1395177604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 13:43:16]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</delegated_by>
+<other_assignees><other_assignee><id>16</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[David Minton]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+<created_on/>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-02-24 18:35:03]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/16.40x40.png?time=1393266903]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/16.16x16.png?time=1393266903]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/16.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/16.256x256.png?time=1393266903]]></_largest_size>
+</avatar>
+<first_name><![CDATA[David]]></first_name>
+<last_name><![CDATA[Minton]]></last_name>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<email><![CDATA[david@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-19 14:06:57]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</other_assignee>
+<other_assignee><id>18</id>
+<class><![CDATA[Administrator]]></class>
+<name><![CDATA[Frank Yonnetti]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+<created_on><![CDATA[2009-05-04 19:12:45]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2014-03-18 21:20:04]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>3</state>
+<avatar><photo><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></photo>
+<large><![CDATA[https://ac.designhammer.net/avatars/18.40x40.png?time=1395177604]]></large>
+<small><![CDATA[https://ac.designhammer.net/avatars/18.16x16.png?time=1395177604]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/avatars/18.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/avatars/18.256x256.png?time=1395177604]]></_largest_size>
+</avatar>
+<first_name><![CDATA[Frank]]></first_name>
+<last_name><![CDATA[Yonnetti]]></last_name>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<email><![CDATA[frank@designhammer.com]]></email>
+<last_visit_on><![CDATA[2014-03-21 13:43:16]]></last_visit_on>
+<invited_on/>
+<company_id>19</company_id>
+</other_assignee>
+</other_assignees>
+<category_id/>
+<category/>
+<label_id>9</label_id>
+<label/>
+<user_is_subscribed>0</user_is_subscribed>
+<subscribers><subscriber><id>16</id>
+<display_name><![CDATA[David Minton]]></display_name>
+<short_display_name><![CDATA[David M.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/16]]></permalink>
+</subscriber>
+<subscriber><id>18</id>
+<display_name><![CDATA[Frank Yonnetti]]></display_name>
+<short_display_name><![CDATA[Frank Y.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/18]]></permalink>
+</subscriber>
+<subscriber><id>107</id>
+<display_name><![CDATA[Stephen Pashby]]></display_name>
+<short_display_name><![CDATA[Stephen P.]]></short_display_name>
+<permalink><![CDATA[https://ac.designhammer.net/people/19/users/107]]></permalink>
+</subscriber>
+</subscribers>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<object_time>5.7</object_time>
+<object_expenses>0</object_expenses>
+<estimate/>
+<version>10</version>
+<project_id>10</project_id>
+<milestone_id>80238</milestone_id>
+<project><id>10</id>
+<class><![CDATA[Project]]></class>
+<name><![CDATA[DH: Prospecting/Sales/Proposals]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals]]></permalink>
+<created_on><![CDATA[2009-05-06 22:17:33]]></created_on>
+<created_by_id>16</created_by_id>
+<updated_on><![CDATA[2013-11-06 02:59:04]]></updated_on>
+<updated_by_id>16</updated_by_id>
+<state>3</state>
+<is_completed>0</is_completed>
+<avatar><photo><![CDATA[https://ac.designhammer.net/projects_icons/10.256x256.png?time=1383706744]]></photo>
+<large><![CDATA[https://ac.designhammer.net/projects_icons/10.80x80.png?time=1383706744]]></large>
+<big><![CDATA[https://ac.designhammer.net/projects_icons/10.40x40.png?time=1383706744]]></big>
+<small><![CDATA[https://ac.designhammer.net/projects_icons/10.16x16.png?time=1383706744]]></small>
+<_full_size><![CDATA[https://ac.designhammer.net/projects_icons/10.original.png]]></_full_size>
+<_largest_size><![CDATA[https://ac.designhammer.net/projects_icons/10.256x256.png?time=1383706744]]></_largest_size>
+</avatar>
+<category_id>1558</category_id>
+<label_id/>
+<is_favorite>0</is_favorite>
+<custom_fields/>
+<slug><![CDATA[dh-prospectingsalesproposals]]></slug>
+<company_id>19</company_id>
+<leader_id>16</leader_id>
+<currency_id/>
+<budget>0</budget>
+<is_member>0</is_member>
+</project>
+<milestone><id>80238</id>
+<class><![CDATA[Milestone]]></class>
+<name><![CDATA[2013 Week 14 (ends 04/07/13)]]></name>
+<permalink><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/80238]]></permalink>
+<created_on><![CDATA[2013-03-28 15:29:06]]></created_on>
+<created_by_id>107</created_by_id>
+<updated_on><![CDATA[2013-06-23 12:00:06]]></updated_on>
+<updated_by_id>0</updated_by_id>
+<state>2</state>
+<visibility>1</visibility>
+<is_completed>1</is_completed>
+<comments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/80238/comments]]></comments_url>
+<comments_count>0</comments_count>
+<is_locked/>
+<attachments_url><![CDATA[https://ac.designhammer.net/projects/dh-prospectingsalesproposals/milestones/80238/attachments]]></attachments_url>
+<attachments_count>0</attachments_count>
+<assignee_id>107</assignee_id>
+<delegated_by_id>107</delegated_by_id>
+<other_assignee_ids><other_assignee_id><![CDATA[16]]></other_assignee_id>
+</other_assignee_ids>
+<user_is_subscribed>0</user_is_subscribed>
+<is_favorite>0</is_favorite>
+<version>5</version>
+<priority>0</priority>
+<project_id>10</project_id>
+<start_on><![CDATA[2013-04-01]]></start_on>
+<due_on><![CDATA[2013-04-07]]></due_on>
+</milestone>
+<task_id>527</task_id>
+</task>
