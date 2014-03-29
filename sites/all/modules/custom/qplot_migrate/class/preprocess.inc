@@ -7,7 +7,7 @@
 
 class DHPreprocessMigration extends MigrationBase {
   /**
-   * API settings
+   * API settings.
    */
   public $api = array(
     // 'url' => 'https://qplot.manageprojects.com/api.php',
@@ -15,6 +15,11 @@ class DHPreprocessMigration extends MigrationBase {
     'url' => 'https://ac.designhammer.net/api.php',
     'token' => '217-qUrX6d8cJVc69tPndSrqtgcDI2meGkXW5eIZiF2S',
   );
+
+  /**
+   * Source path.
+   */
+  public $migratePath = '';
 
   /**
    * Phantom JS
@@ -28,6 +33,8 @@ class DHPreprocessMigration extends MigrationBase {
     parent::__construct($arguments);
 
     $this->phantomjs = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/phantomjs/pull.js';
+
+    $this->migratePath = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate');
   }
 
   /**
@@ -52,8 +59,8 @@ class DHPreprocessMigration extends MigrationBase {
   public function import() {
     $use_phantomjs = TRUE;
 
-    $data_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data';
-    $compiled_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
+    $data_path = $this->migratePath . '/data';
+    $compiled_path = $this->migratePath . '/compiled';
 
     // Ensure 'compiled' folder exists.
     if (!is_dir($compiled_path)) {
@@ -89,20 +96,24 @@ class DHPreprocessMigration extends MigrationBase {
 
     $processed_dir = array(
       // Download company list xml.
-      'pre_company',
+      'pre_company' => array(),
       // Read company xml and download each company xml.
-      'company',
+      'company' => array(),
       // Copy from downloaded company xml.
-      'pre_user',
+      // 'pre_user',
       // Read company xml and downlaod each user xml.
-      'user',
+      'user' => array('path' => 'compiled/company'),
       // Download project list xml.
-      'pre_project',
+      'pre_project' => array(),
       // Read project xml and download each project xml.
-      'project',
+      'project' => array(),
+      // Read project xml and download milestone xml.
+      'milestone' => array('path' => 'data/project'),
+      // Read project xml and download categories xml.
+      'category' => array('path' => 'data/project'),
     );
 
-    foreach ($processed_dir as $dir) {
+    foreach ($processed_dir as $dir => $source_path) {
       $i = 0;
       $parts = explode('_', $dir);
       // Preprocess.
@@ -156,7 +167,11 @@ class DHPreprocessMigration extends MigrationBase {
       // Process.
       else {
         $saved_dir = $compiled_path . '/' . $dir;
-        $directory = new DirectoryIterator($data_path . '/' . $dir);
+        $source_dir = $data_path . '/' . $dir;
+        if (!empty($source_path)) {
+          $source_dir = $this->migratePath . '/' . $source_path['path'];
+        }
+        $directory = new DirectoryIterator($source_dir);
         foreach ($directory as $fileinfo) {
           if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
             $file = file_get_contents($fileinfo->getPathname());
@@ -209,6 +224,36 @@ class DHPreprocessMigration extends MigrationBase {
                 }
                 break;
 
+              case 'milestone':
+                foreach ($xml->project as $project) {
+                  $id = (string) $project->id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $this->downloadXML('projects/' . $id . '/milestones', $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' milestones downloaded from project/' . $fileinfo->getFilename());
+                }
+                break;
+
+              case 'category':
+                foreach ($xml->project as $project) {
+                  $id = (string) $project->id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $this->downloadXML('projects/' . $id . '/tasks/categories', $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' categories downloaded from project/' . $fileinfo->getFilename());
+                }
+                break;
+
               case 'task':
                 foreach ($xml->task as $task) {
                   $id = (string) $task->id;
@@ -224,14 +269,9 @@ class DHPreprocessMigration extends MigrationBase {
                   }
                 }
                 break;
-
-              default:
-                break;
             }
-
           }
         }
-
       }
     }
 
