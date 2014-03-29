@@ -79,7 +79,8 @@ class DHPreprocessMigration extends MigrationBase {
       'project',
       'milestone',
       'category',
-      'task'
+      'task',
+      'comment',
     );
     // Make sure all folder exists.
     foreach ($dirs as $dir) {
@@ -115,6 +116,10 @@ class DHPreprocessMigration extends MigrationBase {
       'category' => array('path' => 'data/project'),
       // Read project xml and download tasks list xml.
       'pre_task' => array('path' => 'data/project'),
+      // Read task xml and download each task xml.
+      'task' => array(),
+      // Read task xml and download comment list xml.
+      'comment' => array('path' => 'data/task'),
     );
 
     $project_lists = array(
@@ -169,6 +174,20 @@ class DHPreprocessMigration extends MigrationBase {
               }
             }
             drupal_set_message($i . ' project lists downloaded');
+            break;
+
+          case 'task':
+            foreach ($project_lists as $pid) {
+              foreach ($ops as $op) {
+                $filename = $pid . '_' . (!empty($op) ? $op : $dir);
+                $output = $saved_dir . '/' . $filename . '.xml';
+                if (!file_exists($output)) {
+                  $this->downloadXML('projects/' . $pid . '/tasks/' . $op, $output);
+                  $i += 1;
+                }
+              }
+            }
+            drupal_set_message($i . ' tasks lists downloaded');
             break;
         }
       }
@@ -270,11 +289,29 @@ class DHPreprocessMigration extends MigrationBase {
                   $output = $saved_dir . '/' . $id . '.xml';
 
                   if (!file_exists($output)) {
-                    $link = $api['url'] . '?path_info=projects/' . $pid . '/tasks/' . $task_id . '&auth_api_token=' . $api['token'];
-                    // dsm($link); break;
-                    $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                    exec($exec);
+                    $this->downloadXML('projects/' . $pid . '/tasks/' . $task_id, $output);
+                    $i += 1;
                   }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' tasks downloaded from task/' . $fileinfo->getFilename());
+                }
+                break;
+
+              case 'comment':
+                foreach ($xml->task as $task) {
+                  $id = (string) $task->id;
+                  $task_id = (string) $task->task_id;
+                  $pid = (string) $task->project_id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $this->downloadXML('projects/' . $pid . '/tasks/' . $task_id . '/comments', $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' comments downloaded from task/' . $fileinfo->getFilename());
                 }
                 break;
             }
