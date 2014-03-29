@@ -6,6 +6,29 @@
  */
 
 class DHPreprocessMigration extends MigrationBase {
+  /**
+   * API settings
+   */
+  public $api = array(
+    // 'url' => 'https://qplot.manageprojects.com/api.php',
+    // 'token' => '1-bm4xON3HasMFpm7qg9oea9sUvfy1j1WkbOHPqzmr',
+    'url' => 'https://ac.designhammer.net/api.php',
+    'token' => '217-qUrX6d8cJVc69tPndSrqtgcDI2meGkXW5eIZiF2S',
+  );
+
+  /**
+   * Phantom JS
+   */
+  protected $phantomjs = '';
+
+  /**
+   * Constructor.
+   */
+  public function __construct($arguments) {
+    parent::__construct($arguments);
+
+    $this->phantomjs = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/phantomjs/pull.js';
+  }
 
   /**
    * IsComplete.
@@ -28,7 +51,6 @@ class DHPreprocessMigration extends MigrationBase {
    */
   public function import() {
     $use_phantomjs = TRUE;
-    $phantomjs = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/phantomjs/pull.js';
 
     $data_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data';
     $compiled_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
@@ -47,12 +69,8 @@ class DHPreprocessMigration extends MigrationBase {
       'company',
       'user',
       'project',
-    );
-    $api = array(
-      // 'url' => 'https://qplot.manageprojects.com/api.php',
-      // 'token' => '1-bm4xON3HasMFpm7qg9oea9sUvfy1j1WkbOHPqzmr',
-      'url' => 'https://ac.designhammer.net/api.php',
-      'token' => '217-qUrX6d8cJVc69tPndSrqtgcDI2meGkXW5eIZiF2S',
+      'milestone',
+      'task'
     );
     // Make sure all folder exists.
     foreach ($dirs as $dir) {
@@ -70,93 +88,150 @@ class DHPreprocessMigration extends MigrationBase {
     }
 
     $processed_dir = array(
-      // 'company',
-      // 'user',
-      // 'project',
-      'task',
+      // Download company list xml.
+      'pre_company',
+      // Read company xml and download each company xml.
+      'company',
+      // Copy from downloaded company xml.
+      'pre_user',
+      // Read company xml and downlaod each user xml.
+      'user',
+      // Download project list xml.
+      'pre_project',
+      // Read project xml and download each project xml.
+      'project',
     );
 
     foreach ($processed_dir as $dir) {
-      $saved_dir = $compiled_path . '/' . $dir;
-      $directory = new DirectoryIterator($data_path . '/' . $dir);
-      foreach ($directory as $fileinfo) {
-        if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
-          $file = file_get_contents($fileinfo->getPathname());
-          $xml = simplexml_load_string($file);
-
-          switch ($dir) {
-
-            case 'company':
-              foreach ($xml->company as $company) {
-                $id = (string) $company->id;
-                $output = $saved_dir . '/' . $id . '.xml';
-
-                if (!file_exists($output)) {
-                  $link = $api['url'] . '?path_info=people/' . $id . '&auth_api_token=' . $api['token'];
-
-                  // Save directly to disk.
-                  // $page = file_get_contents($link);
-                  // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
-
-                  // Use phantomjs to help us get around the https issue.
-                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                  exec($exec);
-                }
-
+      $i = 0;
+      $parts = explode('_', $dir);
+      // Preprocess.
+      if ($parts[0] == 'pre') {
+        $dir = $parts[1];
+        $saved_dir = $data_path . '/' . $dir;
+        $ops = array('', 'archive');
+        switch ($dir) {
+          case 'company':
+            foreach ($ops as $op) {
+              $filename = !empty($op) ? $op : $dir;
+              $output = $saved_dir . '/' . $filename . '.xml';
+              if (!file_exists($output)) {
+                $this->downloadXML('people/' . $op, $output);
+                $i += 1;
               }
-              break;
+            }
+            drupal_set_message($i . ' company lists downloaded');
+            break;
 
-            // User uses company raw data folder.
-            case 'user':
-              $id = (string) $xml->id;
-              foreach ($xml->users->children() as $user) {
-                $uid = (string) $user->id;
-                $output = $saved_dir . '/' . $uid . '.xml';
-
+          case 'user':
+            $source_dir = $compiled_path . '/company';
+            $directory = new DirectoryIterator($source_dir);
+            foreach ($directory as $fileinfo) {
+              if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+                $output = $saved_dir . '/' . $fileinfo->getFilename();
                 if (!file_exists($output)) {
-                  $link = $api['url'] . '?path_info=people/' . $id . '/users/' . $uid . '&auth_api_token=' . $api['token'];
-                  // dsm($link); break;
-                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                  exec($exec);
+                  if (!copy($fileinfo->getPathname(), $output)) {
+                    // Error.
+                  }
+                  $i += 1;
                 }
               }
-              break;
+            }
+            drupal_set_message($i . ' company lists copied');
+            break;
 
-            case 'project':
-              foreach ($xml->project as $project) {
-                $id = (string) $project->id;
-                $output = $saved_dir . '/' . $id . '.xml';
-
-                if (!file_exists($output)) {
-                  $link = $api['url'] . '?path_info=projects/' . $id . '&auth_api_token=' . $api['token'];
-                  // dsm($link); break;
-                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                  exec($exec);
-                }
+          case 'project':
+            foreach ($ops as $op) {
+              $filename = !empty($op) ? $op : $dir;
+              $output = $saved_dir . '/' . $filename . '.xml';
+              if (!file_exists($output)) {
+                $this->downloadXML('projects/' . $op, $output);
+                $i += 1;
               }
-              break;
-
-            case 'task':
-              foreach ($xml->task as $task) {
-                $id = (string) $task->id;
-                $task_id = (string) $task->task_id;
-                $pid = (string) $task->project_id;
-                $output = $saved_dir . '/' . $id . '.xml';
-
-                if (!file_exists($output)) {
-                  $link = $api['url'] . '?path_info=projects/' . $pid . '/tasks/' . $task_id . '&auth_api_token=' . $api['token'];
-                  // dsm($link); break;
-                  $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
-                  exec($exec);
-                }
-              }
-              break;
-
-            default:
-              break;
-          }
-
+            }
+            drupal_set_message($i . ' project lists downloaded');
+            break;
         }
+      }
+      // Process.
+      else {
+        $saved_dir = $compiled_path . '/' . $dir;
+        $directory = new DirectoryIterator($data_path . '/' . $dir);
+        foreach ($directory as $fileinfo) {
+          if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
+            $file = file_get_contents($fileinfo->getPathname());
+            $xml = simplexml_load_string($file);
+
+            switch ($dir) {
+
+              case 'company':
+                foreach ($xml->company as $company) {
+                  $id = (string) $company->id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $this->downloadXML('people/' . $id, $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' companies downloaded from company/' . $fileinfo->getFilename());
+                }
+                break;
+
+              case 'user':
+                $id = (string) $xml->id;
+                foreach ($xml->users->children() as $user) {
+                  $uid = (string) $user->id;
+                  $output = $saved_dir . '/' . $uid . '.xml';
+                  if (!file_exists($output)) {
+                    $this->downloadXML('people/' . $id . '/users/' . $uid, $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' users downloaded from company/' . $fileinfo->getFilename());
+                }
+                break;
+
+              case 'project':
+                foreach ($xml->project as $project) {
+                  $id = (string) $project->id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $this->downloadXML('projects/' . $id, $output);
+                    $i += 1;
+                  }
+                }
+                if ($i) {
+                  drupal_set_message($i . ' projects downloaded from project/' . $fileinfo->getFilename());
+                }
+                break;
+
+              case 'task':
+                foreach ($xml->task as $task) {
+                  $id = (string) $task->id;
+                  $task_id = (string) $task->task_id;
+                  $pid = (string) $task->project_id;
+                  $output = $saved_dir . '/' . $id . '.xml';
+
+                  if (!file_exists($output)) {
+                    $link = $api['url'] . '?path_info=projects/' . $pid . '/tasks/' . $task_id . '&auth_api_token=' . $api['token'];
+                    // dsm($link); break;
+                    $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $phantomjs . ' ' . escapeshellarg($link) . ' ' . escapeshellarg($output);
+                    exec($exec);
+                  }
+                }
+                break;
+
+              default:
+                break;
+            }
+
+          }
+        }
+
       }
     }
 
@@ -164,19 +239,20 @@ class DHPreprocessMigration extends MigrationBase {
   }
 
   /**
-   * Rollback.
+   * Download xml use api syntax.
    */
-  public function rollback() {
-    $compiled_path = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled';
-    if (!is_dir($compiled_path)) {
-      return MigrationBase::RESULT_COMPLETED;
-    }
+  protected function downloadXml($command, $output) {
+    $link = $this->api['url'] . '?path_info=' . $command .
+      '&auth_api_token=' . $this->api['token'];
 
-    foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator(
-      $compiled_path, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST) as $path) {
-      $path->isFile() ? unlink($path->getPathname()) : rmdir($path->getPathname());
-    }
-    // rmdir($compiled_path);
+    // Save directly to disk.
+    // $page = file_get_contents($link);
+    // file_put_contents($saved_dir . '/' . $id . '.xml', $page);
+
+    // Use phantomjs to help us get around the https issue.
+    $exec = 'sudo -u fjin /usr/local/bin/phantomjs ' . $this->phantomjs . ' ' .
+      escapeshellarg($link) . ' ' . escapeshellarg($output);
+    exec($exec);
   }
 
 }
