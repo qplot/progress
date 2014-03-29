@@ -81,6 +81,7 @@ class DHPreprocessMigration extends MigrationBase {
       'category',
       'task',
       'comment',
+      'tag',
     );
     // Make sure all folder exists.
     foreach ($dirs as $dir) {
@@ -102,10 +103,10 @@ class DHPreprocessMigration extends MigrationBase {
       'pre_company' => array(),
       // Read company xml and download each company xml.
       'company' => array(),
-      // Copy from downloaded company xml.
-      // 'pre_user',
       // Read company xml and downlaod each user xml.
       'user' => array('path' => 'compiled/company'),
+      // Download project category list xml.
+      'pre_category' => array(),
       // Download project list xml.
       'pre_project' => array(),
       // Read project xml and download each project xml.
@@ -113,7 +114,7 @@ class DHPreprocessMigration extends MigrationBase {
       // Read project xml and download milestone xml.
       'milestone' => array('path' => 'data/project'),
       // Read project xml and download categories xml.
-      'category' => array('path' => 'data/project'),
+      'tag' => array('path' => 'data/project'),
       // Read project xml and download tasks list xml.
       'pre_task' => array('path' => 'data/project'),
       // Read task xml and download each task xml.
@@ -147,21 +148,13 @@ class DHPreprocessMigration extends MigrationBase {
             drupal_set_message($i . ' company lists downloaded');
             break;
 
-          case 'user':
-            $source_dir = $compiled_path . '/company';
-            $directory = new DirectoryIterator($source_dir);
-            foreach ($directory as $fileinfo) {
-              if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
-                $output = $saved_dir . '/' . $fileinfo->getFilename();
-                if (!file_exists($output)) {
-                  if (!copy($fileinfo->getPathname(), $output)) {
-                    // Error.
-                  }
-                  $i += 1;
-                }
-              }
+          case 'category':
+            $output = $saved_dir . '/' . $dir . '.xml';
+            if (!file_exists($output)) {
+              $this->downloadXML('projects/categories', $output);
+              $i += 1;
             }
-            drupal_set_message($i . ' company lists copied');
+            drupal_set_message($i . ' category lists downloaded');
             break;
 
           case 'project':
@@ -266,7 +259,7 @@ class DHPreprocessMigration extends MigrationBase {
                 }
                 break;
 
-              case 'category':
+              case 'tag':
                 foreach ($xml->project as $project) {
                   $id = (string) $project->id;
                   $output = $saved_dir . '/' . $id . '.xml';
