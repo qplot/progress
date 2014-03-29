@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <companies><company><id>19</id>
 <class><![CDATA[Company]]></class>
 <name><![CDATA[DesignHammer Media Group LLC]]></name>
@@ -23,7 +22,7 @@ Conference: 919.226.3793]]></office_address>
 <office_fax><![CDATA[919-287-2395]]></office_fax>
 <office_homepage><![CDATA[http://www.designhammer.com]]></office_homepage>
 <is_owner>1</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>26</id>
 <class><![CDATA[Company]]></class>
@@ -31,7 +30,7 @@ Conference: 919.226.3793]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/26]]></permalink>
 <created_on><![CDATA[2009-05-12 20:26:04]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/26.256x256.png?time=1349360794]]></photo>
@@ -47,7 +46,7 @@ Durham, NC 27713]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://aadiagnostics.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>53</id>
 <class><![CDATA[Company]]></class>
@@ -55,7 +54,7 @@ Durham, NC 27713]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/53]]></permalink>
 <created_on><![CDATA[2009-07-22 20:15:44]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/53.256x256.png?time=1349360795]]></photo>
@@ -70,7 +69,7 @@ Durham, NC 27713]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.advisortool.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>100</id>
 <class><![CDATA[Company]]></class>
@@ -78,7 +77,7 @@ Durham, NC 27713]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/100]]></permalink>
 <created_on><![CDATA[2012-07-05 14:00:10]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -88,11 +87,11 @@ Durham, NC 27713]]></office_address>
 <_full_size><![CDATA[https://ac.designhammer.net/logos/100.original.png]]></_full_size>
 <_largest_size><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></_largest_size>
 </avatar>
-<office_address><![CDATA[Postal Address:                
-American Tobacco Historic District      
-324 Blackwell St.     
-Suite 1204      
-Durham, NC 27701      
+<office_address><![CDATA[Postal Address:	  	         	
+American Tobacco Historic District	 	 	
+324 Blackwell St.	 	 	
+Suite 1204	 	 	
+Durham, NC 27701		 	
 
 Physical Address:
 American Tobacco Historic District
@@ -103,7 +102,7 @@ Durham, NC  27701]]></office_address>
 <office_fax><![CDATA[919-667-1229]]></office_fax>
 <office_homepage><![CDATA[http://www.asc-rt.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>44</id>
 <class><![CDATA[Company]]></class>
@@ -111,7 +110,7 @@ Durham, NC  27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/44]]></permalink>
 <created_on><![CDATA[2009-06-29 08:59:31]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/44.256x256.png?time=1349360795]]></photo>
@@ -128,7 +127,7 @@ Fairfield, Connecticut 06824]]></office_address>
 <office_fax><![CDATA[203.255.4713]]></office_fax>
 <office_homepage><![CDATA[http://www.cmbertramconsultants.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>32</id>
 <class><![CDATA[Company]]></class>
@@ -153,7 +152,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[919-560-3065]]></office_fax>
 <office_homepage><![CDATA[http://www.carolinatheatre.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>108</id>
 <class><![CDATA[Company]]></class>
@@ -161,7 +160,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/108]]></permalink>
 <created_on><![CDATA[2013-04-23 20:33:16]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -203,7 +202,7 @@ Chapel Hill, NC 27515]]></office_address>
 <office_fax><![CDATA[919-968-6874]]></office_fax>
 <office_homepage><![CDATA[http://www.carolinachamber.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>57</id>
 <class><![CDATA[Company]]></class>
@@ -228,7 +227,7 @@ Research Triangle Park, NC 27709]]></office_address>
 <office_fax><![CDATA[(919) 549-9390]]></office_fax>
 <office_homepage><![CDATA[http://nccwep.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>107</id>
 <class><![CDATA[Company]]></class>
@@ -236,7 +235,7 @@ Research Triangle Park, NC 27709]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/107]]></permalink>
 <created_on><![CDATA[2013-01-08 20:07:41]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -252,7 +251,7 @@ Chapel Hill, NC 27516]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.clinicaltools.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>113</id>
 <class><![CDATA[Company]]></class>
@@ -260,7 +259,7 @@ Chapel Hill, NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/113]]></permalink>
 <created_on><![CDATA[2013-09-12 19:25:54]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -284,7 +283,7 @@ Memphis, TN 38104]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/114]]></permalink>
 <created_on><![CDATA[2013-10-03 15:27:47]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -307,7 +306,7 @@ Memphis, TN 38104]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/68]]></permalink>
 <created_on><![CDATA[2010-03-02 18:02:50]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -331,7 +330,7 @@ Durham, North Carolina 27703]]></office_address>
 <office_fax><![CDATA[919.845.7766]]></office_fax>
 <office_homepage><![CDATA[http://www.crispincorp.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>37</id>
 <class><![CDATA[Company]]></class>
@@ -339,7 +338,7 @@ Durham, North Carolina 27703]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/37]]></permalink>
 <created_on><![CDATA[2009-06-18 17:23:52]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/37.256x256.png?time=1349360795]]></photo>
@@ -356,7 +355,7 @@ Raleigh, NC 27609]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.csrecognition.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>33</id>
 <class><![CDATA[Company]]></class>
@@ -364,7 +363,7 @@ Raleigh, NC 27609]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/33]]></permalink>
 <created_on><![CDATA[2009-06-16 05:08:09]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -381,7 +380,7 @@ Chapel Hill, NC 27515]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.dailytarheel.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>30</id>
 <class><![CDATA[Company]]></class>
@@ -406,7 +405,7 @@ Raleigh, NC 27604]]></office_address>
 <office_fax><![CDATA[(919) 277-0033]]></office_fax>
 <office_homepage><![CDATA[http://www.datatrial.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>24</id>
 <class><![CDATA[Company]]></class>
@@ -414,7 +413,7 @@ Raleigh, NC 27604]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/24]]></permalink>
 <created_on><![CDATA[2009-05-07 00:58:58]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/24.256x256.png?time=1349360795]]></photo>
@@ -430,7 +429,7 @@ New Canaan, CT 06840]]></office_address>
 <office_fax><![CDATA[203-966-5530]]></office_fax>
 <office_homepage><![CDATA[http://www.DunbarConsultants.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>116</id>
 <class><![CDATA[Company]]></class>
@@ -438,7 +437,7 @@ New Canaan, CT 06840]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/116]]></permalink>
 <created_on><![CDATA[2013-10-17 19:27:16]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -461,7 +460,7 @@ New Canaan, CT 06840]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/72]]></permalink>
 <created_on><![CDATA[2010-05-14 18:24:51]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/72.256x256.png?time=1349360795]]></photo>
@@ -478,7 +477,7 @@ Brookline, MA 02445]]></office_address>
 <office_fax><![CDATA[617.232.0281]]></office_fax>
 <office_homepage><![CDATA[http://www.facinghistory.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>29</id>
 <class><![CDATA[Company]]></class>
@@ -486,7 +485,7 @@ Brookline, MA 02445]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/29]]></permalink>
 <created_on><![CDATA[2009-06-03 15:46:53]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/29.256x256.png?time=1349360794]]></photo>
@@ -501,7 +500,7 @@ Brookline, MA 02445]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>120</id>
 <class><![CDATA[Company]]></class>
@@ -509,7 +508,7 @@ Brookline, MA 02445]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/120]]></permalink>
 <created_on><![CDATA[2013-12-04 23:13:42]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -533,7 +532,7 @@ Overland Park, Kansas 66211]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/46]]></permalink>
 <created_on><![CDATA[2009-07-07 15:40:11]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -548,7 +547,7 @@ Overland Park, Kansas 66211]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://friskybusinessboutique.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>67</id>
 <class><![CDATA[Company]]></class>
@@ -556,7 +555,7 @@ Overland Park, Kansas 66211]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/67]]></permalink>
 <created_on><![CDATA[2010-02-19 17:11:03]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -571,7 +570,7 @@ Overland Park, Kansas 66211]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.greatlakesconsult.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>43</id>
 <class><![CDATA[Company]]></class>
@@ -579,7 +578,7 @@ Overland Park, Kansas 66211]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/43]]></permalink>
 <created_on><![CDATA[2009-06-29 08:27:15]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/43.256x256.png?time=1349360794]]></photo>
@@ -596,7 +595,7 @@ Chapel Hill, NC 27514]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://grimballjewelers.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>25</id>
 <class><![CDATA[Company]]></class>
@@ -604,7 +603,7 @@ Chapel Hill, NC 27514]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/25]]></permalink>
 <created_on><![CDATA[2009-05-11 18:04:25]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -620,7 +619,7 @@ Chapel Hill NC 27516]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://patientsbeyondborders.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>93</id>
 <class><![CDATA[Company]]></class>
@@ -628,7 +627,7 @@ Chapel Hill NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/93]]></permalink>
 <created_on><![CDATA[2012-03-02 19:06:23]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -645,7 +644,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ipihd.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>81</id>
 <class><![CDATA[Company]]></class>
@@ -653,7 +652,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/81]]></permalink>
 <created_on><![CDATA[2011-06-10 18:28:16]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -670,7 +669,7 @@ Chapel Hill, NC 27517]]></office_address>
 <office_fax><![CDATA[919-313-9108]]></office_fax>
 <office_homepage><![CDATA[http://www.intrahealth.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>88</id>
 <class><![CDATA[Company]]></class>
@@ -678,7 +677,7 @@ Chapel Hill, NC 27517]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/88]]></permalink>
 <created_on><![CDATA[2011-10-31 18:18:17]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -699,7 +698,7 @@ Wingate, North Carolina 28174]]></office_address>
 <office_fax><![CDATA[704.233.1787]]></office_fax>
 <office_homepage><![CDATA[http://www.jessehelmscenter.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>20</id>
 <class><![CDATA[Company]]></class>
@@ -723,7 +722,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <office_fax><![CDATA[919-821-5117]]></office_fax>
 <office_homepage><![CDATA[http://www.johnlocke.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>111</id>
 <class><![CDATA[Company]]></class>
@@ -731,7 +730,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/111]]></permalink>
 <created_on><![CDATA[2013-07-05 18:34:52]]></created_on>
 <created_by_id>26</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -754,7 +753,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/122]]></permalink>
 <created_on><![CDATA[2014-01-30 14:58:54]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -769,7 +768,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://educationalequity.org/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>109</id>
 <class><![CDATA[Company]]></class>
@@ -777,7 +776,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/109]]></permalink>
 <created_on><![CDATA[2013-05-07 13:48:56]]></created_on>
 <created_by_id>18</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -800,7 +799,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/92]]></permalink>
 <created_on><![CDATA[2012-02-01 18:48:16]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -815,7 +814,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>39</id>
 <class><![CDATA[Company]]></class>
@@ -823,7 +822,7 @@ Raleigh, North Carolina 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/39]]></permalink>
 <created_on><![CDATA[2009-06-19 06:46:10]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/39.256x256.png?time=1349360795]]></photo>
@@ -840,7 +839,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[(919) 683-1531]]></office_fax>
 <office_homepage><![CDATA[http://www.measinc.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>118</id>
 <class><![CDATA[Company]]></class>
@@ -848,7 +847,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/118]]></permalink>
 <created_on><![CDATA[2013-12-04 14:42:18]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -888,7 +887,7 @@ Raleigh, NC 27609]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>101</id>
 <class><![CDATA[Company]]></class>
@@ -896,7 +895,7 @@ Raleigh, NC 27609]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/101]]></permalink>
 <created_on><![CDATA[2012-08-04 02:06:06]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -912,7 +911,7 @@ Raleigh, NC 27699-6368]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>54</id>
 <class><![CDATA[Company]]></class>
@@ -920,7 +919,7 @@ Raleigh, NC 27699-6368]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/54]]></permalink>
 <created_on><![CDATA[2009-08-04 15:54:17]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -938,7 +937,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>51</id>
 <class><![CDATA[Company]]></class>
@@ -946,7 +945,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/51]]></permalink>
 <created_on><![CDATA[2009-07-22 15:50:45]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/51.256x256.png?time=1349360794]]></photo>
@@ -961,7 +960,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ncicl.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>103</id>
 <class><![CDATA[Company]]></class>
@@ -969,7 +968,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/103]]></permalink>
 <created_on><![CDATA[2012-11-12 16:29:11]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -984,7 +983,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.nesthomeimprovement.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>34</id>
 <class><![CDATA[Company]]></class>
@@ -992,7 +991,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/34]]></permalink>
 <created_on><![CDATA[2009-06-16 15:53:51]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/34.256x256.png?time=1349360794]]></photo>
@@ -1007,7 +1006,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>80</id>
 <class><![CDATA[Company]]></class>
@@ -1015,7 +1014,7 @@ Raleigh, NC  27699-6356]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/80]]></permalink>
 <created_on><![CDATA[2011-06-06 17:59:54]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1032,7 +1031,7 @@ Research Triangle Park, NC 27709-3547]]></office_address>
 <office_fax><![CDATA[919.990.9544]]></office_fax>
 <office_homepage><![CDATA[http://www.ncbiotech.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>105</id>
 <class><![CDATA[Company]]></class>
@@ -1040,7 +1039,7 @@ Research Triangle Park, NC 27709-3547]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/105]]></permalink>
 <created_on><![CDATA[2013-01-07 22:30:14]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1061,7 +1060,7 @@ Chapel Hill, NC 27515]]></office_address>
 <office_fax><![CDATA[(919) 240-7399]]></office_fax>
 <office_homepage><![CDATA[http://www.nchsaa.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>77</id>
 <class><![CDATA[Company]]></class>
@@ -1069,7 +1068,7 @@ Chapel Hill, NC 27515]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/77]]></permalink>
 <created_on><![CDATA[2011-04-15 17:24:49]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/77.256x256.png?time=1349360795]]></photo>
@@ -1085,7 +1084,7 @@ Raleigh, North Carolina 27601-1029]]></office_address>
 <office_fax><![CDATA[919.733.1573]]></office_fax>
 <office_homepage><![CDATA[http://naturalsciences.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>106</id>
 <class><![CDATA[Company]]></class>
@@ -1093,7 +1092,7 @@ Raleigh, North Carolina 27601-1029]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/106]]></permalink>
 <created_on><![CDATA[2013-01-08 15:31:32]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1110,7 +1109,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.northgatemall.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>50</id>
 <class><![CDATA[Company]]></class>
@@ -1118,7 +1117,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/50]]></permalink>
 <created_on><![CDATA[2009-07-20 18:38:50]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1133,7 +1132,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>41</id>
 <class><![CDATA[Company]]></class>
@@ -1156,7 +1155,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.philanthropyjournal.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>117</id>
 <class><![CDATA[Company]]></class>
@@ -1164,7 +1163,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/117]]></permalink>
 <created_on><![CDATA[2013-10-28 14:15:03]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1188,7 +1187,7 @@ Hillsborough, NC 27278]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/97]]></permalink>
 <created_on><![CDATA[2012-05-02 18:55:41]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1205,7 +1204,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[(919) 640-8881]]></office_fax>
 <office_homepage><![CDATA[http://perc.net]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>27</id>
 <class><![CDATA[Company]]></class>
@@ -1213,7 +1212,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/27]]></permalink>
 <created_on><![CDATA[2009-05-21 15:19:58]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/27.256x256.png?time=1349360794]]></photo>
@@ -1228,7 +1227,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>112</id>
 <class><![CDATA[Company]]></class>
@@ -1236,7 +1235,7 @@ Durham, NC 27701]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/112]]></permalink>
 <created_on><![CDATA[2013-08-30 20:09:36]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1278,7 +1277,7 @@ Bethesda, MD 20817]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.proteus.net]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>40</id>
 <class><![CDATA[Company]]></class>
@@ -1286,7 +1285,7 @@ Bethesda, MD 20817]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/40]]></permalink>
 <created_on><![CDATA[2009-06-23 19:11:27]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/40.256x256.png?time=1349360795]]></photo>
@@ -1302,7 +1301,7 @@ Raleigh, NC 27601]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.raleighrescue.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>76</id>
 <class><![CDATA[Company]]></class>
@@ -1310,7 +1309,7 @@ Raleigh, NC 27601]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/76]]></permalink>
 <created_on><![CDATA[2010-08-25 21:47:21]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/76.256x256.png?time=1349360795]]></photo>
@@ -1331,7 +1330,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.rtihs.org/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>23</id>
 <class><![CDATA[Company]]></class>
@@ -1354,7 +1353,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>69</id>
 <class><![CDATA[Company]]></class>
@@ -1362,7 +1361,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/69]]></permalink>
 <created_on><![CDATA[2010-03-02 20:31:16]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/69.256x256.png?time=1349360795]]></photo>
@@ -1377,7 +1376,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>95</id>
 <class><![CDATA[Company]]></class>
@@ -1385,7 +1384,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/95]]></permalink>
 <created_on><![CDATA[2012-03-26 22:12:00]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1400,7 +1399,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>99</id>
 <class><![CDATA[Company]]></class>
@@ -1408,7 +1407,7 @@ Research Triangle Park, NC 27709-2194]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/99]]></permalink>
 <created_on><![CDATA[2012-05-31 16:13:54]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1424,7 +1423,7 @@ Fresno, CA 93727]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>58</id>
 <class><![CDATA[Company]]></class>
@@ -1432,7 +1431,7 @@ Fresno, CA 93727]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/58]]></permalink>
 <created_on><![CDATA[2009-09-23 15:59:47]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1447,7 +1446,7 @@ Fresno, CA 93727]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>70</id>
 <class><![CDATA[Company]]></class>
@@ -1471,7 +1470,7 @@ Chapel Hill, NC 27516]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.thoughtleaderselect.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>94</id>
 <class><![CDATA[Company]]></class>
@@ -1479,7 +1478,7 @@ Chapel Hill, NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/94]]></permalink>
 <created_on><![CDATA[2012-03-22 21:30:13]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1496,7 +1495,7 @@ Chapel Hill, NC 27599-3330]]></office_address>
 <office_fax><![CDATA[919.962.0654]]></office_fax>
 <office_homepage><![CDATA[http://www.sog.unc.edu/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>119</id>
 <class><![CDATA[Company]]></class>
@@ -1504,7 +1503,7 @@ Chapel Hill, NC 27599-3330]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/119]]></permalink>
 <created_on><![CDATA[2013-12-04 19:58:02]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1528,7 +1527,7 @@ Chapel Hill, NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/35]]></permalink>
 <created_on><![CDATA[2009-06-16 18:27:38]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/35.256x256.png?time=1360858981]]></photo>
@@ -1543,7 +1542,7 @@ Chapel Hill, NC 27516]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>115</id>
 <class><![CDATA[Company]]></class>
@@ -1551,7 +1550,7 @@ Chapel Hill, NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/115]]></permalink>
 <created_on><![CDATA[2013-10-17 19:22:29]]></created_on>
 <created_by_id>16</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1574,7 +1573,7 @@ Chapel Hill, NC 27516]]></office_address>
 <permalink><![CDATA[https://ac.designhammer.net/people/121]]></permalink>
 <created_on><![CDATA[2013-12-23 18:57:54]]></created_on>
 <created_by_id>107</created_by_id>
-<updated_on></updated_on>
+<updated_on/>
 <updated_by_id>0</updated_by_id>
 <state>3</state>
 <avatar><photo><![CDATA[https://ac.designhammer.net/logos/default.256x256.png]]></photo>
@@ -1590,6 +1589,6 @@ Chapel Hill, NC 27516]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.womensaudiomission.org/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 </companies>

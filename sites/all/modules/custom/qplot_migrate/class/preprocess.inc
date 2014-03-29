@@ -34,7 +34,8 @@ class DHPreprocessMigration extends MigrationBase {
 
     $this->phantomjs = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/phantomjs/pull.js';
 
-    $this->migratePath = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate');
+    // $this->migratePath = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate');
+    $this->migratePath = DRUPAL_ROOT . '/../dh-ac';
   }
 
   /**
@@ -77,6 +78,7 @@ class DHPreprocessMigration extends MigrationBase {
       'user',
       'project',
       'milestone',
+      'category',
       'task'
     );
     // Make sure all folder exists.
@@ -111,6 +113,12 @@ class DHPreprocessMigration extends MigrationBase {
       'milestone' => array('path' => 'data/project'),
       // Read project xml and download categories xml.
       'category' => array('path' => 'data/project'),
+      // Read project xml and download tasks list xml.
+      'pre_task' => array('path' => 'data/project'),
+    );
+
+    $project_lists = array(
+      10,
     );
 
     foreach ($processed_dir as $dir => $source_path) {

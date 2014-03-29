@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <companies><company><id>71</id>
 <class><![CDATA[Company]]></class>
 <name><![CDATA[AdForce, Inc.]]></name>
@@ -22,7 +21,7 @@ Durham, NC  27713]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.adforcenc.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>86</id>
 <class><![CDATA[Company]]></class>
@@ -47,7 +46,7 @@ Durham, NC 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.afs-global.net]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>104</id>
 <class><![CDATA[Company]]></class>
@@ -73,7 +72,7 @@ USA]]></office_address>
 <office_fax><![CDATA[301.656.9221]]></office_fax>
 <office_homepage><![CDATA[http://www.ceo.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>63</id>
 <class><![CDATA[Company]]></class>
@@ -98,7 +97,7 @@ RTP, NC 27709]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ciscoadexchange.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>55</id>
 <class><![CDATA[Company]]></class>
@@ -123,7 +122,7 @@ Raleigh, NC 27603]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.nccivitas.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>98</id>
 <class><![CDATA[Company]]></class>
@@ -148,7 +147,7 @@ Durham, NC 27713]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.clinpharmconsulting.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>87</id>
 <class><![CDATA[Company]]></class>
@@ -173,7 +172,7 @@ Durham, NC 27705]]></office_address>
 <office_fax><![CDATA[919.403.8199]]></office_fax>
 <office_homepage><![CDATA[http://www.droegecomputing.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>74</id>
 <class><![CDATA[Company]]></class>
@@ -198,7 +197,7 @@ Durham, NC 27705]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.cancer.duke.edu/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>75</id>
 <class><![CDATA[Company]]></class>
@@ -221,7 +220,7 @@ Durham, NC 27705]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.dukece.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>45</id>
 <class><![CDATA[Company]]></class>
@@ -244,7 +243,7 @@ Durham, NC 27705]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.durhambulls.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>79</id>
 <class><![CDATA[Company]]></class>
@@ -268,7 +267,7 @@ Elon, NC 27244]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.elon.edu]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>47</id>
 <class><![CDATA[Company]]></class>
@@ -291,7 +290,7 @@ Elon, NC 27244]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.etrials.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>21</id>
 <class><![CDATA[Company]]></class>
@@ -314,7 +313,7 @@ Elon, NC 27244]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>73</id>
 <class><![CDATA[Company]]></class>
@@ -337,7 +336,7 @@ Elon, NC 27244]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>38</id>
 <class><![CDATA[Company]]></class>
@@ -362,7 +361,7 @@ Chapel Hill, NC 27517]]></office_address>
 <office_fax><![CDATA[(919) 968-2575]]></office_fax>
 <office_homepage><![CDATA[http://hrc-pa.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>96</id>
 <class><![CDATA[Company]]></class>
@@ -385,7 +384,7 @@ Chapel Hill, NC 27517]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ibiliti-nc.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>78</id>
 <class><![CDATA[Company]]></class>
@@ -412,7 +411,7 @@ Raleigh, NC 27606]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://newmindedu.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>85</id>
 <class><![CDATA[Company]]></class>
@@ -437,7 +436,7 @@ San Jose, CA 95131]]></office_address>
 <office_fax><![CDATA[(408) 436-6343]]></office_fax>
 <office_homepage><![CDATA[http://www.jhtechnologies.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>28</id>
 <class><![CDATA[Company]]></class>
@@ -461,7 +460,7 @@ Durham, NC 27709]]></office_address>
 <office_fax><![CDATA[919-403-7175]]></office_fax>
 <office_homepage><![CDATA[http://www.jfsipp.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>48</id>
 <class><![CDATA[Company]]></class>
@@ -484,7 +483,7 @@ Durham, NC 27709]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>59</id>
 <class><![CDATA[Company]]></class>
@@ -513,7 +512,7 @@ Raleigh, NC 27601]]></office_address>
 <office_fax><![CDATA[919-856-2175]]></office_fax>
 <office_homepage><![CDATA[http://www.ncpolicywatch.org/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>66</id>
 <class><![CDATA[Company]]></class>
@@ -536,7 +535,7 @@ Raleigh, NC 27601]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ncspin.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>64</id>
 <class><![CDATA[Company]]></class>
@@ -559,7 +558,7 @@ Raleigh, NC 27601]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>90</id>
 <class><![CDATA[Company]]></class>
@@ -584,7 +583,7 @@ Raleigh, NC 27606]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.newmindedu.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>91</id>
 <class><![CDATA[Company]]></class>
@@ -608,7 +607,7 @@ Durham, North Carolina 27701]]></office_address>
 <office_fax><![CDATA[(919) 400-4824]]></office_fax>
 <office_homepage><![CDATA[http://www.nicholsonpham.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>56</id>
 <class><![CDATA[Company]]></class>
@@ -631,7 +630,7 @@ Durham, North Carolina 27701]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>84</id>
 <class><![CDATA[Company]]></class>
@@ -655,7 +654,7 @@ San Rafael, CA 94912]]></office_address>
 <office_fax><![CDATA[415.963.4433]]></office_fax>
 <office_homepage><![CDATA[http://www.pediafed.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>22</id>
 <class><![CDATA[Company]]></class>
@@ -678,7 +677,7 @@ San Rafael, CA 94912]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>110</id>
 <class><![CDATA[Company]]></class>
@@ -727,7 +726,7 @@ Chapel Hill, NC 27514]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.turnandscreen.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>82</id>
 <class><![CDATA[Company]]></class>
@@ -750,7 +749,7 @@ Chapel Hill, NC 27514]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.ncfencing.org]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>83</id>
 <class><![CDATA[Company]]></class>
@@ -774,7 +773,7 @@ Washington, DC 20006]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>89</id>
 <class><![CDATA[Company]]></class>
@@ -799,7 +798,7 @@ Hillsborough, NC 27278]]></office_address>
 <office_fax><![CDATA[]]></office_fax>
 <office_homepage><![CDATA[http://www.wholesaleloghomes.com/]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>65</id>
 <class><![CDATA[Company]]></class>
@@ -824,7 +823,7 @@ South Hackensack, NJ 07606]]></office_address>
 <office_fax><![CDATA[201-440-5805]]></office_fax>
 <office_homepage><![CDATA[http://www.xfactorcom.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 <company><id>61</id>
 <class><![CDATA[Company]]></class>
@@ -854,6 +853,6 @@ Chapel Hill, North Carolina 27514]]></office_address>
 <office_fax><![CDATA[919-932-4447]]></office_fax>
 <office_homepage><![CDATA[http://www.KitchenMarketing.com]]></office_homepage>
 <is_owner>0</is_owner>
-<note></note>
+<note/>
 </company>
 </companies>
