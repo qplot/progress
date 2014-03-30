@@ -35,12 +35,16 @@ class DHMilestoneMigration extends XMLMigration {
       'project_id' => t('Project ID'),
     );
     // Create source.
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/milestone';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/milestone';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
       $directory = new DirectoryIterator($xml_folder);
       foreach ($directory as $fileinfo) {
+        // Make sure the file is not almost empty.
+        if ($fileinfo->getSize() < 20) {
+          continue;
+        }
         if (preg_match('/\.xml$/', $fileinfo->getFilename())) {
           $items_url[] = $fileinfo->getPathname();
         }

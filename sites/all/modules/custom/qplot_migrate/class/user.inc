@@ -1,10 +1,20 @@
 <?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * Migration for User.
+ */
+
 class DHUserMigration extends XMLMigration {
+  /**
+   * Constructor.
+   */
   public function __construct($arguments) {
     parent::__construct($arguments);
 
-    // create source
+    // Create source.
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -29,7 +39,7 @@ class DHUserMigration extends XMLMigration {
       'company_id' => t('Company ID'),
     );
 
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/user';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/user';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
@@ -42,14 +52,14 @@ class DHUserMigration extends XMLMigration {
     }
 
     $item_xpath = "/user";
-    $item_ID_xpath = 'id';
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $item_id_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
-    // create destination
+    // Create destination.
     $this->destination = new MigrateDestinationNode('contact');
 
-    // create map
+    // Create map.
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'id' => array(
@@ -61,7 +71,7 @@ class DHUserMigration extends XMLMigration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
     $this->addFieldMapping('title', 'name')->xpath('name');
     $this->addFieldMapping('created', 'created')->xpath('created_on');
@@ -71,8 +81,8 @@ class DHUserMigration extends XMLMigration {
     $this->addFieldMapping('field_contact_title', 'title')->xpath('title')
          ->callbacks(array($this, 'fixEmpty'));
     $this->addFieldMapping('field_contact_phone', 'phone_work')->xpath('phone_work');
-    // missing mobile phone
-    // missing messager
+    // Missing mobile phone.
+    // Missing messager.
     $this->addFieldMapping('field_contact_email', 'email')->xpath('email');
     $this->addFieldMapping('field_contact_company', 'company_id')->xpath('company_id')
          ->sourceMigration('Company');
@@ -81,6 +91,9 @@ class DHUserMigration extends XMLMigration {
     $this->addFieldMapping('field_contact_migrate_id', 'id')->xpath('id');
   }
 
+  /**
+   * Preapre Row.
+   */
   public function prepareRow($row) {
     if (parent::prepareRow($row) === FALSE) {
       return FALSE;
@@ -89,14 +102,16 @@ class DHUserMigration extends XMLMigration {
     return TRUE;
   }
 
+  /**
+   * Fix Empty.
+   */
   protected function fixEmpty($value) {
     if ($value) {
       return $value;
-    } else {
+    }
+    else {
       return NULL;
     }
   }
 
 }
-
-?>

@@ -43,7 +43,7 @@ class DHTaskMigration extends XMLMigration {
       'task_id' => t('Task Ordered ID'),
     );
     // Create source.
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/task';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/task';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
@@ -83,7 +83,7 @@ class DHTaskMigration extends XMLMigration {
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
     $this->addFieldMapping('field_task_project', 'project_id')->xpath('project_id')
          ->sourceMigration('Project');
-    $this->addFieldMapping('field_task_tag', 'label')->xpath('label/name');
+    $this->addFieldMapping('field_task_tag', 'category')->xpath('category/name');
     $this->addFieldMapping('field_task_tag:create_term')
          ->defaultValue(TRUE);
     $this->addFieldMapping('body', 'body_formatted')->xpath('body_formatted');

@@ -1,6 +1,16 @@
 <?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * Migration for Project Category.
+ */
+
 class DHCategoryMigration extends XMLMigration {
+  /**
+   * Constructor.
+   */
   public function __construct($arguments) {
     parent::__construct($arguments);
 
@@ -9,16 +19,16 @@ class DHCategoryMigration extends XMLMigration {
       'class' => t('Class'),
       'name' => t('Name'),
     );
-    // create source
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/data/';
-    $items_url = $xml_folder . 'category.xml';
+    // Create source.
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR;
+    $items_url = $xml_folder . '/data/category/category.xml';
     $item_xpath = "/categories/category";
-    $item_ID_xpath = 'id';
+    $item_id_xpath = 'id';
 
-    // create destination
+    // Create destination.
     $this->destination = new MigrateDestinationTerm('project_category');
 
-    // create map
+    // Create map.
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'id' => array(
@@ -30,11 +40,9 @@ class DHCategoryMigration extends XMLMigration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
     $this->addFieldMapping('name', 'name')->xpath('name');
   }
 }
-
-?>

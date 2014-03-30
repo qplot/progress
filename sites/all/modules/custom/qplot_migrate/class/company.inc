@@ -1,10 +1,20 @@
 <?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * Migration for Company.
+ */
+
 class DHCompanyMigration extends XMLMigration {
+  /**
+   * Constructor.
+   */
   public function __construct($arguments) {
     parent::__construct($arguments);
 
-    // create source
+    // Create source.
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -19,8 +29,8 @@ class DHCompanyMigration extends XMLMigration {
       'url' => t('URL'),
       'note' => t('Note'),
     );
-    
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/company';
+
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/company';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
@@ -33,14 +43,14 @@ class DHCompanyMigration extends XMLMigration {
     }
 
     $item_xpath = "/company";
-    $item_ID_xpath = 'id';
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $item_id_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
-    // create destination
+    // Create destination.
     $this->destination = new MigrateDestinationNode('company');
 
-    // create map
+    // Create map.
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'id' => array(
@@ -54,7 +64,7 @@ class DHCompanyMigration extends XMLMigration {
 
     $this->addFieldMapping('title', 'name')->xpath('name');
     $this->addFieldMapping('created', 'created')->xpath('created_on');
-    // missing author from created_by_id
+    // Missing author from created_by_id.
     $this->addFieldMapping('changed', 'updated')->xpath('updated_on');
     $this->addFieldMapping('field_company_address')
          ->defaultValue('US');
@@ -62,7 +72,7 @@ class DHCompanyMigration extends XMLMigration {
          ->defaultValue('stored in data');
     $this->addFieldMapping('field_company_address:data', 'address')->xpath('office_address');
     $this->addFieldMapping('field_company_phone', 'phone')->xpath('office_phone');
-    // missing logo
+    // Missing logo.
     $this->addFieldMapping('body', 'note')->xpath('note');
     $this->addFieldMapping('body:format')
          ->defaultValue('full_html');
@@ -72,6 +82,9 @@ class DHCompanyMigration extends XMLMigration {
     $this->addFieldMapping('field_company_migrate_id', 'id')->xpath('id');
   }
 
+  /**
+   * Prepare Row.
+   */
   public function prepareRow($row) {
     if (parent::prepareRow($row) === FALSE) {
       return FALSE;
@@ -81,5 +94,3 @@ class DHCompanyMigration extends XMLMigration {
   }
 
 }
-
-?>

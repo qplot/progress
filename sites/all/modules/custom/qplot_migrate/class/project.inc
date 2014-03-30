@@ -1,10 +1,20 @@
 <?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * Migration for User.
+ */
+
 class DHProjectMigration extends XMLMigration {
+  /**
+   * Constructor.
+   */
   public function __construct($arguments) {
     parent::__construct($arguments);
 
-    // create source
+    // Create source.
     $fields = array(
       'id' => t('ID'),
       'class' => t('Class'),
@@ -24,7 +34,7 @@ class DHProjectMigration extends XMLMigration {
       'cost' => t('Cost Summarized'),
     );
 
-    $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'qplot_migrate') . '/compiled/project';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/project';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
@@ -37,14 +47,14 @@ class DHProjectMigration extends XMLMigration {
     }
 
     $item_xpath = "/project";
-    $item_ID_xpath = 'id';
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $item_id_xpath = 'id';
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
 
-    // create destination
+    // Create destination.
     $this->destination = new MigrateDestinationNode('project');
 
-    // create map
+    // Create map.
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'id' => array(
@@ -56,7 +66,7 @@ class DHProjectMigration extends XMLMigration {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
+    $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_id_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
     $this->addFieldMapping('field_project_old_id', 'id')->xpath('id');
     $this->addFieldMapping('title', 'name')->xpath('name');
@@ -74,8 +84,8 @@ class DHProjectMigration extends XMLMigration {
          ->defaultValue('tid');
     $this->addFieldMapping('field_project_status', 'completed')->xpath('is_completed')
          ->callbacks(array($this, 'assignCompleted'));
-    // missing project avatar
-    // missing leader id
+    // Missing project avatar.
+    // Missing leader id.
 
     $this->addFieldMapping('field_project_icon')
          ->defaultValue('adjust');
@@ -87,22 +97,27 @@ class DHProjectMigration extends XMLMigration {
     $this->addFieldMapping('field_project_migrate_id', 'id')->xpath('id');
   }
 
+  /**
+   * Prepare Row.
+   */
   public function prepareRow($row) {
     if (parent::prepareRow($row) === FALSE) {
       return FALSE;
     }
 
     return TRUE;
-  }  
+  }
 
+  /**
+   * Assign Completed.
+   */
   protected function assignCompleted($value) {
     if ($value) {
       return 'Completed';
-    } else {
+    }
+    else {
       return NULL;
     }
   }
 
 }
-
-?>

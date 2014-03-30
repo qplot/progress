@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * Migration.
+ */
+
+/**
+ * Migrate API.
+ */
 function qplot_migrate_migrate_api() {
   $api = array(
     'api' => 2,
@@ -31,7 +41,7 @@ function qplot_migrate_migrate_api() {
       'Project' => array(
         'class_name' => 'DHProjectMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array('Preprocess', 'Company', 'User')
+        'soft_dependencies' => array('Preprocess', 'Company', 'Category')
       ),
       'Milestone' => array(
         'class_name' => 'DHMilestoneMigration',
@@ -41,10 +51,7 @@ function qplot_migrate_migrate_api() {
       'Task' => array(
         'class_name' => 'DHTaskMigration',
         'group_name' => 'dh',
-        'soft_dependencies' => array(
-          'Preprocess', 'Company', 'User',
-          'Project', 'Milestone'
-        )
+        'soft_dependencies' => array('Preprocess', 'Project', 'Milestone')
       ),
     ),
   );

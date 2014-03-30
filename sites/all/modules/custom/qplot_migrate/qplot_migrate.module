@@ -1,2 +1,13 @@
-<?
+<?php
 
+/**
+ * @file
+ * MIgrate module file.
+ *
+ * This file is normally empty. Here we include a define for PGH_MIGRATE_DATA_DIR and we also define a class which
+ * represents an empty migration.
+ */
+
+// The location of the CSV files containing the application, section, and question definitions.
+// This should be customized in local.settings.php.
+define('PROGRESS_MIGRATE_DATA_DIR', DRUPAL_ROOT . '/../dh-ac');
