@@ -79,6 +79,9 @@ class DHMilestoneMigration extends XMLMigration {
          ->sourceMigration('Project');
     $this->addFieldMapping('field_phase_durating:value', 'start_on')->xpath('start_on');
     $this->addFieldMapping('field_phase_durating:to', 'due_on')->xpath('due_on');
+    $this->addFieldMapping('field_migrate_source')
+         ->defaultValue(array('DesignHammer AC'));
+    $this->addFieldMapping('field_migrate_id', 'id')->xpath('id');
   }
 
   /**

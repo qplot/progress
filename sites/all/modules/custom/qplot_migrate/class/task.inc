@@ -98,6 +98,9 @@ class DHTaskMigration extends XMLMigration {
          ->xpath('task_id');
     $this->addFieldMapping('field_task_phase', 'milestone_id')->xpath('milestone_id')
          ->sourceMigration('Milestone');
+    $this->addFieldMapping('field_migrate_source')
+         ->defaultValue(array('DesignHammer AC'));
+    $this->addFieldMapping('field_migrate_id', 'id')->xpath('id');
   }
 
   /**
@@ -111,6 +114,8 @@ class DHTaskMigration extends XMLMigration {
    * Prepare.
    */
   public function prepare($node, stdClass $row) {
+    dsm($node);
+    dsm($row);
     if ($row->milestone_id) {
       return;
     }
