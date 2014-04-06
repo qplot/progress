@@ -126,7 +126,7 @@ class DHPreprocessMigration extends MigrationBase {
     );
 
     $project_lists = array(
-      10,
+      10, 346
     );
 
     foreach ($processed_dir as $dir => $source_path) {

@@ -34,6 +34,7 @@ class DHTaskMigration extends XMLMigration {
       'assignee' => t('Assigned By'),
       'label_id' => t('Label ID'),
       'label' => t('Label'),
+      'object_time' => t('Hours'),
       'category_id' => t('Category ID'),
       'category' => t('Category'),
       'body_formatted' => t('Formatted Body'),
@@ -91,7 +92,7 @@ class DHTaskMigration extends XMLMigration {
          ->defaultValue('full_html');
     $this->addFieldMapping('field_task_progress', 'is_completed')->xpath('is_completed')
          ->callbacks(array($this, 'assignProgress'));
-    // Missing hours.
+    $this->addFieldMapping('field_task_hours', 'object_time')->xpath('object_time');
     $this->addFieldMapping('field_task_url', 'permalink')
          ->xpath('permalink');
     $this->addFieldMapping('field_task_url:title', 'task_id')
