@@ -111,14 +111,16 @@ class DHPreprocessMigration extends MigrationBase {
       'pre_project' => array(),
       // Read project xml and download each project xml.
       'project' => array(),
-      // Read project xml and download milestone xml.
-      'milestone' => array('path' => 'data/project'),
       // Read project xml and download categories xml.
       'tag' => array('path' => 'data/project'),
       // Read project xml and download tasks list xml.
       'pre_task' => array('path' => 'data/project'),
       // Read task xml and download each task xml.
       'task' => array(),
+      // Download milestone list xml.
+      'pre_milestone' => array(),
+      // Read project xml and download milestone xml.
+      // 'milestone' => array('path' => 'data/project'),
       // Read task xml and download comment list xml.
       'comment' => array('path' => 'data/task'),
     );
@@ -167,6 +169,20 @@ class DHPreprocessMigration extends MigrationBase {
               }
             }
             drupal_set_message($i . ' project lists downloaded');
+            break;
+
+          case 'milestone':
+            foreach ($project_lists as $pid) {
+              foreach ($ops as $op) {
+                $filename = $pid . '_' . (!empty($op) ? $op : $dir);
+                $output = $saved_dir . '/' . $filename . '.xml';
+                if (!file_exists($output)) {
+                  $this->downloadXML('projects/' . $pid . '/milestones/' . $op, $output);
+                  $i += 1;
+                }
+              }
+            }
+            drupal_set_message($i . ' milestone lists downloaded');
             break;
 
           case 'task':

@@ -114,8 +114,6 @@ class DHTaskMigration extends XMLMigration {
    * Prepare.
    */
   public function prepare($node, stdClass $row) {
-    dsm($node);
-    dsm($row);
     if ($row->milestone_id) {
       return;
     }

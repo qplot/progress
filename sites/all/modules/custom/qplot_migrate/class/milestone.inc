@@ -35,7 +35,7 @@ class DHMilestoneMigration extends XMLMigration {
       'project_id' => t('Project ID'),
     );
     // Create source.
-    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/compiled/milestone';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/data/milestone';
     $items_url = array();
 
     if (is_dir($xml_folder)) {
