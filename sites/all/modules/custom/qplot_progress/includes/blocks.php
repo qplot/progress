@@ -232,18 +232,15 @@ function qplot_progress_block_view_project_overview(&$block) {
 
   // find phases info and associate properties
   $variables['items'] = array();
-  $nids = qplot_api_find_nodes2(
+  $nids = qplot_api_find_nodes3(
     array(
       'type' => 'phase',
       'field_phase_project' => array('target_id', $nid, '=')
     ),
-    array(
-      'changed' => 'DESC'
-    ),
-    TRUE, 3
+    array(3), array('changed' => 'DESC')
   );
-  foreach ($nids as $id) {
-    $node = node_load($id);
+  $nodes = node_load_multiple($nids);
+  foreach ($nodes as &$node) {
     $wrapper = entity_metadata_wrapper('node', $node);
     $variables['items'][] = array(
       'title' => $wrapper->title->value(),
@@ -330,19 +327,19 @@ function qplot_progress_block_view_phases_full(&$block) {
     ))) : '',
   );
   // find phases info
-  $pnids = qplot_api_find_nodes2(
+  $pnids = qplot_api_find_nodes3(
     array(
       'type' => 'phase',
       'field_phase_project' => array('target_id', $nid, '='),
     ),
+    isset($_GET['full']) ? TRUE : array(0, 10),
     array(
-      'field_phase_durating' => array('value', 'ASC')
-    ),
-    TRUE
+      'field_phase_durating' => array('value', 'DESC')
+    )
   );
+  $phases = node_load_multiple($pnids);
   $variables['phases'] = array();
-  foreach ($pnids as $pid) {
-    $phase = node_load($pid);
+  foreach ($phases as &$phase) {
     $phase_wrapper = entity_metadata_wrapper('node', $phase);
     $body = $phase_wrapper->body->value();
     $duration = $phase_wrapper->field_phase_durating->value();
@@ -372,7 +369,7 @@ function qplot_progress_block_view_phases_full(&$block) {
       )) : '',
       'create_task' => node_access('create', 'task') ? url('task/new', array('query' => array_merge(
         array(
-          'phase' => $pid,
+          'phase' => $phase_wrapper->getIdentifier(),
           'project' => $nid,
         ), $destination
       ))) : '',
@@ -381,18 +378,18 @@ function qplot_progress_block_view_phases_full(&$block) {
     );
 
     // find tasks for this phase
-    $tnids = qplot_api_find_nodes2(
+    $tnids = qplot_api_find_nodes3(
       array(
         'type' => 'task',
         'field_task_phase' => array('target_id', $phase_wrapper->getIdentifier(), '='),
         'field_task_project' => array('target_id', $nid, '='),
       ),
-      NULL,
       TRUE
     );
     $phase_item['group'] = array();
-    foreach ($tnids as $tid) {
-      $node = node_load($tid);
+    $tasks = node_load_multiple($tnids);
+    foreach ($tasks as &$node) {
+      // $node = node_load($tid);
       $wrapper = entity_metadata_wrapper('node', $node);
       $body = $wrapper->body->value();
       $url = $wrapper->field_task_url->value();

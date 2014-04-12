@@ -1,7 +1,14 @@
 <?php
 
 /**
- * Implements theme
+ * @file
+ * QPLOT Progress API.
+ *
+ * @author Fang Jin <fjin@qplot.com>
+ */
+
+/**
+ * Implements theme.
  */
 function qplot_api_theme() {
   return array(
@@ -16,11 +23,11 @@ function qplot_api_theme() {
       ),
       // 'template' => 'templates/status_messages'
     ),
-  );  
+  );
 }
 
 /**
- * Theme views link
+ * Theme views link.
  */
 function theme_views_link($vars) {
   $link = l($vars['text'], $vars['path'], array(
@@ -30,48 +37,11 @@ function theme_views_link($vars) {
   ));
   if ($vars['parent-classes']) {
     return '<div class="' . implode(' ', $vars['parent-classes']) . '">' . $link . '</div>';
-  } else {
+  }
+  else {
     return $link;
   }
 }
-
-// /**
-//  * Returns nid(s) based on a supplied pgh item key id.
-//  *
-//  * @param string $key
-//  *   A category key.
-//  *
-//  * @param string $type
-//  *   Type of the item
-//  *
-//  * @param bool $all
-//  *   If all matching nid are returned, or just the first one, default FALSE
-//  *
-//  * @return int
-//  *   The nid for the supplied id or 0 if not found.
-//  *   Or array of nids if $all = TRUE
-//  *
-//  * @author Fang Jin <fang@designhammer.com>
-//  */
-// function pgh_api_find_nid($key, $type, $all = FALSE) {
-//   $query = new EntityFieldQuery();
-//   $result = $query->entityCondition('entity_type', 'node')
-//                   ->propertyCondition('type', $type)
-//                   ->propertyCondition('title', $key)
-//                   ->execute();
-//   if (!empty($result['node'])) {
-//     $keys = array_keys($result['node']);
-//     if ($all) {
-//       return $keys;
-//     }
-//     else {
-//       return $keys[0];
-//     }
-//   }
-//   else {
-//     return 0;
-//   }
-// }
 
 /**
  * Returns node nid(s) based on a supplied entity and property conditions.
@@ -104,7 +74,8 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
   );
   if (!empty($entity_conds)) {
     $entity_conds = array_merge($entity_default, $entity_conds);
-  } else {
+  }
+  else {
     $entity_conds = $entity_default;
   }
   foreach ($entity_conds as $key => $value) {
@@ -118,11 +89,12 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
   if (!empty($field_conds)) {
     foreach ($field_conds as $key => $value) {
       if (is_array($value)) {
-        $property = isset($value[1]) ? $value[0] : 'value'; 
+        $property = isset($value[1]) ? $value[0] : 'value';
         $assigned = isset($value[1]) ? $value[1] : $value[0];
         $operator = isset($value[2]) ? $value[2] : '=';
         $query->fieldCondition($key, $property, $assigned, $operator);
-      } else {
+      }
+      else {
         $query->fieldCondition($key, 'value', $value);
       }
     }
@@ -150,10 +122,12 @@ function qplot_api_find_nodes($property_conds = NULL, $field_conds = NULL, $all 
     else {
       return $keys[0];
     }
-  } else {
+  }
+  else {
     if ($all) {
       return array();
-    } else {
+    }
+    else {
       return 0;
     }
   }
@@ -194,7 +168,7 @@ function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE, $range = NUL
 
   $query = new EntityFieldQuery();
 
-  // apply condition to query
+  // Apply condition to query.
   foreach ($conds as $key => $value) {
     $splits = explode('_', $key);
     $type = $splits[0];
@@ -209,23 +183,24 @@ function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE, $range = NUL
 
       case 'field':
         if (is_array($value)) {
-          $property = isset($value[1]) ? $value[0] : 'value'; 
+          $property = isset($value[1]) ? $value[0] : 'value';
           $assigned = isset($value[1]) ? $value[1] : $value[0];
           $operator = isset($value[2]) ? $value[2] : '=';
           $query->fieldCondition($key, $property, $assigned, $operator);
-        } else {
+        }
+        else {
           $query->fieldCondition($key, 'value', $value);
         }
         break;
-      
-      // rest of them are all property
+
+      // Rest of them are all property.
       default:
         $query->propertyCondition($key, $value);
         break;
     }
   }
 
-  // apply sort to query
+  // Apply sort to query.
   foreach ($sorts as $key => $value) {
     $splits = explode('_', $key);
     $type = $splits[0];
@@ -237,19 +212,20 @@ function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE, $range = NUL
       case 'field':
         $query->fieldOrderBy($key, $value[0], $value[1]);
         break;
-      
+
       default:
         $query->propertyOrderBy($key, $value);
         break;
     }
   }
 
-  // apply range
+  // Apply range.
   if (!empty($range)) {
     $rvars = array(0, 0);
     if (is_array($range)) {
       $rvars = $range;
-    } else {
+    }
+    else {
       $rvars[1] = $range;
     }
     $query->range($rvars[0], $rvars[1]);
@@ -265,22 +241,24 @@ function qplot_api_find_nodes2($conds, $sorts = NULL, $all = FALSE, $range = NUL
     else {
       return $keys[0];
     }
-  } else {
+  }
+  else {
     if ($all) {
       return array();
-    } else {
+    }
+    else {
       return 0;
     }
   }
 }
 
 /**
- * Load node and extract fields
+ * Load node and extract fields.
  */
 function qplot_api_node_values($ids, $fields = NULL) {
   if (!is_array($ids)) {
     $ids = array($ids);
-  } 
+  }
   if (empty($fields)) {
     $fields = array();
   }
@@ -288,6 +266,126 @@ function qplot_api_node_values($ids, $fields = NULL) {
 
   $nodes = node_load_multiple($ids);
   foreach ($nodes as $node) {
-    
+  }
+}
+
+/**
+ * Returns node nid(s) with filters and sorts.
+ *
+ * @param array $conds
+ *   Condition entries, there're three different type of conditions
+ *   1. prefixed with entity_, ex. 'entity_type' => 'node'
+ *   2. prefixed with field_, ex. 'field_project', 
+ *      two formats allowed, simple version 'field_tag' => 'abc',
+ *      or long version, 'field_tag' => array('target_id', 11, '=')
+ *   3. no prefix or other prefix, 'title' => 'abc'
+ *   Default $conds contains 'entity_type' => 'node' entry.
+ *
+ * @param mixed $range
+ *   $range is TRUE for all, $range = array(start, length) for range
+ *   $range is not set, return only single item.
+ *
+ * @param array $sorts
+ *   Sort entiries, there're two different type of sorts
+ *   1. prefixed with field_, ex. 'field_tag' => array('target_id', 'ASC')
+ *   2. no prefix or other prefix, 'title' => 'ASC'
+ *   Default $sorts are empty
+ *
+ * @return array
+ *   The nid for the supplied id or 0 if not found.
+ *   Or array of nids if $all = TRUE
+ *
+ * @author Fang Jin <windmaomao@gmail.com>
+ */
+function qplot_api_find_nodes3($conds, $range = NULL, $sorts = NULL) {
+  $conds = array_merge(array('entity_type' => 'node'), $conds);
+  if (empty($sorts)) {
+    $sorts = array();
+  }
+
+  $query = new EntityFieldQuery();
+
+  // Apply condition to query.
+  foreach ($conds as $key => $value) {
+    $splits = explode('_', $key);
+    $type = $splits[0];
+    if (count($splits) == 1) {
+      $type = 'property';
+    }
+
+    switch ($type) {
+      case 'entity':
+        $query->entityCondition($key, $value);
+        break;
+
+      case 'field':
+        if (is_array($value)) {
+          $property = isset($value[1]) ? $value[0] : 'value';
+          $assigned = isset($value[1]) ? $value[1] : $value[0];
+          $operator = isset($value[2]) ? $value[2] : '=';
+          $query->fieldCondition($key, $property, $assigned, $operator);
+        }
+        else {
+          $query->fieldCondition($key, 'value', $value);
+        }
+        break;
+
+      // Rest of them are all property.
+      default:
+        $query->propertyCondition($key, $value);
+        break;
+    }
+  }
+
+  // Apply sort to query.
+  foreach ($sorts as $key => $value) {
+    $splits = explode('_', $key);
+    $type = $splits[0];
+    if (count($splits) == 1) {
+      $type = 'property';
+    }
+
+    switch ($type) {
+      case 'field':
+        $query->fieldOrderBy($key, $value[0], $value[1]);
+        break;
+
+      default:
+        $query->propertyOrderBy($key, $value);
+        break;
+    }
+  }
+
+  // Apply range.
+  $all = isset($range);
+  if (!empty($range) && is_array($range)) {
+    $rvars = array(0, 0);
+    if (count($range) > 1) {
+      $rvars = $range;
+    }
+    else {
+      $rvars[1] = $range[0];
+    }
+    $query->range($rvars[0], $rvars[1]);
+  }
+
+  $result = $query->execute();
+  $ctype = $conds['entity_type'];
+  if (!empty($result[$ctype])) {
+    $keys = array_keys($result[$ctype]);
+    if ($all) {
+      return $keys;
+    }
+    else {
+      return $keys[0];
+    }
+  }
+  else {
+    if ($all) {
+      return array();
+    }
+    else {
+      return 0;
+    }
   }
 }
