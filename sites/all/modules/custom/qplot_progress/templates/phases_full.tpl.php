@@ -156,7 +156,7 @@
                                       <?php echo $task['ticket'] ?>
                                     </td>
                                     <td class="v-align-middle">
-                                      <a href="" class="tip" data-toggle="tooltip" title="<?php echo $task['description'] ?>" data-placement="right">
+                                      <a href="" class="tip" data-toggle="tooltip" title="" data-placement="right">
                                         <?php if ($task['description']): ?>
                                           <i class="fa fa-file-text-o"></i>
                                         <?php endif; ?>

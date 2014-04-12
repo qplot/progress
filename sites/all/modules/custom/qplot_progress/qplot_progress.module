@@ -680,10 +680,25 @@ function qplot_progress_task_edit_form($node) {
       $edit = !empty($node);
 
       // Load js.
-      $jss = array('js/form_elements.js');
-      $path = drupal_get_path('theme', 'webarch') . '/assets';
+      $jss = array(
+        'plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
+        'plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
+        'plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js',
+        'plugins/jquery-inputmask/jquery.inputmask.min.js',
+        'plugins/jquery-autonumeric/autoNumeric.js',
+        'plugins/ios-switch/ios7-switch.js',
+        'plugins/bootstrap-select2/select2.min.js',
+        'plugins/bootstrap-tag/bootstrap-tagsinput.min.js',
+        'plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js',
+        'plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js',
+        'plugins/dropzone/dropzone.min.js',
+        'plugins/boostrap-slider/js/bootstrap-slider.js',
+        'plugins/jquery-easy-pie-chart/js/jquery.easypiechart.min.js',
+        'js/form_elements.js',
+      );
+      $path = drupal_get_path('theme', 'webarch') . '/assets/';
       foreach ($jss as $js) {
-        drupal_add_js($path . '/js/pgh_form_settings.js', array('scope' => 'footer'));
+        drupal_add_js($path . $js, array('scope' => 'footer'));
       }
 
       // Initial data.
