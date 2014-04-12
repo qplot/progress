@@ -549,61 +549,67 @@ function qplot_progress_update_project_progress($node) {
  */
 function qplot_progress_user_profile($uid) {
   if ($uid) {
-    $user = user_load($uid);
-    $uwrapper = entity_metadata_wrapper('user', $user);
+    $users = &drupal_static(__FUNCTION__);
+    $key = 'user_' . $uid;
+    if (!isset($users[$key])) {
+      // dsm($uid);
+      $user = user_load($uid);
+      $uwrapper = entity_metadata_wrapper('user', $user);
 
-    // Get profile info.
-    $profile = profile2_load_by_user(intval($uid));
-    $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
-    $photo = $wrapper->field_profile_photo->value();
+      // Get profile info.
+      $profile = profile2_load_by_user(intval($uid));
+      $wrapper = entity_metadata_wrapper('profile2', $profile['main']);
+      $photo = $wrapper->field_profile_photo->value();
 
-    // Get company info.
-    $company = array();
-    $project = array();
-    if ($uid > 1) {
-      foreach ($uwrapper->og_user_node->getIterator() as $nwrapper) {
-        $type = $nwrapper->type->value();
-        switch ($type) {
-          case 'company':
-            $company[] = array(
-              'id' => $nwrapper->getIdentifier(),
-              'title' => $nwrapper->title->value(),
-              'view' => url('company/' . $nwrapper->getIdentifier()),
-            );
-            break;
+      // Get company info.
+      $company = array();
+      $project = array();
+      if ($uid > 1) {
+        foreach ($uwrapper->og_user_node->getIterator() as $nwrapper) {
+          $type = $nwrapper->type->value();
+          switch ($type) {
+            case 'company':
+              $company[] = array(
+                'id' => $nwrapper->getIdentifier(),
+                'title' => $nwrapper->title->value(),
+                'view' => url('company/' . $nwrapper->getIdentifier()),
+              );
+              break;
 
-          case 'project':
-            $icon = $nwrapper->field_project_icon->value();
-            $body = $nwrapper->body->value();
-            $project[] = array(
-              'id' => $nwrapper->getIdentifier(),
-              'title' => $nwrapper->title->value(),
-              'view' => url('project/' . $nwrapper->getIdentifier()),
-              'icon' => !empty($icon) ? $icon->name : '',
-              'description' => !$body['value'] ? $body['value'] : '',
-              'progress' => $nwrapper->field_project_progress->value(),
-              'status' => $nwrapper->field_project_status->name->value(),
-            );
-            break;
+            case 'project':
+              $icon = $nwrapper->field_project_icon->value();
+              $body = $nwrapper->body->value();
+              $project[] = array(
+                'id' => $nwrapper->getIdentifier(),
+                'title' => $nwrapper->title->value(),
+                'view' => url('project/' . $nwrapper->getIdentifier()),
+                'icon' => !empty($icon) ? $icon->name : '',
+                'description' => !$body['value'] ? $body['value'] : '',
+                'progress' => $nwrapper->field_project_progress->value(),
+                'status' => $nwrapper->field_project_status->name->value(),
+              );
+              break;
 
-          default:
-            break;
+            default:
+              break;
+          }
         }
       }
-    }
 
-    return array(
-      'id' => $user->uid,
-      'name' => $user->name,
-      'roles' => $user->roles,
-      'first' => $wrapper->field_profile_first->value(),
-      'last' => $wrapper->field_profile_last->value(),
-      'title' => $wrapper->field_profile_title->value(),
-      'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
-      'company' => $company,
-      'project' => $project,
-      'logout' => url('user/logout'),
-    );
+      $users[$key] = array(
+        'id' => $user->uid,
+        'name' => $user->name,
+        'roles' => $user->roles,
+        'first' => $wrapper->field_profile_first->value(),
+        'last' => $wrapper->field_profile_last->value(),
+        'title' => $wrapper->field_profile_title->value(),
+        'photo' => !empty($photo) ? $wrapper->field_profile_photo->file->url->value() : '',
+        'company' => $company,
+        'project' => $project,
+        'logout' => url('user/logout'),
+      );
+    }
+    return $users[$key];
   }
   else {
     return '';
