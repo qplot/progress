@@ -17,6 +17,9 @@ function qplot_migrate_migrate_api() {
       'dh' => array(
         'title' => t('DH AC'),
       ),
+      'dc' => array(
+        'title' => t('DC TW'),
+      )
     ),
     'migrations' => array(
       'Preprocess' => array(
@@ -52,6 +55,10 @@ function qplot_migrate_migrate_api() {
         'class_name' => 'DHTaskMigration',
         'group_name' => 'dh',
         'soft_dependencies' => array('Preprocess', 'Project', 'Milestone')
+      ),
+      'Company' => array(
+        'class_name' => 'DCCompanyMigration',
+        'group_name' => 'dc',
       ),
     ),
   );
