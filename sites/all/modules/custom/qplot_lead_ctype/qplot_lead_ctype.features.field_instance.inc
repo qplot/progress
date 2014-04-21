@@ -52,7 +52,7 @@ function qplot_lead_ctype_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -136,23 +136,36 @@ function qplot_lead_ctype_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
   // Exported field_instance: 'node-lead-field_lead_location'
   $field_instances['node-lead-field_lead_location'] = array(
     'bundle' => 'lead',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'element_key' => 'node|lead|field_lead_location|und|0',
+        'thoroughfare' => '',
+        'premise' => '',
+        'locality' => '',
+        'country' => 'AF',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'location_cck',
-        'settings' => array(),
-        'type' => 'location_default',
-        'weight' => 2,
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -162,7 +175,6 @@ function qplot_lead_ctype_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_lead_location',
     'label' => 'Location',
     'required' => 0,
@@ -170,11 +182,62 @@ function qplot_lead_ctype_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-lead-field_lead_phone'
+  $field_instances['node-lead-field_lead_phone'] = array(
+    'bundle' => 'lead',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_lead_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'ca_phone_parentheses' => 1,
+      'ca_phone_separator' => '-',
+      'phone_country_code' => 0,
+      'phone_default_country_code' => 1,
+      'phone_int_max_length' => 15,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
       'active' => 0,
-      'module' => 'location_cck',
+      'module' => 'phone',
       'settings' => array(),
-      'type' => 'location',
-      'weight' => 3,
+      'type' => 'phone_textfield',
+      'weight' => 5,
     ),
   );
 
@@ -234,7 +297,7 @@ function qplot_lead_ctype_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -272,7 +335,7 @@ function qplot_lead_ctype_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -313,7 +376,7 @@ function qplot_lead_ctype_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -323,6 +386,7 @@ function qplot_lead_ctype_field_default_field_instances() {
   t('Email');
   t('Location');
   t('Notes');
+  t('Phone');
   t('Referer URL');
   t('Status');
   t('Type');
