@@ -15,4 +15,6 @@ files[] = class/task.inc
 files[] = class/user.inc
 files[] = class/category.inc
 files[] = class/milestone.inc
+files[] = class/preprocess_dc.inc
 files[] = class/company_dc.inc
+files[] = class/user_dc.inc

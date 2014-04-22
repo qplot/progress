@@ -30,7 +30,7 @@ class DCCompanyMigration extends XMLMigration {
       'website' => t('URL'),
     );
 
-    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/data/company-dc';
+    $xml_folder = PROGRESS_MIGRATE_DATA_DIR . '/data/company_dc';
     $items_url = array();
 
     if (is_dir($xml_folder)) {

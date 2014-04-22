@@ -56,9 +56,19 @@ function qplot_migrate_migrate_api() {
         'group_name' => 'dh',
         'soft_dependencies' => array('Preprocess', 'Project', 'Milestone')
       ),
-      'Company' => array(
+      'Preprocess_DC' => array(
+        'class_name' => 'DCPreprocessMigration',
+        'group_name' => 'dc',
+      ),
+      'Company_DC' => array(
         'class_name' => 'DCCompanyMigration',
         'group_name' => 'dc',
+        'soft_dependencies' => array('Preprocess_DC')
+      ),
+      'User_DC' => array(
+        'class_name' => 'DCUserMigration',
+        'group_name' => 'dc',
+        'soft_dependencies' => array('Preprocess_DC', 'Company_DC')
       ),
     ),
   );

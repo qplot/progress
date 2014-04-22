@@ -1,6 +1,10 @@
 var system = require('system');
 var fs = require('fs');
 var page = require('webpage').create();
+
+page.settings.userName = 'atom614guitar';
+page.settings.password = '';
+
 page.onConsoleMessage = function(msg) {
   system.stderr.writeLine('console:' + msg);
 }
