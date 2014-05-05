@@ -21,7 +21,10 @@ function processSingle(link) {
         // Title
         title = this.fetchText('#page-title');
         // Company
-        company = (title.match(/\| (.*?)$/))[1];
+        company = (title.match(/\| (.*?)$/));
+        if (company) { 
+            company = company[1]; 
+        } else company = "";
         utils.dump(company);
         // Employment
         employment = this.fetchText('.field-field-type .field-item');
@@ -38,8 +41,8 @@ function processSingle(link) {
         email = body.match(/\b[_\S\d-]+@[_\S\d-]+\.[\S]{2,3}\b/g);
         utils.dump(email);
         // Phone
-        phone = body.match(//g);
-        utils.dump(phone);
+        // phone = body.match(//g);
+        // utils.dump(phone);
         // Location
         place = body.match(/\b[A-Z][a-zA-Z]+,[ ]?[A-Z]{2}\b/g);
         utils.dump(place);
@@ -71,4 +74,3 @@ casper.start(domain + '/drupal-jobs', function() {
 });
 
 casper.run(processLinks);
-
