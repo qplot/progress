@@ -1,16 +1,44 @@
 var utils = require("utils");
+var fs = require('fs');
 var casper = require('casper').create();
 
 var domain = 'https://groups.drupal.org';
-var links;
+var links = [];
 var index = 0;
-var limit = 4;
+var limit = 10;
+var results = [];
+var pageIndex = 0;
+var pageLimit = 2;
 
 // Get all links
 function getLinks() {
-    links = document.querySelectorAll('.views-row .node-title a');
-    return Array.prototype.map.call(links, function(e) {
+    items = document.querySelectorAll('.views-row .node-title a');
+    return Array.prototype.map.call(items, function(e) {
         return e.getAttribute('href');
+    });
+}
+
+// Save results to csv
+function saveCSV() {
+    outputs = [];
+    for (var i = 0; i < results.length; i++) {
+        item = [];
+        item.push(results[i].company);
+        item.push(results[i].email);
+        item.push(results[i].url)
+        outputs.push('"' + item.join('","') + '"');
+    };
+    // utils.dump(output);
+    fs.write('results.csv', outputs.join("\r\n"), 'w');
+}
+
+// Process page
+function processPage(link) {
+    this.start(link, function() {
+        var items = this.evaluate(getLinks);
+        for (var i = 0; i < items.length; i++) {
+            links.push(items[i]);
+        };
     });
 }
 
@@ -25,33 +53,9 @@ function processSingle(link) {
         if (company) { 
             company = company[1]; 
         } else company = "";
-        utils.dump(company);
-        // Employment
-        employment = this.fetchText('.field-field-type .field-item');
-        // employment = employment.match('/C/');
-        utils.dump(employment);
-        // Telecommute
-        telecommute = this.fetchText('.field-field-telecommute .field-item');
-        utils.dump(telecommute);
 
-        // Body
-        body = this.fetchText('.node-content');
-
-        // Email
-        email = body.match(/\b[_\S\d-]+@[_\S\d-]+\.[\S]{2,3}\b/g);
-        utils.dump(email);
-        // Phone
-        // phone = body.match(//g);
-        // utils.dump(phone);
-        // Location
-        place = body.match(/\b[A-Z][a-zA-Z]+,[ ]?[A-Z]{2}\b/g);
-        utils.dump(place);
-        // URls
-        url = body.match(/https?:\/\/\S+/g);
-        utils.dump(url);
-        // User id
-        // User name
-    })
+        results.push({'company': company});
+    });
 }
 
 // Recursively process links
@@ -62,15 +66,29 @@ function processLinks() {
         index++;
         this.run(processLinks);
     } else {
-        // Stops here.
+        utils.dump(results);
+        // save results here
+        // // Stops here.
         this.exit();
     }
 }
 
-casper.start(domain + '/drupal-jobs', function() {
-    this.echo(this.getTitle());
-    links = this.evaluate(getLinks);
-    // utils.dump(links);
-});
+// Recursively process pages
+function processPages() {
+    if (pageIndex < pageLimit) {
+        utils.dump('page = ' + pageIndex);
+        processPage.call(this, domain + '/drupal-jobs?page=' + pageIndex);
+        pageIndex++;
+        this.run(processPages);
+    } else {
+        utils.dump(links);
+        processLinks.call(this);
+    }
+}
 
-casper.run(processLinks);
+casper.start(domain + '/drupal-jobs', function() {
+    // this.echo(this.getTitle());
+    // links = this.evaluate(getLinks);
+});
+casper.run(processPages);
+// casper.run(processLinks);
