@@ -5,10 +5,10 @@ var casper = require('casper').create();
 var domain = 'https://groups.drupal.org';
 var links = [];
 var index = 0;
-var limit = 2000;
+var limit = 20000;
 var results = [];
-var pageStart = 11;
-var pageEnd = 12;
+var pageStart = 12;
+var pageEnd = 50;
 var pageIndex = pageStart;
 //var pageLimit = 2;
 
